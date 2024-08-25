@@ -4,9 +4,10 @@ project:
 
 book:
   title: "공장관리기술사사"
-  author: "YK"
+  author: "yeonkyu.park@gmail.com"
   date: last-modified
   date-format: iso
+  repo-actions: [edit]
   chapters:
     - index.qmd
     - part: 1. 생산전략.qmd
