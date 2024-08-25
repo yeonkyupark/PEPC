@@ -1,0 +1,47 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "공장관리기술사사"
+  author: "YK"
+  date: last-modified
+  date-format: iso
+  chapters:
+    - index.qmd
+    - part: 1. 생산전략.qmd
+      chapters:
+      - 1-1. 경쟁우위 생산전략.qmd
+      - 1-2. 생산구조와 방식(Layout).qmd
+    - part: 2. 생산운영 및 물류관리.qmd
+      chapters: 
+        - 2. 생산운영 및 물류관리.qmd
+    - part: 3. 공정관리.qmd
+      chapters: 
+        - 3. 공정관리.qmd
+    - part: 4. 설비관리.qmd
+      chapters: 
+        - 4. 설비관리.qmd
+    - part: 5. 작업 및 생산성과 측정과 개선.qmd
+      chapters: 
+        - 5. 작업 및 생산성과 측정과 개선.qmd
+    - part: 6. 원가관리 및 경제성 공학.qmd
+      chapters: 
+        - 6. 원가관리 및 경제성 공학.qmd
+    - part: 7. 생산지원기술 및 기타.qmd
+      chapters: 
+        - 7. 생산지원기술 및 기타.qmd
+    - part: 8. 참고 자료.qmd
+      chapters: 
+        - 8. 참고 자료.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    mermaid:
+      theme: neutral
+
+freeze: auto
