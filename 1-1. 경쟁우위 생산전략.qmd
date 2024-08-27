@@ -1,6 +1,41 @@
 # 경쟁우위 생산전략 {#sec-competitive-advantage}
 
-시장 진출에 있어 경쟁 우위를 위해 생산전략을 수립해야 한다. 일반적으로 원가 경쟁력 전략 또는 차별화 전략을 통해 시장에서 경쟁을 하게 된다.
+## 경영전략 {#sec-strategy}
+
+경영전략은 분석 수준에 따라 `기업전략`, `사업전략`, `기능전략`으로 구분된다.
+
+```{mermaid}
+flowchart TD
+  subgraph 기업전략
+    전사
+  end
+  subgraph 사업전략
+    A사업
+    B사업
+    C사업
+  end
+  subgraph 기능전략
+    인사전략
+    재무전략
+    생산전략
+    지원전략
+    영업전략
+  end
+  전사 --- A사업 & B사업 & C사업
+  B사업 --- 인사전략 & 재무전략 & 생산전략 & 지원전략 & 영업전략 
+```
+
+### 기업전략
+
+`기업전략`(Corporate Strategy)
+
+### 사업전략
+
+`사업전략`(Business Strategy)
+
+### 기능전략
+
+`기능전략`(Functions Strategy)
 
 ## 본원적 경쟁전략 {#sec-generic-competitive-strategy}
 
