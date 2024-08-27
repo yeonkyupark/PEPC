@@ -74,6 +74,8 @@ book:
 
 bibliography: references.bib
 
+number-sections: false
+
 format:
   html:
     theme: minty
