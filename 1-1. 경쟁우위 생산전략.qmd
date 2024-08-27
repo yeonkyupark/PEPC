@@ -43,7 +43,7 @@ classDef someclass fill:#f96
 
 마이클 포터의 `본원적 경쟁전략`(Generic Competitive Strategy)란 특정 산업군 내 경쟁우위를 점하기 위한 방법론이다. 경쟁우위는 기업이 보유한 경영 자원이나 핵심역량이 타 기업과 달리 고유한 성공요인이 된다.
 
-![Generic Competitive Strategy](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Michael_Porter%27s_Three_Generic_Strategies.svg/1280px-Michael_Porter%27s_Three_Generic_Strategies.svg.png)
+![Generic Competitive Strategy](https://upload.wikimedia.org/wikipedia/commons/0/0b/Michael_Porter%27s_Three_Generic_Strategies.svg)
 
 ### 원가우위 전략
 
