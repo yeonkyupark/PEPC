@@ -30,14 +30,14 @@ classDef someclass fill:#f96
 ### 기업전략
 
 `기업전략`(Corporate Strategy)은 기업이 참여할 시장과 산업 범위를 결정한다. 사업 다각화, 수직적 통합, 인수합병, 해외사업진출 등 사업 영역 전반적인 의사결정을 한다.
- 
+
 ### 사업전략
 
 `사업전략`(Business Strategy)은 시장 진출 사업 단위로 수립하며, 사업 영력을 설정하고 경쟁우위 확보를 위한 구체적이고 실질적인 전략이다. 원가가우위 전략, 차별화 전략, 집중화 전략 등 시장 경쟁위를 위한 의사결정을 한다. 기업이 단일 사업일 경우 기업전략과 사업전략은 동일하다.
 
 ### 기능전략
 
-`기능전략`(Functions Strategy)은 연구개발, 구매, 생산, 물류, 영업 등 사업 경영 기능별 기본 전략이다. 사업전략 달성을 위해 각 사업 운영에 있어 세부적이고 효율적인 수행방법을 수립한다. 
+`기능전략`(Functions Strategy)은 연구개발, 구매, 생산, 물류, 영업 등 사업 경영 기능별 기본 전략이다. 사업전략 달성을 위해 각 사업 운영에 있어 세부적이고 효율적인 수행방법을 수립한다.
 
 ## 경영전략 수립 프로세스
 
@@ -57,7 +57,7 @@ flowchart LR
 
 마이클 포터의 `본원적 경쟁전략`(Generic Competitive Strategy)란 특정 산업군 내 경쟁우위를 점하기 위한 방법론이다. 경쟁우위는 기업이 보유한 경영 자원이나 핵심역량이 타 기업과 달리 고유한 성공요인이 된다.
 
-![Generic Competitive Strategy](https://upload.wikimedia.org/wikipedia/commons/0/0b/Michael_Porter%27s_Three_Generic_Strategies.svg)
+![https://en.wikipedia.org/wiki/Porter%27s_generic_strategies](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Michael_Porter%27s_Three_Generic_Strategies.svg/1280px-Michael_Porter%27s_Three_Generic_Strategies.svg.png)
 
 #### 원가우위 전략
 
@@ -81,7 +81,7 @@ flowchart LR
 -   공급자 교섭력
 -   구매자 교섭력
 
-![5 Forces Model Analysis](https://upload.wikimedia.org/wikipedia/commons/2/2b/Elements_of_Industry_Structure.svg)
+![https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Elements_of_Industry_Structure.svg/1920px-Elements_of_Industry_Structure.svg.png)
 
 #### 기존 기업간 경쟁
 
@@ -113,15 +113,4 @@ flowchart LR
 -   공급자 교섭력 - 모바일 AP를 제공하는 퀄컴과 LSI
 -   구매자 교섭력 - B2B 시장인 통신사업자와 자급제를 위한 일반 소비자
 
-### SWOT 분석
-
-### BCG 매트릭스
-
-### GE 매트릭스
-
-### PEST 분석
-
-### Value chain diagram 
-
-
-
+이외 전략 수립 프레임워크나 도구는 @sec-business-environment-analysis 참고 한다.

@@ -1,1 +1,20 @@
 # 사업환경분석 {#sec-business-environment-analysis}
+
+## SWOT 분석
+
+![https://en.wikipedia.org/wiki/SWOT_analysis](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/SWOT_en.svg/800px-SWOT_en.svg.png)
+
+## BCG 매트릭스
+
+![https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/BCG_Matrix_Stylised.png/1920px-BCG_Matrix_Stylised.png)
+
+## GE 매트릭스
+
+![https://changingminds.org/disciplines/marketing/understanding_markets/ge_matrix.htm](https://changingminds.org/images/ge_matrix.GIF)
+
+## PEST 분석
+
+
+## Value chain diagram
+
+![https://en.wikipedia.org/wiki/Value_chain](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Porter_Value_Chain.png/1280px-Porter_Value_Chain.png)
