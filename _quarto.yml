@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 book:
-  title: "공장관리기술사사"
+  title: "공장관리기술사"
   author: "yeonkyu.park@gmail.com"
-  date: last-modified
+  date-modified: last-modified
   date-format: iso
   repo-url: https://github.com/yeonkyupark/PEPC 
   repo-branch: main
@@ -76,7 +76,7 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: minty
     mermaid:
       theme: neutral
 
