@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -423,22 +427,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-generic-competitive-strategy" id="toc-sec-generic-competitive-strategy" class="nav-link active" data-scroll-target="#sec-generic-competitive-strategy"><span class="header-section-number">1.1</span> 본원적 경쟁전략</a>
+  <li><a href="#sec-strategy" id="toc-sec-strategy" class="nav-link active" data-scroll-target="#sec-strategy"><span class="header-section-number">1.1</span> 경영전략</a>
   <ul class="collapse">
-  <li><a href="#원가우위-전략" id="toc-원가우위-전략" class="nav-link" data-scroll-target="#원가우위-전략"><span class="header-section-number">1.1.1</span> 원가우위 전략</a></li>
-  <li><a href="#차별화-전략" id="toc-차별화-전략" class="nav-link" data-scroll-target="#차별화-전략"><span class="header-section-number">1.1.2</span> 차별화 전략</a></li>
-  <li><a href="#집중화-전략" id="toc-집중화-전략" class="nav-link" data-scroll-target="#집중화-전략"><span class="header-section-number">1.1.3</span> 집중화 전략</a></li>
+  <li><a href="#기업전략" id="toc-기업전략" class="nav-link" data-scroll-target="#기업전략"><span class="header-section-number">1.1.1</span> 기업전략</a></li>
+  <li><a href="#사업전략" id="toc-사업전략" class="nav-link" data-scroll-target="#사업전략"><span class="header-section-number">1.1.2</span> 사업전략</a></li>
+  <li><a href="#기능전략" id="toc-기능전략" class="nav-link" data-scroll-target="#기능전략"><span class="header-section-number">1.1.3</span> 기능전략</a></li>
   </ul></li>
-  <li><a href="#sec-5force" id="toc-sec-5force" class="nav-link" data-scroll-target="#sec-5force"><span class="header-section-number">1.2</span> 5-Forces Model</a>
+  <li><a href="#sec-generic-competitive-strategy" id="toc-sec-generic-competitive-strategy" class="nav-link" data-scroll-target="#sec-generic-competitive-strategy"><span class="header-section-number">1.2</span> 본원적 경쟁전략</a>
   <ul class="collapse">
-  <li><a href="#기존-기업간-경쟁" id="toc-기존-기업간-경쟁" class="nav-link" data-scroll-target="#기존-기업간-경쟁"><span class="header-section-number">1.2.1</span> 기존 기업간 경쟁</a></li>
-  <li><a href="#신규-진입자-위협" id="toc-신규-진입자-위협" class="nav-link" data-scroll-target="#신규-진입자-위협"><span class="header-section-number">1.2.2</span> 신규 진입자 위협</a></li>
-  <li><a href="#대체제-위협" id="toc-대체제-위협" class="nav-link" data-scroll-target="#대체제-위협"><span class="header-section-number">1.2.3</span> 대체제 위협</a></li>
-  <li><a href="#공급자-교섭력" id="toc-공급자-교섭력" class="nav-link" data-scroll-target="#공급자-교섭력"><span class="header-section-number">1.2.4</span> 공급자 교섭력</a></li>
-  <li><a href="#구매자-교섭력" id="toc-구매자-교섭력" class="nav-link" data-scroll-target="#구매자-교섭력"><span class="header-section-number">1.2.5</span> 구매자 교섭력</a></li>
-  <li><a href="#분석-사례" id="toc-분석-사례" class="nav-link" data-scroll-target="#분석-사례"><span class="header-section-number">1.2.6</span> 분석 사례</a></li>
+  <li><a href="#원가우위-전략" id="toc-원가우위-전략" class="nav-link" data-scroll-target="#원가우위-전략"><span class="header-section-number">1.2.1</span> 원가우위 전략</a></li>
+  <li><a href="#차별화-전략" id="toc-차별화-전략" class="nav-link" data-scroll-target="#차별화-전략"><span class="header-section-number">1.2.2</span> 차별화 전략</a></li>
+  <li><a href="#집중화-전략" id="toc-집중화-전략" class="nav-link" data-scroll-target="#집중화-전략"><span class="header-section-number">1.2.3</span> 집중화 전략</a></li>
   </ul></li>
-  <li><a href="#sec-qcdf" id="toc-sec-qcdf" class="nav-link" data-scroll-target="#sec-qcdf"><span class="header-section-number">1.3</span> 제조업 경쟁력</a></li>
+  <li><a href="#sec-5force" id="toc-sec-5force" class="nav-link" data-scroll-target="#sec-5force"><span class="header-section-number">1.3</span> 5-Forces Model</a>
+  <ul class="collapse">
+  <li><a href="#기존-기업간-경쟁" id="toc-기존-기업간-경쟁" class="nav-link" data-scroll-target="#기존-기업간-경쟁"><span class="header-section-number">1.3.1</span> 기존 기업간 경쟁</a></li>
+  <li><a href="#신규-진입자-위협" id="toc-신규-진입자-위협" class="nav-link" data-scroll-target="#신규-진입자-위협"><span class="header-section-number">1.3.2</span> 신규 진입자 위협</a></li>
+  <li><a href="#대체제-위협" id="toc-대체제-위협" class="nav-link" data-scroll-target="#대체제-위협"><span class="header-section-number">1.3.3</span> 대체제 위협</a></li>
+  <li><a href="#공급자-교섭력" id="toc-공급자-교섭력" class="nav-link" data-scroll-target="#공급자-교섭력"><span class="header-section-number">1.3.4</span> 공급자 교섭력</a></li>
+  <li><a href="#구매자-교섭력" id="toc-구매자-교섭력" class="nav-link" data-scroll-target="#구매자-교섭력"><span class="header-section-number">1.3.5</span> 구매자 교섭력</a></li>
+  <li><a href="#분석-사례" id="toc-분석-사례" class="nav-link" data-scroll-target="#분석-사례"><span class="header-section-number">1.3.6</span> 분석 사례</a></li>
+  </ul></li>
+  <li><a href="#sec-qcdf" id="toc-sec-qcdf" class="nav-link" data-scroll-target="#sec-qcdf"><span class="header-section-number">1.4</span> 제조업 경쟁력</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/1-1. 경쟁우위 생산전략.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -464,9 +474,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>시장 진출에 있어 경쟁 우위를 위해 생산전략을 수립해야 한다. 일반적으로 원가 경쟁력 전략 또는 차별화 전략을 통해 시장에서 경쟁을 하게 된다.</p>
-<section id="sec-generic-competitive-strategy" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="sec-generic-competitive-strategy"><span class="header-section-number">1.1</span> 본원적 경쟁전략</h2>
+<section id="sec-strategy" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-strategy"><span class="header-section-number">1.1</span> 경영전략</h2>
+<p>경영전략은 분석 수준에 따라 <code>기업전략</code>, <code>사업전략</code>, <code>기능전략</code>으로 구분된다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  subgraph 기업전략
+    전사
+  end
+  subgraph 사업전략
+    A사업
+    B사업
+    C사업
+  end
+  subgraph 기능전략
+    인사전략
+    재무전략
+    생산전략
+    지원전략
+    영업전략
+  end
+  전사 --- A사업 &amp; B사업 &amp; C사업
+  B사업 --- 인사전략 &amp; 재무전략 &amp; 생산전략 &amp; 지원전략 &amp; 영업전략 
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="기업전략" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="기업전략"><span class="header-section-number">1.1.1</span> 기업전략</h3>
+<p><code>기업전략</code>(Corporate Strategy)</p>
+</section>
+<section id="사업전략" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="사업전략"><span class="header-section-number">1.1.2</span> 사업전략</h3>
+<p><code>사업전략</code>(Business Strategy)</p>
+</section>
+<section id="기능전략" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="기능전략"><span class="header-section-number">1.1.3</span> 기능전략</h3>
+<p><code>기능전략</code>(Functions Strategy)</p>
+</section>
+</section>
+<section id="sec-generic-competitive-strategy" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-generic-competitive-strategy"><span class="header-section-number">1.2</span> 본원적 경쟁전략</h2>
 <p>마이클 포터의 <code>본원적 경쟁전략</code>(Generic Competitive Strategy)란 특정 산업군 내 경쟁우위를 점하기 위한 방법론이다. 경쟁우위는 기업이 보유한 경영 자원이나 핵심역량이 타 기업과 달리 고유한 성공요인이 된다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -474,21 +528,21 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>본원적 경쟁전략</figcaption>
 </figure>
 </div>
-<section id="원가우위-전략" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="원가우위-전략"><span class="header-section-number">1.1.1</span> 원가우위 전략</h3>
+<section id="원가우위-전략" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="원가우위-전략"><span class="header-section-number">1.2.1</span> 원가우위 전략</h3>
 <p><code>원가우위 전략</code>(Cost Leadership Strategy)은 경쟁사보다 낮은 생산원가를 통해 저렴한 원가로 경쟁하는 전략이다.</p>
 </section>
-<section id="차별화-전략" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="차별화-전략"><span class="header-section-number">1.1.2</span> 차별화 전략</h3>
+<section id="차별화-전략" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="차별화-전략"><span class="header-section-number">1.2.2</span> 차별화 전략</h3>
 <p><code>차별화 전략</code>(Differentiation Strategy)은 고객 요구에 맞춰 높은 서비스와 품질을 제공하여 경쟁사보다 차별화된 제품으로 경쟁하는 전략이다.</p>
 </section>
-<section id="집중화-전략" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="집중화-전략"><span class="header-section-number">1.1.3</span> 집중화 전략</h3>
+<section id="집중화-전략" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="집중화-전략"><span class="header-section-number">1.2.3</span> 집중화 전략</h3>
 <p><code>집중화 전략</code>(Focus Strategy)는 경쟁 범위에 따른 분류로 일반적인 넓은 경쟁 시장이 아닌 틈새 시장(Niche Market)에서 원가우위 또는 차별화 전략으로 경쟁한다.</p>
 </section>
 </section>
-<section id="sec-5force" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="sec-5force"><span class="header-section-number">1.2</span> 5-Forces Model</h2>
+<section id="sec-5force" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-5force"><span class="header-section-number">1.3</span> 5-Forces Model</h2>
 <p>마이클 포터가 제안한 시장 진입에 있어 산업을 분석하기 위해 제안한 모델이다. 다음 5가지 관점에서 업계 구조 및 시장 매력도를 평가하는 도구이다.</p>
 <ul>
 <li><p>기존 기업간 경쟁</p></li>
@@ -503,28 +557,28 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>5 Forces Model Analysis</figcaption>
 </figure>
 </div>
-<section id="기존-기업간-경쟁" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="기존-기업간-경쟁"><span class="header-section-number">1.2.1</span> 기존 기업간 경쟁</h3>
+<section id="기존-기업간-경쟁" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="기존-기업간-경쟁"><span class="header-section-number">1.3.1</span> 기존 기업간 경쟁</h3>
 <p>동종 업계 경쟁 상황을 분석한다.</p>
 </section>
-<section id="신규-진입자-위협" class="level3" data-number="1.2.2">
-<h3 data-number="1.2.2" class="anchored" data-anchor-id="신규-진입자-위협"><span class="header-section-number">1.2.2</span> 신규 진입자 위협</h3>
+<section id="신규-진입자-위협" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="신규-진입자-위협"><span class="header-section-number">1.3.2</span> 신규 진입자 위협</h3>
 <p>신규 진입 가능성을 분석한다. 진입 장벽이 낮은 경우 경쟁이 치열해 질 수 있다.</p>
 </section>
-<section id="대체제-위협" class="level3" data-number="1.2.3">
-<h3 data-number="1.2.3" class="anchored" data-anchor-id="대체제-위협"><span class="header-section-number">1.2.3</span> 대체제 위협</h3>
+<section id="대체제-위협" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="대체제-위협"><span class="header-section-number">1.3.3</span> 대체제 위협</h3>
 <p>제품 PLC 단계 중 성숙기에서는 대체재가 나타날 수 있다. 예를 드면 CD플레이어가 MP3플레이어로, 데스크탑PC가 노트PC로 대체 되면서 시장 상황에 변화를 가져 왔다. 진입하려난 시장의 대체제를 분석하는 것은 중요한 일이다.</p>
 </section>
-<section id="공급자-교섭력" class="level3" data-number="1.2.4">
-<h3 data-number="1.2.4" class="anchored" data-anchor-id="공급자-교섭력"><span class="header-section-number">1.2.4</span> 공급자 교섭력</h3>
+<section id="공급자-교섭력" class="level3" data-number="1.3.4">
+<h3 data-number="1.3.4" class="anchored" data-anchor-id="공급자-교섭력"><span class="header-section-number">1.3.4</span> 공급자 교섭력</h3>
 <p>자재 공급이 유일 공급자만 존재하다면 생산 전략에 영향을 미치게 된다. 또한 공급자와의 신뢰 관계 구축을 통해 시장 경쟁에 유리한 위치를 점할 수 있다.</p>
 </section>
-<section id="구매자-교섭력" class="level3" data-number="1.2.5">
-<h3 data-number="1.2.5" class="anchored" data-anchor-id="구매자-교섭력"><span class="header-section-number">1.2.5</span> 구매자 교섭력</h3>
+<section id="구매자-교섭력" class="level3" data-number="1.3.5">
+<h3 data-number="1.3.5" class="anchored" data-anchor-id="구매자-교섭력"><span class="header-section-number">1.3.5</span> 구매자 교섭력</h3>
 <p>생산하는 제품이 B2B 제품인지 B2C 제품인지, 소비 시장이 집중화 되어 있는지 일반 오픈 마켓인지 분석을 해야 한다.</p>
 </section>
-<section id="분석-사례" class="level3" data-number="1.2.6">
-<h3 data-number="1.2.6" class="anchored" data-anchor-id="분석-사례"><span class="header-section-number">1.2.6</span> 분석 사례</h3>
+<section id="분석-사례" class="level3" data-number="1.3.6">
+<h3 data-number="1.3.6" class="anchored" data-anchor-id="분석-사례"><span class="header-section-number">1.3.6</span> 분석 사례</h3>
 <p>삼성전자의 스마트폰을 5 Forces Model로 분석하면 아래와 같을 것이다.</p>
 <ul>
 <li><p>기존 경쟁간 경쟁 - 원가우위 전략의 샤오미와 차별화 전략의 애플</p></li>
@@ -535,8 +589,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="sec-qcdf" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="sec-qcdf"><span class="header-section-number">1.3</span> 제조업 경쟁력</h2>
+<section id="sec-qcdf" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-qcdf"><span class="header-section-number">1.4</span> 제조업 경쟁력</h2>
 <p>제조업 경쟁력은 생산목표인 QCDF, 즉 품질(Quality), 가격(Cost), 납기(Delivery), 그리고 유연성(Flexibility)으로 요약할 수 있다. 경쟁력을 위해 차원에 중점을 두냐에 따라 생산활동 방향이 크게 달라지게 된다. 또한 각 목표는 상호 Trade-Off 관계에 있어 기업 전략과 생산 목표에 따라 합리적으로 선택해야 한다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
