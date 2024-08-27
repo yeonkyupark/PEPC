@@ -7,11 +7,11 @@
 ```{mermaid}
 flowchart TD
   subgraph 기업전략
-    전사
+    전사:::someclass
   end
   subgraph 사업전략
     A사업
-    B사업
+    B사업:::someclass
     C사업
   end
   subgraph 기능전략
