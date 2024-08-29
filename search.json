@@ -20,16 +20,6 @@
     ]
   },
   {
-    "objectID": "1. 생산전략.html",
-    "href": "1. 생산전략.html",
-    "title": "Ⅰ. 생산전략",
-    "section": "",
-    "text": "경쟁우위 생산전략\n생산구조와 방식(Layout)\n구매와 외주전략\n인력과 직무설계\n사업환경분석",
-    "crumbs": [
-      "Ⅰ. 생산전략"
-    ]
-  },
-  {
     "objectID": "1-1. 경쟁우위 생산전략.html",
     "href": "1-1. 경쟁우위 생산전략.html",
     "title": "경쟁우위 생산전략",
@@ -89,7 +79,7 @@
     "href": "1-1. 경쟁우위 생산전략.html#생산-시스템",
     "title": "경쟁우위 생산전략",
     "section": "생산 시스템",
-    "text": "생산 시스템\n\n생산\n생산이란 생산요소(투입물 - 인력, 원자재, 기계설비, 에너지, 정보 등)를 유형, 무형의 경제재로 변환(생산공정)시킴으로써 효용을 산출하는 과정이다.\n\n\n\n\n\n투입 --&gt; (변환) --&gt; 산출\n\n\n\n\n\n\n\n\n시스템적 사고\n\n\n생산 시스템",
+    "text": "생산 시스템\n\n생산\n생산이란 생산요소(투입물 - 인력, 원자재, 기계설비, 에너지, 정보 등)를 유형, 무형의 경제재로 변환(생산공정)시킴으로써 효용을 산출하는 과정이다.\n\n\n\n\n\nflowchart LR\n  Input[투입] --&gt; Process([변환]) --&gt; Output[산출]\n\n\n\n\n\n\n\n\n시스템적 사고\n\n\n생산 시스템",
     "crumbs": [
       "Ⅰ. 생산전략",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>경쟁우위 생산전략</span>"
@@ -192,6 +182,16 @@
     "crumbs": [
       "Ⅰ. 생산전략",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>사업환경분석</span>"
+    ]
+  },
+  {
+    "objectID": "1. 생산전략.html",
+    "href": "1. 생산전략.html",
+    "title": "Ⅰ. 생산전략",
+    "section": "",
+    "text": "경쟁우위 생산전략\n생산구조와 방식(Layout)\n구매와 외주전략\n인력과 직무설계\n사업환경분석",
+    "crumbs": [
+      "Ⅰ. 생산전략"
     ]
   }
 ]
