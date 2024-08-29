@@ -1,1 +1,1 @@
-# Ⅲ. 생공정관리 {#sec-process}
+# Ⅲ. 공정관리 {#sec-process}
