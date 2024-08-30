@@ -10,6 +10,13 @@ book:
   repo-url: https://github.com/yeonkyupark/PEPC 
   repo-branch: main
   repo-actions: [edit, issue]
+  sidebar: 
+    collapse-level: 1
+    tools:
+      - icon: global
+        href: https://yeonkyupark.github.io/
+      - icon: instagram
+        href: https://www.instagram.com/yeonkyu.park/
   chapters:
     - index.qmd
     - part: 1. 생산전략.qmd
