@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -448,10 +452,10 @@ ul.task-list li input[type="checkbox"] {
 <li>다양화와 위험 분산</li>
 <li>정보 및 기술 교류</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled" title="리쇼어링(Reshoring)">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="리쇼어링(Reshoring)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 리쇼어링(Reshoring)
@@ -466,10 +470,10 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-note callout-titled" title="오프쇼어링(Offshoring)">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="오프쇼어링(Offshoring)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 오프쇼어링(Offshoring)
@@ -486,28 +490,60 @@ ul.task-list li input[type="checkbox"] {
 <section id="입지-선정-기법" class="level3">
 <h3 class="anchored" data-anchor-id="입지-선정-기법">입지 선정 기법</h3>
 <p>입지 선정 방법에는 양적인 요인과 질적인 요인으로 구분할 수 있다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+0[입지 선정 기법]
+
+subgraph g1[양적요인]
+11[총비용비교법]
+12[입지손익분기점분석법]
+13[선형계획법]
+14[수송법]
+end
+
+subgraph g2[질적요인]
+21[단순서열법]
+22["점수법(요인평정법)"]
+23[ㅤ]:::transclass
+24[ㅤ]:::transclass
+end
+
+subgraph g3[양적요인 및 질적요인 절충]
+31[Brown-Gibson 모형]
+32[ㅤ]:::transclass
+33[ㅤ]:::transclass
+34[ㅤ]:::transclass
+end
+
+0 --- g1 &amp; g2 &amp; g3
+
+classDef transclass fill:#fcfcfc, stroke:#fcfcfc
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p><strong>앙적 요인</strong>에 의한 선정 방법은 다음과 같다.</p>
-<blockquote class="blockquote">
 <ul>
 <li>총비용비교법</li>
 <li>입지손익분기점분석법</li>
 <li>선형계획법</li>
 <li>수송법</li>
 </ul>
-</blockquote>
 <p><strong>질적 요인</strong>에 의한 선정 방법은 다음과 같다.</p>
-<blockquote class="blockquote">
 <ul>
 <li>단순서열법</li>
 <li>점수법(요인평정법)</li>
 </ul>
-</blockquote>
 <p>양적 요인과 질절 요인을 <strong>절충</strong>한 방법은 다음과 같다.</p>
-<blockquote class="blockquote">
 <ul>
 <li>Brown-Gibson 모형</li>
 </ul>
-</blockquote>
 </section>
 </section>
 <section id="설비-배치" class="level2">
@@ -516,23 +552,168 @@ ul.task-list li input[type="checkbox"] {
 <section id="위치고정형-배치" class="level3">
 <h3 class="anchored" data-anchor-id="위치고정형-배치">위치고정형 배치</h3>
 <p><strong>프로젝트 배치</strong>라고도 하며 제품이 매우 크고 복잡한 경우 제품이나 공사 구조물을 한 장소에 고정하고 원자재, 기계설비, 작업자 등을 제품 중심으로 옮겨 가면서 생상하는 형태이다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>생산물 이동을 최소한으로 줄일 수 있다.</p></li>
+<li><p>다양한 제품, 작업을 신축성 있게 제조할 수 있다.</p></li>
+<li><p>크고 복작한 제품, 구조물 생산에 적합하다.</p></li>
+</ul></td>
+<td><ul>
+<li><p>제조현장까지 자재와 기계설비를 옮기는데 많은 시간과 노력, 비용이 소요된다.</p></li>
+<li><p>기계설배 이용률이 낮다.</p></li>
+<li><p>고도의 숙련을 요하는 작업이 많다.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="공정별-배치" class="level3">
 <h3 class="anchored" data-anchor-id="공정별-배치">공정별 배치</h3>
 <p>동일한 기능을 자는 설비를 집단으로 배치하는 형태이다. <strong>기능별 배치</strong>라고도 하며 주로 가공 공정에 이용되며 <strong>다품종 소량생산</strong> 시스템에 적합하다. 부품이나 구성품을 표준화 하기 어렵고 범용설비를 이용하여 제품을 생산한다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>변화에 대한 <strong>유연성</strong>이 크다</p></li>
+<li><p><strong>범용설비</strong> 투자 및 배치에 비용이 적게 든다.</p></li>
+<li><p>기계고장, 작업자 결근 등에도 생산량 유지가 용이하다.</p></li>
+<li><p><strong>소량생산</strong> 시 유리하다.</p></li>
+<li><p><strong>직무만족</strong>을 증진시킨다.</p></li>
+</ul></td>
+<td><ul>
+<li><p>대량생산 시 불리하다.</p></li>
+<li><p>운반능률이 떨어진다.</p></li>
+<li><p>재고나 재공품의 투자액과 저장면적이 많이 소요된다.</p></li>
+<li><p>설비와 작업자 이용률이 낮다.</p></li>
+<li><p>주문별로 일정계획이 달라 관리가 어렵다.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="제품별-배치" class="level3">
 <h3 class="anchored" data-anchor-id="제품별-배치">제품별 배치</h3>
 <p>제품이나 서비스를 생산하기 위한 작업 절차와 동일하게 설비를 배치하는 형태이다. 컨베이어와 같은 운반장치가 필요하며 특정 제품을 생산하기 위한 전용설비를 이용한다. 대표적으로 자동차, 전자제품 등의 <strong>조립생산공정</strong>이 이에 해당하며 생산능률은 높으나 설비투자비용이 커며 소요가 감소하게 되면 단위당 제조 원가가 상승하게 된다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>단위단 <strong>생산비용</strong>이 낮다.</p></li>
+<li><p>운반거리가 짧고 가공물의 흐름이 빠르다.</p></li>
+<li><p>기계와 작업자 이용률이 높다.</p></li>
+<li><p>재고와 재공품 저장면적이 적다.</p></li>
+<li><p>일정계획이 단순하고 관리가 용이하다.</p></li>
+<li><p>작업이 단순하여 작업자 훈련 및 감독이 용이하다.</p></li>
+</ul></td>
+<td><ul>
+<li><p>작업에 대한 유연성이 떨어진다.</p></li>
+<li><p><strong>전용설비</strong> 투자와 배치에 자본이 많이 든다.</p></li>
+<li><p>기계고장 및 작업자 결근 등은 전체 공정에 영향을 미친다.</p></li>
+<li><p>적은 수량의 제조 시 <strong>고정비</strong> 부담이 크다.</p></li>
+<li><p>단조로운 작업으로 <a href="1-4. 인력과 직무설계.html#sec-job-satisfication" class="quarto-xref"><span>직무만족</span></a> 이 떨어진다.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="그룹별-배치" class="level3">
 <h3 class="anchored" data-anchor-id="그룹별-배치">그룹별 배치</h3>
 <p>자재 운반, 대기 시간을 줄이는 한편 다양한 품목을 생산할 수 있도록 고안된 설비 배치 형태로 공정별 배치와 제품별 배치의 특징을 모두 갖는다. 즉, 생산공정 또는 제품 특성에 따라 생산 품목을 몇 개 그룹으로 나누어 각 <strong>그룹별</strong>로 <strong>생산설비</strong>를 배치하는 형태이다. 그룹테크놀로지(GT)의 <strong>셀형 배치</strong>와 JIT 생산 시스템의 <strong>U자형 배치</strong>가 대표적이다. 중품종 중량생산에 적합한 형태이다.</p>
 <section id="셀형-배치" class="level4">
 <h4 class="anchored" data-anchor-id="셀형-배치">셀형 배치</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hbr.org/resources/images/article_assets/hbr/8407/84404_B.gif" class="img-fluid figure-img"></p>
+<figcaption>https://hbr.org/1984/07/group-technology-and-productivity</figcaption>
+</figure>
+</div>
+<p>“GT 배치” 또는 “그룹별 배치”라고 하며 작업장과 기계를 유사한 생산/가공 흐름을 갖는 제품들로그룹화하여 셀(cell) 단위로 배열하고 부품 분류별로 가공하는 형태이다. 금속가공 및 조립, 컴퓨터 칩 제조 및 조립 작업에 적용되며 유연성은 유지(공정별 배치 장점)하면서 효율성을 증대(제품별 배치 장점)시키려는 형태이다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>흐름이 일정하고 이동거리가 짧아 운반시간/비용이 적다.</p></li>
+<li><p>가공물의 흐름이 원활하여 공정품이 적다.</p></li>
+<li><p>유사부품을 가공하므로 준비시간이 짧다.</p></li>
+<li><p>빨리 가공할 수 있어 납기가 단축된다.</p></li>
+<li><p>반복적으로 관리와 생산자동화가 용이하다.</p></li>
+</ul></td>
+<td><ul>
+<li><p>재배치에 추가비용이 소요된다.</p></li>
+<li><p>가공물의 흐름균형을 이루는 것이 쉽지 않다.</p></li>
+<li><p>부품에 따라 분류하기에 애매한 것이 있다.</p></li>
+<li><p>다기능공 양성 및 관리가 어렵다.</p></li>
+<li><p>공장이용률이 떨어지기도 한다.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="u자형-배치" class="level4">
 <h4 class="anchored" data-anchor-id="u자형-배치">U자형 배치</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.mdpi.com/applsci/applsci-12-03375/article_deploy/html/images/applsci-12-03375-g001.png" class="img-fluid figure-img"></p>
+<figcaption>https://www.mdpi.com/2076-3417/12/7/3375</figcaption>
+</figure>
+</div>
+<p>다양한 수요변화에 풀 시스템(pull system)을 전개하는 일본기업에서 흔히 U자형 조립라인을 사용한다. U자형 배치는 셀형배치와 같이 일본에서 작업단순화와 지속적 개선사상을 토대로 공정별로 배치를 개선한 것이다.</p>
+<p>U자형 배치 원칙은 다음과 같다.</p>
+<ul>
+<li>다공정 담당 원칙</li>
+<li>작업량 공평 원칙</li>
+<li>1개 만드기 원칙</li>
+<li>흐름작업 원칙</li>
+</ul>
+<p>U자형 배치는 다음과 같은 장점이 있다.</p>
+<ul>
+<li>공간이 적게 소요된다.</li>
+<li>운반을 최소화한다.</li>
+<li>작업자 간 의사소통을 증진시킨다.</li>
+<li>작업 유연성을 증가시킨다.</li>
+</ul>
 
 
 </section>
