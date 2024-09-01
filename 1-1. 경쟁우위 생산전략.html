@@ -660,8 +660,8 @@ classDef someclass fill:#f96
 <p>시스템 유형은 다음 같다.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 51%">
+<col style="width: 48%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -671,16 +671,16 @@ classDef someclass fill:#f96
 </thead>
 <tbody>
 <tr class="odd">
-<td>환경변화에 능동적 대응이 가능한 시스템으로 확장성을 지닌 시스템</td>
-<td>변화에 대한 응대가 불가능한 시스템</td>
-</tr>
-<tr class="even">
-<td>자유무역체제, 민첩하고 혁신적이면서도 선구적인 기업이 생산 번영</td>
-<td>보호무역체제, 경쟁없이 폐쇄된 상태로 보호 받으며 이윤을 창출</td>
-</tr>
-<tr class="odd">
-<td>보일러, 에어컨</td>
-<td>아궁이/난로, 선풍기</td>
+<td><ul>
+<li><p>환경변화에 능동적 대응이 가능한 시스템으로 확장성을 지닌 시스템</p></li>
+<li><p>자유무역체제, 민첩하고 혁신적이면서도 선구적인 기업이 생산 번영</p></li>
+<li><p>보일러, 에어컨</p></li>
+</ul></td>
+<td><ul>
+<li><p>변화에 대한 응대가 불가능한 시스템</p></li>
+<li><p>보호무역체제, 경쟁없이 폐쇄된 상태로 보호 받으며 이윤을 창출</p></li>
+<li><p>아궁이/난로, 선풍기</p></li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -688,10 +688,10 @@ classDef someclass fill:#f96
 <section id="시스템-사고" class="level4">
 <h4 class="anchored" data-anchor-id="시스템-사고">시스템 사고</h4>
 <p><strong>시스템 사고</strong>(systems thinking)는 세상을 여러 부분으로 나누는 것이 아니라 전체와 관계의 관점에서 바라봄으로써 세상의 복잡성을 이해하는 방법이다. 시스템 이론과 시스템 과학 등을 이론적인 기반으로 한다. 기존의 분석적 사고가 환원주의에 기반하여 대상을 쪼개어 나가는데 반해 시스템적 사고는 전일주일(holism)에 기반하여 대상을 살아있는 유기체로 보며 부분을 넘어선 젠체를 파악하려 한다. 시스템 사고는 1950년대 말 MIT 포리스터 교수가 개발한 시스템 다이나믹스(System Dynamics)라는 학문을 뿌리에 두고, 해당 학자들이 어려운 컴퓨터 모델링 부분을 떼어 내어 시스템 사고라는 영역을 만드어 널리 알려졌다. <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
-<div class="callout callout-style-default callout-note callout-titled" title="시스템 다이나믹스(System Dynamics)">
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="시스템 다이나믹스(System Dynamics)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 시스템 다이나믹스(System Dynamics)
@@ -829,9 +829,152 @@ classDef someclass fill:#f96
 <p>경쟁우위 요소와 생산 목표에 따라 생산시스템이 변천해 왔다.</p>
 <section id="테일러-시스템" class="level4">
 <h4 class="anchored" data-anchor-id="테일러-시스템">테일러 시스템</h4>
+<p>테일러 시스템은 F.W. Taylor가 창안한 생산관리와 경영 전반에 걸친 시스템이다. 테일러 시스템의 핵심은 다음과 같다.</p>
+<ul>
+<li>고임금</li>
+<li>저노무비</li>
+<li>과업관리</li>
+</ul>
+<p>19세기 말, 기업 규모 확대 및 노사 분규 중대에 따른 노동생상성 향상 문제가 나타났다. 노동 관리에 과학적 분석을 가하고 제도를 개선하여 대응하려 만든 관리법으로 작업 동작을 과학적으로 분석한 뒤 불필요한 동작을 최소화하고 표준 동작을 책정하고 조합하여 평균 작업시간을 산출했다. 그에 따른 목표를 세우고 과업 달성 여부에 따라 성과급 제도 등을 고안했다.</p>
+<p>테일러 시스템의 4가지 원리는 다음과 같다.</p>
+<ul>
+<li>과업관리</li>
+<li>직능식 직장제도</li>
+<li>차별적 성과급제</li>
+<li>과학적 관리법법</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+시간연구 &amp; 동작연구 --&gt; 0 --&gt; 1[작업관리]
+
+subgraph 0[표준작업량 설정]
+00[일류 노동자 선택&lt;br&gt;작업을 부분 동작으로 구분&lt;br&gt;동작별 소요 측정&lt;br&gt;여유시간 더하여 설정]
+end 
+
+subgraph 작업관리[과학적 관리 운영 제도]
+direction LR
+11[기획부제]
+12[직능별 직장제]
+13[지도표제]
+14[차별적 성과급제]
+end
+
+subgraph 4대원칙
+direction LR
+21[공정한 1일 과업량]
+22[작업조건 표준화]
+23[과업 성공 시 성과급제]
+24[과업 실패 시 손실]
+end
+1 ---&gt; 4대원칙 
+1 ----&gt; 작업관리
+
+classDef transclass fill:#fcfcfc, stroke:#fcfcfc
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>기획부 제도</dt>
+<dd>
+<p>각 기획부를 두어 작업자를 관리하여 작업자는 생산작업에 집중하도록 함</p>
+</dd>
+<dt>기능적 직장 제도</dt>
+<dd>
+<p>기능적 책임자가 작업자에게 분업적으로 지도하도록 함</p>
+</dd>
+<dt>작업지도표(카드) 제도</dt>
+<dd>
+<p>작업지시 시 주요 사항을 작업지도표(카드)에 기록하도록 함</p>
+</dd>
+<dt>차별적 성과급 제도</dt>
+<dd>
+<p>과업 성공 시 작업자에 대한 성과급 지급</p>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="차별적 성과급제">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+차별적 성과급제
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>차별적 성과급 제도는 목표한 과업을 달성한 경우 작업자에게 성과급을 지급하고, 달성하지 못하는 경우 작업자에게 상대적으로 저임금을 지급했다. 현대에는 많이 상용화되어 있지만 당시에는 획기적인 방법이었다.</p>
+</div>
+</div>
 </section>
 <section id="포드-시스템" class="level4">
 <h4 class="anchored" data-anchor-id="포드-시스템">포드 시스템</h4>
+<p>포드(Ford) 시스템은 H.Ford가 포드 자동차 회사에서 대량생산방식으로 확립한 자동차 이동 조립법으로 컨베이어 시스템이라 한다. 생산산을 표준화하고 컨베이어와 작업자를 <strong>동시 관리</strong> 했다. <strong>고임금</strong>과 <strong>저가격</strong>으로 사회에 봉사한다는 것을 목표로 했다.</p>
+<p>디트로이트 공장에서 완성하였다고 하여 <strong>디트로이트 오토메이션</strong>(Detroit automation)이라 하며, 대량생산의 획기적인 계기가 되었다고 하여 <strong>대량생산 시스템</strong>이라고 한다.</p>
+<p>포드 시스템의 <strong>전제조건</strong>은 다음과 같다.</p>
+<ul>
+<li>생산 표준화</li>
+<li>컨베이어 시스템</li>
+<li>동시관리</li>
+<li>대량소비 시장장</li>
+</ul>
+<p>포드 시스템 성과는 다음과 같다.</p>
+<ul>
+<li>생산 표준화로 대량 생산 가능</li>
+<li>컨베이어 시스템으로 생산 규칙성 실현</li>
+<li>종합적인 생산관리 가능</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="포드 시스템 생산 3S">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+포드 시스템 생산 3S
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>표준화 (standardization)</li>
+<li>전문화 (specialization)</li>
+<li>단순화 (simplification)</li>
+</ul>
+</div>
+</div>
+<p>포드 시스템의 장점과 단점은 다음과 같다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>생산 규칙성에 따른 품질 균일화</p></li>
+<li><p>정체공정 배제로 인한 재공품 감소</p></li>
+<li><p>작업자 작업시간 안정</p></li>
+</ul></td>
+<td><ul>
+<li><p>컨베이어 시스템으로 작업속도 강제</p></li>
+<li><p>한 공정에서 장애 발생 시 전체 공정에 영향</p></li>
+<li><p>조업도가 낮으면 제조 원가 상승</p></li>
+<li><p>제품 및 생산설비 변경 어려움</p></li>
+<li><p>제품 단순화에 따른 다양한 수요변화 적응 어려움</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="도요타-생산-시스템" class="level4">
 <h4 class="anchored" data-anchor-id="도요타-생산-시스템">도요타 생산 시스템</h4>
