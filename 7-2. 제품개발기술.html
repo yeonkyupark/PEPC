@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -380,8 +384,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#제품개발" id="toc-제품개발" class="nav-link active" data-scroll-target="#제품개발">제품개발</a></li>
+  <li><a href="#제품설계" id="toc-제품설계" class="nav-link" data-scroll-target="#제품설계">제품설계</a>
+  <ul class="collapse">
+  <li><a href="#모듈러-설계" id="toc-모듈러-설계" class="nav-link" data-scroll-target="#모듈러-설계">모듈러 설계</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2. 제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -405,8 +419,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="제품개발" class="level2">
+<h2 class="anchored" data-anchor-id="제품개발">제품개발</h2>
+</section>
+<section id="제품설계" class="level2">
+<h2 class="anchored" data-anchor-id="제품설계">제품설계</h2>
+<section id="모듈러-설계" class="level3">
+<h3 class="anchored" data-anchor-id="모듈러-설계">모듈러 설계</h3>
+<p><strong>모듈러 설계</strong>(Modular Design)는 호환성 있는 표준 모듈을 여러 가지로 다르게 결합하여 제품 다양성과 생산원가 절감, 두 가지를 동시에달성하기 위한 젤품설계 기법이다. 여기서 <strong>모듈</strong>(Module)이란 다수 부품으로 구성되어 있는 표준화된 중간 조립품을 말한다. 모듈러 설계에서는 서로 다른 모듈이 결합되어 제품 하나가 구성되므로 제품 기본 단위는 모듈이 된다.</p>
+<p>모듈러 설계는 재고관리, 구매관리, 생산관리 등 경영활동에 있어 복잡성을 줄이는 효과가 있다. 모듈러 설계 시 장단점은 다음과 같다.</p>
+<p>장점|단점 - 모듈러 설계 제품은 고장이 낫을 때 고장 난 부분만 모듈을 갈아 끼울 수 있어 수리가 용이 | - 모듈을 구성한 부품 하나가 고장 날 경우 부품 수준이 아니라 모듈 단위로 관리되기 때문에 모듈 전체를 교체해야 함 - 소비자 요구에 따라 필요한 모듈만을 보충하고 불필요한 모듈을 제거하기가 비교적 쉬움| - 개별적인 부품을 사용하기 보다 다양성이 감소 - 재고관리, 구매관리, 생산관리 등 전반적인 경영활동의 복잡성을 감소 | - 제품을 전체적으로 표준화하는 경우보다 비교적 많은 부품이 필요 - 부품 수준에서는 규메의 경제를 이용, 동시에 차별화된 제품을 제공할 수 있게 됨(다양성 제공) |</p>
+<p>모듈러 설계 유형은 다음과 같다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+1[구성요소 공유형]
+2[구성요소 교환형]
+3[맞춤형]
+4[혼합형]
+5[버스형]
+6[조립형]
+0[모듈러 유형] --- 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>구성요소 공유형 모듈화 &gt; 범위의 경제를 달성하기 위해 동일한 구성요소를 여러 제품 및 서비스에 사용한다. 비용이 제품 수에 비례해 빠르게 증가하는 제품군에서 대량생산 이점을 얻고자 할 때 유리항 유형이다. 이 방법은 다양성을 늘리고 원가를 감소시키며 신제품 개발 속도를 높여준다. 보험상품 등이 여기에 해당된다(보험지급 기능 + 보험 상품).</p>
+<p>구성요소 교환형 모듈화 &gt; 공유형 모듈화를 보완한 유형으로 여러 요소가 동일 제품군 제품에 조립되기 때문에 교환되는 구성요소 수만큼 상품이 생기게 된다. 사실상 공유형과 교환형은 정도의 문제며 같은 형태이다. 예식장 등이 여기에 해당된다(예식요소 + 신랑/신부).</p>
+<p>맞춤형 모듈화 &gt; 하나 또는 그 이상의 구성요소 형태가 미리 계획된 범위 안에서 또는 실현 가능한 범위 안에서 끊임없이 변화한다는 점이 공유형/교환형과 다른 점이다. 의류산업이 여기에 해당된다(기성복 + 개인 맞춤).</p>
+<p>혼합형 모듈화 &gt; 두 이상 유형을 활용한 형태이다. 구성요소가 함께 혼합되면 전혀 새로운 형태로 변화된다는 점이 중요하다. 예를 들면 특정 페인트 색상을 혼합하면 처음 색상은 최종 상품에서 찾을 수 없게 된다.</p>
+<p>버스형 모듈화 &gt; 여러 가지 다른 종류 구성요소를 결합할 수 있는 표준 구조를 사용한다. 컴퓨터 조립업체가 여기에 해당된다.</p>
+<p>조립형 모듈화 &gt; 여러 모듈화 유형 가운데 가장 높은 수준의 댜양성과 고객화를 제공한다. 여러 가지 구성 요소의 표준 접촉면을 통해 서로 연결만 될 수 있다면 어떻게든 구성 요소를 임의의 방식으로 배열할 수 있다. 레고 블록이 여기에 해당된다.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -846,4 +898,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2. 제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2. 제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
