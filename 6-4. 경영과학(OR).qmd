@@ -2,6 +2,8 @@
 
 ## 분석적 계층화 과정 (AHP)
 
+#97-1-3 
+
 **분석적 계층화 과정**(AHP, Analytic Hierarchy Process)는 Thomas L. Saaty 교수가 1970년대 창안한 다기준 의사결정방법론이다.[^6-4-1-AHP]
 
 [^6-4-1-AHP]: https://ko.wikipedia.org/wiki/분석적_계층화_과정  
