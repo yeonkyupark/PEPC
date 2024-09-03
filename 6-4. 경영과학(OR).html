@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -456,6 +460,40 @@ ul.task-list li input[type="checkbox"] {
 <li>문제별 쌍대비교 단계</li>
 <li>가중치 산정 및 일치성 분석</li>
 </ol>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+subgraph 목표
+0[스마트폰 구입]
+end
+subgraph 평가기준
+11[디자인]
+12[가격]
+13[성능]
+14[서비스]
+end
+subgraph 대안
+21[삼성]
+22[샤오미]
+23[애플]
+end
+0 --- 11 &amp; 12 &amp; 13 &amp; 14
+11 --- 21 &amp; 22 &amp; 23
+12 --- 21 &amp; 22 &amp; 23
+13 --- 21 &amp; 22 &amp; 23
+14 --- 21 &amp; 22 &amp; 23
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>문제설정 및 계층적 구조화 &gt; 스마프폰 구입을 위해 디자인, 가격, 성능, 서비스를 판가기준으로 3개 제품을 중 선택하고자 한다.</p>
+<p>문제별 쌍대비교 &gt;</p>
+<p>가중치 산정 및 일치성 분석 &gt;</p>
 </section>
 </section>
 <section id="분석-네트워크-프로세스-anp" class="level2">
