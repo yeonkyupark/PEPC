@@ -43,6 +43,8 @@ flowchart TB
 
 ### 개선 절차
 
+![https://www.youtube.com/watch?app=desktop&v=8-kmV4wR2xo](images/job_change.png)
+
 1. 현상 파악  
     - 가동 분석을 통해 현 실태를 파악하고 현재 실시하고 있는 방법을 분석한다.
 2. 낭비제거  

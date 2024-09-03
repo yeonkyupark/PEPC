@@ -4,6 +4,8 @@
 
 #97-1-5
 
+![https://en.wikipedia.org/wiki/Kanban](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kanban_principles.svg/1920px-Kanban_principles.svg.png)
+
 칸판(Kanban, 또는 간판으로 읽음)생산 방식은 "필요한 것은 필요한 때에 필요한 만큼만"이라는 JIT(Just In Time) 사상을 실현하기 위해 도요타에서 창안 되었다. JIT 생산에 있어 정보 시스템 역할을 한다. 즉 어떤 제품이나 부품이 언제 얼마나 필요한가를 알려주는 기능이다.
 
 ### 칸판 역할

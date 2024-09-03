@@ -8,9 +8,11 @@
 
 #97-1-6
 
+![https://en.wikipedia.org/wiki/Concurrent_engineering](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Waterfall_vs_iterative.JPG/1080px-Waterfall_vs_iterative.JPG)
+
 **동시공학**(CE, Concurrent Engineering)은 설계에 관련된 모든 부서와 관계자를 처음부터 설계과정에 참여시킴으로써 설계를 보다 효과적으로 수행하고자 하는 개념이다. 
 
-ITI(Industrial Technology Institue) 스톨(1988)은 CE를 다음 "4C"로 설명하였다.
+ITI(Industrial Technology Institute) 스톨(1988)은 CE를 다음 "4C"로 설명하였다.
 
 동시성(Concurrence)
 > - 제품 설계와 공정 설계가 동시에 이루어진다.
@@ -21,7 +23,7 @@ ITI(Industrial Technology Institue) 스톨(1988)은 CE를 다음 "4C"로 설명�
 협조성(Coordination)
 > - 최선 품질과 비용, 그리고 납기일을 달성하기 위해서는 제품과 공정이 서로 협조해야 한다.
 
-합의성(Concensus)
+합의성(Consensus)
 > - CE팀 모든 구성원들 합의 하에 의사결정을 내려야 한다.
 
 #### 동시공학 성공 요인
@@ -60,6 +62,7 @@ CE는 제품 개발과 그 제품을 생산하는 공정, 판매와 유통, 구�
 
 #97-1-4
 
+![https://en.wikipedia.org/wiki/Modular_design](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Framework_Laptop_-_the_Design_Museum.jpg/330px-Framework_Laptop_-_the_Design_Museum.jpg)
 **모듈러 설계**(Modular Design)는 호환성 있는 표준 모듈을 여러 가지로 다르게 결합하여 제품 다양성과 생산원가 절감, 두 가지를 동시에달성하기 위한 젤품설계 기법이다. 여기서 **모듈**(Module)이란 다수 부품으로 구성되어 있는 표준화된 중간 조립품을 말한다. 모듈러 설계에서는 서로 다른 모듈이 결합되어 제품 하나가 구성되므로 제품 기본 단위는 모듈이 된다.
 
 모듈러 설계는 재고관리, 구매관리, 생산관리 등 경영활동에 있어 복잡성을 줄이는 효과가 있다. 모듈러 설계 시 장단점은 다음과 같다.
