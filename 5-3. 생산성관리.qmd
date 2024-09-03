@@ -74,3 +74,47 @@ flowchart TB
 5. 개선 실시 계획 작성
 6. 개선 실시
 7. 평가결과 횡전재
+
+## Less Engineering
+
+낭비를 발생시키는 구체적인 현상을 완전히 제거하고자 하는 관점에서 시작된 것으로 개선 4원칙 중 가장 효과적인 **배제**에 주안점을 두고 적은 비용으로 큰 영영 성과를 달성하고자 하는 방안이다.
+
+::: {.callout-note title="개선 4원칙(ECRS)" icon="false"}
+배제(Eliminate)
+> 불필요한 작업이나 작업 요소를 제거한다.
+
+결합(Combine)
+> 다른 작업이나 작업요소를 결합한다.
+ 
+재배열(Rearrange)
+> 작업순서를 변경한다.  
+
+간소화(Simplify)
+> 작업이나 작업요소를 단수화 및 간소화 한다.
+:::
+
+### Less Engineering 유형
+
+다음과 같은 유형이 있다.
+
+- Walk Less - 보행 낭비 없애기
+- Search Less - 찾는 낭비 없애기
+- Air Less - 빈 공간 없애기
+- Over stock Less - 과인 재고 없애기
+- Air Cut Less - 공구 절삭 낭비 없애기
+- Conveyor Less - 불필요한 컨베이어 없애기
+- Dust Less - 분짅방지, 먼지 발생 원인 없애기
+- Rough Motion Less - 불필요한 동작 없애기
+
+
+
+
+
+
+
+
+
+
+
+
+
