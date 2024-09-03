@@ -376,7 +376,7 @@
     "href": "5-3. 생산성관리.html",
     "title": "생산성관리",
     "section": "",
-    "text": "준비교체 개선활동\n준비교체 시간이란 현 제품 생산 종료 시점으로부터 다음 제품으로 교체/조정을 하여 완전히 양품이 생산되기까지의 시간을 말한다. 치공구 해체, 청소, 다음 제품에 사용할 치공구 준비, 금형류 준비, 세팅, 시가공, 조정, 측정 시간 등을 포함한다.",
+    "text": "준비교체 개선활동\n#97-1-1\n준비교체 시간이란 현 제품 생산 종료 시점으로부터 다음 제품으로 교체/조정을 하여 완전히 양품이 생산되기까지의 시간을 말한다. 치공구 해체, 청소, 다음 제품에 사용할 치공구 준비, 금형류 준비, 세팅, 시가공, 조정, 측정 시간 등을 포함한다.",
     "crumbs": [
       "Ⅴ. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>생산성관리</span>"
@@ -398,7 +398,7 @@
     "href": "5-3. 생산성관리.html#less-engineering",
     "title": "생산성관리",
     "section": "Less Engineering",
-    "text": "Less Engineering\n낭비를 발생시키는 구체적인 현상을 완전히 제거하고자 하는 관점에서 시작된 것으로 개선 4원칙 중 가장 효과적인 배제에 주안점을 두고 적은 비용으로 큰 영영 성과를 달성하고자 하는 방안이다.\n\n\n\n\n\n\n개선 4원칙(ECRS)\n\n\n\n배제(Eliminate) &gt; 불필요한 작업이나 작업 요소를 제거한다.\n결합(Combine) &gt; 다른 작업이나 작업요소를 결합한다.\n재배열(Rearrange) &gt; 작업순서를 변경한다.\n간소화(Simplify) &gt; 작업이나 작업요소를 단수화 및 간소화 한다.\n\n\n\nLess Engineering 유형\n다음과 같은 유형이 있다.\n\nWalk Less - 보행 낭비 없애기\nSearch Less - 찾는 낭비 없애기\nAir Less - 빈 공간 없애기\nOver stock Less - 과인 재고 없애기\nAir Cut Less - 공구 절삭 낭비 없애기\nConveyor Less - 불필요한 컨베이어 없애기\nDust Less - 분짅방지, 먼지 발생 원인 없애기\nRough Motion Less - 불필요한 동작 없애기",
+    "text": "Less Engineering\n#97-1-2\n낭비를 발생시키는 구체적인 현상을 완전히 제거하고자 하는 관점에서 시작된 것으로 개선 4원칙 중 가장 효과적인 배제에 주안점을 두고 적은 비용으로 큰 영영 성과를 달성하고자 하는 방안이다.\n\n\n\n\n\n\n개선 4원칙(ECRS)\n\n\n\n배제(Eliminate) &gt; 불필요한 작업이나 작업 요소를 제거한다.\n결합(Combine) &gt; 다른 작업이나 작업요소를 결합한다.\n재배열(Rearrange) &gt; 작업순서를 변경한다.\n간소화(Simplify) &gt; 작업이나 작업요소를 단수화 및 간소화 한다.\n\n\n\nLess Engineering 유형\n다음과 같은 유형이 있다.\n\nWalk Less - 보행 낭비 없애기\nSearch Less - 찾는 낭비 없애기\nAir Less - 빈 공간 없애기\nOver stock Less - 과인 재고 없애기\nAir Cut Less - 공구 절삭 낭비 없애기\nConveyor Less - 불필요한 컨베이어 없애기\nDust Less - 분짅방지, 먼지 발생 원인 없애기\nRough Motion Less - 불필요한 동작 없애기",
     "crumbs": [
       "Ⅴ. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>생산성관리</span>"
