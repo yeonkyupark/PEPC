@@ -526,6 +526,28 @@
     ]
   },
   {
+    "objectID": "7-3. 서비스운영관리.html",
+    "href": "7-3. 서비스운영관리.html",
+    "title": "서비스운영관리",
+    "section": "",
+    "text": "마케팅 믹스 4P\n#97-1-11\nflowchart TB\n0[마케팅 믹스 4P]\n11[제품(Product)]\n12[유통(Place)]\n13[가격(Price)]\n14[판매촉진(Promotion)]\n\n0 --- 11 & 12 & 13 & 14",
+    "crumbs": [
+      "Ⅶ. 생산지원기술 및 기타",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>서비스운영관리</span>"
+    ]
+  },
+  {
+    "objectID": "7-3. 서비스운영관리.html#마케팅-믹스-4p",
+    "href": "7-3. 서비스운영관리.html#마케팅-믹스-4p",
+    "title": "서비스운영관리",
+    "section": "",
+    "text": "제품(Production)\n\n\n유형 물건 뿐만 아니라 기업에서 제공하고 고객이 이용하는 무형 서비스까지 포함하는 넓은 의미\n\n\n유통(Place)\n\n\n제품을 판매하고 소비자가 구매할 수 있는 경로 의미\n\n\n가격(Price)\n\n\n소비자가 기업이 제공하는 제품 또는 서비스를 구매할 때 지불하게 되는 비용을 의미\n\n\n판매촉진(Promotion)\n\n\n광고 외 PR, 이벤트, 할인 ㄹ행사, 인적 판매, SNS 홍보, DM 등 자사 상품을 알리고 판매를 촉진하기 위한 모든 활동을 아우르는 개념",
+    "crumbs": [
+      "Ⅶ. 생산지원기술 및 기타",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>서비스운영관리</span>"
+    ]
+  },
+  {
     "objectID": "7-4. 생산혁신기술.html",
     "href": "7-4. 생산혁신기술.html",
     "title": "생산혁신기술",
