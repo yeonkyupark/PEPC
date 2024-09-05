@@ -75,6 +75,7 @@ book:
         
     - part: 8. 참고 자료.qmd
       chapters: 
+        - 8-2. 용어.qmd
         - 8-1. ISO.qmd
 
 bibliography: references.bib
