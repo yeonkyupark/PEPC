@@ -6,11 +6,11 @@
 
 ```{mermaid}
 flowchart TB
-0[마케팅 믹스 4P]
-11[제품(Product)]
-12[유통(Place)]
-13[가격(Price)]
-14[판매촉진(Promotion)]
+0["마케팅 믹스 4P"]
+11["제품(Product)"]
+12["유통(Place)"]
+13["가격(Price)"]
+14["판매촉진(Promotion)"]
 
 0 --- 11 & 12 & 13 & 14
 ```
