@@ -530,7 +530,7 @@
     "href": "7-3. 서비스운영관리.html",
     "title": "서비스운영관리",
     "section": "",
-    "text": "마케팅 믹스 4P\n#97-1-11\nflowchart TB\n0[마케팅 믹스 4P]\n11[제품(Product)]\n12[유통(Place)]\n13[가격(Price)]\n14[판매촉진(Promotion)]\n\n0 --- 11 & 12 & 13 & 14",
+    "text": "마케팅 믹스 4P\n#97-1-11\nflowchart TB\n0[\"마케팅 믹스 4P\"]\n11[\"제품(Product)\"]\n12[\"유통(Place)\"]\n13[\"가격(Price)\"]\n14[\"판매촉진(Promotion)\"]\n\n0 --- 11 & 12 & 13 & 14",
     "crumbs": [
       "Ⅶ. 생산지원기술 및 기타",
       "<span class='chapter-number'>31</span>  <span class='chapter-title'>서비스운영관리</span>"
