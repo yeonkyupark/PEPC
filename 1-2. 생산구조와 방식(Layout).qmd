@@ -223,17 +223,21 @@ U자형 배치는 다음과 같은 장점이 있다.
 생산운영 시스템 내 작업, 물자, 정보가 원활하게 흐르게 하여 생산 시스템 효율을 극대화하기 위한 설비 배치 분석 기법은 다음과 같다.
 
 ```{mermaid}
-flowchart TB
-0[설비배치 분석 기법]
-1[SLP]
-2[전산배치기법]
-21[기존방식] --- ALDEP & PLANET 
+flowchart LR
+subgraph slp[""]
+SLP
+end
+
+subgraph clp[""]
+direction LR
+20[전산배치기법]
+21[구성방식] --- CORELAP & ALDEP & PLANET
 22[개선방식] --- CRAFT & COFAD
 
-0 --- 1 & 2
-2 --- 21 & 22
-
+설비배치 --- SLP & 20
 ``` 
+
+
 
 #### 컴퓨터를 활용한 분석
 
@@ -263,7 +267,7 @@ COFAD(Computerized Facility Design)
 
 #### SLP
 
-**SLP**(체계적 공장 배치, Systematic Layout Programming)는 설비 배치 시 효율적인 질적요인을 분석하기 위해 머더(Richard Muther)가 소개한 기법이다.
+**SLP**(체계적 공장 배치, Systematic Layout Planning)는 설비 배치 시 효율적인 질적요인을 분석하기 위해 머더(Richard Muther)가 소개한 기법이다.
 
 - 물자 흐름 및 상호 관계 검토 후 활동 내용 작성
 - 필요한 면적에 따른 이용 가능 면적 작성
@@ -282,18 +286,18 @@ Muther는 6단계 절차를 이용하여 관계가 가장 빈번하고 논리적
 ![https://www.researchgate.net/figure/Systematic-Layout-Planning-Procedure-12_fig1_321943344](https://www.researchgate.net/publication/321943344/figure/fig1/AS:573637008211979@1513777128863/Systematic-Layout-Planning-Procedure-12.png)
 
 Muther 6단계 SLP
-: 1. 도표 관계 작성
-2. 공간 조건 설정
+: 1. 도표 관계 작성  
+2. 공간 조건 설정  
     - DOR, ENG, SEC, FOY, FIL, COP, STO 등
     - **부문 상호관계표**(Activity Relationship Chart), 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표
-3. 활동 관계도 작성
+3. 활동 관계도 작성    
     - **상호 관계도**(Relationship Diagram), 자재 흐롬 분석과 부문 상호 관계 분석이 끝난 후 이 두 가지 결과를 결합하여 상호 관계도 작성
-4. 공간 관계 설비 배치
+4. 공간 관계 설비 배치  
     - **면적 상호 관계도**(Space Relationship Diagram), 각 부분 면적을 산출하여 정해진 위치에 블록 형태로 배치
     - Block lay out case study, 현실적 제약조건과 전제조건을 반영하여 여러 가지 layout 대안 수립
-5. 대체 배열 안 평가
+5. 대체 배열 안 평가  
     - 개인적 취향, 공급품 이동, 방문객 접견, 여연성에 관해 평가
-6. 선정된 설비 배치 시행
+6. 선정된 설비 배치 시행  
 
 
 
