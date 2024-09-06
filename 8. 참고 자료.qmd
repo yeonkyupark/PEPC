@@ -1,4 +1,4 @@
-# 참고 자료 {#sec-reference .unnumbered}
+# 참고 자료 {#sec-reference .unnumbered .appendix}
 
 ::: {#refs}
 :::
