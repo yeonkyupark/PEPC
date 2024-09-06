@@ -224,15 +224,16 @@ U자형 배치는 다음과 같은 장점이 있다.
 
 ```{mermaid}
 flowchart LR
-subgraph slp[""]
+subgraph slp[" "]
 SLP
 end
 
-subgraph clp[""]
+subgraph clp["  "]
 direction LR
 20[전산배치기법]
 21[구성방식] --- CORELAP & ALDEP & PLANET
 22[개선방식] --- CRAFT & COFAD
+end 
 
 설비배치 --- SLP & 20
 ``` 
