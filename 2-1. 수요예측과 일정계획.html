@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -391,8 +395,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#crm" id="toc-crm" class="nav-link active" data-scroll-target="#crm">CRM</a>
+  <li><a href="#수요예측" id="toc-수요예측" class="nav-link active" data-scroll-target="#수요예측">수요예측</a>
   <ul class="collapse">
+  <li><a href="#수요예측-기법" id="toc-수요예측-기법" class="nav-link" data-scroll-target="#수요예측-기법">수요예측 기법</a></li>
   <li><a href="#crm-필요성" id="toc-crm-필요성" class="nav-link" data-scroll-target="#crm-필요성">CRM 필요성</a></li>
   <li><a href="#crm-특징" id="toc-crm-특징" class="nav-link" data-scroll-target="#crm-특징">CRM 특징</a></li>
   <li><a href="#crm-전제-조건" id="toc-crm-전제-조건" class="nav-link" data-scroll-target="#crm-전제-조건">CRM 전제 조건</a></li>
@@ -423,10 +428,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="crm" class="level2">
-<h2 class="anchored" data-anchor-id="crm">CRM</h2>
+<section id="수요예측" class="level2">
+<h2 class="anchored" data-anchor-id="수요예측">수요예측</h2>
+<p>#97-2-2</p>
+<section id="수요예측-기법" class="level3">
+<h3 class="anchored" data-anchor-id="수요예측-기법">수요예측 기법</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+subgraph s1["   "]
+10["정성적 예측법&lt;br&gt;(질적 예측 기법)"]
+11[직관을 이용한 예측]
+12[시장 조사에 의한 예측]
+13[유추에 의한 예측]
+11 --- 111[데파이법]
+11 --- 112[판매원 의견 종합법]
+11 --- 113[경영자 판단법]
+11 --- 114[위원회 홥의법, 패널 동의법]
+12 --- 시장조사법
+13 --- 131[라이프 사이클 유추법]
+13 --- 132[자료 유추법]
+10 --- 11 &amp; 12 &amp; 13
+end
+
+subgraph s2["   "]
+20["정량적 예측법&lt;br&gt;(양적 예측 기법)"]
+21[시계열 예측기법]
+22[인과관계 예측기법]
+21 --- 211[이동 평균법]
+21 --- 212[지수 평활법]
+21 --- 213[수학적 모형]
+21 --- 214[Box-Jenkins]
+21 --- 215[추세 분석법]
+22 --- 221[회귀분석]
+22 --- 222[계량경제모형]
+22 --- 223[투입-산출 모형]
+22 --- 224[시뮬레이션 모형]
+22 --- 225[선도지표법]
+20 --- 21 &amp; 22
+end
+
+예측기법 --- 10 &amp; 20
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="델파이법" class="level4">
+<h4 class="anchored" data-anchor-id="델파이법">델파이법</h4>
+<p><strong>델파이법</strong>(Delphi)은 익명 전문가 집단으로부터 합의를 도출하는 과정이다. 통계적 모형을 개발하기 위한 과거 자료가 없거나 영영자가 경험이 없어서 판단 근거를 찾을 수 없을 때 사용한다. 장기 수요 예측이나 신제품 수요 예측에 사용할 수 있으며, 기술 예측에 있어 매우 효과적이다. 예측에 걸리는 시간이 상당히 길고 응답 내용에 책임감이 적으며, 설문지를 잘못 설계하면 잘못된 결론을 도출할 수도 있다. 새로운 제품 수요 변환점을 예측하는데 상당히 우수하다고 알려져 있다.</p>
+</section>
+<section id="시계열분해법" class="level4">
+<h4 class="anchored" data-anchor-id="시계열분해법">시계열분해법</h4>
+<p><strong>시계열 분석</strong>이란 시계열(연, 월, 주, 일 등 시간 간격)에 따라 제시된 과거 자료(수요량, 매출액 등)로부터 그 추세나 경향을 파악하여 장래 수요를 예측하는 것이다. 이 경우 과거 자료를 미래 예측 길잡이로 이용하는데 시간이 독립변수가 되며 수요량 또는 매출액은 종속변수가 된다. 따라서 시계열 분석 초점은 과거에 발생한 수요와 관련된 시계열성에 있다고 볼 수 있다. 분석 방법에 따라 단순이동평균법, 가중이동평균법, 지수평활법 등이 있다..2ㅔ ## CRM</p>
 <p>#97-1-8</p>
 <p><strong>고객관계관리</strong>(Customer Relationship Management)는 마케팅 각 단계에서 축적되는 고객 정보를 체계적으로 이용하여고객과 장기적인 관계를 형성하기 위한 제반 활동, 조직, 업무 프로세스 및 IT 인프라 총체이다.</p>
+</section>
+</section>
 <section id="crm-필요성" class="level3">
 <h3 class="anchored" data-anchor-id="crm-필요성">CRM 필요성</h3>
 <p>CRM 필요성은 다음과 같다.</p>
