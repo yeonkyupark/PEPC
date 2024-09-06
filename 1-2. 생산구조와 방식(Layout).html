@@ -405,7 +405,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#공정별-배치" id="toc-공정별-배치" class="nav-link" data-scroll-target="#공정별-배치">공정별 배치</a></li>
   <li><a href="#제품별-배치" id="toc-제품별-배치" class="nav-link" data-scroll-target="#제품별-배치">제품별 배치</a></li>
   <li><a href="#그룹별-배치" id="toc-그룹별-배치" class="nav-link" data-scroll-target="#그룹별-배치">그룹별 배치</a></li>
-  <li><a href="#설비배치-분석-기법" id="toc-설비배치-분석-기법" class="nav-link" data-scroll-target="#설비배치-분석-기법">설비배치 분석 기법</a></li>
+  </ul></li>
+  <li><a href="#설비배치-분석-기법" id="toc-설비배치-분석-기법" class="nav-link" data-scroll-target="#설비배치-분석-기법">설비배치 분석 기법</a>
+  <ul class="collapse">
+  <li><a href="#컴퓨터를-활용한-분석" id="toc-컴퓨터를-활용한-분석" class="nav-link" data-scroll-target="#컴퓨터를-활용한-분석">컴퓨터를 활용한 분석</a></li>
+  <li><a href="#체계적-설비-배치" id="toc-체계적-설비-배치" class="nav-link" data-scroll-target="#체계적-설비-배치">체계적 설비 배치</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/1-2. 생산구조와 방식(Layout).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -811,8 +815,9 @@ end
 </ul>
 </section>
 </section>
-<section id="설비배치-분석-기법" class="level3">
-<h3 class="anchored" data-anchor-id="설비배치-분석-기법">설비배치 분석 기법</h3>
+</section>
+<section id="설비배치-분석-기법" class="level2">
+<h2 class="anchored" data-anchor-id="설비배치-분석-기법">설비배치 분석 기법</h2>
 <p>생산운영 시스템 내 작업, 물자, 정보가 원활하게 흐르게 하여 생산 시스템 효율을 극대화하기 위한 설비 배치 분석 기법은 다음과 같다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -837,8 +842,8 @@ direction LR
 </div>
 </div>
 </div>
-<section id="컴퓨터를-활용한-분석" class="level4">
-<h4 class="anchored" data-anchor-id="컴퓨터를-활용한-분석">컴퓨터를 활용한 분석</h4>
+<section id="컴퓨터를-활용한-분석" class="level3">
+<h3 class="anchored" data-anchor-id="컴퓨터를-활용한-분석">컴퓨터를 활용한 분석</h3>
 <p><strong>컴퓨터를 활용한 분석 기법</strong>(Computerized Layout Technique)은 배치하고자 하는 설비와 작업 장소가 많은 경우 휴리스틱(heuristic) 방법으로 컴퓨터 탐색 기법을 통해 다양한 배치안을 제시한다.</p>
 <dl>
 <dt>CORELAP(Computerized Relationship Layout Planning)</dt>
@@ -877,9 +882,9 @@ direction LR
 </dd>
 </dl>
 </section>
-<section id="slp" class="level4">
-<h4 class="anchored" data-anchor-id="slp">SLP</h4>
-<p><strong>SLP</strong>(체계적 공장 배치, Systematic Layout Planning)는 설비 배치 시 효율적인 질적요인을 분석하기 위해 머더(Richard Muther)가 소개한 기법이다.</p>
+<section id="체계적-설비-배치" class="level3">
+<h3 class="anchored" data-anchor-id="체계적-설비-배치">체계적 설비 배치</h3>
+<p><strong>SLP</strong>(체계적 설비 배치, Systematic Layout Planning)는 설비 배치 시 효율적인 질적요인을 분석하기 위해 머더(Richard Muther)가 소개한 기법이다.</p>
 <ul>
 <li>물자 흐름 및 상호 관계 검토 후 활동 내용 작성</li>
 <li>필요한 면적에 따른 이용 가능 면적 작성</li>
@@ -915,29 +920,34 @@ direction LR
 </ol>
 <ul>
 <li>DOR, ENG, SEC, FOY, FIL, COP, STO 등</li>
-<li><strong>부문 상호관계표</strong>(Activity Relationship Chart), 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표</li>
+<li><strong>부문 상호관계표</strong>(Activity Relationship Chart), 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표<br>
+</li>
 </ul>
 <ol start="3" type="1">
 <li>활동 관계도 작성<br>
 </li>
 </ol>
 <ul>
-<li><strong>상호 관계도</strong>(Relationship Diagram), 자재 흐롬 분석과 부문 상호 관계 분석이 끝난 후 이 두 가지 결과를 결합하여 상호 관계도 작성</li>
+<li><strong>상호 관계도</strong>(Relationship Diagram), 자재 흐롬 분석과 부문 상호 관계 분석이 끝난 후 이 두 가지 결과를 결합하여 상호 관계도 작성<br>
+</li>
 </ul>
 <ol start="4" type="1">
 <li>공간 관계 설비 배치<br>
 </li>
 </ol>
 <ul>
-<li><strong>면적 상호 관계도</strong>(Space Relationship Diagram), 각 부분 면적을 산출하여 정해진 위치에 블록 형태로 배치</li>
-<li>Block lay out case study, 현실적 제약조건과 전제조건을 반영하여 여러 가지 layout 대안 수립</li>
+<li><strong>면적 상호 관계도</strong>(Space Relationship Diagram), 각 부분 면적을 산출하여 정해진 위치에 블록 형태로 배치<br>
+</li>
+<li>Block lay out case study, 현실적 제약조건과 전제조건을 반영하여 여러 가지 layout 대안 수립<br>
+</li>
 </ul>
 <ol start="5" type="1">
 <li>대체 배열 안 평가<br>
 </li>
 </ol>
 <ul>
-<li>개인적 취향, 공급품 이동, 방문객 접견, 여연성에 관해 평가</li>
+<li>개인적 취향, 공급품 이동, 방문객 접견, 여연성에 관해 평가<br>
+</li>
 </ul>
 <ol start="6" type="1">
 <li>선정된 설비 배치 시행</li>
@@ -947,7 +957,6 @@ direction LR
 <p>EOF</p>
 
 
-</section>
 </section>
 </section>
 
