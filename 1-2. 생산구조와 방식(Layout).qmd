@@ -233,6 +233,7 @@ direction LR
 20[전산배치기법]
 21[구성방식] --- CORELAP & ALDEP & PLANET
 22[개선방식] --- CRAFT & COFAD
+20 --- 21 & 22
 end 
 
 설비배치 --- SLP & 20
@@ -286,17 +287,16 @@ Muther는 6단계 절차를 이용하여 관계가 가장 빈번하고 논리적
 Muther 6단계 SLP
 : 1. 도표 관계 작성  
 2. 공간 조건 설정  
-    - DOR, ENG, SEC, FOY, FIL, COP, STO 등
-    - **부문 상호관계표**(Activity Relationship Chart), 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표  
+        - DOR, ENG, SEC, FOY, FIL, COP, STO 등
+         - **부문 상호관계표**(Activity Relationship Chart), 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표  
 3. 활동 관계도 작성     
-    - **상호 관계도**(Relationship Diagram), 자재 흐롬 분석과 부문 상호 관계 분석이 끝난 후 이 두 가지 결과를 결합하여 상호 관계도 작성  
+        - **상호 관계도**(Relationship Diagram), 자재 흐롬 분석과 부문 상호 관계 분석이 끝난 후 이 두 가지 결과를 결합하여 상호 관계도 작성  
 4. 공간 관계 설비 배치  
-    - **면적 상호 관계도**(Space Relationship Diagram), 각 부분 면적을 산출하여 정해진 위치에 블록 형태로 배치  
-    - Block lay out case study, 현실적 제약조건과 전제조건을 반영하여 여러 가지 layout 대안 수립  
+        - **면적 상호 관계도**(Space Relationship Diagram), 각 부분 면적을 산출하여 정해진 위치에 블록 형태로 배치  
+        - Block lay out case study, 현실적 제약조건과 전제조건을 반영하여 여러 가지 layout 대안 수립  
 5. 대체 배열 안 평가  
-    - 개인적 취향, 공급품 이동, 방문객 접견, 여연성에 관해 평가  
+        - 개인적 취향, 공급품 이동, 방문객 접견, 여연성에 관해 평가  
 6. 선정된 설비 배치 시행  
-
 
 
 EOF
