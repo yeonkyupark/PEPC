@@ -279,6 +279,8 @@ SLP 시설 배치 절차 4단계
 
 Muther는 6단계 절차를 이용하여 관계가 가장 빈번하고 논리적으로 밀접한 2개 영역을 파악했다.
 
+![https://www.researchgate.net/figure/Systematic-Layout-Planning-Procedure-12_fig1_321943344](https://www.researchgate.net/publication/321943344/figure/fig1/AS:573637008211979@1513777128863/Systematic-Layout-Planning-Procedure-12.png)
+
 Muther 6단계 SLP
 : 1. 도표 관계 작성
 2. 공간 조건 설정
