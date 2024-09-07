@@ -88,4 +88,4 @@ format:
     mermaid:
       theme: neutral
 
-freeze: auto
+# freeze: auto
