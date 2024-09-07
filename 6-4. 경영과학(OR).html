@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -395,7 +424,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#분석적-계층화-과정-ahp" id="toc-분석적-계층화-과정-ahp" class="nav-link active" data-scroll-target="#분석적-계층화-과정-ahp">분석적 계층화 과정 (AHP)</a>
+  <li><a href="#경영과학-이해" id="toc-경영과학-이해" class="nav-link active" data-scroll-target="#경영과학-이해">경영과학 이해</a>
+  <ul class="collapse">
+  <li><a href="#발전-과정" id="toc-발전-과정" class="nav-link" data-scroll-target="#발전-과정">발전 과정</a></li>
+  <li><a href="#특성" id="toc-특성" class="nav-link" data-scroll-target="#특성">특성</a></li>
+  </ul></li>
+  <li><a href="#선형계획법" id="toc-선형계획법" class="nav-link" data-scroll-target="#선형계획법">선형계획법</a>
+  <ul class="collapse">
+  <li><a href="#최대화-모델-예제" id="toc-최대화-모델-예제" class="nav-link" data-scroll-target="#최대화-모델-예제">최대화 모델 예제</a></li>
+  </ul></li>
+  <li><a href="#분석적-계층화-과정-ahp" id="toc-분석적-계층화-과정-ahp" class="nav-link" data-scroll-target="#분석적-계층화-과정-ahp">분석적 계층화 과정 (AHP)</a>
   <ul class="collapse">
   <li><a href="#ahp-원리" id="toc-ahp-원리" class="nav-link" data-scroll-target="#ahp-원리">AHP 원리</a></li>
   <li><a href="#가지-공리" id="toc-가지-공리" class="nav-link" data-scroll-target="#가지-공리">4가지 공리</a></li>
@@ -427,10 +465,564 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="경영과학-이해" class="level2">
+<h2 class="anchored" data-anchor-id="경영과학-이해">경영과학 이해</h2>
+<p><strong>경영과학</strong>(operations research)은 복잡하고 불확실한 환경에서 발생하는 경영의사결정 문제 분석과 해결을 위하여 합리적이고 체계적인 계량적 방법을 적용한 학문이다.</p>
+<dl>
+<dt>목적</dt>
+<dd>
+<ul>
+<li>여러 가지 모데과 기법들을 적용하여 경영자가 직면한 복작하고 불확실한 경영문제를 합리적이고 체계적으로 해결함으로써 좋은(옳은) 결정을 내릴 수 있도록 도와주는 것</li>
+</ul>
+</dd>
+<dt>특징</dt>
+<dd>
+<ul>
+<li>경영의사결정을 위한 과학적 방법 사용</li>
+<li>문제해결을 위한 계량적, 객관적, 수학적 모델(model) 사용</li>
+<li>문제해결을 위한 분석 도구(tool), 절차(algorithm), 기법(technique) 사용</li>
+</ul>
+</dd>
+</dl>
+<p>경영과학은 경영과학(management science), 결정과학(decision science), 계량경영학(quantitative management), OR(operations research), 산업공학(industrial engineering) 등 유사 용어로 사용된다.</p>
+<section id="발전-과정" class="level3">
+<h3 class="anchored" data-anchor-id="발전-과정">발전 과정</h3>
+<p>경영과학 발전 과정을 정리하면 다음과 같다.</p>
+<ul>
+<li>1930년대 말 영국 군부에서 군사문제 해결을 위해 학제적 팀 적근법 사용</li>
+<li>2차 대전 중 미국이 영국의 작전연구(operational research) 모방, 작전분석을 위해 팀 워크 구성</li>
+<li>1947년, G.Dantzig 선형계획법 개발</li>
+<li>대형 컴퓨터 개발로 경영 문제를 해결하는 학문분야로 자리 매김</li>
+<li>2차 대전 이후 산업계에서 OR 기법 적용 시작</li>
+<li>1960년대 대기행렬이론, 시뮬레이션 모델 개발</li>
+<li>1970년대 이후 MIS와 결합하여 DSS 탄생</li>
+<li>전문가 시스템, 인공지능 개발로 발전</li>
+</ul>
+</section>
+<section id="특성" class="level3">
+<h3 class="anchored" data-anchor-id="특성">특성</h3>
+<p>경영과학 특성은 다음과 같다.</p>
+<ul>
+<li>경영의사결정에 관심</li>
+<li>과학적 방법</li>
+<li>시스템적 접근 방법</li>
+<li>학제적 팀워크
+<ul>
+<li>수학적 모델 사용</li>
+<li>컴퓨터 활용</li>
+</ul></li>
+</ul>
+<section id="의사결정과-문제해결" class="level4">
+<h4 class="anchored" data-anchor-id="의사결정과-문제해결">의사결정과 문제해결</h4>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+문제해결 ----- 6 &amp; 7
+의사결정 ---- 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5
+문제해결 ---- 의사결정 
+
+subgraph a2[ ]
+1["1.문제를 규명하고 정의한다."]
+2[2.여러 문제해결 대안을 결정한다.]
+3[3.대안을 평가할 기준을 결정한다.]
+4[4.대안을 평가한다.]
+5[5.가장 좋은 대안을 선정한다.]
+subgraph a1[" "]
+6[6.선정된 대안을 실행한다.]
+7[7.만족스런 해인지 결과를 평가한다.]
+end
+end
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>문제해결</strong>(problem solving)은 원하는 결과와 실제 결과 사이에 존재하는 차이를 규명하고 이 차이를 해결할 조치를 취하는 과정(process)이다. <strong>의사결정</strong>(decision making)은 문제를 정의하고, 대안을 결정하고, 결정 기준을 마련하고, 대안을 선정하는 과정이다.</p>
+<p>의사결정 과정에는 질적분석과 수리적 분석이 있다.</p>
+<dl>
+<dt>질적 분석(qualitative analysis)</dt>
+<dd>
+<ul>
+<li>대안을 평가할 때 경영자 경험이나 판단력 같은 기예(art)에 의존하는 방법</li>
+</ul>
+</dd>
+<dt>수리적 분석(quantitative analysis)</dt>
+<dd>
+<ul>
+<li>대안을 평가할 때 계량적 자료와 수학적 모델 및 기법을 사용하는 방법</li>
+</ul>
+</dd>
+</dl>
+<p>경영자는 더 좋은 경영문제 해결을 위해 질적 분석과 수리적 분석을 결합하여 사용한다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+subgraph g1[문제 구성]
+direction LR
+문제정의 ---&gt; 대안결정 ---&gt; 기준결정
+end
+
+subgraph g2[문제 분석]
+기준결정 ---&gt; 질적분석 &amp; 수리적분석 ---&gt; 요약평가 ---&gt; 의사결정
+end
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="과학적-방법" class="level4">
+<h4 class="anchored" data-anchor-id="과학적-방법">과학적 방법</h4>
+<p><strong>과학적 방법</strong>(scientific method)은 17세기 이후 자연과학에 의해 정형화된 계획적 관찰, 측정, 실험, 일반화, 시험 및 가설 변경 등의 과정으로 이루어진 방법을 뜻한다.</p>
+<p>과학분야에 따라 과정이 동리하지는 않으나 현상을 설명하는 <strong>가설</strong>을 수립하고 이 가설에 의한 예측이 들어 맞는지 검증하기 위해 <strong>실험 설계</strong> 과정이 반드시 포함된다. 과학적 방법을 통하여 얻은 지식은 경헙적이며 귀납적인 것으로 반증 가능성이 언제나 존재한다. 과작 발전에 따라 과학 지식은 그 의미와 내용이 변할 수 있기 때문이다.</p>
+<p>과학적 방법 특징은 다음과 같다(F.N. Kerlinger, 1986).</p>
+<ul>
+<li>문제 해결은 상식적 접근보다 논리적 접근을 통해 이루어진다.</li>
+<li>이론이나 가설은 체계적이고 경험적으로 검증된다.</li>
+<li>체계적이고 표준화된 관찰이나 실험은 통제를 통해 이루어진다.</li>
+<li>사상 체계나 상호관계가 객관성 있고 타당성 있게 설명된다.</li>
+<li>문제에 대한 연구자 관심 정도에 따라 과학적 방법의 의미가 달라질 수 있다.</li>
+</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+subgraph g1[의사결정과정]
+11[문제정의]
+12[대안설정]
+13[대안평가]
+14[의사결정]
+end
+
+subgraph g2[과학적방법]
+21[문제정의]
+22[가설설정]
+23[실험 설계와 실행]
+24[가설 채택 또는 기각]
+end
+
+11 ---&gt; 21
+12 ---&gt; 22
+13 ---&gt; 23
+14 ---&gt; 24
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="시스템적-접근" class="level4">
+<h4 class="anchored" data-anchor-id="시스템적-접근">시스템적 접근</h4>
+<p>경영과학 특성 중 하나는 <strong>시스템적 접근 방법</strong>이다.</p>
+<dl>
+<dt>시스템</dt>
+<dd>
+<ul>
+<li>특정 목적을 달성하기 위하여 구성되는 상호 관련된, 독립적인 부분(하위 시스템, subsystem)의 전체(모임, 집합)</li>
+<li>하위 시스템도 시스템</li>
+</ul>
+</dd>
+<dt>시스템적 접근 방법</dt>
+<dd>
+<ul>
+<li>전체 시스템 관점에서 하위 시스템 문제를 해결하는 것</li>
+<li>divide and conquer</li>
+</ul>
+</dd>
+<dt>최적화(optimization)</dt>
+<dd>
+<ul>
+<li>전체 최적화(global optimization)
+<ul>
+<li>전체 시스템 목적에 부합하는 해(global optimum)을 찾는 것</li>
+</ul></li>
+<li>부분 최적화(sub optimization)
+<ul>
+<li>어느 하위 시스템 목적에는 부합하지만 전체 시스템 목적에는 부합하지 못하는 해(local optimum)를 찾는 것</li>
+</ul></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="수학적-모델" class="level4">
+<h4 class="anchored" data-anchor-id="수학적-모델">수학적 모델</h4>
+<p><strong>모델</strong>(model, 모형)은 실제 세계 특정 현상이나 실체를 단순하게 요약하여 표현한 것이다. 문제를 기술하고 표현하는 모델화(modelling, 모형화)는 여러 가지 혜택도 주지만동시에 위함도 따르므로 현실 문제에 대한 통찰력이 필요하다. 또한 모든 모델은 가정을 수반하게 된다.</p>
+<dl>
+<dt>가정(assumption)</dt>
+<dd>
+<ul>
+<li>가정을 세우면 실제 문제 복잡성을 감소시켜 단순화 하는데 도움이 됨</li>
+<li>단순화 vs.&nbsp;정확성</li>
+</ul>
+</dd>
+</dl>
+<p>좋은 모델이란 모델이 표현하고자 하는 실체 핵심을 문제 해결 관점에서 단순하면서도 정확하게 나타낸 것이다.</p>
+<p>모델 종류는 다음과 같다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  flowchart TB
+    0[모델종류]
+    1["형상모델"]
+    2["상사모델"]
+    3["수학적 모델"]
+    
+    0 --- 1 &amp; 2 &amp; 3
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>형상모델 (iconic model), 또는 축적 모델 (scale model)</dt>
+<dd>
+<ul>
+<li>물리적으로 확대 또는 추곳한 원형 복사판</li>
+<li>장난감, 사진, 생산라인 등</li>
+</ul>
+</dd>
+<dt>상사모델 (analog model)</dt>
+<dd>
+<ul>
+<li>실제 시스템처럼 기능하는 모델</li>
+<li>diagram, 조직표, 청사진, 속도계, 온도계 등</li>
+</ul>
+</dd>
+<dt>수학적 모델 (mathematical model)</dt>
+<dd>
+<ul>
+<li>실제 문제를 수학적 기호를 사용하여 방정식이나 수학적 설명 등을 함수적 관계로 표현한 모델</li>
+<li>장점
+<ul>
+<li>문제 이해를 돕는다.</li>
+<li>다양한 수학적 해결 절차를 적용할 수 있게 해 준다.</li>
+<li>실행하는 시스템에서 일을 하는 사람에게 해를 만들 수 있도록 도와 준다.</li>
+</ul></li>
+</ul>
+</dd>
+</dl>
+<p>수학적 모델 구성 요소는 다음과 같다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  flowchart LR
+  
+  구성요소 --- 변수 &amp; 상수
+  변수 --- 독립변수 &amp; 종속변수
+  독립변수 --- 결정변수 &amp; 외생변수
+  
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>변수(variable)</dt>
+<dd>
+<ul>
+<li>시간이나 조건에 따라 값이 변할 수 있는 것</li>
+<li>독립변수(independent variable)
+<ul>
+<li>다른 변수에 영향을 받지 않는 변수</li>
+<li>결정변수(decision variable), 통제가능변수(controllable variable) - 의사결정자가 자의적으로 변경할 수 있는 변수 - 총비용, 총수입 등</li>
+<li>외생변수(exogenous variable), 통제불가능변수(uncontrollable variable) - 의사결정자가 자의적으로 통제할 수 없어 주어지는 대로 받아 들이는 변수 - 이자율, 사망률, 경쟁제품 가격 등</li>
+</ul></li>
+<li>종속변수(dependent variable), 기준변수(criterion variable)
+<ul>
+<li>독립변수 값에 영향을 받는 변수</li>
+<li>총이익</li>
+</ul></li>
+</ul>
+</dd>
+<dt>상수(constant), 매개변수(parameter)</dt>
+<dd>
+<ul>
+<li>시간이나 조건에 따라 변하지 않고 고정된 값</li>
+<li>원주율, 자연로그 등</li>
+</ul>
+</dd>
+</dl>
+<p>수학적 모델 분류는 다음과 같다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+0[수학적 모델]
+subgraph g1[" "]
+11[규범적 모델]
+12[서술적 모델]
+end
+
+subgraph g2[" "]
+21[확정적 모델]
+22[확률적 모델]
+end
+
+subgraph g3[" "]
+31[분석적 모델]
+32[시뮬레이션 모델]
+end
+
+0 --- g1 &amp; g2 &amp; g3
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>규범적 모델과 서술적 모델</dt>
+<dd>
+<ul>
+<li>규범적 모델 (normative model), 최적화 모델 (optimization model)
+<ul>
+<li>의사결정자가 특정 목적을 가장 효율적으로 달성하기 위해서 취해야 하는 행위를 규정(prescribe)하는 모델</li>
+<li>규범적 모델은 최적해 (optimal solution)를 구하기 위하여 사용</li>
+<li>선형계획법, 네트워크 모델, 수송 모델, 동적 계획법 등</li>
+</ul></li>
+<li>서술적 모델 (descriptive model)
+<ul>
+<li>의사결정이 실제로 어떻게 이루어지는가를 기술(describe)하는 모델</li>
+<li>여러 대안 결과, 즉 시스템 성과 또는 효과성을 조사하기 위하여 사용하며, 만족해(satisficing solution)를 제공함</li>
+<li>대기행렬, 마이코브 분석, 시뮬레이션 모델 등</li>
+</ul></li>
+</ul>
+</dd>
+<dt>확정적 모델과 확률적 모델</dt>
+<dd>
+<ul>
+<li>확정적 모델 (deterministic model)
+<ul>
+<li>통제불능변수 값을 사전에 확실히 알고 사용하는 모델</li>
+<li>선형계획법, 수송모델 등</li>
+</ul></li>
+<li>확률적 모델 (probabilistic model)
+<ul>
+<li>통제불능변수 값이 불확실하고 변동하는 경우에 사용하는 모델</li>
+<li>재고관리 모델, 대기행렬 모델, 시뮬레이션 모델 등</li>
+</ul></li>
+</ul>
+</dd>
+<dt>분석적 모데과 시뮬레이션 모델</dt>
+<dd>
+<ul>
+<li>분석적 모델 (analytic model)
+<ul>
+<li>반복적 연산절차나 일반해 공식을 사용하는 모델</li>
+<li>선형계획법, 재고관리 모델 등</li>
+</ul></li>
+<li>시뮬레이션 모델 (simulation model)
+<ul>
+<li>해가 연역적으로 구해지는 것이 아니고 어떤 조건 하에서 모델에 통제가능한 변수 특정값을 대입하여 종속변수에 미치는 영향을 관참함으로써 실험하는 모델</li>
+<li>슈퍼마켓 계산대 수가 고객 도착률에 따라 총비용에 미치는 영향 실험 등등</li>
+</ul></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+<section id="선형계획법" class="level2">
+<h2 class="anchored" data-anchor-id="선형계획법">선형계획법</h2>
+<p>#97-2-5</p>
+<p><strong>선형계획법</strong>(linear programming, LP)은 선형(linearity) 조건이 갖추어진 수리계획법으로 변수 간 함수적 관계가 직선으로 표현된다.</p>
+<dl>
+<dt>수리계획법(mathematical programming)</dt>
+<dd>
+<ul>
+<li>의사결정자가 실현하고자 하는 목적을 최적화(최대화 또는 최소화)하고자 문제를 모델화해서 그 해결 절차에 따라 최적해를 찾아내려는 과정</li>
+<li>programming은 계획한다(planning) 또는 최적화 한다(optimizing)를 의미</li>
+</ul>
+</dd>
+</dl>
+<p>일반적인 선형계획 모델 구조는 다음과 같다.</p>
+<p><span id="eq-lp-eq1"><span class="math display">\[ \begin{align}
+max/min \ Z = C_1x_1 + C_2x_2 + ... + C_nx_n
+\end{align}  \tag{28.1}\]</span></span></p>
+<p><span id="eq-lp-eq2"><span class="math display">\[ \begin{align}
+\\subject \ to \\
+a_{11}x_1 \ + \ a_{12}x_2 \ + \ ... \ a_{1_n}x_n \ \le \ b_1 \\
+a_{21}x_1 \ + \ a_{22}x_2 \ + \ ... \ a_{2_n}x_n \ \le \ b_2 \\
+... \\
+a_{m1}x_1 \ + \ a_{m2}x_2 \ + \ ... \ a_{m_n}x_n \ \le \ b_m \\
+\end{align}  \tag{28.2}\]</span></span></p>
+<p><span id="eq-lp-eq3"><span class="math display">\[ \begin{align}
+where \ x_1 \ge 0, \ x_2 \ge 0, \ , \ ... \ , \ x_n \ge 0
+\end{align}  \tag{28.3}\]</span></span></p>
+<p>일반 구조 구성요소는 다음과 같다.</p>
+<dl>
+<dt>결정변수(decision variable)</dt>
+<dd>
+<ul>
+<li><span class="math inline">\(x_1, x_2, ..., x_n\)</span></li>
+<li>기업이 수행하는 활동 수준을 나타내는 기호
+<ul>
+<li>제품 1 생산량, 제품 2 생산량 등</li>
+</ul></li>
+<li>아직 알지 못하는 변수 양을 나타내는 기호</li>
+</ul>
+</dd>
+<dt>목적함수(objective function)</dt>
+<dd>
+<ul>
+<li>위 수식 (<a href="#eq-lp-eq1" class="quarto-xref"><span>28.1</span></a>)</li>
+<li>의사결정자가 달성하고자 하는 목적을 최대화(maximize) 또는 최소화(minimize)하려는 선형 함수식
+<ul>
+<li>최대화: 이익, 수입, 시장점유율, 투자수익 등</li>
+<li>최소화: 비용, 시간, 거리 등</li>
+</ul></li>
+</ul>
+</dd>
+<dt>제약조건(constraint)</dt>
+<dd>
+<ul>
+<li>결정변수 값을 결정하려는 의사결정자 능력은 자원 가용성, 법적 또는 계약 요구, 기술적 요구, 고객 주문, 수요 예측, 회사정책 등에 따라 제약</li>
+<li>제약 조건은 이러한 제약을 반영하여 선형 부등식 또는 선형 등식으로 펴현</li>
+<li>구조적 제약조건(structural constraint)
+<ul>
+<li>제조기술적 시방과 제한된 자원 간 관계를 표현한 제약조건</li>
+<li>위 수식 (<a href="#eq-lp-eq2" class="quarto-xref"><span>28.2</span></a>)</li>
+</ul></li>
+<li>비음조건(non-negativity condition)
+<ul>
+<li>결정변수 값이 음수이면 안된다는 제약조건</li>
+<li>위 수식 (<a href="#eq-lp-eq3" class="quarto-xref"><span>28.3</span></a>)</li>
+</ul></li>
+</ul>
+</dd>
+<dt>매개변수</dt>
+<dd>
+<ul>
+<li>계수(coefficient)
+<ul>
+<li>목적함수 계수(objective function coefficient): <span class="math inline">\(C_1, C_2, ..., C_n\)</span></li>
+<li>기술 계수(technology coefficient), 투입-산출계수(input-output coefficient): <span class="math inline">\(a_{11}, a_{12}, ..., a_{mn}\)</span></li>
+</ul></li>
+<li>우변상수(right hand side value): <span class="math inline">\(b_1, b_2, ..., b_m\)</span></li>
+</ul>
+</dd>
+</dl>
+<section id="최대화-모델-예제" class="level3">
+<h3 class="anchored" data-anchor-id="최대화-모델-예제">최대화 모델 예제</h3>
+<p>평화전자(주) 제품배합(product mix) 문제로, 두 종류 모델을 생산 판매한다. 생산 공정은 조립, 검사, 창고 저장이며 제약 조건은 아래 표와 같다. 이익을 최대화 하기 위해 하루에 각 모델을 얼마씩 생산해야 하는가? <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">공정</th>
+<th style="text-align: center;">모델1</th>
+<th style="text-align: center;">모델2</th>
+<th style="text-align: center;">자원</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">조립(시간/대)</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">80</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">검사(시간/대)</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">저장공간(<span class="math inline">\(ft^3\)</span>/대)</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">39</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">이익(만원/대)</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>결정변수</dt>
+<dd>
+<ul>
+<li><p><span class="math inline">\(x_1\)</span> : 모델1 생산량(대/일)</p></li>
+<li><p><span class="math inline">\(x_2\)</span> : 모델2 생산량(대/일)</p></li>
+</ul>
+</dd>
+<dt>목적함수</dt>
+<dd>
+<ul>
+<li><span class="math inline">\(max Z = 6x_1 + 7x_2\)</span></li>
+</ul>
+</dd>
+<dt>제약조건</dt>
+<dd>
+<ul>
+<li><p><span class="math inline">\(10x_1 + 4x_2 \le 80\)</span> : 조립조건</p></li>
+<li><p><span class="math inline">\(1x_1 + 2x_2 \le 22\)</span> : 검사조건</p></li>
+<li><p><span class="math inline">\(3x_1 + 3x_2 \le 39\)</span> - 저장조건</p></li>
+</ul>
+</dd>
+<dt>비음조건</dt>
+<dd>
+<ul>
+<li><span class="math inline">\(x_1 \ge 0, \ x_2 \ge 0\)</span></li>
+</ul>
+</dd>
+</dl>
+<p>완전한 모델로 표기 하면 다음과 같다.</p>
+<p><span class="math display">\[
+\begin{aligned}
+max \ Z = 6x_1 + 7x_2 \\ \\
+s.t. \\
+10x_1 + 4x_2 \le 80 \\
+1x_1 + 2x_2 \le 22 \\
+3x_1 + 3x_2 \le 39 \\  \\
+x_1 \ge 0, \ x_2 \ge 0
+\end{aligned}
+\]</span></p>
+<section id="최적해를-구하는-방법" class="level4">
+<h4 class="anchored" data-anchor-id="최적해를-구하는-방법">최적해를 구하는 방법</h4>
+<p>선형계획 모델 최적해는 구하는 방식은 다음과 같다.</p>
+<ul>
+<li>그래프 방법</li>
+<li>심플렉스 법</li>
+<li>Ellipsoid algorithm</li>
+<li>Projective algorithm of Karmarkar</li>
+</ul>
+<p>그래프 방법으로 최적해를 구하면 다음과 같다.</p>
+<p><img src="images/lp-graph1.png" class="img-fluid"></p>
+<p><img src="images/lp-graph2.png" class="img-fluid"></p>
+<p>위 연립방정식을 풀면 <span class="math inline">\(x_1 = 4\)</span>, <span class="math inline">\(x_2 = 9\)</span>를 갖는다. 즉 모델1 생산량은 4, 모델2 생산량이 9일 때 <span class="math inline">\(Z = (6 \times 4) + (7 \times 9) = 87(만원)\)</span>을 갖게 된다.</p>
+</section>
+</section>
+</section>
 <section id="분석적-계층화-과정-ahp" class="level2">
 <h2 class="anchored" data-anchor-id="분석적-계층화-과정-ahp">분석적 계층화 과정 (AHP)</h2>
 <p>#97-1-3</p>
-<p><strong>분석적 계층화 과정</strong>(AHP, Analytic Hierarchy Process)는 Thomas L. Saaty 교수가 1970년대 창안한 다기준 의사결정방법론이다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><strong>분석적 계층화 과정</strong>(AHP, Analytic Hierarchy Process)는 Thomas L. Saaty 교수가 1970년대 창안한 다기준 의사결정방법론이다.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <section id="ahp-원리" class="level3">
 <h3 class="anchored" data-anchor-id="ahp-원리">AHP 원리</h3>
 <p>인간이 의사결정 시 두뇌가 단계적 또는 위계적 분석 과정을 활용한다는 사실에 착안하여 개발되었다. 연구 결과에 따릅면 사람은 문제를 해결할 대 다음 세가지 원칙을 따른다.</p>
@@ -543,7 +1135,8 @@ end
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>https://ko.wikipedia.org/wiki/분석적_계층화_과정<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>http://www.kocw.net/home/search/kemView.do?kemId=1317851<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>https://ko.wikipedia.org/wiki/분석적_계층화_과정<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
