@@ -92,4 +92,6 @@ format:
 crossref:
   fig-title: 그림
   tbl-title: 표
-  title-delim: "-"
+  exm-title: 예제
+  toc-title: 목차
+  title-delim: ":"
