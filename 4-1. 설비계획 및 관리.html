@@ -536,11 +536,26 @@ window.Quarto = {
 <li><span class="math inline">\(시간가동률 = \frac{부하시간 - 정지시간}{부하시간} \times 100\)</span></li>
 </ul>
 </dd>
+<dt>정미가동률</dt>
+<dd>
+<ul>
+<li>실제 생산 시간 대비 가동시간 비율이다.</li>
+<li><span class="math inline">\(정미가동률 = \frac{생산량 \times 실제 cycle time}{부하시간 - 정지시간} \times 100\)</span></li>
+</ul>
+</dd>
+<dt>속도가동률</dt>
+<dd>
+<ul>
+<li>이론 cycle time 대비 실제 cycle time비율이다.</li>
+<li><span class="math inline">\(속도가동률 = \frac{이론 cycle time}{실제 cycle time} \times 100\)</span></li>
+</ul>
+</dd>
 <dt>성능가동률</dt>
 <dd>
 <ul>
 <li>가동시간 중 설비 목표 성능을 바뤼한 시간 비율이다.</li>
 <li><span class="math inline">\(성능가동률 = \frac{생산량 \times 이론 cycle time}{가동시간} \times 100\)</span></li>
+<li>$성능가동률 = 정미가동률 속도가동률 = </li>
 </ul>
 </dd>
 <dt>양품률</dt>
@@ -604,6 +619,8 @@ window.Quarto = {
 </div>
 <p>위 표(<a href="#tbl-97-3-2" class="quarto-xref"><span>16.1</span></a>) 기준으로 설비종합효율을 계산하면 다음과 같다.</p>
 <p><span class="math inline">\(시간가동률 = \frac{부하시간 - 정지시간}{부하시간} \times 100 = \frac{5700 - (100 + 390)}{5700} \times 100 = 91.4(\%)\)</span></p>
+<p><span class="math inline">\(정미가동률 = \frac{생산량 \times 실제 cycle time}{부하시간 - 정지시간} \times 100 = \frac{4250 \times 1.2}{5700 - 100 - 390} \times 100 = 97.9(\%)\)</span></p>
+<p><span class="math inline">\(속도가동률 = \frac{이론 cycle time}{실제 cycle time} \times 100 = \frac{1.0}{1.2} \times 100 = 83.3(\%)\)</span></p>
 <p><span class="math inline">\(성능가동률 = \frac{생산량 \times 이론 cycle time}{부하시간-정지시간} \times 100 = \frac{4250 \times 1}{5700 - (100 + 390)} \times 100 = 81.6(\%)\)</span></p>
 <p><span class="math inline">\(양품률 = \frac{총생산량-불량품수}{총생산량} \times 100 = \frac{4250-250}{4250} \times 100 = 94.1(\%)\)</span></p>
 <p>따라서 종합설비효율은 다음과 같다.</p>
