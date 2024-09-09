@@ -89,3 +89,7 @@ format:
       theme: neutral
 
 # freeze: auto
+crossref:
+  fig-title: 그림
+  tbl-title: 표
+  title-delim: "-"
