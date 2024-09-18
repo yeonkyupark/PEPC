@@ -2,7 +2,11 @@
 
 ## 칸판 생산방식
 
+:::{.callout-tip}
+## 기출
+
 #97-1-5
+:::
 
 ![https://en.wikipedia.org/wiki/Kanban](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kanban_principles.svg/1920px-Kanban_principles.svg.png)
 
