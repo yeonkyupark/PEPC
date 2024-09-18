@@ -2,7 +2,11 @@
 
 ## 생산성 지표
 
+:::{.callout-tip}
+## 기출
+
 #97-3-4
+:::
 
 생산성(Productivity)
 : - 단위 투입물(input)에 대한 산출물(output) 비율
