@@ -2,7 +2,11 @@
 
 ## 마케팅 믹스 4P
 
+:::{.callout-tip}
+## 기출
+
 #97-1-11
+:::
 
 ```{mermaid}
 flowchart TB
