@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -392,8 +421,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#손익분기점" id="toc-손익분기점" class="nav-link active" data-scroll-target="#손익분기점">손익분기점</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-1. 사업성분석.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -417,8 +452,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-3-4</p>
+</div>
+</div>
+<section id="손익분기점" class="level2">
+<h2 class="anchored" data-anchor-id="손익분기점">손익분기점</h2>
+<p><strong>손익분기점</strong>(Break Even Point)이란 총 매출과 이를 위해 지출된 총 비용이 일치되는 매출액을 의미한다. 즉, 일정기간 매출액이 그 기간에 지출된 비용과 같아서 이익도 손실도 발생하지 않는(이익 금액 - 손실 금액 = 0) 지점을 가리킨다. 손익분기점분석은 조업도 변동에 따라 수익과 비용 변동 상황을 나타냄으로써 기업 채산성 파악을 위한 중요한 수단이 됨은 물론 장래 경영 계획과 통제 수잔으로 널리 이용되고 있다.</p>
+<p><span class="math display">\[
+손익분기점 ￦ 매출액 ￦ = ￦ \frac{고정비}{1 ￦ - ￦ \frac{변동비}{매출액}}
+\]</span></p>
+<p><strong>손익분기점률</strong>은 손익분기점에서 매출액과 이미 실현된 매출액 간 비율로서, 일반적으로 이 비율이 낮을수록 영업활동 채산성이 양호함을 의미하나, 손익분기점률 고저가 수익성을 좌우하는 절대적 지표라고는 할 수 없다. 손익분기점은 매출액과 비용 간 상관관계를 나타내지만 투하자본(총자본) 회수를 위한 적정매축액을 표시하는 것이 아니기 떼문이다.</p>
+<p><span class="math display">\[
+손익분기점률(%) ￦ = ￦ \frac{손익분기점 ￦ 매출액}{매출액} \times \ 100
+\]</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -858,4 +917,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-1. 사업성분석.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-1. 사업성분석.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
