@@ -450,6 +450,10 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#작성방법" id="toc-작성방법" class="nav-link" data-scroll-target="#작성방법">작성방법</a></li>
   </ul></li>
+  <li><a href="#대기행렬이론" id="toc-대기행렬이론" class="nav-link" data-scroll-target="#대기행렬이론">대기행렬이론</a>
+  <ul class="collapse">
+  <li><a href="#대기행렬-가정" id="toc-대기행렬-가정" class="nav-link" data-scroll-target="#대기행렬-가정">대기행렬 가정</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-4. 경영과학(OR).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -1268,6 +1272,52 @@ end
 <p><span class="math display">\[(0.6 \times 0.9억 원 + 0.4 \times 0.1억 원) \times 10년 = 5.8억 원/년\]</span></p>
 <p>소규모 투자에 대한 기대수익도 같은 수식으로 계산하면 4.4억 원/년이다.</p>
 <p>따라서 투자비를 고려한 기대수익은 <strong>대규모투자</strong> 시 3.8억, 소규모투자 시 3.4억이므로대규모 투자가 유리한 전략이다.</p>
+<p>:::{,callout-tip title=“기출”} #97-3-5 :::</p>
+</section>
+</section>
+<section id="대기행렬이론" class="level2">
+<h2 class="anchored" data-anchor-id="대기행렬이론">대기행렬이론</h2>
+<p><strong>대기행렬이론</strong>(Queueing Theory)은 고객과 서비스 시설 간 관계를 확률 이론을 적용하여 모형을 작성하고 고객 도착 상황에 대응할 수 있는 경제적 규모를 결정하고자 하는 의사결정 기법이다. 총 대기 비용을 최소화시키는 최적 서비스 시설 결정을 위한 기법으로 대기행렬 분석에 따라 프로세스 설계, 용량 계획, 프로세스 성과가 달라지게 된다.</p>
+<p>다음과 같은 경우 대기행렬이 생기거나 서비스 시설이 휴지상태에 이르게 된다.</p>
+<ul>
+<li>불규칙한 고객 요구(도착)</li>
+<li>서비스 능력 크기</li>
+<li>수요와 서비스 시스템 간 일시적인 불균형</li>
+</ul>
+<p>대기행렬 현상은 다음과 같다.</p>
+<ul>
+<li>은행이나 병원에서 차례를 기다리는 고객</li>
+<li>생산 공장에서 수리를 기다리는 고장 난 기계</li>
+<li>재료나 일감 공급을 기다리는 작업공정</li>
+</ul>
+<p>대기행렬 분석 목적은 고객 도착 상황에 잘 대응할 수 있는 능력 내지 규모를 경제적으로 결정하여 서비스 비용을 최소화 하는데 있다.</p>
+<p>대기행렬 시스템 기본 구조는 다음과 같다.</p>
+<ol type="1">
+<li>고객(도착지, Input) - 서비스를 받으러 오는 시스템 투입물</li>
+<li>서비(Server, 서비스 시설 - 서비스를 수행하는 주체로 어떤 서비스를 정해진 순서나 규칙에 따라 제공</li>
+<li>서비스(Output) - 고객(도착지)에게 제공되는 산출물</li>
+<li>모집단 크기 - 서비스를 요구하는 잠재 고객 수</li>
+</ol>
+<section id="대기행렬-가정" class="level3">
+<h3 class="anchored" data-anchor-id="대기행렬-가정">대기행렬 가정</h3>
+<p>대기행렬 이론 가정은 다음과 같다.</p>
+<dl>
+<dt>고객 수 분포</dt>
+<dd>
+<ul>
+<li>시간당 고객 도착 수는 <strong>포아송 분포</strong>를 따른다</li>
+</ul>
+</dd>
+<dt>서비스 시간 분포</dt>
+<dd>
+<ul>
+<li>고객이 도착하는 시간 간격은 <strong>지수 분포</strong>를 따른다.</li>
+</ul>
+</dd>
+</dl>
+<p><span class="math display">\[
+대기행렬 ￦ 평균길이 ￦ L_q \ = \ \frac{\lambda^2}{\mu(\mu - \lambda)}
+\]</span></p>
 
 
 </section>
