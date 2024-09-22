@@ -68,7 +68,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -392,8 +425,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-invenory-management" id="toc-sec-invenory-management" class="nav-link active" data-scroll-target="#sec-invenory-management">제고관리</a>
+  <ul class="collapse">
+  <li><a href="#재고-종류" id="toc-재고-종류" class="nav-link" data-scroll-target="#재고-종류">재고 종류</a></li>
+  <li><a href="#재고-비용" id="toc-재고-비용" class="nav-link" data-scroll-target="#재고-비용">재고 비용</a></li>
+  <li><a href="#재고-수준-적정성-평가" id="toc-재고-수준-적정성-평가" class="nav-link" data-scroll-target="#재고-수준-적정성-평가">재고 수준 적정성 평가</a></li>
+  <li><a href="#수요-종류" id="toc-수요-종류" class="nav-link" data-scroll-target="#수요-종류">수요 종류</a></li>
+  <li><a href="#재고관리-모형" id="toc-재고관리-모형" class="nav-link" data-scroll-target="#재고관리-모형">재고관리 모형</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/2-4.물류관리(자재 및 재고관리).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -417,8 +463,150 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="sec-invenory-management" class="level2">
+<h2 class="anchored" data-anchor-id="sec-invenory-management">제고관리</h2>
+<p><strong>재고</strong>란 조직에서 판매를 목적으로 보관중인 물품이나 자원으로, 많이 보유하면 빠르게 시장에 대응할 수 있고 재고주문비용이나 생산준비비용이 절감되지만, 재고 저장 비용이나 이자비용, 기회비용이 증가하는 문제점이 발생한다.</p>
+<p>재고관리는 기업에서 재고 수준을 어떻게 유지할 것인지, 언제 보충할 것인지(주문시점/생산시점), 주문량을 얼마로 할 것인지(1회 주문량/생산량) 등을 결정하여 비용을 최소화하면서 고객 서비스 수준을 향상시키는 활동이다.</p>
+<p><br></p>
+<section id="재고-종류" class="level3">
+<h3 class="anchored" data-anchor-id="재고-종류">재고 종류</h3>
+<p>재고는 사용 목적에 따라 다음과 같이 분류된다.</p>
+<dl>
+<dt>안전재고</dt>
+<dd>
+<ul>
+<li>완충재고, 불확실성을 대비하기 위해 평균적으로 소요되는 수량을 초과하여 보유하는 재고</li>
+<li>변동성이 증가할수록 안전재고량 증가</li>
+</ul>
+</dd>
+<dt>예상재고</dt>
+<dd>
+<ul>
+<li>예비재고, 장재 예상되는 수요에 대비하기 위하여 보유하는 재고</li>
+</ul>
+</dd>
+<dt>수송재고</dt>
+<dd>
+물품 대금은 지급하였으나 아직 입고되지 않은 상태, 즉 수송 중인 상태인 재고
+</dd>
+<dt>주기재고</dt>
+<dd>
+경재적 주문량에 따라 발생하는 재고
+</dd>
+</dl>
+<p><br></p>
+</section>
+<section id="재고-비용" class="level3">
+<h3 class="anchored" data-anchor-id="재고-비용">재고 비용</h3>
+<p>재고 보유 시 다음과 같은 관련 비용이 발생한다.</p>
+<dl>
+<dt>재고유지비</dt>
+<dd>
+재고를 보유함으로써 발생하는 비용으로, 자본비용, 저장비, 냉동비 등이 해당한다.
+</dd>
+<dt>재고주문비</dt>
+<dd>
+재고 보충이나 신규로 주문할 때 소요되는 비용으로, 재고입고 비용, 검사 비용 등이 해당한다(고정비 성격).
+</dd>
+<dt>생산준비비</dt>
+<dd>
+재고를 자체적으로 제작할 경우 제조하기 위해 생산 라인을 준비하는데 소요되는 비용으로, 설비 및 장치 변경 비용, 유휴시간 비용 등이 해당한다(고정비 성격).
+</dd>
+<dt>재고부족비</dt>
+<dd>
+재고가 부족하여 고객 주문에 대응하지 못할 때 발생하는 비용으로, 기회비용, 신뢰도 하락 비용 등이 해당한다(주관적 평가).
+</dd>
+</dl>
+<p><br></p>
+</section>
+<section id="재고-수준-적정성-평가" class="level3">
+<h3 class="anchored" data-anchor-id="재고-수준-적정성-평가">재고 수준 적정성 평가</h3>
+<p>재고 수준 적정성 평가 방법은 다음과 같다.</p>
+<dl>
+<dt>평균총재고가치</dt>
+<dd>
+<ul>
+<li>보유하고 있는 모든 재고 단가와 수량을 곱하여 재고 가치를 합한 것으로, 시계열 분석이나 경쟁사 대비 분석을 사용한다.</li>
+</ul>
+</dd>
+<dt>공급일수/공급주수</dt>
+<dd>
+<ul>
+<li>현재 보유하고 있는 재고가 언제 매출이 되는지 계산한 값으로 재고재산 회전일수/회전주수이다.</li>
+<li><span class="math inline">\(공급일수 = \frac{평균총재고}{연간매출원가 (또는 연간매출액)} \times 기간\)</span></li>
+</ul>
+</dd>
+<dt>재고자산회전율</dt>
+<dd>
+<ul>
+<li>매출원가를 평균재고자산으로 나눈 것으로 재고잔산 회전속도를 나타낸다.</li>
+</ul>
+</dd>
+</dl>
+<p><br></p>
+</section>
+<section id="수요-종류" class="level3">
+<h3 class="anchored" data-anchor-id="수요-종류">수요 종류</h3>
+<p>수요는 크게 독립수요와 종속수요로 구분된다.</p>
+<dl>
+<dt>독립수요</dt>
+<dd>
+<ul>
+<li>다른 수요와 상관없이 발생하는 수요로, 완제품 수요관리를 의미하며 고정주문량모형, 고정주문기간모형 등을 이용한다.</li>
+</ul>
+</dd>
+<dt>종속수요</dt>
+<dd>
+<ul>
+<li>다른 품목 수요에 의존하여 발생하는 수요로 원재료나 부분품 수요를 의미하면 MRP 시스템 등을 이용한다.</li>
+</ul>
+</dd>
+</dl>
+<p><br></p>
+</section>
+<section id="재고관리-모형" class="level3">
+<h3 class="anchored" data-anchor-id="재고관리-모형">재고관리 모형</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+0[재고모형]
+11[확정적 모형]
+12[확률적 모형]
+13[기타 재고모형]
+21[고정주문량 모형]
+22[고정주문기간 모형]
+23[조건부 재고 보충 시스템]
+24[단일기간 재고모형]
+25[ABC 모형]
+26["투빈시스템&lt;br&gt;원빈시스템&lt;br&gt;기본 재고 시스템"]
+31[EOQ 모형]
+32[EPQ 모형]
+
+subgraph s1[수요 및 조달 기간 특성]
+11 --&gt; 21 &amp; 22
+12 --&gt; 21 &amp; 22
+13 ---&gt; 23 &amp; 24 &amp; 25 &amp; 26
+end
+subgraph s2[주문시기 및 주문량 결정 방법]
+21 --&gt; 31 &amp; 32
+22 --&gt; 31 &amp; 32
+end
+
+0 --&gt; 1 &amp; 2 &amp; 3
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -858,4 +1046,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/2-4.물류관리(자재 및 재고관리).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/2-4.물류관리(자재 및 재고관리).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
