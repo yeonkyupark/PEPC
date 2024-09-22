@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="yeonkyu.park@gmail.com">
-<meta name="dcterms.date" content="2024-09-22">
 
-<title>공장관리기술사</title>
+<title>사업성분석 – 공장관리기술사</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-1.경쟁우위 생산전략.html" rel="next">
+<link href="./6-2.원가관리.html" rel="next">
+<link href="./5-4.품질관리.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">들어가기</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6-1.사업성분석.html">6. 원가관리 및 경제성 공학</a></li><li class="breadcrumb-item"><a href="./6-1.사업성분석.html"><span class="chapter-title">사업성분석</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">들어가기</span></a>
   </div>
 </li>
@@ -295,16 +323,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">6. 원가관리 및 경제성 공학</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./6-1.사업성분석.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">사업성분석</span></a>
+  <a href="./6-1.사업성분석.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">사업성분석</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,35 +426,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#들어가기" id="toc-들어가기" class="nav-link active" data-scroll-target="#들어가기">들어가기</a></li>
+  <li><a href="#손익분기점" id="toc-손익분기점" class="nav-link active" data-scroll-target="#손익분기점">손익분기점</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-1.사업성분석.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6-1.사업성분석.html">6. 원가관리 및 경제성 공학</a></li><li class="breadcrumb-item"><a href="./6-1.사업성분석.html"><span class="chapter-title">사업성분석</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">공장관리기술사</h1>
+<h1 class="title"><span id="sec-feasibility-study" class="quarto-section-identifier"><span class="chapter-title">사업성분석</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>yeonkyu.park@gmail.com </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2024-09-22</p>
-    </div>
-  </div>
   
     
   </div>
@@ -436,30 +452,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="들어가기" class="level1 unnumbered">
-<h1 class="unnumbered">들어가기</h1>
-<p><strong>공장관리기술사</strong>(Professional Engineer Plant Control)는 공장관리분야에 관한 고도의 전문 지식과 실무경험에 입각한 계획, 연구, 설계, 분석, 시험, 운영, 평가 또는 이에 관한 지도 등의 기술업무를 수행하는 직무이다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>필기 과목으로는 공장계획 및 설계, 공장조직, 생산계획 및 통제(공정관리), 설비 및 공구관리, 자재 및 운반관리, 작업관리, 경제성공학, 원가관리, 계기관리와 오퍼레이션리서치, 그 밖의 공장 관리에 관한 사항이 정의한다.</p>
-<p>주요항목은 다음과 같다.</p>
-<ol type="1">
-<li>생산전략</li>
-<li>생산운영 및 물류관리</li>
-<li>공정관리</li>
-<li>설비관리</li>
-<li>작업 및 생산성과 측정과 개선</li>
-<li>원가관리 및 경제성 공학</li>
-<li>생산지원기술 및 기타</li>
-</ol>
-<p>필기 시험을 합격하면 구술형 면접을 진행하게 되며 <strong>기술사로서 품위 및 자질</strong> 항목이 추가된다. 필기 및 면접 시험을 100점 만점 기준 60점 이상이면 합격이다.</p>
-<p>본 자료는 공장관리기술사를 준비하면서 기출문제를 중심으로 관련 내용을 수집, 정리했다. 시중에 관련 서적이나 교재가 부족한 상황으로 시험 준비에 조금이나마 도움이 되었으면 한다. 다만 시험범위가 넓고 다양한 정답이 있을 수 있다는 점을 감안하여 참고하기 바란다. 공장관리기술사를 준비하거나 공장운영에 참고할 수 있는 체계적인 교과서가 만들어지길 바라본다.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-3-4</p>
+</div>
+</div>
+<section id="손익분기점" class="level2">
+<h2 class="anchored" data-anchor-id="손익분기점">손익분기점</h2>
+<p><strong>손익분기점</strong>(Break Even Point)이란 총 매출과 이를 위해 지출된 총 비용이 일치되는 매출액을 의미한다. 즉, 일정기간 매출액이 그 기간에 지출된 비용과 같아서 이익도 손실도 발생하지 않는(이익 금액 - 손실 금액 = 0) 지점을 가리킨다. 손익분기점분석은 조업도 변동에 따라 수익과 비용 변동 상황을 나타냄으로써 기업 채산성 파악을 위한 중요한 수단이 됨은 물론 장래 경영 계획과 통제 수잔으로 널리 이용되고 있다.</p>
+<p><span class="math display">\[
+손익분기점 \ 매출액 \ = \ \frac{고정비}{1 \ - \ \frac{변동비}{매출액}}
+\]</span></p>
+<p><strong>손익분기점률</strong>은 손익분기점에서 매출액과 이미 실현된 매출액 간 비율로서, 일반적으로 이 비율이 낮을수록 영업활동 채산성이 양호함을 의미하나, 손익분기점률 고저가 수익성을 좌우하는 절대적 지표라고는 할 수 없다. 손익분기점은 매출액과 비용 간 상관관계를 나타내지만 투하자본(총자본) 회수를 위한 적정매축액을 표시하는 것이 아니기 떼문이다.</p>
+<p><span class="math display">\[
+손익분기점률(\%) \ = \ \frac{손익분기점 \ 매출액}{매출액} \times \ 100
+\]</span></p>
 
 
-</section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>https://www.q-net.or.kr/crf005.do?id=crf00505&amp;gSite=Q&amp;jmCd=0760<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -885,10 +902,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./5-4.품질관리.html" class="pagination-link" aria-label="품질관리">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">품질관리</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-1.경쟁우위 생산전략.html" class="pagination-link" aria-label="경쟁우위 생산전략">
-        <span class="nav-page-text"><span class="chapter-title">경쟁우위 생산전략</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./6-2.원가관리.html" class="pagination-link" aria-label="원가관리">
+        <span class="nav-page-text"><span class="chapter-title">원가관리</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -897,4 +917,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-1.사업성분석.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

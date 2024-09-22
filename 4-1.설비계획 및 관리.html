@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="yeonkyu.park@gmail.com">
-<meta name="dcterms.date" content="2024-09-22">
 
-<title>공장관리기술사</title>
+<title>설비계획 및 관리 – 공장관리기술사</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-1.경쟁우위 생산전략.html" rel="next">
+<link href="./4-2.자재취급 및 운반관리.html" rel="next">
+<link href="./3-6.공정개선.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,7 +68,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">들어가기</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4-1.설비계획 및 관리.html">4. 설비관리</a></li><li class="breadcrumb-item"><a href="./4-1.설비계획 및 관리.html"><span class="chapter-title">설비계획 및 관리</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">들어가기</span></a>
   </div>
 </li>
@@ -228,16 +260,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">4. 설비관리</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4-1.설비계획 및 관리.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">설비계획 및 관리</span></a>
+  <a href="./4-1.설비계획 및 관리.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">설비계획 및 관리</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,35 +430,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#들어가기" id="toc-들어가기" class="nav-link active" data-scroll-target="#들어가기">들어가기</a></li>
+  <li><a href="#강제열화와-자연열화" id="toc-강제열화와-자연열화" class="nav-link active" data-scroll-target="#강제열화와-자연열화">강제열화와 자연열화</a></li>
+  <li><a href="#설비종합효율" id="toc-설비종합효율" class="nav-link" data-scroll-target="#설비종합효율">설비종합효율</a>
+  <ul class="collapse">
+  <li><a href="#설비종합효율-용어" id="toc-설비종합효율-용어" class="nav-link" data-scroll-target="#설비종합효율-용어">설비종합효율 용어</a></li>
+  <li><a href="#설비종합효율-산출" id="toc-설비종합효율-산출" class="nav-link" data-scroll-target="#설비종합효율-산출">설비종합효율 산출</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/4-1.설비계획 및 관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4-1.설비계획 및 관리.html">4. 설비관리</a></li><li class="breadcrumb-item"><a href="./4-1.설비계획 및 관리.html"><span class="chapter-title">설비계획 및 관리</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">공장관리기술사</h1>
+<h1 class="title"><span id="sec-equipment-planning-management" class="quarto-section-identifier"><span class="chapter-title">설비계획 및 관리</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>yeonkyu.park@gmail.com </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2024-09-22</p>
-    </div>
-  </div>
   
     
   </div>
@@ -436,29 +461,208 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="들어가기" class="level1 unnumbered">
-<h1 class="unnumbered">들어가기</h1>
-<p><strong>공장관리기술사</strong>(Professional Engineer Plant Control)는 공장관리분야에 관한 고도의 전문 지식과 실무경험에 입각한 계획, 연구, 설계, 분석, 시험, 운영, 평가 또는 이에 관한 지도 등의 기술업무를 수행하는 직무이다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>필기 과목으로는 공장계획 및 설계, 공장조직, 생산계획 및 통제(공정관리), 설비 및 공구관리, 자재 및 운반관리, 작업관리, 경제성공학, 원가관리, 계기관리와 오퍼레이션리서치, 그 밖의 공장 관리에 관한 사항이 정의한다.</p>
-<p>주요항목은 다음과 같다.</p>
-<ol type="1">
-<li>생산전략</li>
-<li>생산운영 및 물류관리</li>
-<li>공정관리</li>
-<li>설비관리</li>
-<li>작업 및 생산성과 측정과 개선</li>
-<li>원가관리 및 경제성 공학</li>
-<li>생산지원기술 및 기타</li>
-</ol>
-<p>필기 시험을 합격하면 구술형 면접을 진행하게 되며 <strong>기술사로서 품위 및 자질</strong> 항목이 추가된다. 필기 및 면접 시험을 100점 만점 기준 60점 이상이면 합격이다.</p>
-<p>본 자료는 공장관리기술사를 준비하면서 기출문제를 중심으로 관련 내용을 수집, 정리했다. 시중에 관련 서적이나 교재가 부족한 상황으로 시험 준비에 조금이나마 도움이 되었으면 한다. 다만 시험범위가 넓고 다양한 정답이 있을 수 있다는 점을 감안하여 참고하기 바란다. 공장관리기술사를 준비하거나 공장운영에 참고할 수 있는 체계적인 교과서가 만들어지길 바라본다.</p>
+<section id="강제열화와-자연열화" class="level2">
+<h2 class="anchored" data-anchor-id="강제열화와-자연열화">강제열화와 자연열화</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-1-10</p>
+</div>
+</div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+열화 --- 강제열화 &amp; 자연열화
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>강제열화</strong>는 설비에 대해서 당연 해야 할 일을 하지 않기 때문에, 즉 인위적으로 열화를 촉진되는 현상이다. 급유해야 할 개소에 급유를 하지 않는다든지 급유량이 기준에 못 미치는 등이 여기에 해당한다.</p>
+<p>이에 반해 <strong>자연열화</strong>는 설비를 올바르게 사용하고 있어도 시간과 함게 물리적으로 열화하여 초기 성능 대비 저하되는 현상이다.</p>
+</section>
+<section id="설비종합효율" class="level2">
+<h2 class="anchored" data-anchor-id="설비종합효율">설비종합효율</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-3-2</p>
+</div>
+</div>
+<p><strong>설비종합효율</strong>(Overall Equipment Effectiveness, OEE)은 실행 예정 기간 동안 제조 작업이 최대 잠재력과 비교하여 얼마나 잘 활용되는지(시설, 시간 및 재료)를 측정한 값이다. 이는 실제로 생산적인 제조 시간 비율을 식별한다. 100% OEE는 최대 속도(100% 성능)로 중단 없이(100% 가용성) 좋은 부품만 생산(100% 품질)한다는 의미이다. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<section id="설비종합효율-용어" class="level3">
+<h3 class="anchored" data-anchor-id="설비종합효율-용어">설비종합효율 용어</h3>
+<dl>
+<dt>조업시간</dt>
+<dd>
+<ul>
+<li>1일 근무시간을 기초로 하루 시업 시간과 종업 시간 사이 총시간으로 휴식, 식사, 수주물량 부족 등 <strong>계획 정지시간을 포함</strong>한다.</li>
+</ul>
+</dd>
+<dt>부하시간</dt>
+<dd>
+<ul>
+<li>조업시간에 기업이 인정하는 식사시간, 휴식시간을 제외하고 설비가 실제 가동되어야 할 시간이다.</li>
+<li><span class="math inline">\(부하시간 = 조업시간 - 계획정지시간\)</span></li>
+</ul>
+</dd>
+<dt>가동시간</dt>
+<dd>
+<ul>
+<li>설비 부하시간에서 정지시간을 제외한 시간으로 설비가 실제 가동한 시간이다. 정지시간이란 비계획적으로 설비가 일정시간(예 5분) 이상 가동하지 않는 시간이다.</li>
+<li><span class="math inline">\(가동시간 = 부하시간 - 정지시간\)</span></li>
+</ul>
+</dd>
+<dt>실가동시간</dt>
+<dd>
+<ul>
+<li>설비가 현재 성능으로 얼마나 제품 생산에 기여했는지를 나타내는 시간이다.</li>
+<li><span class="math inline">\(실가동시간 = 생산량 \times 실제 cycle time\)</span></li>
+</ul>
+</dd>
+<dt>성능가동시간</dt>
+<dd>
+<ul>
+<li>설비 도입 시 표준 성능으로 얼마나 제품을 생산 가능한지를 나타내는 시간이다.</li>
+<li><span class="math inline">\(성능가동시간 = 생산량 \times 이론 cycle time\)</span></li>
+</ul>
+</dd>
+<dt>가치가동시간</dt>
+<dd>
+<ul>
+<li>설비 도입 시 성은으로 얼마나 양품을 생산했는지를 나타내는 시간이다.</li>
+<li><span class="math inline">\(가치가동시간 = 양품수 \times 이론 cycle time\)</span></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="설비종합효율-산출" class="level3">
+<h3 class="anchored" data-anchor-id="설비종합효율-산출">설비종합효율 산출</h3>
+<p>설비종합효율은 기업에서 규정한 부하시간 중 설비 고유 성능을 가지고 부가가치를 만들어 낸 시간 비율을 뜻한다.</p>
+<p><span class="math display">\[설비종합설비 = 시간 가동률 \times 성능 \times 가동률 양품률\]</span></p>
+<dl>
+<dt>시간가동률</dt>
+<dd>
+<ul>
+<li>부하시간 중 설비 고장정지, 기종변경, 자재 품절, 유실 시간 등을 제외한 가동시간과 부하시간 간 비율로 설비가 정지 없이 가돋되고 있는가를 나타내는 지표이다.</li>
+<li><span class="math inline">\(시간가동률 = \frac{부하시간 - 정지시간}{부하시간} \times 100\)</span></li>
+</ul>
+</dd>
+<dt>정미가동률</dt>
+<dd>
+<ul>
+<li>실제 생산 시간 대비 가동시간 비율이다.</li>
+<li><span class="math inline">\(정미가동률 = \frac{생산량 \times 실제 cycle time}{부하시간 - 정지시간} \times 100\)</span></li>
+</ul>
+</dd>
+<dt>속도가동률</dt>
+<dd>
+<ul>
+<li>이론 cycle time 대비 실제 cycle time비율이다.</li>
+<li><span class="math inline">\(속도가동률 = \frac{이론 cycle time}{실제 cycle time} \times 100\)</span></li>
+</ul>
+</dd>
+<dt>성능가동률</dt>
+<dd>
+<ul>
+<li>가동시간 중 설비 목표 성능을 바뤼한 시간 비율이다.</li>
+<li><span class="math inline">\(성능가동률 = \frac{생산량 \times 이론 cycle time}{가동시간} \times 100\)</span></li>
+<li><span class="math inline">\(성능가동률 = 정미가동률 \times 속도가동률 = \frac{생산량 \times 실제 cycle time}{부하시간 - 정지시간} \times \frac{이론 cycle time}{실제 cycle time}\)</span></li>
+</ul>
+</dd>
+<dt>양품률</dt>
+<dd>
+<ul>
+<li>전체 생산 수량에서 양품 비율을 나타낸다.</li>
+<li><span class="math inline">\(양품률 = \frac{생산수량 - 불량수량}{생산수량} \times 100\)</span></li>
+</ul>
+</dd>
+</dl>
+<div id="tbl-97-3-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-97-3-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+표&nbsp;16.1: 공장관리기술사 97회 예제
+</figcaption>
+<div aria-describedby="tbl-97-3-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>내용</th>
+<th>집계결과</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>부하시간</td>
+<td>5700분</td>
+</tr>
+<tr class="even">
+<td>고장정지시간</td>
+<td>100분</td>
+</tr>
+<tr class="odd">
+<td>고장발생건수</td>
+<td>3회</td>
+</tr>
+<tr class="even">
+<td>준비교체시간</td>
+<td>390분</td>
+</tr>
+<tr class="odd">
+<td>총생산량</td>
+<td>4250개</td>
+</tr>
+<tr class="even">
+<td>부적합(불량)품수</td>
+<td>250개</td>
+</tr>
+<tr class="odd">
+<td>이론속도/개</td>
+<td>1.0분/개</td>
+</tr>
+<tr class="even">
+<td>실제속도/개</td>
+<td>1.2분/개</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>위 표(<a href="#tbl-97-3-2" class="quarto-xref"><span>16.1</span></a>) 기준으로 설비종합효율을 계산하면 다음과 같다.</p>
+<p><span class="math inline">\(시간가동률 = \frac{부하시간 - 정지시간}{부하시간} \times 100 = \frac{5700 - (100 + 390)}{5700} \times 100 = 91.4(\%)\)</span></p>
+<p><span class="math inline">\(정미가동률 = \frac{생산량 \times 실제 cycle time}{부하시간 - 정지시간} \times 100 = \frac{4250 \times 1.2}{5700 - 100 - 390} \times 100 = 97.9(\%)\)</span></p>
+<p><span class="math inline">\(속도가동률 = \frac{이론 cycle time}{실제 cycle time} \times 100 = \frac{1.0}{1.2} \times 100 = 83.3(\%)\)</span></p>
+<p><span class="math inline">\(성능가동률 = \frac{생산량 \times 이론 cycle time}{부하시간-정지시간} \times 100 = \frac{4250 \times 1}{5700 - (100 + 390)} \times 100 = 81.6(\%)\)</span></p>
+<p><span class="math inline">\(양품률 = \frac{총생산량-불량품수}{총생산량} \times 100 = \frac{4250-250}{4250} \times 100 = 94.1(\%)\)</span></p>
+<p>따라서 종합설비효율은 다음과 같다.</p>
+<p><span class="math display">\[OEE = 시간가동률 \times 성능가동률 \times 양품률 = 91.4 \times 81.6 \times 94.1 = 70.2(\%)\]</span></p>
 
 
+</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>https://www.q-net.or.kr/crf005.do?id=crf00505&amp;gSite=Q&amp;jmCd=0760<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>https://ko.wikipedia.org/wiki/설비종합효율<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -885,10 +1089,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./3-6.공정개선.html" class="pagination-link" aria-label="공정개선">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">공정개선</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-1.경쟁우위 생산전략.html" class="pagination-link" aria-label="경쟁우위 생산전략">
-        <span class="nav-page-text"><span class="chapter-title">경쟁우위 생산전략</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./4-2.자재취급 및 운반관리.html" class="pagination-link" aria-label="자재취급 및 운반관리">
+        <span class="nav-page-text"><span class="chapter-title">자재취급 및 운반관리</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -897,4 +1104,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/4-1.설비계획 및 관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

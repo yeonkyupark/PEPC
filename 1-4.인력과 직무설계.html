@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="yeonkyu.park@gmail.com">
-<meta name="dcterms.date" content="2024-09-22">
 
-<title>공장관리기술사</title>
+<title>인력과 직무설계 – 공장관리기술사</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-1.경쟁우위 생산전략.html" rel="next">
+<link href="./1-5.사업환경분석.html" rel="next">
+<link href="./1-3.구매와 외주전략.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -82,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">들어가기</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1.경쟁우위 생산전략.html">1. 생산전략</a></li><li class="breadcrumb-item"><a href="./1-4.인력과 직무설계.html"><span class="chapter-title">인력과 직무설계</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,19 +117,19 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">들어가기</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">1. 생산전략</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-1.경쟁우위 생산전략.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">경쟁우위 생산전략</span></a>
@@ -144,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1-4.인력과 직무설계.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">인력과 직무설계</span></a>
+  <a href="./1-4.인력과 직무설계.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">인력과 직무설계</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,35 +401,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#들어가기" id="toc-들어가기" class="nav-link active" data-scroll-target="#들어가기">들어가기</a></li>
+  <li><a href="#인력-운영" id="toc-인력-운영" class="nav-link active" data-scroll-target="#인력-운영">인력 운영</a>
+  <ul class="collapse">
+  <li><a href="#심리적-계약" id="toc-심리적-계약" class="nav-link" data-scroll-target="#심리적-계약">심리적 계약</a></li>
+  <li><a href="#심리적-계약의-영향" id="toc-심리적-계약의-영향" class="nav-link" data-scroll-target="#심리적-계약의-영향">심리적 계약의 영향</a></li>
+  <li><a href="#심리적-계약-위반" id="toc-심리적-계약-위반" class="nav-link" data-scroll-target="#심리적-계약-위반">심리적 계약 위반</a></li>
+  </ul></li>
+  <li><a href="#직무설계" id="toc-직무설계" class="nav-link" data-scroll-target="#직무설계">직무설계</a>
+  <ul class="collapse">
+  <li><a href="#직무단순화" id="toc-직무단순화" class="nav-link" data-scroll-target="#직무단순화">직무단순화</a></li>
+  <li><a href="#직무순환" id="toc-직무순환" class="nav-link" data-scroll-target="#직무순환">직무순환</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/1-4.인력과 직무설계.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1.경쟁우위 생산전략.html">1. 생산전략</a></li><li class="breadcrumb-item"><a href="./1-4.인력과 직무설계.html"><span class="chapter-title">인력과 직무설계</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">공장관리기술사</h1>
+<h1 class="title"><span id="sec-hr-jobdesign" class="quarto-section-identifier"><span class="chapter-title">인력과 직무설계</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>yeonkyu.park@gmail.com </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2024-09-22</p>
-    </div>
-  </div>
   
     
   </div>
@@ -436,29 +437,284 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="들어가기" class="level1 unnumbered">
-<h1 class="unnumbered">들어가기</h1>
-<p><strong>공장관리기술사</strong>(Professional Engineer Plant Control)는 공장관리분야에 관한 고도의 전문 지식과 실무경험에 입각한 계획, 연구, 설계, 분석, 시험, 운영, 평가 또는 이에 관한 지도 등의 기술업무를 수행하는 직무이다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>필기 과목으로는 공장계획 및 설계, 공장조직, 생산계획 및 통제(공정관리), 설비 및 공구관리, 자재 및 운반관리, 작업관리, 경제성공학, 원가관리, 계기관리와 오퍼레이션리서치, 그 밖의 공장 관리에 관한 사항이 정의한다.</p>
-<p>주요항목은 다음과 같다.</p>
-<ol type="1">
-<li>생산전략</li>
-<li>생산운영 및 물류관리</li>
-<li>공정관리</li>
-<li>설비관리</li>
-<li>작업 및 생산성과 측정과 개선</li>
-<li>원가관리 및 경제성 공학</li>
-<li>생산지원기술 및 기타</li>
-</ol>
-<p>필기 시험을 합격하면 구술형 면접을 진행하게 되며 <strong>기술사로서 품위 및 자질</strong> 항목이 추가된다. 필기 및 면접 시험을 100점 만점 기준 60점 이상이면 합격이다.</p>
-<p>본 자료는 공장관리기술사를 준비하면서 기출문제를 중심으로 관련 내용을 수집, 정리했다. 시중에 관련 서적이나 교재가 부족한 상황으로 시험 준비에 조금이나마 도움이 되었으면 한다. 다만 시험범위가 넓고 다양한 정답이 있을 수 있다는 점을 감안하여 참고하기 바란다. 공장관리기술사를 준비하거나 공장운영에 참고할 수 있는 체계적인 교과서가 만들어지길 바라본다.</p>
+<section id="인력-운영" class="level2">
+<h2 class="anchored" data-anchor-id="인력-운영">인력 운영</h2>
+<section id="심리적-계약" class="level3">
+<h3 class="anchored" data-anchor-id="심리적-계약">심리적 계약</h3>
+<p><strong>심리적 계약</strong>(psychological contract)이란 조직과 조직 구성원 간 상호 교환에 대한 암묵적인 의무와 기대 집합을 의미한다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> 즉, 계약 당사자는 상대방과 교환을 통해 자신이 어떠한 의무를 지고, 그에 따른 대가로 어떠한 것을 받을 권리가 있다고 믿는다. 이러한 계약이 형성되기 위해서는 계약 당사자 간 상호 기대감 내지 상호 의무감에 대한 조직 및 조직 구성원들 사이의 합의가 전제되어야 하며, 이러한 합의는 법적계약과 같이 명시적이기 보다 개인이 지각한 약속이나 합의(Perceived promise &amp; agreement)에 근거한 암묵적인 형태를 띈다.</p>
+<p>유형으로는 거래적 계약, 관계적 계약, 안정적 계약, 발전적 계약이 있다. 거래적 계약과 관계적 계약은 경제적 교환과 사회적 교환 개념을 빌린 유형이고, 안정적 계약과 발전적 계약은 형성 의도 및 지향점, 상호 간 이행하는 의무 성격에 따른 분류이다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+subgraph 가가[특성에 따른 분류]
+direction TB
+나[거래적 계약]
+다[관계적 계약]
+end
+subgraph 가나[의무 성격에 따른 분류]
+direction TB
+라[안정적 계약]
+마[발전적 계약]
+end
+가[ㅤㅤ심리적 계약ㅤㅤ] --- 가가 &amp; 가나
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>거래적 계약</dt>
+<dd>
+<ul>
+<li>조직과 개인이 주로 물질적인 의무를 상호 교환하는 계약 형태이다. 그 내용이 구체적이고 한정적이며, 의무 이행에 대한 판단 또는 비교적 명확하다. 계약 기간이 상대적으로 짧으며 이에 따라 협상 등을 통해 계약 조건이 바뀔 수 있는 여지가 많은 특징이 있다.</li>
+</ul>
+</dd>
+<dt>관계적 계약</dt>
+<dd>
+<ul>
+<li>조직과 개인이 심리적인 의무를 서로 교환하는 것을 중시하는 계약형태이다. 거래적 계약과는 달리 계약기간이 보다 장기적이고 교환 내용 또한 지속적인 관계를 통해서만 확인이 가능한 사회 심리적 요소(socioemotional element)를 포함하는 특징이 있다.</li>
+</ul>
+</dd>
+<dt>안정적 계약</dt>
+<dd>
+<ul>
+<li>조직에서 물질적인 의무 이행을, 개인은 심리적인 의무 이행을 중시하는 계약 형태이다. 조직이 물질적인 의무를 이행하는 것은 개인 요구 중 아전 요구를 충족시켜 주는 것이라 볼 수 있고 개인이 심리적인 의무를 이행하는 것은 조직의 아정을 유지하는데 기여하는 것으로 이해할 수 있다.</li>
+</ul>
+</dd>
+<dt>발전적 계약</dt>
+<dd>
+<ul>
+<li>안정적 계약과 반대로 조직에서 심리적인 의무를, 개인은 물질적인 의무 이행을 중시하는 계약 형태이다. 조직이 심리적인 의무를 이행하는 것이 개인 요구 중 상위 요구를 충족시키는 기능을 한다고 본다. 성취, 도전, 자기개발 등의 욕구는 곧 개인 성장과 발전에 영향을 주는 요인으로 작용하기 때문에 조직이 심리적으로 사회적인 의무를 이행하는 것은 곧 개인 성정 욕구를 충족시키는 기능을 한다고 볼 수 있다. 반면 개인의 물질적인 의무 또한 조직 성과 향상을 통한 이윤 창출 및 기업 발전에 기여하기 때문에 기업의 성장 욕구를 충족하는 기능을 한다고 이해할 수 있다.</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="심리적-계약의-영향" class="level3">
+<h3 class="anchored" data-anchor-id="심리적-계약의-영향">심리적 계약의 영향</h3>
+<section id="조직몰입" class="level4">
+<h4 class="anchored" data-anchor-id="조직몰입">조직몰입</h4>
+<p><strong>조직몰입</strong>은 조직에 대한 구성원의 정서적 반응으로, 조직 구성원이 자신이 속한 조직에 대해 일체감을 갖고 몰두하는 정도를 의미한다. Meyer &amp; Allen(1990)은 3가지 차원으로 몰입을 나눴다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+하[ㅤㅤ조직몰입ㅤㅤ] --- 가[정서적 몰입] &amp; 나[지속적 몰입] &amp; 다[규범적 몰입]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>정서적 몰입</dt>
+<dd>
+<ul>
+<li>조직에 대한 긍적적 공감대, 높은 참여의식을 반영하는 정신 상태</li>
+</ul>
+</dd>
+<dt>지속적 몰입</dt>
+<dd>
+<ul>
+<li>현 조직에 남음으로써 얻는 이득이 조직을 떠남으로써 발생하는 비용보다 크기 때문에 조직에 남으로는 의도</li>
+</ul>
+</dd>
+<dt>규범적 몰입</dt>
+<dd>
+<ul>
+<li>조직에 대한 어던 어무감에 의해 몰입이 형성됨</li>
+</ul>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled" title="권한위임">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+권한위임
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>상사가 업무에 대한 자신의 공식적인 권한을 부하직원에게 사적으로 위임하는 것을 의미한다.</p>
+<p>Oliver(1990)는 리더가 부하에게 자율성을 부여하고 적극적으로 의사결정에 참여하도록 유도하는 행위를 할 때 조직몰입과 통계적으로 유의한 정(+)의 상관 관계가 있다고 했다. 즉, 구성원의 조직몰입도를 높이려면 상사가 부하직원들에게 적절한 권한 위임을 통해 자율성을 부여하는 게 매우 중요하다.</p>
+</div>
+</div>
+</section>
+<section id="조직신뢰" class="level4">
+<h4 class="anchored" data-anchor-id="조직신뢰">조직신뢰</h4>
+<p><strong>조직신뢰</strong>는 조직과 구성원 간 객관적 고용관계상의 신뢰로서 구성원에게 조직이 유익하거나 적어도 해롭지 않은 행동을 수행할 것이라는 구성원의 조직에 대한 전체적인 평가와 확신으로 정의된다.</p>
+</section>
+<section id="조직충성심" class="level4">
+<h4 class="anchored" data-anchor-id="조직충성심">조직충성심</h4>
+<p><strong>조직충성심</strong>이란 조직에 대해 정서적 애착을 작고 헌신하려는 조직구성원의 열정과 내적인 동기가 행동으로 표출된 것으로 최근 기업 인사관리에서 가장 관심을 보이는 변인 중 하나로 그 개념은 기본적으로 조직에 대한 신뢰로부터 출발한다.</p>
+</section>
+<section id="조직후원인식" class="level4">
+<h4 class="anchored" data-anchor-id="조직후원인식">조직후원인식</h4>
+<p>상호성의 규범에서 비롯되어 제시된 <strong>조직후원인식</strong>은 조직 구성원의 조직에 대한 몰입 정도를 설명하는 몰입과는 반대로, 조직이 조직 구성원에게 몰입하는 정도에 따른 조직 구성원의 지각을 의미한다. 조직후원인식은 조직이 조직 구성원의 노력을 중요하게 여기며, 조직 구성원의 복지향상을 위하여 노력하고 있다는 것에 대해 조직 구성원이 형성하게 되는 전반적인 지각을 뜻하며, 조직 구성원의 노력이 정당하게 평가되고 있는지를 결정하고 조직 구성원의 인정, 소속, 자존 등의 욕구를 충족시키기 위하여 요구된다.</p>
+</section>
+<section id="sec-job-satisfication" class="level4">
+<h4 class="anchored" data-anchor-id="sec-job-satisfication">직무만족</h4>
+<p><strong>직무만족</strong>이란 한 개인의 직무나 직무 경험 평가 시에 발생하는 유쾌하고 긍정적인 정서 상태를 의미하며, 직무 환경에 대한 만족 정도를 나타낸다. 이러한 직무 만족은 조직 구성원의 성과나 태도 및 행동에 중요한 영향을 미치며, 궁극적으로 조직 구성원의 조직 목표 달성과 직결된다.</p>
+</section>
+<section id="직무관여" class="level4">
+<h4 class="anchored" data-anchor-id="직무관여">직무관여</h4>
+<p><strong>직무관여</strong>는 업무 의미 또는 업무 중요성과 같은 가치가 개인 가치 안으로 내면화된 정도를 의미한다.</p>
+</section>
+</section>
+<section id="심리적-계약-위반" class="level3">
+<h3 class="anchored" data-anchor-id="심리적-계약-위반">심리적 계약 위반</h3>
+<p>심리적 계약이 지속적이고 정상적으로 작동하기 위해선 계약 당시 약속되었던 유인과 실제 이뤄진 유인 사이 격차가 없어야 한다. 기업 환경 변화에 따라 조직과 조직 구성원 사이의 약속이 지켜지지 못하는 상황이 발생할 수 있다. 이러한 상황은 조직 구성원의 계약에 대한 믿음과 현실 사이의 차이를 유발하며, 조직 구성원은 이를 마음속으로 느끼게 된다. 이렇게 조직과 조직 구성원 사이의 계약에 대한 조직 구성원의 믿음과 현실 사이의 차이를 조직 구성원이 지작하는 일련의 과정을 심리적 계약 위반이라고 정의한다.</p>
+<p>심리적 계약 위반에 대한 인식은 상호 의무에 대한 기대 차이로부터 시작하며, 불확실한 상황에 대한 조직 구성원의 경계로 인해, 즉 불확실한 상황이 많아 질수록 조직 구성원의 심리적 계약 위반에 대한 인식이 증가한다. 즉히 조직 변화가 빈번하며 조직 구성원의 교체가 용이할 경우 조직 구성원의 불안감은 증가하며, 그에 따른 심리적 계약 위반에 대한 인식 또한 증가하게 된다.</p>
+</section>
+</section>
+<section id="직무설계" class="level2">
+<h2 class="anchored" data-anchor-id="직무설계">직무설계</h2>
+<section id="직무단순화" class="level3">
+<h3 class="anchored" data-anchor-id="직무단순화">직무단순화</h3>
+<p><strong>직무단순화</strong>(Job Simplification)는 직무담당자가 좁은 범위의 몇 가지 일을 담당하도록 직무를 설계하는 방법이다.</p>
+<dl>
+<dt>장점</dt>
+<dd>
+<ul>
+<li>직무 활동이 단순하고 반복적이기 때문에 작업자 교체가 용이하고 새로운 종업원을 교육시키기 쉬움</li>
+</ul>
+</dd>
+<dt>단점</dt>
+<dd>
+<ul>
+<li>단순화가 과도하게 되면 종업원 동기부여가 어려움</li>
+<li>과도하게 전문화된 직무는 종업원에게 무료감을 주어 직무만족 저하의 원인이 됨</li>
+<li>결근율, 이직율, 태업의 원인이 됨</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="직무순환" class="level3">
+<h3 class="anchored" data-anchor-id="직무순환">직무순환</h3>
+<p><strong>직무순환</strong>(Job Rotation)은 작업자로 하여금 여러 가지 다양한 직무에 순환 근무토록 하는 방식이다. 활동을 다각화하여 단일 직무에서 오는 권태감을 상쇄시킬 수 있다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>수직적 순환</th>
+<th>수평적 순환</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>조직계층 상하위 직무로 순환</td>
+<td>같은직무 계층에서 직무 변환</td>
+</tr>
+<tr class="even">
+<td>승진과 강등 순환</td>
+<td>일반적으로 직무순환이라고 할 때는 수평적 순환 의미</td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>장점</dt>
+<dd>
+<ul>
+<li>종원원에게 광범위한 경험과 지식을 접할 수 있는 기회 제공</li>
+<li>직무로부터 느끼게 되는 지루함과 단조로움을 감소</li>
+<li>승진에 필요한 직무통합 능력 개발</li>
+</ul>
+</dd>
+<dt>단점</dt>
+<dd>
+<ul>
+<li>능률과 경제성을 기대하기 어려움</li>
+<li>비용이 증가하는 반면 생산성이 감소</li>
+<li>의사결정상 오류가 발생할 위험 비자발적 직무순환은 종업원 직무만족을 감소시키며 결근율을 증가</li>
+</ul>
+</dd>
+</dl>
+<section id="직무확대" class="level4">
+<h4 class="anchored" data-anchor-id="직무확대">직무확대</h4>
+<p><strong>직무확대</strong>(Job Enlargement)수평적으로 직무 범위를 넓히는 것으로 직무를 수행하는 작업자가 하여야 할 활동의 다양성을 증대시키는 방법이다.</p>
+<dl>
+<dt>장점</dt>
+<dd>
+<ul>
+<li>정형화된 직무의 단조로움을 줄일 수 있음</li>
+</ul>
+</dd>
+<dt>단점</dt>
+<dd>
+<ul>
+<li>유사한 몇 가지 일을 하게 만드는 직무확대로는 궁극적인 동기부여나 도전감을 불러 일으킬 수 없음</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="직무충실화" class="level4">
+<h4 class="anchored" data-anchor-id="직무충실화">직무충실화</h4>
+<p><strong>직무충실화</strong>(Job Enrichment)는 직무를 수직적으로 확대하는 것으로 직무 깊이를 심화하는 방법이다. 자가 직무에 보다 큰 통제력을 행사하는 것을 허용한다.</p>
+<p>5가지 핵심적 직무 차원은 다음과 같다.</p>
+<dl>
+<dt>기술다양화 (skill variety)</dt>
+<dd>
+<ul>
+<li>작업자가 상이한 기술이나 재능 및 기술을 활용할 수 있도록 직무가 다양하고 상이한 활동을 요구하는 정도</li>
+</ul>
+</dd>
+<dt>과업정체성 (task identity)</dt>
+<dd>
+<ul>
+<li>과업이 하나의 단위로써 완성이 되어 있는 정도로 독자적인 작업의 범위가 확인될 수 있는 정도</li>
+</ul>
+</dd>
+<dt>과업중요성 (task significance)</dt>
+<dd>
+<ul>
+<li>과업이 다른 사람의 직무나 활동에 영향을 미칠 수 있는 정도</li>
+</ul>
+</dd>
+<dt>자율성 (autonomy)</dt>
+<dd>
+<ul>
+<li>작업자드이 직무수행에 필요한 작업의 일정계획과 작업방법 및 작업절차를 결정, 선택하는데 있어 작업자 개인에게 부여되는 자유, 독립성 및 재량권 정도</li>
+</ul>
+</dd>
+<dt>피드백 (feedback)</dt>
+<dd>
+<ul>
+<li>직무가 요구되고 있는 활동의 수행결과에 관하여 직접적이고 명확한 정보를 얻을 수 있는 정도</li>
+</ul>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled" title="핵맨과 올드햄의 직무특성모형">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+핵맨과 올드햄의 직무특성모형
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/jcm.png" class="img-fluid figure-img"></p>
+<figcaption>J. Richard Hackman and Greg R. Oldham, “Development of the Diagnostic Survey,” Journal of Applied Psychology, 1975, pp.159-170.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>https://www.q-net.or.kr/crf005.do?id=crf00505&amp;gSite=Q&amp;jmCd=0760<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>https://ko.wikipedia.org/wiki/심리적_계약<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -885,10 +1141,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./1-3.구매와 외주전략.html" class="pagination-link" aria-label="구매와 외주전략">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">구매와 외주전략</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-1.경쟁우위 생산전략.html" class="pagination-link" aria-label="경쟁우위 생산전략">
-        <span class="nav-page-text"><span class="chapter-title">경쟁우위 생산전략</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./1-5.사업환경분석.html" class="pagination-link" aria-label="사업환경분석">
+        <span class="nav-page-text"><span class="chapter-title">사업환경분석</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -897,4 +1156,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/1-4.인력과 직무설계.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

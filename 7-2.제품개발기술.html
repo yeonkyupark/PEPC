@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="yeonkyu.park@gmail.com">
-<meta name="dcterms.date" content="2024-09-22">
 
-<title>공장관리기술사</title>
+<title>제품개발기술 – 공장관리기술사</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1-1.경쟁우위 생산전략.html" rel="next">
+<link href="./7-3.서비스운영관리.html" rel="next">
+<link href="./7-1.정보화활용기술(스마트팩토리 등).html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -82,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">들어가기</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7-1.정보화활용기술(스마트팩토리 등).html">7. 생산지원기술 및 기타</a></li><li class="breadcrumb-item"><a href="./7-2.제품개발기술.html"><span class="chapter-title">제품개발기술</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">들어가기</span></a>
   </div>
 </li>
@@ -326,13 +329,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
  <span class="menu-text">7. 생산지원기술 및 기타</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./7-1.정보화활용기술(스마트팩토리 등).html" class="sidebar-item-text sidebar-link"><span class="chapter-title">정보화활용기술(스마트팩토리 등)</span></a>
@@ -340,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./7-2.제품개발기술.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">제품개발기술</span></a>
+  <a href="./7-2.제품개발기술.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">제품개발기술</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,35 +401,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#들어가기" id="toc-들어가기" class="nav-link active" data-scroll-target="#들어가기">들어가기</a></li>
+  <li><a href="#제품개발" id="toc-제품개발" class="nav-link active" data-scroll-target="#제품개발">제품개발</a></li>
+  <li><a href="#제품설계" id="toc-제품설계" class="nav-link" data-scroll-target="#제품설계">제품설계</a>
+  <ul class="collapse">
+  <li><a href="#동시공학" id="toc-동시공학" class="nav-link" data-scroll-target="#동시공학">동시공학</a></li>
+  <li><a href="#모듈러-설계" id="toc-모듈러-설계" class="nav-link" data-scroll-target="#모듈러-설계">모듈러 설계</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2.제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./7-1.정보화활용기술(스마트팩토리 등).html">7. 생산지원기술 및 기타</a></li><li class="breadcrumb-item"><a href="./7-2.제품개발기술.html"><span class="chapter-title">제품개발기술</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">공장관리기술사</h1>
+<h1 class="title"><span id="sec-product-development" class="quarto-section-identifier"><span class="chapter-title">제품개발기술</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>yeonkyu.park@gmail.com </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2024-09-22</p>
-    </div>
-  </div>
   
     
   </div>
@@ -436,30 +432,140 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="들어가기" class="level1 unnumbered">
-<h1 class="unnumbered">들어가기</h1>
-<p><strong>공장관리기술사</strong>(Professional Engineer Plant Control)는 공장관리분야에 관한 고도의 전문 지식과 실무경험에 입각한 계획, 연구, 설계, 분석, 시험, 운영, 평가 또는 이에 관한 지도 등의 기술업무를 수행하는 직무이다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>필기 과목으로는 공장계획 및 설계, 공장조직, 생산계획 및 통제(공정관리), 설비 및 공구관리, 자재 및 운반관리, 작업관리, 경제성공학, 원가관리, 계기관리와 오퍼레이션리서치, 그 밖의 공장 관리에 관한 사항이 정의한다.</p>
-<p>주요항목은 다음과 같다.</p>
+<section id="제품개발" class="level2">
+<h2 class="anchored" data-anchor-id="제품개발">제품개발</h2>
+</section>
+<section id="제품설계" class="level2">
+<h2 class="anchored" data-anchor-id="제품설계">제품설계</h2>
+<section id="동시공학" class="level3">
+<h3 class="anchored" data-anchor-id="동시공학">동시공학</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-1-6</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Waterfall_vs_iterative.JPG/1080px-Waterfall_vs_iterative.JPG" class="img-fluid figure-img"></p>
+<figcaption>https://en.wikipedia.org/wiki/Concurrent_engineering</figcaption>
+</figure>
+</div>
+<p><strong>동시공학</strong>(CE, Concurrent Engineering)은 설계에 관련된 모든 부서와 관계자를 처음부터 설계과정에 참여시킴으로써 설계를 보다 효과적으로 수행하고자 하는 개념이다.</p>
+<p>ITI(Industrial Technology Institute) 스톨(1988)은 CE를 다음 “4C”로 설명하였다.</p>
+<p>동시성(Concurrence) &gt; - 제품 설계와 공정 설계가 동시에 이루어진다.</p>
+<p>제약성(Constraints) &gt; - 공정은 제품 설계에 제약을 준다.</p>
+<p>협조성(Coordination) &gt; - 최선 품질과 비용, 그리고 납기일을 달성하기 위해서는 제품과 공정이 서로 협조해야 한다.</p>
+<p>합의성(Consensus) &gt; - CE팀 모든 구성원들 합의 하에 의사결정을 내려야 한다.</p>
+<section id="동시공학-성공-요인" class="level4">
+<h4 class="anchored" data-anchor-id="동시공학-성공-요인">동시공학 성공 요인</h4>
+<p>동시공학을 성공적으로 도입하기 위해서는 다음 4가지 사항이 유기적으로 잘 운영되어야 한다.</p>
 <ol type="1">
-<li>생산전략</li>
-<li>생산운영 및 물류관리</li>
-<li>공정관리</li>
-<li>설비관리</li>
-<li>작업 및 생산성과 측정과 개선</li>
-<li>원가관리 및 경제성 공학</li>
-<li>생산지원기술 및 기타</li>
+<li>엔지니어링 프로세스 혁신 - BPR</li>
+<li>새로운 기법과 도구 활용 - CAD/CAM/CAE</li>
+<li>동시공학 조직 구성 및 운영 - 모든 분야 전문가 집단 참여</li>
+<li>효과적인 정보기술 활용 - 전사적 엔지니어링 데이터 효율적 공유</li>
 </ol>
-<p>필기 시험을 합격하면 구술형 면접을 진행하게 되며 <strong>기술사로서 품위 및 자질</strong> 항목이 추가된다. 필기 및 면접 시험을 100점 만점 기준 60점 이상이면 합격이다.</p>
-<p>본 자료는 공장관리기술사를 준비하면서 기출문제를 중심으로 관련 내용을 수집, 정리했다. 시중에 관련 서적이나 교재가 부족한 상황으로 시험 준비에 조금이나마 도움이 되었으면 한다. 다만 시험범위가 넓고 다양한 정답이 있을 수 있다는 점을 감안하여 참고하기 바란다. 공장관리기술사를 준비하거나 공장운영에 참고할 수 있는 체계적인 교과서가 만들어지길 바라본다.</p>
+</section>
+<section id="동시공학-구성요소" class="level4">
+<h4 class="anchored" data-anchor-id="동시공학-구성요소">동시공학 구성요소</h4>
+<p>조직은 통상 4~20명 내외 다기능 팀으로 구성되어 운영된다.</p>
+<ol type="1">
+<li>조직환경
+<ul>
+<li>기존 기능 분담에 의한 단계적 조직체계를 바꾸어 기능 교차에 의한 매트릭스 조직 또는 팀 활동을 골자로 하는 조직론적 접근이 중요하다.</li>
+</ul></li>
+<li>시스템 환경
+<ul>
+<li>동시공학을 지원하기 위해서는 HW적 시스템 환경용소로 원격화상회의, 컴퓨터 통신망, 인공지능/전문가 시스템, 조기 프로토타입 시스템 등이 있다.</li>
+</ul></li>
+<li>접근 방법론
+<ul>
+<li>데이터베이스, 제품 데이터 모델, 체계적인 의사소통, 지식 기반 접근법 등 기술적 접근법에 대한 연구가 필수적이다.</li>
+</ul></li>
+<li>주요 응용분야
+<ul>
+<li>환경과 방법론을 제품과 기업 특성이나 제품 개발 과정에 일부 단계에 맞추어 여러 가지로 특화된 공용 시스템을 개발할 수 있다. #### 동시공학 효과</li>
+</ul></li>
+</ol>
+<p>CE는 제품 개발과 그 제품을 생산하는 공정, 판매와 유통, 구매과정을 동시에 수행함으로써 처음부터 완전한 설계를 할 수 있으며, 이로 인해 불필요한 시간 낭비를 제거할 수 있다. 다음과 같은 효과가 있다.</p>
+<ul>
+<li>제품을 시장에 신속하게 출시한다.</li>
+<li>개발 비용이 감소한다.</li>
+<li>팀워크가 증진된다.</li>
+<li>품질이 향상된다.</li>
+<li>설계변경 횟수가 감소된다.</li>
+<li>재공품이 감소된다.</li>
+</ul>
+</section>
+</section>
+<section id="모듈러-설계" class="level3">
+<h3 class="anchored" data-anchor-id="모듈러-설계">모듈러 설계</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-1-4</p>
+</div>
+</div>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Framework_Laptop_-_the_Design_Museum.jpg/330px-Framework_Laptop_-_the_Design_Museum.jpg" class="img-fluid" alt="https://en.wikipedia.org/wiki/Modular_design"> <strong>모듈러 설계</strong>(Modular Design)는 호환성 있는 표준 모듈을 여러 가지로 다르게 결합하여 제품 다양성과 생산원가 절감, 두 가지를 동시에달성하기 위한 젤품설계 기법이다. 여기서 <strong>모듈</strong>(Module)이란 다수 부품으로 구성되어 있는 표준화된 중간 조립품을 말한다. 모듈러 설계에서는 서로 다른 모듈이 결합되어 제품 하나가 구성되므로 제품 기본 단위는 모듈이 된다.</p>
+<p>모듈러 설계는 재고관리, 구매관리, 생산관리 등 경영활동에 있어 복잡성을 줄이는 효과가 있다. 모듈러 설계 시 장단점은 다음과 같다.</p>
+<p>장점|단점 - 모듈러 설계 제품은 고장이 낫을 때 고장 난 부분만 모듈을 갈아 끼울 수 있어 수리가 용이 | - 모듈을 구성한 부품 하나가 고장 날 경우 부품 수준이 아니라 모듈 단위로 관리되기 때문에 모듈 전체를 교체해야 함 - 소비자 요구에 따라 필요한 모듈만을 보충하고 불필요한 모듈을 제거하기가 비교적 쉬움| - 개별적인 부품을 사용하기 보다 다양성이 감소 - 재고관리, 구매관리, 생산관리 등 전반적인 경영활동의 복잡성을 감소 | - 제품을 전체적으로 표준화하는 경우보다 비교적 많은 부품이 필요 - 부품 수준에서는 규메의 경제를 이용, 동시에 차별화된 제품을 제공할 수 있게 됨(다양성 제공) |</p>
+<p>모듈러 설계 유형은 다음과 같다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+1[구성요소 공유형]
+2[구성요소 교환형]
+3[맞춤형]
+4[혼합형]
+5[버스형]
+6[조립형]
+0[모듈러 유형] --- 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>구성요소 공유형 모듈화 &gt; 범위의 경제를 달성하기 위해 동일한 구성요소를 여러 제품 및 서비스에 사용한다. 비용이 제품 수에 비례해 빠르게 증가하는 제품군에서 대량생산 이점을 얻고자 할 때 유리항 유형이다. 이 방법은 다양성을 늘리고 원가를 감소시키며 신제품 개발 속도를 높여준다. 보험상품 등이 여기에 해당된다(보험지급 기능 + 보험 상품).</p>
+<p>구성요소 교환형 모듈화 &gt; 공유형 모듈화를 보완한 유형으로 여러 요소가 동일 제품군 제품에 조립되기 때문에 교환되는 구성요소 수만큼 상품이 생기게 된다. 사실상 공유형과 교환형은 정도의 문제며 같은 형태이다. 예식장 등이 여기에 해당된다(예식요소 + 신랑/신부).</p>
+<p>맞춤형 모듈화 &gt; 하나 또는 그 이상의 구성요소 형태가 미리 계획된 범위 안에서 또는 실현 가능한 범위 안에서 끊임없이 변화한다는 점이 공유형/교환형과 다른 점이다. 의류산업이 여기에 해당된다(기성복 + 개인 맞춤).</p>
+<p>혼합형 모듈화 &gt; 두 이상 유형을 활용한 형태이다. 구성요소가 함께 혼합되면 전혀 새로운 형태로 변화된다는 점이 중요하다. 예를 들면 특정 페인트 색상을 혼합하면 처음 색상은 최종 상품에서 찾을 수 없게 된다.</p>
+<p>버스형 모듈화 &gt; 여러 가지 다른 종류 구성요소를 결합할 수 있는 표준 구조를 사용한다. 컴퓨터 조립업체가 여기에 해당된다.</p>
+<p>조립형 모듈화 &gt; 여러 모듈화 유형 가운데 가장 높은 수준의 댜양성과 고객화를 제공한다. 여러 가지 구성 요소의 표준 접촉면을 통해 서로 연결만 될 수 있다면 어떻게든 구성 요소를 임의의 방식으로 배열할 수 있다. 레고 블록이 여기에 해당된다.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled" title="모듈러 생상(Modular Production)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+모듈러 생상(Modular Production)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>표준 부품 조합으로 조립품 다양화를 경제적으로 도모하는 <strong>생산방식</strong>이다. 즉 다양하게 결합할 수 있는 부분품을 설계, 제조하여 최소 종류 부분품으로 최다 종류 제품을 생산하는 방식이다. 전통적인 대량생산에서는 부분품 호환성(interchangeability)을 주요 요건으로하여 단일제품을 대량생산하였지만, 모듈러 생산에서는 부분품 호환성을 다른 품종에까지 확장시킨다는 점에서 차이가 있다. 모듈러 생산 본질은 초대한 결할될 수 있는 부품을 설계, 개발, 생삼함이다. 제품 가짓수는 수요 다양성과 규모의 경제, 그리고 한계이익 등을 고려하여 적절한 제품 구성(Adequate Product Mix)을 도모할 수 있는 범위 내에서 결정한다.</p>
+</div>
+</div>
 
 
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>https://www.q-net.or.kr/crf005.do?id=crf00505&amp;gSite=Q&amp;jmCd=0760<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -885,10 +991,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./7-1.정보화활용기술(스마트팩토리 등).html" class="pagination-link" aria-label="정보화활용기술(스마트팩토리 등)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">정보화활용기술(스마트팩토리 등)</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1-1.경쟁우위 생산전략.html" class="pagination-link" aria-label="경쟁우위 생산전략">
-        <span class="nav-page-text"><span class="chapter-title">경쟁우위 생산전략</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./7-3.서비스운영관리.html" class="pagination-link" aria-label="서비스운영관리">
+        <span class="nav-page-text"><span class="chapter-title">서비스운영관리</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -897,4 +1006,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2.제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/yeonkyupark/PEPC/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
