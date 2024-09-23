@@ -94,7 +94,7 @@ number-sections: false
 format:
   html:
     theme: 
-      - minty
+      - sandstone
       - custom.scss
     mermaid:
       theme: neutral
