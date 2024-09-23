@@ -84,7 +84,7 @@
 ### 재고관리 모형
 
 ```{mermaid}
-flowchart LR
+flowchart TR
 
 0[재고모형]
 11[확정적 모형]
