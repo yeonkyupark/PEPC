@@ -430,7 +430,7 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-invenory-management" id="toc-sec-invenory-management" class="nav-link active" data-scroll-target="#sec-invenory-management">제고관리</a>
+  <li><a href="#sec-invenory-management" id="toc-sec-invenory-management" class="nav-link active" data-scroll-target="#sec-invenory-management">재고관리</a>
   <ul class="collapse">
   <li><a href="#재고-종류" id="toc-재고-종류" class="nav-link" data-scroll-target="#재고-종류">재고 종류</a></li>
   <li><a href="#재고-비용" id="toc-재고-비용" class="nav-link" data-scroll-target="#재고-비용">재고 비용</a></li>
@@ -463,8 +463,24 @@ window.Quarto = {
 </header>
 
 
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+자재관리 --- 구매관리 &amp; 재고관리
+
+구매관리 --- 구매관리 &amp; 외주관리 &amp; 협력사관리
+재고관리 --- 소요관리 &amp; 저장관리 &amp; 분배관리
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <section id="sec-invenory-management" class="level2">
-<h2 class="anchored" data-anchor-id="sec-invenory-management">제고관리</h2>
+<h2 class="anchored" data-anchor-id="sec-invenory-management">재고관리</h2>
 <div class="callout callout-style-default callout-tip callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -633,11 +649,15 @@ subgraph s2[주문시기 및 주문량 결정 방법]
 26
 end
 
+subgraph s3[고정주문량]
+31
+32
+end
+
 0 --&gt; 11 &amp; 12 &amp; 13
 11 &amp; 12 --&gt; 21 &amp; 22
 13 --&gt; 23 &amp; 24 &amp; 25 &amp; 26
 21 --&gt; 31 &amp; 32
-
 </pre>
 </div>
 <p></p></figure><p></p>
