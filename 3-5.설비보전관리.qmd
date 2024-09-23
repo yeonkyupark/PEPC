@@ -134,7 +134,7 @@ IFR, increase failure rate
 **고장률**(failure rate)이란 어떤 시점까지 동작하여 온 품목이 계속되는 단위시간 내 고장을 일으키는 비율을 뜻한다. 평균 고장률은 총 고장횟수를 총 동작시간으로 나눈 값이다.
 
 $$
-평균고장률(\lamba) = \frac{r(총고장횟수)}{T(총동작시간)} = \frac{1}{MTBF}
+평균고장률(\lambda) = \frac{r(총고장횟수)}{T(총동작시간)} = \frac{1}{MTBF}
 $$
 
 여기서 **[-@sec-mtbf]**(Mean Time Between Failure)는 평균고장간격으로, 즉 수리할 수 있는 시스템 또는 설비에서 고장 발생 시점부터 다음 고장 발생 시점까지의 평균 시간이다.
