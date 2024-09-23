@@ -201,10 +201,10 @@ end
 
 항목 | 계산식
 -|-
-연간 재고관련 총 비용 TC | $$= 연간 주문비용 + 연간 재고 유지비용 $$ $$ = \frac{D}{Q} \times S + \frac{Q}{2} \times H$$ $$ \sqrt{2DSH} $$
+연간 재고관련 총 비용 TC | $$연간 주문비용 + 연간 재고 유지비용 $$ $$ \frac{D}{Q}S + \frac{Q}{2}H$$ $$\sqrt{2DSH} $$
 경제적 주문량(Q*) | $$ \sqrt\frac{2DS}{H} $$ 
 일일평균수요(d) | $$ \frac{D}{연간영업일수} $$ 
-재주문점(R) | $$ d \times L$$ 
+재주문점(R) | $$ dL$$ 
 연간 최적주문횟수(N*) | $$ \frac{D}{Q^*} = \sqrt{\frac{DH}{2S}} $$
 연간 최적주문주기(T*) | $$ \frac{1}{N^*} = \sqrt{\frac{2S}{DH}}$$ 
 
@@ -223,12 +223,13 @@ EPQ 모델 가정
 - 생산단가는 생산량 크리와 관계없이 일정하다.
 
 항목 | 계산식
-생산기간(t) | $$=\frac{Q}{P}$$
-평균재고수준 | $$=\frac{(P-D)Q}{2P}$$
-연간재고유지비용 | $$=\frac{P-D}QH{2P} = \frac{DS}{Q}$$
-연간생산준비비용 | $$= \frac{D}{Q}S$$
+-|-
+생산기간(t) | $$\frac{Q}{P}$$
+평균재고수준 | $$\frac{(P-D)Q}{2P}$$
+연간재고유지비용 | $$\frac{(P-D)QH}{2P} = \frac{DS}{Q}$$
+연간생산준비비용 | $$\frac{D}{Q}S$$
 연간총비용(TC) | $$\frac{DS}{Q} + \frac{(P-D)QH}{2P}$$
-경제적 생산량(EPQ) | $$=\sqrt{\frac{2DS}{H}(\frac{P}{P-D})}$$
+경제적 생산량(EPQ) | $$\sqrt{\frac{2DS}{H}(\frac{P}{P-D})}$$
 
 <br>
 
