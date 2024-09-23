@@ -11,7 +11,7 @@ book:
   repo-branch: main
   repo-actions: [edit, issue]
   sidebar: 
-    collapse-level: 1
+    collapse-level: 2
     tools:
       - icon: global
         href: https://yeonkyupark.github.io/
