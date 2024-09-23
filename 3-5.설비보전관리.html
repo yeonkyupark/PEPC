@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -427,9 +431,20 @@ window.Quarto = {
    
   <ul>
   <li><a href="#자주보전-7단계" id="toc-자주보전-7단계" class="nav-link active" data-scroll-target="#자주보전-7단계">자주보전 7단계</a></li>
+  <li><a href="#설비-보전-지표" id="toc-설비-보전-지표" class="nav-link" data-scroll-target="#설비-보전-지표">설비 보전 지표</a>
+  <ul>
+  <li><a href="#sec-mttr" id="toc-sec-mttr" class="nav-link" data-scroll-target="#sec-mttr">MTTR</a></li>
+  <li><a href="#sec-mtbf" id="toc-sec-mtbf" class="nav-link" data-scroll-target="#sec-mtbf">MTBF</a></li>
+  <li><a href="#sec-mttf" id="toc-sec-mttf" class="nav-link" data-scroll-target="#sec-mttf">MTTF</a></li>
+  <li><a href="#가용도" id="toc-가용도" class="nav-link" data-scroll-target="#가용도">가용도</a></li>
+  </ul></li>
   <li><a href="#욕조곡선" id="toc-욕조곡선" class="nav-link" data-scroll-target="#욕조곡선">욕조곡선</a>
   <ul>
   <li><a href="#고장률" id="toc-고장률" class="nav-link" data-scroll-target="#고장률">고장률</a></li>
+  </ul></li>
+  <li><a href="#rams" id="toc-rams" class="nav-link" data-scroll-target="#rams">RAMS</a>
+  <ul>
+  <li><a href="#측정-방법" id="toc-측정-방법" class="nav-link" data-scroll-target="#측정-방법">측정 방법</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-5.설비보전관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
@@ -556,6 +571,57 @@ window.Quarto = {
 <hr>
 <p><br></p>
 </section>
+<section id="설비-보전-지표" class="level2">
+<h2 class="anchored" data-anchor-id="설비-보전-지표">설비 보전 지표</h2>
+<p>대표적인 설비 보전 지표로 MTTR, MTBF, MTTF가 있다. 위 지표는 설비 보전 신뢰성 지표로 사용되고 설벼 효율을 극대화 하기 위한 척도로도 사용된다.</p>
+<section id="sec-mttr" class="level3">
+<h3 class="anchored" data-anchor-id="sec-mttr">MTTR</h3>
+<p><strong>MTTR</strong>(mean time to repair)는 평균 수리 시간(평균 고장/장애 복구 시간)으로서 설비 고장이 발생했을 때부터 다시 동작하는데까지 걸리는 시간이다.</p>
+<p><span class="math display">\[
+MTTR = \frac{설비 정지 총 시간}{설비 정지 횟수}
+\]</span></p>
+<p>MTTR은 설비가 정상동작하지 않는 시간 총합을 측정하고 총 건수로 나눈 값으로 현장에서는 설비 보전성 지료로 사용된다.</p>
+<p><br></p>
+</section>
+<section id="sec-mtbf" class="level3">
+<h3 class="anchored" data-anchor-id="sec-mtbf">MTBF</h3>
+<p><strong>MTBF</strong>(mean time between failures)는 평균 무고장 시간으로 설비가 한번 고장이 발생한 뒤 같은 고장이 다시 발생할 때까지의 평균 시간이다.</p>
+<p><span class="math display">\[
+MTBF = \frac{정상가동총시간}{고장횟수}
+\]</span></p>
+<p>설비 고장에 대한 대응력을 확인할 수 있는 지표로 설비 신뢰정 지표로 사용된다. MTBF는 수리 가능한 설비에 대한 지표이며, 수리가 불가한 설비나 시스템인 경우 MTTF를 사용해야 한다.</p>
+<p><br></p>
+</section>
+<section id="sec-mttf" class="level3">
+<h3 class="anchored" data-anchor-id="sec-mttf">MTTF</h3>
+<p><strong>MTTF</strong>(mean time to failures)는 수리하지 않은 부품이 사용되었을 때 시작 시점부터 고장 발생 시까지 시간을 의미한다.</p>
+<p><span class="math display">\[
+MTTF = 수리하지 \ 않은 \ 부품의 \ 사용 \ 시작부터 \ 고장까지 \ 시간
+\]</span></p>
+<p><br></p>
+</section>
+<section id="가용도" class="level3">
+<h3 class="anchored" data-anchor-id="가용도">가용도</h3>
+<p>가용도는 다음과 같이 계산된다.</p>
+<p><span class="math display">\[
+가동도 = \frac{MTTF}{MTBF}
+\]</span></p>
+<div id="exm-availability" class="theorem example">
+<p><span class="theorem-title"><strong>예제 14.1 (가용도 계산)</strong></span> 설비 부품 A가 10시간 만에 파손되어 설비 고장이 발생하였고, 부품 A를 교체하는데 1시간 소요되었다. 교체된 부품 A가 다시 10시간 후 파손되었을 때 가용도를 계산하시오.</p>
+</div>
+<p>설비 보전 지표는 다음과 같다.</p>
+<ul>
+<li>MTTR: 1</li>
+<li>MTTF: 10</li>
+<li>MTBF: 11 (10+1)</li>
+</ul>
+<p>따라서 가용도는 다음과 같다.</p>
+<p><span class="math display">\[
+가용도 = \frac{MTTF}{MTBF} = 10/11 = 0.91
+\]</span></p>
+<p>해당 설비를 사용하는 작업장의 조업일수가 200일인 경우 200x0.09 = 18, 즉 18일은 비가동이라 볼 수 있다.</p>
+</section>
+</section>
 <section id="욕조곡선" class="level2">
 <h2 class="anchored" data-anchor-id="욕조곡선">욕조곡선</h2>
 <div class="callout callout-style-default callout-tip callout-titled" title="기출">
@@ -605,7 +671,87 @@ window.Quarto = {
 <p><span class="math display">\[
 평균고장률(\lamba) = \frac{r(총고장횟수)}{T(총동작시간)} = \frac{1}{MTBF}
 \]</span></p>
-<p>여기서 <strong>MTBF</strong>(Mean Time Between Failure)는 평균고장간격으로, 즉 수리할 수 있는 시스템 또는 설비에서 고장 발생 시점부터 다음 고장 발생 시점까지의 평균 시간이다.</p>
+<p>여기서 <strong><a href="#sec-mtbf" class="quarto-xref"><span>MTBF</span></a></strong>(Mean Time Between Failure)는 평균고장간격으로, 즉 수리할 수 있는 시스템 또는 설비에서 고장 발생 시점부터 다음 고장 발생 시점까지의 평균 시간이다.</p>
+</section>
+</section>
+<section id="rams" class="level2">
+<h2 class="anchored" data-anchor-id="rams">RAMS</h2>
+<p><strong>RAMS</strong>(Reliability, Availability, Maintainability, Safety)는 제품 신뢰성과 안전성 평가를 위한 지표이다. 제품이나 시스템의 신뢰성, 가용성, 유지보수성 그리고 안전성을 평가한다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+RAMS --- 신뢰성 &amp; 가용성 &amp; 유지보수성 &amp; 안전성
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>신뢰성(reliability)</dt>
+<dd>
+<ul>
+<li>제품이 일정 기간 동안 얼마나 정상적으로 동작하는지를 나타내는 지표</li>
+<li>고장없이 예상대로 동작하는 능력</li>
+</ul>
+</dd>
+<dt>가용성(availability)</dt>
+<dd>
+<ul>
+<li>제품이나 시스템이 사용 가능한 상태에 있는 비율을 나타내는 지표</li>
+<li>장애로 인한 중단 시간을 최소화하여 시스템 가동 시간을 최대한 확보하는 것이 목표</li>
+</ul>
+</dd>
+<dt>유지보수성(maintainability)</dt>
+<dd>
+<ul>
+<li>제품이나 시스템이 고장 났을 때 빠르게 복구 또는 유지보수를 수행할 수 있는지를 나타내는 지표</li>
+<li>유지보수성이 높으면 고장 시간을 최소화하고 장애복구를 빠르게 수행 가능</li>
+</ul>
+</dd>
+<dt>안전성(safety)</dt>
+<dd>
+<ul>
+<li>제품이나 시스템을 사용하는 중 사용ㅈ바나 환경에 어떠한 유해한 영향도 미치지 않는 능력</li>
+<li>제품 사용자와 주변 환경을 보호하는 중요한 역할</li>
+</ul>
+</dd>
+</dl>
+<section id="측정-방법" class="level3">
+<h3 class="anchored" data-anchor-id="측정-방법">측정 방법</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>측정방법</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>신뢰성</td>
+<td>MTBF, 실페 확률(특정 기간 내 고장이 발생할 확률, 과거 데이터 및 통계 기반으로 계산)</td>
+</tr>
+<tr class="even">
+<td>가용성</td>
+<td>MTTR</td>
+</tr>
+<tr class="odd">
+<td>유지보수성</td>
+<td>복구 시간, 유지 보수 작업 복잡성, 필요한 기술 및 장비 등을 고려하여 평가</td>
+</tr>
+<tr class="even">
+<td>안전성</td>
+<td>HAZOP(hazard and operability study), FMEA(failure modes and effects analysis), FTA(fault tree analysis)</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
