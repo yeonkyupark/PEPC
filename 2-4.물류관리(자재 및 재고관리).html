@@ -753,7 +753,7 @@ end
 <tbody>
 <tr class="odd">
 <td>연간 재고관련 총 비용 TC</td>
-<td><span class="math display">\[= 연간 주문비용 + 연간 재고 유지비용 \]</span> <span class="math display">\[ = \frac{D}{Q} \times S + \frac{Q}{2} \times H\]</span> <span class="math display">\[ \sqrt{2DSH} \]</span></td>
+<td><span class="math display">\[연간 주문비용 + 연간 재고 유지비용 \]</span> <span class="math display">\[ \frac{D}{Q}S + \frac{Q}{2}H\]</span> <span class="math display">\[\sqrt{2DSH} \]</span></td>
 </tr>
 <tr class="even">
 <td>경제적 주문량(Q*)</td>
@@ -765,7 +765,7 @@ end
 </tr>
 <tr class="even">
 <td>재주문점(R)</td>
-<td><span class="math display">\[ d \times L\]</span></td>
+<td><span class="math display">\[ dL\]</span></td>
 </tr>
 <tr class="odd">
 <td>연간 최적주문횟수(N*)</td>
@@ -795,7 +795,40 @@ end
 </ul>
 </dd>
 </dl>
-<p>항목 | 계산식 생산기간(t) | <span class="math display">\[=\frac{Q}{P}\]</span> 평균재고수준 | <span class="math display">\[=\frac{(P-D)Q}{2P}\]</span> 연간재고유지비용 | <span class="math display">\[=\frac{P-D}QH{2P} = \frac{DS}{Q}\]</span> 연간생산준비비용 | <span class="math display">\[= \frac{D}{Q}S\]</span> 연간총비용(TC) | <span class="math display">\[\frac{DS}{Q} + \frac{(P-D)QH}{2P}\]</span> 경제적 생산량(EPQ) | <span class="math display">\[=\sqrt{\frac{2DS}{H}(\frac{P}{P-D})}\]</span></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>계산식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>생산기간(t)</td>
+<td><span class="math display">\[\frac{Q}{P}\]</span></td>
+</tr>
+<tr class="even">
+<td>평균재고수준</td>
+<td><span class="math display">\[\frac{(P-D)Q}{2P}\]</span></td>
+</tr>
+<tr class="odd">
+<td>연간재고유지비용</td>
+<td><span class="math display">\[\frac{(P-D)QH}{2P} = \frac{DS}{Q}\]</span></td>
+</tr>
+<tr class="even">
+<td>연간생산준비비용</td>
+<td><span class="math display">\[\frac{D}{Q}S\]</span></td>
+</tr>
+<tr class="odd">
+<td>연간총비용(TC)</td>
+<td><span class="math display">\[\frac{DS}{Q} + \frac{(P-D)QH}{2P}\]</span></td>
+</tr>
+<tr class="even">
+<td>경제적 생산량(EPQ)</td>
+<td><span class="math display">\[\sqrt{\frac{2DS}{H}(\frac{P}{P-D})}\]</span></td>
+</tr>
+</tbody>
+</table>
 <p><br></p>
 </section>
 </section>
