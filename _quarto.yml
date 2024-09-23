@@ -9,7 +9,7 @@ book:
   date-format: iso
   repo-url: https://github.com/yeonkyupark/PEPC 
   repo-branch: main
-  repo-actions: [edit, issue]
+  repo-actions: [edit]
   sidebar: 
     collapse-level: 2
     tools:
