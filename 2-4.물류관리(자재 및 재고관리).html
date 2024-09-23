@@ -622,6 +622,7 @@ window.Quarto = {
 </section>
 <section id="재고관리-모형" class="level3">
 <h3 class="anchored" data-anchor-id="재고관리-모형">재고관리 모형</h3>
+<p>재고관리 모형은 수용 특성에 따라 <strong>확정적 재고관리 모형</strong>과 <strong>확률적 재고관리 모형</strong>으로 나눌 수 있다. 또한 특수한 경우 사용할 수 있는 <strong>단일기간 재고관리 모형</strong>이나 <strong>ABC 재고관리 모형</strong>도 있다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -632,11 +633,11 @@ window.Quarto = {
 0[재고모형]
 11[확정적 모형]
 12[확률적 모형]
-13[기타 재고모형]
+13[기타 재고 모형]
 21[고정주문량 모형]
 22[고정주문기간 모형]
 23[조건부 재고 보충 시스템]
-24[단일기간 재고모형]
+24[단일기간 재고관리 모형]
 25[ABC 모형]
 26["투빈시스템&lt;br&gt;원빈시스템&lt;br&gt;기본 재고 시스템"]
 31[EOQ 모형]
@@ -676,9 +677,88 @@ end
 </div>
 </div>
 <p><br></p>
-<section id="확정적-재고모형" class="level4">
-<h4 class="anchored" data-anchor-id="확정적-재고모형">확정적 재고모형</h4>
+<section id="확정적-재고관리-모형" class="level4">
+<h4 class="anchored" data-anchor-id="확정적-재고관리-모형">확정적 재고관리 모형</h4>
+<p><strong>확정적 재고관리 모형</strong>은 재고관련 비용, 수요율, 생산율이 확정적인 경우에 사용하는 관리 모형이다.</p>
+<dl>
+<dt>특징</dt>
+<dd>
+<ul>
+<li>재고관련 비용, 수요율, 생산율이 확정적</li>
+</ul>
+</dd>
+<dt>가정</dt>
+<dd>
+<ul>
+<li>수요는 미리 알려져 있고, 일정하며, 균일하게 발생한다.</li>
+<li>조달기간은 알려져 있고 일정하다.</li>
+<li>제품 구입단가는 일정하다.</li>
+<li>주문비용 또는 준비비용은 고정비로서 일정하다.</li>
+<li>주문량은 조달기간이 지나면 일시에 전량이 한번에 들어온다.</li>
+<li>모든 수요는 재고부족 없이 충족된다.</li>
+</ul>
+</dd>
+<dt>주요 용어 설명</dt>
+<dd>
+<ul>
+<li><p>기호 및 설명</p>
+<p>기호|설명 TC | 연간 재고관련 총 비용 D | 연간 수요량 Q | 1회 주문량 EOQ 또는 Q* | 경제적 주문량 (최적 주문량) C | 단위당 구입가격(생산인 경우 생산 비용) S | 1회 주문비용 또는 준비비용 H | 연간 단위당 재고유지비용, 1단위를 1년간 재고로 유지하는데 소요되는 비용, 보통 단위당 가입가격의 몇 %로 산정, H = C x 몇 % d | 일일 평균 수요 L | 조달 기간 R | 재주문점 N* | 연가 최적 주문 횟수 T* | 연간 최적 주문 주기 P | 연간생산율</p></li>
+</ul>
+</dd>
+</dl>
 <p><br></p>
+<section id="경제적-주문량-모형eoq" class="level5">
+<h5 class="anchored" data-anchor-id="경제적-주문량-모형eoq">경제적 주문량 모형(EOQ)</h5>
+<p>주문량에 따른 특징은 다음과 같다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>주문량이 적을 경우</th>
+<th>주문량이 많을 경우</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>평균재고 감소</td>
+<td>평균재고 증가</td>
+</tr>
+<tr class="even">
+<td>재고 유지비용 감소</td>
+<td>재고유지비용 감소</td>
+</tr>
+<tr class="odd">
+<td>연간 주문횟수 증가</td>
+<td>연간 주문 횟수 감소</td>
+</tr>
+<tr class="even">
+<td>연간 주문비용 증가</td>
+<td>연간 주문비용 감소</td>
+</tr>
+</tbody>
+</table>
+<p>이상적인 주문량, 즉 최적주문량은 주문비용과 재고유지비용이 적정한 수준에서 결정된 수량이다.</p>
+<p><strong>경제적 주문량</strong>(EOQ,economic order quantity) 모형이란 가장 단순한 형태를 갖는 재고 모형으로 연간 재고유지비용과 연간 주문비용의 합을 최소화하는 1회 주문량(EOQ 또는 Q*)을 구하는 것으로 이 때 주문량 크기를 경제적 로트 사이즈(ELS, economic lot size)라고도 한다.</p>
+<p>!!! 그림 추가</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>계산식</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>연간 재고관련 총 비용 TC</td>
+<td><span class="math display">\[= 연간 주문비용 + 연간 재고 유지비용 \frac{D}{Q} \times S + \frac{Q}{2} \times H\]</span></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</section>
 </section>
 <section id="확률적-재고모형" class="level4">
 <h4 class="anchored" data-anchor-id="확률적-재고모형">확률적 재고모형</h4>
