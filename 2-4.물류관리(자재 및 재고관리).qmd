@@ -201,8 +201,12 @@ end
 
 항목 | 계산식
 -|-
-연간 재고관련 총 비용 TC | $$= 연간 주문비용 + 연간 재고 유지비용 \\ = \frac{D}{Q} \times S + \frac{Q}{2} \times H$$
-
+연간 재고관련 총 비용 TC | $$= 연간 주문비용 + 연간 재고 유지비용 $$ $$ = \frac{D}{Q} \times S + \frac{Q}{2} \times H$$ $$ \sqrt{2DSH} $$
+경제적 주문량(Q*) | $$ \sqrt\frac{2DS}{H} $$ 
+일일평균수요(d) | $$ \frac{D}{연간영업일수} $$ 
+재주문점(R) | $$ d \times L$$ 
+연간 최적주문횟수(N*) | $$ \frac{D}{Q^*} = \sqrt{\frac{DH}{2S}} $$
+연간 최적주문주기(T*) | $$ \frac{1}{N^*} = \sqrt{\frac{2S}{DH}}$$ 
 <br>
 
 #### 확률적 재고모형
