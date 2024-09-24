@@ -430,7 +430,8 @@ window.Quarto = {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#자주보전-7단계" id="toc-자주보전-7단계" class="nav-link active" data-scroll-target="#자주보전-7단계">자주보전 7단계</a></li>
+  <li><a href="#생산보전" id="toc-생산보전" class="nav-link active" data-scroll-target="#생산보전">생산보전</a></li>
+  <li><a href="#자주보전-7단계" id="toc-자주보전-7단계" class="nav-link" data-scroll-target="#자주보전-7단계">자주보전 7단계</a></li>
   <li><a href="#설비-보전-지표" id="toc-설비-보전-지표" class="nav-link" data-scroll-target="#설비-보전-지표">설비 보전 지표</a>
   <ul>
   <li><a href="#sec-mttr" id="toc-sec-mttr" class="nav-link" data-scroll-target="#sec-mttr">MTTR</a></li>
@@ -471,6 +472,41 @@ window.Quarto = {
 </header>
 
 
+<section id="생산보전" class="level2">
+<h2 class="anchored" data-anchor-id="생산보전">생산보전</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  subgraph sg2[비계획보전]
+    긴급보전 --&gt; 비계획보전
+  end
+  subgraph sg1[계획보전]
+    direction LR 
+    subgraph sg12[개선활동]
+    direction LR 
+      개량보전
+      보전예방
+    end 
+    subgraph sg11[유지활동]
+    direction LR
+      예방보전
+      사후보전
+    end
+    계획보전 --&gt; 예방보전 &amp; 사후보전 &amp; 계량보전 &amp; 보전예방
+  end
+
+설비보전 --&gt; 계획보전 &amp; 비계획보전
+예방보전 --&gt; 1["정기보전(TBM)"] &amp; 2["예지보전(CBM)"] &amp; 3["일상보전"] &amp; 4["정기적인 분해 점검"]  
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 <section id="자주보전-7단계" class="level2">
 <h2 class="anchored" data-anchor-id="자주보전-7단계">자주보전 7단계</h2>
 <div class="callout callout-style-default callout-tip callout-titled" title="기출">
