@@ -16,7 +16,7 @@ flowchart LR
 
 예방보전과 종합적 생산보전, 그리고 종합적 생산성 관리를 요약하면 다음과 같다.
 
-구분|Preventivie Maintenance | Total Productive Maintenance | Total Productivity Management
+구분|Preventive Maintenance | Total Productive Maintenance | Total Productivity Management
 -|-|--
 추진조직| 보전 전문가 | 중복 소집단 | 중복 소집단
 추진방식| 전문가 중심 | 현장 사원 교육을 통한 현장 개선 | 자주 보전 개념을 사무 간접 부분까지 확대
@@ -238,7 +238,7 @@ $$
 97-4-3
 :::
 
-!!! 그림 추가
+![https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO201300024419](https://nrms.kisti.re.kr/bitextimages/TRKO201300024419/TRKO201300024419_129_image_89.jpg)
 
 **욕조곡선**(bathtube curve), 신뢰도 곡선은 고장률이 시간 변화에 따라 높은 값에서 점차 낮은 값으로 감소하는 일정한 값을 얼마동안 유지한 후 점차 다시 높아지는 제품 수명을 나타내는 곡선이다. 신뢰도에서 고장률이 마치 욕조처럼 생겼다고 붙여진 명칭이다.
 
