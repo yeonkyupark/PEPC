@@ -1,5 +1,33 @@
 # 설비보전관리 {#sec-equipmnet-maintainance}
 
+## 생산보전
+
+```{mermaid}
+flowchart LR
+  subgraph sg2[비계획보전]
+    긴급보전 --> 비계획보전
+  end
+  subgraph sg1[계획보전]
+    direction LR 
+    subgraph sg12[개선활동]
+    direction LR 
+      개량보전
+      보전예방
+    end 
+    subgraph sg11[유지활동]
+    direction LR
+      예방보전
+      사후보전
+    end
+    계획보전 --> 예방보전 & 사후보전 & 계량보전 & 보전예방
+  end
+
+설비보전 --> 계획보전 & 비계획보전
+예방보전 --> 1["정기보전(TBM)"] & 2["예지보전(CBM)"] & 3["일상보전"] & 4["정기적인 분해 점검"]  
+```
+
+
+
 ## 자주보전 7단계
 
 :::{.callout-tip title="기출"}
