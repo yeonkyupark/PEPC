@@ -499,16 +499,16 @@ window.Quarto = {
   end
   subgraph sg1[계획보전]
     direction LR 
-    subgraph sg12[개선활동]
-    direction LR 
-      개량보전
-      보전예방
-    end 
     subgraph sg11[유지활동]
     direction LR
       예방보전
       사후보전
     end
+    subgraph sg12[개선활동]
+    direction LR 
+      개량보전
+      보전예방
+    end 
     계획보전 --&gt; 예방보전 &amp; 사후보전 &amp; 개량보전 &amp; 보전예방
   end
 

@@ -464,7 +464,7 @@
     "href": "3-5.설비보전관리.html",
     "title": "설비보전관리",
     "section": "",
-    "text": "생산보전\n생산보전(productive maintenance)은 설비 수명주기(life cycle)를 대상으로 하여 생산성을 높이기 위해 실시하는 가장 경제적인 보전활동이다. 생산보전은 설비가 언제라도 기능을 발휘할 수 있도록 하는 목적으로 최소 비용을 수단으로 수행하는 활동이다. 아래와 같은 수단을 통해 목적을 달성할 수 있다.\nflowchart LR\n  subgraph sg2[비계획보전]\n    비계획보전 --&gt; 긴급보전\n  end\n  subgraph sg1[계획보전]\n    direction LR \n    subgraph sg12[개선활동]\n    direction LR \n      개량보전\n      보전예방\n    end \n    subgraph sg11[유지활동]\n    direction LR\n      예방보전\n      사후보전\n    end\n    계획보전 --&gt; 예방보전 & 사후보전 & 개량보전 & 보전예방\n  end\n\n생산보전 --&gt; 계획보전 & 비계획보전\n예방보전 --&gt; 1[\"정기보전(TBM)\"] & 2[\"예지보전(CBM)\"] & 3[\"일상보전\"] & 4[\"정기적인 분해 점검\"]",
+    "text": "생산보전\n생산보전(productive maintenance)은 설비 수명주기(life cycle)를 대상으로 하여 생산성을 높이기 위해 실시하는 가장 경제적인 보전활동이다. 생산보전은 설비가 언제라도 기능을 발휘할 수 있도록 하는 목적으로 최소 비용을 수단으로 수행하는 활동이다. 아래와 같은 수단을 통해 목적을 달성할 수 있다.\nflowchart LR\n  subgraph sg2[비계획보전]\n    비계획보전 --&gt; 긴급보전\n  end\n  subgraph sg1[계획보전]\n    direction LR \n    subgraph sg11[유지활동]\n    direction LR\n      예방보전\n      사후보전\n    end\n    subgraph sg12[개선활동]\n    direction LR \n      개량보전\n      보전예방\n    end \n    계획보전 --&gt; 예방보전 & 사후보전 & 개량보전 & 보전예방\n  end\n\n생산보전 --&gt; 계획보전 & 비계획보전\n예방보전 --&gt; 1[\"정기보전(TBM)\"] & 2[\"예지보전(CBM)\"] & 3[\"일상보전\"] & 4[\"정기적인 분해 점검\"]",
     "crumbs": [
       "3. 공정관리",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>설비보전관리</span>"
