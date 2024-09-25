@@ -97,6 +97,8 @@ format:
     toc-depth: 4
     toc-title: 목차
     page-layout: full
+    grid:
+      body-width: 900px
     theme: 
       - sandstone
       - custom.scss
