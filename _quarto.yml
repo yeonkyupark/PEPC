@@ -96,6 +96,7 @@ format:
     toc: true
     toc-depth: 4
     toc-title: 목차
+    page-layout: full
     theme: 
       - sandstone
       - custom.scss
