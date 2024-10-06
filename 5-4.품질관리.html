@@ -489,13 +489,65 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TB
-01{"품질 특성값"} -- 계량값 --&gt; 11["군 크기"]
-01 -- 계수값 --&gt; 12["판단"]
 
-11 -- "여러 개" --&gt; 21["중심선"]
-11 -- "한 개" --&gt; 22["군 구분"]
+subgraph sg1[ ]
+31["$$\bar{x} - R$$"]
+32["$$\bar{x} - s$$"]
+end
 
-21 --&gt; 31["$$\bar{x}-R$$"]
+subgraph sg2[ ]
+33["$$\tilde{x} - R$$"]
+34["$$Me - R$$"]
+end
+
+subgraph sg3[ ]
+35["$$X-Rs$$"]
+end
+
+subgraph sg4[ ]
+37["$$x - \bar{x} - R$$"]
+end
+
+subgraph sg[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;**포아송분포**]
+24
+c
+u
+end
+
+subgraph sg5[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;**이항분포**]
+23
+np
+p
+end
+23 -- 일정 ---&gt; np
+23 -- 불일정 ---&gt; p
+
+
+24 -- 일정 ---&gt; c
+24 -- 불일정 ---&gt; u
+
+subgraph sg0[&lt;br&gt;**정규분포**]
+22
+21
+sg3
+sg4
+sg1
+sg2
+end
+22 -- 가능 ---&gt; sg4
+22 -- 불가능 ---&gt; sg3
+21 --"$$\bar{x}$$"--&gt; sg1
+21 --"$$\tilde{x}(Me)$$"--&gt; sg2
+
+01{"품질 특성값"} -- 계량값 --&gt; 11{"군 크기"}
+01 -- 계수값 --&gt; 12{"판단"}
+
+11 -- "한 개" --&gt; 22{"군 구분"}
+11 -- "여러 개" --&gt; 21{"중심선"}
+
+12 --부적합품 --&gt; 23{"군 크기"}
+12 --부적합--&gt; 24{"군 단위"}
+
 </pre>
 </div>
 <p></p></figure><p></p>
