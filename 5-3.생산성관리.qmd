@@ -2,10 +2,8 @@
 
 ## 생산성 지표
 
-:::{.callout-tip}
-## 기출
-
-#97-3-4
+:::{.callout-tip title="기출"}
+97-3-4
 :::
 
 생산성(Productivity)
