@@ -483,6 +483,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p><br></p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -490,54 +491,42 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">flowchart TB
 
-subgraph sg1[ ]
-31["xbar - R"]
-32["xbar - s"]
-end
-
-subgraph sg2[ ]
-33["xtilde - R"]
-34["Me - R"]
-end
-
-subgraph sg3[ ]
+31["xbar - R&lt;br&gt;xbar - s"]
+33["xtilde - R&lt;br&gt;(Me - R)"]
 35["X - Rs"]
-end
-
-subgraph sg4[ ]
 37["x - xbar - R"]
-end
 
-subgraph sg[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;**포아송분포**]
+subgraph sg6[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;포아송분포]
 24
 c
 u
 end
 
-subgraph sg5[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;**이항분포**]
+subgraph sg5[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;이항분포]
 23
 np
 p
 end
-23 -- 일정 ---&gt; np
-23 -- 불일정 ---&gt; p
 
-
-24 -- 일정 ---&gt; c
-24 -- 불일정 ---&gt; u
-
-subgraph sg0[&lt;br&gt;**정규분포**]
+subgraph sg0[&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;정규분포]
 22
 21
-sg3
-sg4
-sg1
-sg2
+31
+33
+35
+37
 end
-22 -- 가능 ---&gt; sg4
-22 -- 불가능 ---&gt; sg3
-21 --"xbar"--&gt; sg1
-21 --"xtilde(Me)"--&gt; sg2
+23 -- 일정 --&gt; np
+23 -- 불일정 --&gt; p
+
+
+24 -- 일정 --&gt; c
+24 -- 불일정 --&gt; u
+
+22 -- 가능 --&gt; 37
+22 -- 불가능 --&gt; 35
+21 --"xbar"--&gt; 31
+21 --"xtilde(Me)"--&gt; 33
 
 01{"품질 특성값"} -- 계량값 --&gt; 11{"군 크기"}
 01 -- 계수값 --&gt; 12{"판단"}
