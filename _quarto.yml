@@ -13,7 +13,7 @@ book:
   sidebar: 
     collapse-level: 2
     tools:
-      - icon: global
+      - icon: globe
         href: https://yeonkyupark.github.io/
       - icon: instagram
         href: https://www.instagram.com/yeonkyu.park/
@@ -110,4 +110,4 @@ crossref:
   fig-title: 그림
   tbl-title: 표
   exm-title: 예제
-  title-delim: ":"
+  title-delim: " - "
