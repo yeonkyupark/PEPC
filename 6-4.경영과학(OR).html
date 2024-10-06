@@ -464,6 +464,19 @@ window.Quarto = {
   <li><a href="#대기행렬-가정" id="toc-대기행렬-가정" class="nav-link" data-scroll-target="#대기행렬-가정">대기행렬 가정</a></li>
   <li><a href="#sec-little" id="toc-sec-little" class="nav-link" data-scroll-target="#sec-little">리틀(Little) 공식</a></li>
   </ul></li>
+  <li><a href="#투자안-평가" id="toc-투자안-평가" class="nav-link" data-scroll-target="#투자안-평가">투자안 평가</a>
+  <ul>
+  <li><a href="#전통적-분석방법" id="toc-전통적-분석방법" class="nav-link" data-scroll-target="#전통적-분석방법">전통적 분석방법</a>
+  <ul class="collapse">
+  <li><a href="#회수기간법" id="toc-회수기간법" class="nav-link" data-scroll-target="#회수기간법">회수기간법</a></li>
+  <li><a href="#회계적-이익률법" id="toc-회계적-이익률법" class="nav-link" data-scroll-target="#회계적-이익률법">회계적 이익률법</a></li>
+  </ul></li>
+  <li><a href="#현금흐름할인법" id="toc-현금흐름할인법" class="nav-link" data-scroll-target="#현금흐름할인법">현금흐름할인법</a>
+  <ul class="collapse">
+  <li><a href="#순현가법npv-method" id="toc-순현가법npv-method" class="nav-link" data-scroll-target="#순현가법npv-method">순현가법(NPV method)</a></li>
+  <li><a href="#내부수익률법irr-method" id="toc-내부수익률법irr-method" class="nav-link" data-scroll-target="#내부수익률법irr-method">내부수익률법(IRR method)</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-4.경영과학(OR).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -1185,9 +1198,9 @@ end
 <p><strong>분석 네트워크 프로세스</strong>(ANP, Analytic Network Process)는 AHP 분석 한계로 인해 1996년 Saaty 교수가 기존 AHP 기법을 보완하여 개발되었다. AHP는 구성요소간 독립성을 가정하였지만 현실에서는 수평적 상호관계, 수직적 종속관계가 존재하기 때문에 단순한 계층적 구조만으로 설명할 수 없는 경우가 있다. ANP는 AHP 기법에 기초를 둔 시스템으로 요소간 비선형 관계를 모델화하는 복작한 의사결정을 다룰 수 있다.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 29%">
+<col style="width: 29%">
+<col style="width: 29%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1363,8 +1376,421 @@ L = \bar\lambda \\
 L_q = \bar\lambda W_q \\
 W = W_q + \frac{1}{\mu}
 \]</span> 로 계산할 수 있다.</p>
+</section>
+</section>
+<section id="투자안-평가" class="level2">
+<h2 class="anchored" data-anchor-id="투자안-평가">투자안 평가</h2>
+<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>#97-4-4</p>
+</div>
+</div>
+<p>투자안으로부터 예상되는 미래 현금흐름과 자본비용을 알고 잇다고 가정할 때 각 투자안이 기업 가치 증가에 어느정도 공헌하는지에 따라 투자안 경제성을 평가한다. 미래 현금 흐름을 고려 유무에 따라 전통적인 분석방법과 현금흐름할인법(DCF, discounted cash flow)으로 구분할 수 있다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+0[경제성 평가방법]
+11[전통적 분석방법]
+12[현금흐름할인방법]
+21[회수기간법]
+22[회계적이익률법]
+23["순현가법(NPV)"]
+24["내부수익률법(IRR)"]
+
+0 --- 11 &amp; 12
+11 --- 21 &amp; 22
+12 --- 23 &amp; 24
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="전통적-분석방법" class="level3">
+<h3 class="anchored" data-anchor-id="전통적-분석방법">전통적 분석방법</h3>
+<p>전통적 분석방법에는 회수기간법화 회계적 이익률법이 있다.</p>
+<section id="회수기간법" class="level4">
+<h4 class="anchored" data-anchor-id="회수기간법">회수기간법</h4>
+<p><strong>회수기간법</strong>(payback period method)은 투자원금을 투자안을 통해 미래 현금유입으로부터 회수하는데 소요되는 기간을 산출하여 의사결정하는 방법이다.</p>
+<p><span class="math display">\[
+회수기간 = \frac{투자액}{연간현금유입액}
+\]</span></p>
+<dl>
+<dt>의사결정 기준</dt>
+<dd>
+<ul>
+<li>독립적 투자안: 목표회수기간보다 짧은 투자안을 선택</li>
+<li>상호배타적 투자안: 폭표회수기간보다 짧은 투자안들 중에서 회수기간이 가장 짧은 투자안 선택</li>
+</ul>
+</dd>
+</dl>
+<p>회수기간법은 다음과 같은 장단점을 갖는다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>계산이 간단하고 이해하기 쉬움</p></li>
+<li><p>위험지표(risk indicator)로서 정보를 제공(즉, 회수기간이 짧을수록 안전한 투자안으로 볼 수 있음)</p></li>
+<li><p>간접적으로 유동성상태를 나타내 줌(회수기간이 짧을수록 빠른 자금회수로 기업 유동성이 증가)</p></li>
+<li><p>시설재의 내용수명 적정성을 평가하는 판단 기준(특히, 수요변화나 기술진부화 등의 위험이 높은 경우 유용)</p></li>
+</ul></td>
+<td><ul>
+<li><p>화폐의 시간적 가치를 무시</p></li>
+<li><p>회수기간 이후 현금흐름이 무시</p></li>
+<li><p>회수기간만을 고려하기 때문에 투자안 수익성 자체가 무시</p></li>
+<li><p>목표회수기간을 결정하는데 주관적임</p></li>
+<li><p>R&amp;D 투자안과 같은 장기투자안일수록 부정적인 편의가 심함</p></li>
+<li><p>투자안에 따라서는 회수기간이 존재하지 않을 수 있음</p></li>
+<li><p>목표회수기간 내에 회수되는 투자안이지만 NPV는 음(-)일 수 있음</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>할인회수기간법</strong>(discounted payback period method)은 미래 현금유입의 현재가치로부터 투자원금을 회수하는데 소요되는 기간으로 투자의사결정을 하는 방법이다. 화폐의 시간가치가 감안되어 있으나 회수기간 이후의 현금흐름름이 무시된다는 단점이 여전히 존재한다.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="예제">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+예제
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>단순현금흐름과 연 10% 할인현금흐름이 다음 표와 같다. 각각의 회수기간을 계산하라.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>연수</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>단순현금흐름</td>
+<td>100</td>
+<td>10</td>
+<td>20</td>
+<td>30</td>
+<td>40</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>할인현금흐름</td>
+<td>100</td>
+<td>9</td>
+<td>17</td>
+<td>23</td>
+<td>27</td>
+<td>31</td>
+</tr>
+</tbody>
+</table>
+<p>산식에 따라 다음과 같이 계산한다.</p>
+<p><span class="math display">\[
+단순현금흐름 = \frac{100}{10+20+30+40} = 1
+\]</span></p>
+<p><span class="math display">\[
+할인현금흐름 = \frac{100}{9+17+23+27+(24)} = 1
+\]</span> 할인현금흐름인 경우, 5년차에 31만큼 현금흐름이 예상되나 실 필요한 현금흐름은 24이므로 <span class="math inline">\(24/31 \approx 0.8(개월)\)</span>만에 투자액이 회수 가능한다.</p>
+<p><span class="math inline">\(\therefore\)</span> ㅤ단순현금흐름인 경우 회수기간이 4년, 할인회수기간인 경우 회수기간이 약 4.8년으로 계산된다.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="예제">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+예제
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>목표회수기간이 2년이고 투자안 A, B, C가 다음과 같을 때, 잘못된 투자안을 어느 것인가?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>기간</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>NPV @ 10%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>2000</td>
+<td>500</td>
+<td>500</td>
+<td>5000</td>
+<td>+2624</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2000</td>
+<td>500</td>
+<td>1800</td>
+<td>0</td>
+<td>-58</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>2000</td>
+<td>1800</td>
+<td>500</td>
+<td>0</td>
+<td>+50</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>A: 2년(500 + 500) + (1000/5000) = 2.2년</li>
+<li>B: 1년(500) + (1500/1800) = 1.83년</li>
+<li>C: 1년(1800) + (200/500) = 1.4년</li>
+</ul>
+<p><span class="math inline">\(\therefore\)</span> ㅤ2년 내 회수가 불가한 투자안은 A안이다. 참고로, 하나만 선택할 경우 회수기간이 가장 짧은 투자안은 C안이다.</p>
+</div>
+</div>
+</section>
+<section id="회계적-이익률법" class="level4">
+<h4 class="anchored" data-anchor-id="회계적-이익률법">회계적 이익률법</h4>
+<p><strong>회계적 이익률</strong>(accounting rate of return)법은 장부가치기준으로 연평균투자액에 대한 연평균 회계적 순이익 비율을 구하여 투자결정을 하는 방법이다.</p>
+<p><span class="math display">\[
+회계적 \ 이익률 = \frac{연평균순이익}{연평균투자액(장부가치)}, \ 또는 \  \frac{연평균순이익}{\frac{총투자액}{2}}
+\]</span></p>
+<dl>
+<dt>의사결정 기준</dt>
+<dd>
+<ul>
+<li>독립적 투자안: 목표회계적 이익률(요구수익률)보다 높은 투자안을 선택</li>
+<li>상호배타적인 투자안: 목표회계적 이익률보다 높은 투자안들 중에서 목표 회계적 이익률이 가장 높은 투자안을 선택</li>
+</ul>
+</dd>
+</dl>
+<p>회계적 이익률법은 다음과 같은 장단점을 갖는다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li><p>계산이 간편하고 이해하기가 용이</p></li>
+<li><p>회계자료를 바로 이용할 수 있어 편리</p></li>
+</ul></td>
+<td><ul>
+<li><p>화폐의 시간가치를 무시</p></li>
+<li><p>회계처리방법에 따라 순이익이 달라지므로 객관성이 떨어짐(예, 감가상각방법 차이)</p></li>
+<li><p>목표이익률 결정이 자의적</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="현금흐름할인법" class="level3">
+<h3 class="anchored" data-anchor-id="현금흐름할인법">현금흐름할인법</h3>
+<p>현금흐름할인법에는 순현가(NPV)법과 내부수익률(IRR)법이 있다.</p>
+<section id="순현가법npv-method" class="level4">
+<h4 class="anchored" data-anchor-id="순현가법npv-method">순현가법(NPV method)</h4>
+<p>투자안과 관련된 현금 흐름은 편익에 해당되는 현금유입과 비용(투자액)에 해당되는 현금유출로 구분이 가능하다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+01["현금흐름(CF, cash flow)"]
+11["현금유입(CI, cash inflow"]
+12["현금유출(CO, cash outflow"]
+
+01 --- 11 &amp; 12
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>순현가법은 순현재가치(NPV, net present value)를 근거로 투자안을 결정하는 방법이다. NPV는 투자로 인한 미래 기대현금유입을 적절한 할인율로 할인한 현재가치에서 투자액의 현재가치를 차감한 값을 의미한다.</p>
+<p>계산식은 다음과 같다.</p>
+<p><span class="math display">\[
+NPV = 미래 \ 현금유입액 \ 현가 \ - \ 초기 \ 투자액
+\]</span></p>
+<p><span class="math display">\[
+NPV = \sum^{n}_{t=1}\frac{CI_t}{(1+R)^t} - I_0
+\]</span> 여기서</p>
+<ul>
+<li><span class="math inline">\(CI_t\)</span> : <span class="math inline">\(t\)</span>시점에서 예상되는 현금유입액</li>
+<li><span class="math inline">\(I_0\)</span> : 최초 투자액</li>
+<li><strong>R</strong> : <strong>할인율</strong> 또는 요구수익률(RRR, 자본비용)</li>
+</ul>
+<dl>
+<dt>의사결정 기준</dt>
+<dd>
+<ul>
+<li>독립적 투자안: NPV &gt; 0이면 채택</li>
+<li>상호배타적 투자안: NPV &gt; 0이고 NPV가 가장 큰 투자안을 채택</li>
+</ul>
+</dd>
+</dl>
+<p>NPV법은 다음과 같은 특징을 갖는다.</p>
+<ul>
+<li>화폐의 시간가치가 고려된 방법</li>
+<li>오직 현금 흐름의 기대치와 자본비용만이 고려 (회계수치와는 무관)</li>
+<li>모든 투자안의 NPV 합계는 바로 기업 가치</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="예제">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+예제
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>할인율(자본비용)이 10%일 때, 투자안 A, B에 대한 현금흐름이 다음과 같다. 경제성을 평가하라.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>1500</td>
+<td>150</td>
+<td>300</td>
+<td>450</td>
+<td>600</td>
+<td>1875</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>1500</td>
+<td>300</td>
+<td>450</td>
+<td>750</td>
+<td>750</td>
+<td>900</td>
+</tr>
+</tbody>
+</table>
+<p>산식에 따라 각 투자안에 대한 NPV는 다음과 같다.</p>
+<p><span class="math display">\[
+A = \frac{150}{(1+0.1)^1} + \frac{300}{(1+0.1)^2} + \frac{450}{(1+0.1)^3} + \frac{600}{(1+0.1)^4} + \frac{1875}{(1+0.1)^5} - 1500 \approx 797
+\]</span> <span class="math display">\[
+B = \frac{300}{(1+0.1)^1} + \frac{450}{(1+0.1)^2} + \frac{750}{(1+0.1)^3} + \frac{750}{(1+0.1)^4} + \frac{900}{(1+0.1)^5} - 1500 \approx 779
+\]</span> <span class="math inline">\(\therefore\)</span>ㅤA안과 B안이 상호배타적이라면 A안을 선택하는 것이 기업가치를 더 향상시킬 수 있다.</p>
+</div>
+</div>
+</section>
+<section id="내부수익률법irr-method" class="level4">
+<h4 class="anchored" data-anchor-id="내부수익률법irr-method">내부수익률법(IRR method)</h4>
+<p><strong>내부수익률</strong>(IRR, internal rate of return)법은 기대 현금유입 현과와 현금 유출 현가를 동일하게 하는 할인률인 IRR을 기준으로 투자를 결정하는 방식이다. 즉, 내부수익률(IRR)과 요구수익률(R)를 비교하여 투자를 결정한다.</p>
+<p>계산법은 좌변에 이익현가를 두고 우변에 투자액 현가를 두어 일치시키는 할인율로 화폐의 시간가치가 감안된 예상투자수익률을 계산한다.</p>
+<p><span class="math display">\[
+\sum^{n}_{t=1}\frac{CI_t}{(1+IRR)^t} = \ I_0 \quad (여기서 \ 식을 \ 만족시키는 \ IRR \ 계산)
+\]</span></p>
+<p>IRR은 현가표를 이용하여 시행착오법으로 구하며, 현가표에 정확한 값이 없을 경우 보간법 또는 재무계산기나 Excel을 이용하여 계산할 수도 있다.</p>
+<dl>
+<dt>의사결정 기준</dt>
+<dd>
+<ul>
+<li>독리적인 투자안: IRR &gt; R이면 채택</li>
+<li>상호배타적 투자안: IRR &gt; R이고 IRR이 제일 큰 투자안 채택</li>
+</ul>
+</dd>
+</dl>
+<p>IRR법은 화폐의 시간가치가 감안된 평균투자수익률로 투자안을 평가한다는 특징이 있다.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="예제">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+예제
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>자본비용이 연 10%일 경우, 다음과 같은 현금유입이 발생할 경우 채택 여부를 결정하라.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>현금흐름</td>
+<td>770</td>
+<td>500</td>
+<td>125</td>
+<td>250</td>
+</tr>
+</tbody>
+</table>
+<p>산식에 따라 다음고 같이 IRR을 계산한다.</p>
+<p><span class="math display">\[
+\frac{500}{(1+IRR)^1} + \frac{125}{(1+IRR)^2} + \frac{250}{(1+IRR)^3} = 770
+\]</span></p>
+<p><span class="math display">\[
+IRR \approx 7.88
+\]</span></p>
+<p><span class="math inline">\(\therefore\)</span> ㅤ계산된 내부수수익률(IRR)이 7.88%로 자본비용 10%에 미치지 못하므로 이 투자안은 기각한다.</p>
+</div>
+</div>
 
 
+</section>
 </section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
