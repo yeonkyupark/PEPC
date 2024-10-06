@@ -30,21 +30,21 @@
 flowchart TB
 
 subgraph sg1[ ]
-31["$$\bar{x} - R$$"]
-32["$$\bar{x} - s$$"]
+31["xbar - R"]
+32["xbar - s"]
 end
 
 subgraph sg2[ ]
-33["$$\tilde{x} - R$$"]
-34["$$Me - R$$"]
+33["xtilde - R"]
+34["Me - R"]
 end
 
 subgraph sg3[ ]
-35["$$X-Rs$$"]
+35["X - Rs"]
 end
 
 subgraph sg4[ ]
-37["$$x - \bar{x} - R$$"]
+37["x - xbar - R"]
 end
 
 subgraph sg[<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>**포아송분포**]
@@ -75,8 +75,8 @@ sg2
 end
 22 -- 가능 ---> sg4
 22 -- 불가능 ---> sg3
-21 --"$$\bar{x}$$"--> sg1
-21 --"$$\tilde{x}(Me)$$"--> sg2
+21 --"xbar"--> sg1
+21 --"xtilde(Me)"--> sg2
 
 01{"품질 특성값"} -- 계량값 --> 11{"군 크기"}
 01 -- 계수값 --> 12{"판단"}
@@ -89,7 +89,13 @@ end
 
 ```
 
+계수형(계수치)
+: - 연속량으로 측정되는 품질 특성 값(예, 길이, 무게, 온도, 전류 등)
 
+계량형(계량치)
+: - 유효한 값으로 표시되는 수치 값(예, 1개, 2개 등 이산적으로 셀 수 있는 값)
 
+군 크기
+: - 하나의 통일된 군(집단)을 구성하는 개체 수 
 
 
