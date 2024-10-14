@@ -109,6 +109,12 @@ $x-s$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_3\bar{R}$|$\bar{\bar{x}} - A_
 
 ### 계수수 관리도
 
+관리도 | 측정치 | CL | UCL | LCL
+-|-|-|-|-
+$p$ | $p$ | $\bar{p}$ | $\bar{p}+3\sqrt{\frac{\bar{p}(1-\bar{p}}{n}}$ | $\bar{p}-3\sqrt{\frac{\bar{p}(1-\bar{p}}{n}}$
+$np$ | $np$ | $n\bar{p}$ | $n\bar{p} + 3\sqrt{n\bar{p}(1-\bar{p}}$ | $n\bar{p} - 3\sqrt{n\bar{p}(1-\bar{p}}$
+$u$ | $u$ | $\bar{u}$ | $\bar{u} + 3\sqrt{\frac{\bar{u}}{n}}$ | $\bar{u} - 3\sqrt{\frac{\bar{u}}{n}}$
+$c$ | $c$ | $\bar{c}$ | $\bar{c} + 3\sqrt{\bar{c}}$ | $\bar{c} - 3\sqrt{\bar{u}}$
 
 
 
