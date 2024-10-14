@@ -131,8 +131,8 @@ $c$ | $c$ | $\bar{c}$ | $\bar{c} + 3\sqrt{\bar{c}}$ | $\bar{c} - 3\sqrt{\bar{c}}
 
 영역
 : - A: CL $\pm 1\sigma$
-- B: $1~2, -1~-2\sigma$
-- C: $2~3, -2~-3\sigma$
+- B: $\pm1 \sim \pm2 \sigma$
+- C: $\pm2 \sim \pm3 \sigma$
 
 
 
