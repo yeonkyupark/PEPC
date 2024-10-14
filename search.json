@@ -695,7 +695,7 @@
     "href": "5-4.품질관리.html#관리도-작성",
     "title": "품질관리",
     "section": "관리도 작성",
-    "text": "관리도 작성\n\n계량형 관리도\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n관리도\n측정치\nCL\nUCL\nLCL측정치\nCL\nUCL\nLCL\n\n\n\n\n\n\\(x-R\\)\n\\(\\bar{x}\\)\n\\(\\bar{\\bar{x}}\\)\n\\(\\bar{\\bar{x}} + A_2\\bar{R}\\)\n\\(\\bar{\\bar{x}} - A_2\\bar{R}\\)\n\\(R\\)\n\\(\\bar{R}|\\)D_4{R}\\(|\\)D_3{R}\n\n\n\n\n\\(\\bar{x}-R\\)\n\\(\\bar{x}\\)\n\\(\\bar{\\bar{x}}\\)\n\\(\\bar{\\bar{x}} + A_2\\bar{R}\\)\n\\(\\bar{\\bar{x}} - A_2\\bar{R}\\)\n\\(R\\)\n\\(\\bar{R}|\\)D_4{R}\\(|\\)D_3{R}\n\n\n\n\n\n\n\n계수수 관리도",
+    "text": "관리도 작성\n\n계량형 관리도\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n관리도\n측정치\nCL\nUCL\nLCL\n측정치\nCL\nUCL\nLCL\n\n\n\n\n\\(x-R\\)\n\\(\\bar{x}\\)\n\\(\\bar{\\bar{x}}\\)\n\\(\\bar{\\bar{x}} + A_2\\bar{R}\\)\n\\(\\bar{\\bar{x}} - A_2\\bar{R}\\)\n\\(R\\)\n\\(\\bar{R}\\)\n\\(D_4\\bar{R}\\)\n\\(D_3\\bar{R}\\)\n\n\n\\(\\bar{x}-R\\)\n\\(\\bar{x}\\)\n\\(\\bar{\\bar{x}}\\)\n\\(\\bar{\\bar{x}} + A_2\\bar{R}\\)\n\\(\\bar{\\bar{x}} - A_2\\bar{R}\\)\n\\(R\\)\n\\(\\bar{R}\\)\n\\(D_4\\bar{R}\\)\n\\(D_3\\bar{R}\\)\n\n\n\\(x-s\\)\n\\(\\bar{x}\\)\n\\(\\bar{\\bar{x}}\\)\n\\(\\bar{\\bar{x}} + A_3\\bar{R}\\)\n\\(\\bar{\\bar{x}} - A_3\\bar{R}\\)\n\\(s\\)\n\\(\\bar{s}\\)\n\\(B_4\\bar{s}\\)\n\\(B_3\\bar{s}\\)\n\n\n\n\n\n계수수 관리도",
     "crumbs": [
       "5. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>품질관리</span>"
