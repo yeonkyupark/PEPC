@@ -97,4 +97,19 @@ end
 군 크기
 : - 하나의 통일된 군(집단)을 구성하는 개체 수 
 
+## 관리도 작성
+
+### 계량형 관리도
+
+관리도|측정치|CL|UCL|LCL측정치|CL|UCL|LCL
+-|-|-|-|-|-|-|-|-
+$x-R$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_2\bar{R}$|$\bar{\bar{x}} - A_2\bar{R}$|$R$|$\bar{R}|$D_4\bar{R}$|$D_3\bar{R}
+$\bar{x}-R$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_2\bar{R}$|$\bar{\bar{x}} - A_2\bar{R}$|$R$|$\bar{R}|$D_4\bar{R}$|$D_3\bar{R}
+
+### 계수수 관리도
+
+
+
+
+
 
