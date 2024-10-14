@@ -706,7 +706,7 @@
     "href": "5-4.품질관리.html#관리도-해석",
     "title": "품질관리",
     "section": "관리도 해석",
-    "text": "관리도 해석\n\n\n\n현상\n설명\nISO7870-2:2013\nAT&T\n\n\n\n\n이탈\n관리한계선을 벗어남\n#1\n#1\n\n\n치우침\n7개 연속으로 중심선 한 쪽에서 있음(AT&T 9개)\n#2\n#2\n\n\n경향\n7개 연속으로 증가(또는 감소)(AT&T 6개)\n#2\n#2\n\n\n주기성\n주기성이 나타남(AT&T 14개 연속 지그재그)\n#4\n#4\n\n\n경계1\n3개 중 2개 A 영역\n-\n#5\n\n\n경계2\n5개 중 4개 A,B 영역\n-\n#6\n\n\n과집중\n15개 연속 C 영역\n-\n#7\n\n\n경계3\n8개 연속 B 영역\n-\n#8\n\n\n\n\n영역\n\n\nA: CL \\(\\pm 1\\sigma\\)\nB: \\(1~2, -1~-2\\sigma\\)\nC: \\(2~3, -2~-3\\sigma\\)",
+    "text": "관리도 해석\n\n\n\n현상\n설명\nISO7870-2:2013\nAT&T\n\n\n\n\n이탈\n관리한계선을 벗어남\n#1\n#1\n\n\n치우침\n7개 연속으로 중심선 한 쪽에서 있음(AT&T 9개)\n#2\n#2\n\n\n경향\n7개 연속으로 증가(또는 감소)(AT&T 6개)\n#2\n#2\n\n\n주기성\n주기성이 나타남(AT&T 14개 연속 지그재그)\n#4\n#4\n\n\n경계1\n3개 중 2개 A 영역\n-\n#5\n\n\n경계2\n5개 중 4개 A,B 영역\n-\n#6\n\n\n과집중\n15개 연속 C 영역\n-\n#7\n\n\n경계3\n8개 연속 B 영역\n-\n#8\n\n\n\n\n영역\n\n\nA: CL \\(\\pm 1\\sigma\\)\nB: \\(\\pm1 \\sim \\pm2 \\sigma\\)\nC: \\(\\pm2 \\sim \\pm3 \\sigma\\)",
     "crumbs": [
       "5. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>24</span>  <span class='chapter-title'>품질관리</span>"
