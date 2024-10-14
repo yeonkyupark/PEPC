@@ -437,8 +437,9 @@ window.Quarto = {
   <li><a href="#관리도-작성" id="toc-관리도-작성" class="nav-link" data-scroll-target="#관리도-작성">관리도 작성</a>
   <ul>
   <li><a href="#계량형-관리도" id="toc-계량형-관리도" class="nav-link" data-scroll-target="#계량형-관리도">계량형 관리도</a></li>
-  <li><a href="#계수수-관리도" id="toc-계수수-관리도" class="nav-link" data-scroll-target="#계수수-관리도">계수수 관리도</a></li>
+  <li><a href="#계수형-관리도" id="toc-계수형-관리도" class="nav-link" data-scroll-target="#계수형-관리도">계수형 관리도</a></li>
   </ul></li>
+  <li><a href="#관리도-해석" id="toc-관리도-해석" class="nav-link" data-scroll-target="#관리도-해석">관리도 해석</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-4.품질관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -679,8 +680,8 @@ end
 </tbody>
 </table>
 </section>
-<section id="계수수-관리도" class="level3">
-<h3 class="anchored" data-anchor-id="계수수-관리도">계수수 관리도</h3>
+<section id="계수형-관리도" class="level3">
+<h3 class="anchored" data-anchor-id="계수형-관리도">계수형 관리도</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -703,15 +704,15 @@ end
 <td><span class="math inline">\(p\)</span></td>
 <td><span class="math inline">\(p\)</span></td>
 <td><span class="math inline">\(\bar{p}\)</span></td>
-<td><span class="math inline">\(\bar{p}+3\sqrt{\frac{\bar{p}(1-\bar{p}}{n}}\)</span></td>
-<td><span class="math inline">\(\bar{p}-3\sqrt{\frac{\bar{p}(1-\bar{p}}{n}}\)</span></td>
+<td><span class="math inline">\(\bar{p}+3\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\)</span></td>
+<td><span class="math inline">\(\bar{p}-3\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\)</span></td>
 </tr>
 <tr class="even">
 <td><span class="math inline">\(np\)</span></td>
 <td><span class="math inline">\(np\)</span></td>
 <td><span class="math inline">\(n\bar{p}\)</span></td>
-<td><span class="math inline">\(n\bar{p} + 3\sqrt{n\bar{p}(1-\bar{p}}\)</span></td>
-<td><span class="math inline">\(n\bar{p} - 3\sqrt{n\bar{p}(1-\bar{p}}\)</span></td>
+<td><span class="math inline">\(n\bar{p} + 3\sqrt{n\bar{p}(1-\bar{p})}\)</span></td>
+<td><span class="math inline">\(n\bar{p} - 3\sqrt{n\bar{p}(1-\bar{p})}\)</span></td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(u\)</span></td>
@@ -725,13 +726,76 @@ end
 <td><span class="math inline">\(c\)</span></td>
 <td><span class="math inline">\(\bar{c}\)</span></td>
 <td><span class="math inline">\(\bar{c} + 3\sqrt{\bar{c}}\)</span></td>
-<td><span class="math inline">\(\bar{c} - 3\sqrt{\bar{u}}\)</span></td>
+<td><span class="math inline">\(\bar{c} - 3\sqrt{\bar{c}}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="관리도-해석" class="level2">
+<h2 class="anchored" data-anchor-id="관리도-해석">관리도 해석</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>현상</th>
+<th>설명</th>
+<th>ISO7870-2:2013</th>
+<th>AT&amp;T</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>이탈</td>
+<td>관리한계선을 벗어남</td>
+<td>#1</td>
+<td>#1</td>
+</tr>
+<tr class="even">
+<td>치우침</td>
+<td>7개 연속으로 중심선 한 쪽에서 있음(AT&amp;T 9개)</td>
+<td>#2</td>
+<td>#2</td>
+</tr>
+<tr class="odd">
+<td>경향</td>
+<td>7개 연속으로 증가(또는 감소)(AT&amp;T 6개)</td>
+<td>#2</td>
+<td>#2</td>
+</tr>
+<tr class="even">
+<td>주기성</td>
+<td>주기성이 나타남(AT&amp;T 14개 연속 지그재그)</td>
+<td>#4</td>
+<td>#4</td>
+</tr>
+<tr class="odd">
+<td>경계1</td>
+<td>3개 중 2개 A 영역</td>
+<td>-</td>
+<td>#5</td>
+</tr>
+<tr class="even">
+<td>경계2</td>
+<td>5개 중 4개 A,B 영역</td>
+<td>-</td>
+<td>#6</td>
+</tr>
+<tr class="odd">
+<td>과집중</td>
+<td>15개 연속 C 영역</td>
+<td>-</td>
+<td>#7</td>
+</tr>
+<tr class="even">
+<td>경계3</td>
+<td>8개 연속 B 영역</td>
+<td>-</td>
+<td>#8</td>
 </tr>
 </tbody>
 </table>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
