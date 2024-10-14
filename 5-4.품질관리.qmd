@@ -101,10 +101,11 @@ end
 
 ### 계량형 관리도
 
-관리도|측정치|CL|UCL|LCL측정치|CL|UCL|LCL
+관리도|측정치|CL|UCL|LCL|측정치|CL|UCL|LCL
 -|-|-|-|-|-|-|-|-
-$x-R$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_2\bar{R}$|$\bar{\bar{x}} - A_2\bar{R}$|$R$|$\bar{R}|$D_4\bar{R}$|$D_3\bar{R}
-$\bar{x}-R$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_2\bar{R}$|$\bar{\bar{x}} - A_2\bar{R}$|$R$|$\bar{R}|$D_4\bar{R}$|$D_3\bar{R}
+$x-R$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_2\bar{R}$|$\bar{\bar{x}} - A_2\bar{R}$|$R$|$\bar{R}$|$D_4\bar{R}$|$D_3\bar{R}$
+$\bar{x}-R$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_2\bar{R}$|$\bar{\bar{x}} - A_2\bar{R}$|$R$|$\bar{R}$|$D_4\bar{R}$|$D_3\bar{R}$
+$x-s$|$\bar{x}$|$\bar{\bar{x}}$|$\bar{\bar{x}} + A_3\bar{R}$|$\bar{\bar{x}} - A_3\bar{R}$|$s$|$\bar{s}$|$B_4\bar{s}$|$B_3\bar{s}$
 
 ### 계수수 관리도
 
