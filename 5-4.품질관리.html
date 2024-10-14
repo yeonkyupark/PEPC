@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -405,6 +434,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#관리도-종류" id="toc-관리도-종류" class="nav-link" data-scroll-target="#관리도-종류">관리도 종류</a></li>
   </ul></li>
+  <li><a href="#관리도-작성" id="toc-관리도-작성" class="nav-link" data-scroll-target="#관리도-작성">관리도 작성</a>
+  <ul>
+  <li><a href="#계량형-관리도" id="toc-계량형-관리도" class="nav-link" data-scroll-target="#계량형-관리도">계량형 관리도</a></li>
+  <li><a href="#계수수-관리도" id="toc-계수수-관리도" class="nav-link" data-scroll-target="#계수수-관리도">계수수 관리도</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-4.품질관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -577,6 +611,65 @@ end
 </ul>
 </dd>
 </dl>
+</section>
+</section>
+<section id="관리도-작성" class="level2">
+<h2 class="anchored" data-anchor-id="관리도-작성">관리도 작성</h2>
+<section id="계량형-관리도" class="level3">
+<h3 class="anchored" data-anchor-id="계량형-관리도">계량형 관리도</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>관리도</th>
+<th>측정치</th>
+<th>CL</th>
+<th>UCL</th>
+<th>LCL측정치</th>
+<th>CL</th>
+<th>UCL</th>
+<th>LCL</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(x-R\)</span></td>
+<td><span class="math inline">\(\bar{x}\)</span></td>
+<td><span class="math inline">\(\bar{\bar{x}}\)</span></td>
+<td><span class="math inline">\(\bar{\bar{x}} + A_2\bar{R}\)</span></td>
+<td><span class="math inline">\(\bar{\bar{x}} - A_2\bar{R}\)</span></td>
+<td><span class="math inline">\(R\)</span></td>
+<td><span class="math inline">\(\bar{R}|\)</span>D_4{R}<span class="math inline">\(|\)</span>D_3{R}</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\bar{x}-R\)</span></td>
+<td><span class="math inline">\(\bar{x}\)</span></td>
+<td><span class="math inline">\(\bar{\bar{x}}\)</span></td>
+<td><span class="math inline">\(\bar{\bar{x}} + A_2\bar{R}\)</span></td>
+<td><span class="math inline">\(\bar{\bar{x}} - A_2\bar{R}\)</span></td>
+<td><span class="math inline">\(R\)</span></td>
+<td><span class="math inline">\(\bar{R}|\)</span>D_4{R}<span class="math inline">\(|\)</span>D_3{R}</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="계수수-관리도" class="level3">
+<h3 class="anchored" data-anchor-id="계수수-관리도">계수수 관리도</h3>
 
 
 </section>
