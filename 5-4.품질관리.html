@@ -805,8 +805,17 @@ end
 </ul>
 </dd>
 </dl>
-<div id="exm-97-4-5" class="theorem example">
-<p><span class="theorem-title"><strong>예제 24.1 (<span class="math inline">\(\barX-R\)</span> 관리상한성/중심선/관리하한선 계산)</strong></span> 제품규격이 <span class="math inline">\(750 \pm40mm\)</span>이고, 측정결과 k=16, n=5, <span class="math inline">\(\sum\bar{X}=12,137.8\)</span>, <span class="math inline">\(\sumR=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
+<div class="callout callout-style-default callout-important callout-titled" title="$\bar{X}-R$ 관리상한성/중심선/관리하한선 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="math inline">\(\bar{X}-R\)</span> 관리상한성/중심선/관리하한선 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>제품규격이 <span class="math inline">\(750 \pm40mm\)</span>이고, 측정결과 k=16, n=5, <span class="math inline">\(\sum{\bar{X}}=12,137.8\)</span>, <span class="math inline">\(\sumR=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
 <dl>
 <dt><span class="math inline">\(\bar{X}\)</span> 관리도</dt>
 <dd>
@@ -821,10 +830,11 @@ end
 <ul>
 <li><span class="math inline">\(CL = \frac{\bar{R}}{k} = \frac{628}{16}=39.25\)</span></li>
 <li><span class="math inline">\(UCL = D_4\bar{R} = 2.114 \times 39.25 = 82.97\)</span></li>
-<li><span class="math inline">\(LCL = D_3\bar{R} = (음수이므로 고려하지 않음)\)</span></li>
+<li><span class="math inline">\(LCL = D_3\bar{R}\)</span> = (음수이므로 고려하지 않음)</li>
 </ul>
 </dd>
 </dl>
+</div>
 </div>
 </section>
 <section id="sec-cpk" class="level2">
@@ -850,11 +860,20 @@ C_p = \frac{USL - LSL}{6\sigma}
 <p><span class="math display">\[
 C_pk = (1-k)C_p, \quad k = |\frac{\frac{USL+LSL}{2}-\bar{x}}{\frac{USL-LSL}{2}}|
 \]</span></p>
-<div id="exm-97-4-5" class="theorem example">
-<p><span class="theorem-title"><strong>예제 24.2 (공정지수계산)</strong></span> 제품규격이 <span class="math inline">\(750 \pm40mm\)</span>이고, 측정결과 k=16, n=5, <span class="math inline">\(\sum\bar{X}=12,137.8\)</span>, <span class="math inline">\(\sumR=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
-<p><span class="math inline">\(\bar{\bar{x}}\)</span> = 12137.8/16 = 758.61이고 M = (790+710)/2 = 750이므로 산포가 USL측으로 치우침이 있다. 따라서 <span class="math inline">\(C_pk\)</span>를 계산한다.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="공정지수계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+공정지수계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>제품규격이 <span class="math inline">\(750 \pm40mm\)</span>이고, 측정결과 k=16, n=5, <span class="math inline">\(\sum\bar{X}=12,137.8\)</span>, <span class="math inline">\(\sum{R}=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
+<p><span class="math inline">\(\bar{\bar{x}}\)</span> = 12137.8/16 = 758.61이고 M = (790+710)/2 = 750이므로 산포가 USL측으로 치우침이 있다. 따라서 <span class="math inline">\(C_{pk}\)</span>를 계산한다.</p>
 <p><span class="math display">\[
-C_pk = (1-k)C_p = (1 - 0.21) \times \frac{790-710}{6 \times \frac{\bar{R}}{d_2}} = 0.62
+C_{pk} = (1-k)C_p = (1 - 0.21) \times \frac{790-710}{6 \times \frac{\bar{R}}{d_2}} = 0.62
 \]</span></p>
 <p><span class="math display">\[
 k = \frac{|\bar{\bar{x}}-M|}{\frac{T}{2}} = \frac{758.61 - 750}{\frac{790-710}{2}} = 0.21
@@ -863,10 +882,11 @@ k = \frac{|\bar{\bar{x}}-M|}{\frac{T}{2}} = \frac{758.61 - 750}{\frac{790-710}{2
 <dt>판정</dt>
 <dd>
 <ul>
-<li><span class="math inline">\(C_pk\)</span> = 0.62 &lt; 0.67이므로 4등급으로 판정되며 공정능력이 매우 부족하다고 판단된다.</li>
+<li><span class="math inline">\(C_{pk}\)</span> = 0.62 &lt; 0.67이므로 4등급 판정되며 공정능력이 매우 부족하다고 판단된다.</li>
 </ul>
 </dd>
 </dl>
+</div>
 </div>
 
 
