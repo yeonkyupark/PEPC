@@ -442,6 +442,9 @@ window.Quarto = {
   <li><a href="#sec-forecast-error-index" id="toc-sec-forecast-error-index" class="nav-link" data-scroll-target="#sec-forecast-error-index">오차지표</a></li>
   <li><a href="#추적지표" id="toc-추적지표" class="nav-link" data-scroll-target="#추적지표">추적지표</a></li>
   </ul></li>
+  </ul></li>
+  <li><a href="#crm" id="toc-crm" class="nav-link" data-scroll-target="#crm">CRM</a>
+  <ul>
   <li><a href="#crm-필요성" id="toc-crm-필요성" class="nav-link" data-scroll-target="#crm-필요성">CRM 필요성</a></li>
   <li><a href="#crm-특징" id="toc-crm-특징" class="nav-link" data-scroll-target="#crm-특징">CRM 특징</a></li>
   <li><a href="#crm-전제-조건" id="toc-crm-전제-조건" class="nav-link" data-scroll-target="#crm-전제-조건">CRM 전제 조건</a></li>
@@ -665,14 +668,24 @@ end
 </table>
 <p><a href="#sec-forecast-error-index" class="quarto-xref"><span>오차지표</span></a> 산식에 따라 계산하면 다음과 같다.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>월</th>
-<th>실제수요</th>
-<th>예측치</th>
-<th>누적예측오차</th>
-<th>평균절대오차</th>
-<th>추적지표</th>
+<th>A</th>
+<th>F</th>
+<th>E<br>A-F</th>
+<th>CFE<br><span class="math inline">\(\sum{E}\)</span></th>
+<th>MAD<br></th>
+<th>TS<br></th>
 </tr>
 </thead>
 <tbody>
@@ -680,53 +693,64 @@ end
 <td>1</td>
 <td>95</td>
 <td>100</td>
-<td></td>
-<td></td>
-<td></td>
+<td>-5</td>
+<td>-5</td>
+<td>5</td>
+<td>-1</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>100</td>
 <td>100</td>
-<td></td>
-<td></td>
-<td></td>
+<td>0</td>
+<td>-5</td>
+<td>2.5</td>
+<td>-2</td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>110</td>
 <td>106</td>
-<td></td>
-<td></td>
-<td></td>
+<td>4</td>
+<td>-1</td>
+<td>3</td>
+<td>-0.33</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>102</td>
 <td>106</td>
-<td></td>
-<td></td>
-<td></td>
+<td>-4</td>
+<td>-5</td>
+<td>3.25</td>
+<td>-1.54</td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>98</td>
 <td>100</td>
-<td></td>
-<td></td>
-<td></td>
+<td>-2</td>
+<td>-7</td>
+<td>3</td>
+<td>-2.33</td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>120</td>
 <td>111</td>
-<td></td>
-<td></td>
-<td></td>
+<td>9</td>
+<td>2</td>
+<td>4</td>
+<td>0.5</td>
 </tr>
 </tbody>
 </table>
-<p>::: ## CRM</p>
+<p>:::</p>
+</section>
+</section>
+</section>
+<section id="crm" class="level2">
+<h2 class="anchored" data-anchor-id="crm">CRM</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -741,8 +765,6 @@ end
 </div>
 </div>
 <p><strong>고객관계관리</strong>(Customer Relationship Management)는 마케팅 각 단계에서 축적되는 고객 정보를 체계적으로 이용하여고객과 장기적인 관계를 형성하기 위한 제반 활동, 조직, 업무 프로세스 및 IT 인프라 총체이다.</p>
-</section>
-</section>
 <section id="crm-필요성" class="level3">
 <h3 class="anchored" data-anchor-id="crm-필요성">CRM 필요성</h3>
 <p>CRM 필요성은 다음과 같다.</p>
