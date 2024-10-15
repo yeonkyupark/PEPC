@@ -439,7 +439,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#예측오차" id="toc-예측오차" class="nav-link" data-scroll-target="#예측오차">예측오차</a>
   <ul class="collapse">
-  <li><a href="#sec-forecast-error-index" id="toc-sec-forecast-error-index" class="nav-link" data-scroll-target="#sec-forecast-error-index">오차지표</a></li>
+  <li><a href="#sec-forecast-error-index" id="toc-sec-forecast-error-index" class="nav-link" data-scroll-target="#sec-forecast-error-index">예측오차 지표</a></li>
   <li><a href="#추적지표" id="toc-추적지표" class="nav-link" data-scroll-target="#추적지표">추적지표</a></li>
   </ul></li>
   </ul></li>
@@ -539,11 +539,11 @@ end
 </div>
 <section id="델파이법" class="level4">
 <h4 class="anchored" data-anchor-id="델파이법">델파이법</h4>
-<p><strong>델파이법</strong>(Delphi)은 익명 전문가 집단으로부터 합의를 도출하는 과정이다. 통계적 모형을 개발하기 위한 과거 자료가 없거나 영영자가 경험이 없어서 판단 근거를 찾을 수 없을 때 사용한다. 장기 수요 예측이나 신제품 수요 예측에 사용할 수 있으며, 기술 예측에 있어 매우 효과적이다. 예측에 걸리는 시간이 상당히 길고 응답 내용에 책임감이 적으며, 설문지를 잘못 설계하면 잘못된 결론을 도출할 수도 있다. 새로운 제품 수요 변환점을 예측하는데 상당히 우수하다고 알려져 있다.</p>
+<p><strong>델파이법</strong>(Delphi)은 <font color="blue">익명 전문가 집단으로부터 합의</font>를 도출하는 과정이다. 통계적 모형을 개발하기 위한 과거 자료가 없거나 경영자가 경험이 없어서 판단 근거를 찾을 수 없을 때 사용한다. 장기 수요 예측이나 신제품 수요 예측에 사용할 수 있으며, 기술 예측에 있어 매우 효과적이다. 예측에 걸리는 시간이 상당히 길고 응답 내용에 책임감이 적으며, 전문가 집단에 제공할 설문지를 잘못 설계하면 잘못된 결론을 도출할 수도 있다. 새로운 제품 수요 변환점을 예측하는데 상당히 우수하다고 알려져 있다.</p>
 </section>
 <section id="시계열분해법" class="level4">
 <h4 class="anchored" data-anchor-id="시계열분해법">시계열분해법</h4>
-<p><strong>시계열 분석</strong>이란 시계열(연, 월, 주, 일 등 시간 간격)에 따라 제시된 과거 자료(수요량, 매출액 등)로부터 그 추세나 경향을 파악하여 장래 수요를 예측하는 것이다. 이 경우 과거 자료를 미래 예측 길잡이로 이용하는데 시간이 독립변수가 되며 수요량 또는 매출액은 종속변수가 된다. 따라서 시계열 분석 초점은 과거에 발생한 수요와 관련된 시계열성에 있다고 볼 수 있다. 분석 방법에 따라 단순이동평균법, 가중이동평균법, 지수평활법 등이 있다.</p>
+<p><strong>시계열 분석</strong>이란 시계열(연, 월, 주, 일 등 시간 간격)에 따라 제시된 <font color="blue">과거 자료(수요량, 매출액 등)로부터 그 추세나 경향을 파악</font>하여 장래 수요를 예측하는 것이다. 이 경우 과거 자료를 미래 예측 길잡이로 이용하는데 시간이 독립변수가 되며 수요량 또는 매출액은 종속변수가 된다. 따라서 시계열 분석 초점은 과거에 발생한 수요와 관련된 시계열성에 있다고 볼 수 있다. 분석 방법에 따라 단순이동평균법, 가중이동평균법, 지수평활법 등이 있다.</p>
 </section>
 </section>
 <section id="예측오차" class="level3">
@@ -561,7 +561,7 @@ end
 <li>다른 모든 변동요인들로 설명되고 난 나머지 내재적인 우연변동</li>
 </ul>
 <section id="sec-forecast-error-index" class="level4">
-<h4 class="anchored" data-anchor-id="sec-forecast-error-index">오차지표</h4>
+<h4 class="anchored" data-anchor-id="sec-forecast-error-index">예측오차 지표</h4>
 <dl>
 <dt>예측오차</dt>
 <dd>
@@ -601,7 +601,7 @@ end
 </section>
 <section id="추적지표" class="level4">
 <h4 class="anchored" data-anchor-id="추적지표">추적지표</h4>
-<p><strong>추적지표</strong>(TS)는 예측기법이 실제수요변화를 정확히 예측하고 있는지를 나타내는 지표이다. 예측치가 실측치를 잘 따라가고 있으면 TS는 0에 가까운 값을 갖는다. 예측치가 실제치보다 낮은 경우 TS는 양수값을 갖게 되고 이는 과소예측을 의미한다. 반면 예측치가 실측치보다 높은 경우 TS는 음수값을 가지며 과과예측을 의미한다.</p>
+<p><strong>추적지표</strong>(TS)는 <font color="blue">예측기법이 실제수요변화를 정확히 예측하고 있는지</font>를 나타내는 지표이다. 예측치가 실측치를 잘 따라가고 있으면 TS는 0에 가까운 값을 갖는다. 예측치가 실제치보다 낮은 경우 TS는 양수값을 갖게 되고 이는 과소예측을 의미한다. 반면 예측치가 실측치보다 높은 경우 TS는 음수값을 가지며 과다예측을 의미한다.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="예제: 97-4-6">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -675,7 +675,7 @@ end
 </tr>
 </tbody>
 </table>
-<p><a href="#sec-forecast-error-index" class="quarto-xref"><span>오차지표</span></a> 산식에 따라 계산하면 다음과 같다.</p>
+<p><a href="#sec-forecast-error-index" class="quarto-xref"><span>예측오차 지표</span></a> 산식에 따라 계산하면 다음과 같다.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 5%">
@@ -774,7 +774,7 @@ end
 <p>97-1-8</p>
 </div>
 </div>
-<p><strong>고객관계관리</strong>(Customer Relationship Management)는 마케팅 각 단계에서 축적되는 고객 정보를 체계적으로 이용하여고객과 장기적인 관계를 형성하기 위한 제반 활동, 조직, 업무 프로세스 및 IT 인프라 총체이다.</p>
+<p><strong>고객관계관리</strong>(Customer Relationship Management)는 마케팅 각 단계에서 축적되는 고객 정보를 체계적으로 이용하여 <font color="blue">고객과 장기적인 관계를 형성하기 위한</font> 제반 활동, 조직, 업무 프로세스 및 IT 인프라 총체이다.</p>
 <section id="crm-필요성" class="level3">
 <h3 class="anchored" data-anchor-id="crm-필요성">CRM 필요성</h3>
 <p>CRM 필요성은 다음과 같다.</p>
@@ -804,7 +804,7 @@ end
 </ul>
 </dd>
 </dl>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="e-CRM">
+<div id="note-ecrm" class="callout callout-style-default callout-note no-icon callout-titled" title="e-CRM">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -848,13 +848,13 @@ e-CRM
 <dt>고객 관점(Channel) 통합</dt>
 <dd>
 <ul>
-<li>Call Center, 직접 방문 응대, 영업사원, 대리점, e-CRM 등 다양한 고객 접점에서 동일한 고객에 대해 동일한 메시지를 전달할 수 있어야함</li>
+<li>Call Center, 직접 방문 응대, 영업사원, 대리점, e-CRM(<span class="citation" data-cites="note-ecrm">(<a href="#ref-note-ecrm" role="doc-biblioref"><strong>note-ecrm?</strong></a>)</span>) 등 다양한 고객 접점에서 동일한 고객에 대해 동일한 메시지를 전달할 수 있어야 함</li>
 </ul>
 </dd>
 <dt>내부 고객 관리</dt>
 <dd>
 <ul>
-<li>내부 구성원이 고객과의 접범에 위치해 있으므로 구성원들 만족 여부가 고객 충성도에 많은 영향을 미침</li>
+<li>내부 구성원이 고객과의 접점에 위치해 있으므로 구성원들 만족 여부가 고객 충성도에 많은 영향을 미침</li>
 </ul>
 </dd>
 <dt>외부 고객 관리</dt>
@@ -878,7 +878,7 @@ e-CRM
 </colgroup>
 <thead>
 <tr class="header">
-<th>업무영역</th>
+<th>업무 영역</th>
 <th>CRM 기대 효과</th>
 </tr>
 </thead>
@@ -886,7 +886,7 @@ e-CRM
 <tr class="odd">
 <td>마케팅 기회 분석</td>
 <td><ul>
-<li><p>수익및 고객 평생 가치(LTV) 증대</p></li>
+<li><p>수익 및 고객 평생 가치(LTV) 증대</p></li>
 <li><p>신규 고객 유치 및 기존 고객 활성화</p></li>
 <li><p>고객 Life Cycle상 결정적 시점에 효과적 마케팅 활동</p></li>
 <li><p>평생 고객으로 가치를 창출할 수 있게 함</p></li>
