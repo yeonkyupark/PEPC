@@ -440,6 +440,7 @@ window.Quarto = {
   <li><a href="#계수형-관리도" id="toc-계수형-관리도" class="nav-link" data-scroll-target="#계수형-관리도">계수형 관리도</a></li>
   </ul></li>
   <li><a href="#관리도-해석" id="toc-관리도-해석" class="nav-link" data-scroll-target="#관리도-해석">관리도 해석</a></li>
+  <li><a href="#sec-cpk" id="toc-sec-cpk" class="nav-link" data-scroll-target="#sec-cpk">공정능력지수</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-4.품질관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -805,7 +806,7 @@ end
 </dd>
 </dl>
 <div id="exm-97-4-5" class="theorem example">
-<p><span class="theorem-title"><strong>예제 24.1 (<span class="math inline">\(\barX-R\)</span> 관리상한성/중심선/관리하한선 계산)</strong></span> 측정결과 k=16, n=5, <span class="math inline">\(\sum\bar{X}=12,137.8\)</span>, <span class="math inline">\(\sumR=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
+<p><span class="theorem-title"><strong>예제 24.1 (<span class="math inline">\(\barX-R\)</span> 관리상한성/중심선/관리하한선 계산)</strong></span> 제품규격이 <span class="math inline">\(750 \pm40mm\)</span>이고, 측정결과 k=16, n=5, <span class="math inline">\(\sum\bar{X}=12,137.8\)</span>, <span class="math inline">\(\sumR=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
 <dl>
 <dt><span class="math inline">\(\bar{X}\)</span> 관리도</dt>
 <dd>
@@ -821,6 +822,48 @@ end
 <li><span class="math inline">\(CL = \frac{\bar{R}}{k} = \frac{628}{16}=39.25\)</span></li>
 <li><span class="math inline">\(UCL = D_4\bar{R} = 2.114 \times 39.25 = 82.97\)</span></li>
 <li><span class="math inline">\(LCL = D_3\bar{R} = (음수이므로 고려하지 않음)\)</span></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+<section id="sec-cpk" class="level2">
+<h2 class="anchored" data-anchor-id="sec-cpk">공정능력지수</h2>
+<p><strong>공정능력지수</strong>(Process Capability Index)는 산포와 규격 간 상대적 크기를 나타내는 지표이다.</p>
+<dl>
+<dt>산포</dt>
+<dd>
+<ul>
+<li>공정 결과물 분포, <span class="math inline">\(\mu \pm 3\sigma\)</span>, 좁을수록 좋음</li>
+</ul>
+</dd>
+<dt>규격</dt>
+<dd>
+<ul>
+<li>제품 특성 범위, LSL ~ USL로 고정됨</li>
+</ul>
+</dd>
+</dl>
+<p><span class="math display">\[
+C_p = \frac{USL - LSL}{6\sigma}
+\]</span></p>
+<p><span class="math display">\[
+C_pk = (1-k)C_p, \quad k = |\frac{\frac{USL+LSL}{2}-\bar{x}}{\frac{USL-LSL}{2}}|
+\]</span></p>
+<div id="exm-97-4-5" class="theorem example">
+<p><span class="theorem-title"><strong>예제 24.2 (공정지수계산)</strong></span> 제품규격이 <span class="math inline">\(750 \pm40mm\)</span>이고, 측정결과 k=16, n=5, <span class="math inline">\(\sum\bar{X}=12,137.8\)</span>, <span class="math inline">\(\sumR=628\)</span> n=5일 때, <span class="math inline">\(A\)</span> = 1.342, <span class="math inline">\(A_2\)</span>=0.577, <span class="math inline">\(D_2\)</span>=4.918, <span class="math inline">\(D_4\)</span>=2.114, <span class="math inline">\(d_2\)</span>=2.326</p>
+<p><span class="math inline">\(\bar{\bar{x}}\)</span> = 12137.8/16 = 758.61이고 M = (790+710)/2 = 750이므로 산포가 USL측으로 치우침이 있다. 따라서 <span class="math inline">\(C_pk\)</span>를 계산한다.</p>
+<p><span class="math display">\[
+C_pk = (1-k)C_p = (1 - 0.21) \times \frac{790-710}{6 \times \frac{\bar{R}}{d_2}} = 0.62
+\]</span></p>
+<p><span class="math display">\[
+k = \frac{|\bar{\bar{x}}-M|}{\frac{T}{2}} = \frac{758.61 - 750}{\frac{790-710}{2}} = 0.21
+\]</span></p>
+<dl>
+<dt>판정</dt>
+<dd>
+<ul>
+<li><span class="math inline">\(C_pk\)</span> = 0.62 &lt; 0.67이므로 4등급으로 판정되며 공정능력이 매우 부족하다고 판단된다.</li>
 </ul>
 </dd>
 </dl>
