@@ -1,7 +1,7 @@
 ## 용어 {#sec-terms .unnumbered}
 
 :::{.callout-tip title="기출"}
-#97-1-9
+97-1-9
 :::
 
 ::: {#def-투입시간}
@@ -57,7 +57,7 @@
 :::
 
 :::{.callout-tip title="기출"}
-#97-1-13
+97-1-13
 :::
 
 ::: {#def-부가원가}
@@ -69,3 +69,16 @@
 ## 중성비용
 - 손익계산상으로 비용이나 원가로 취급하지 않는 항목으로 기부금, 유가증권평가손실 등과 같이 생산에 직접 관계가 없는 비용
 :::
+
+:::{.callout-tip title="기출"}
+100-1-1
+:::
+
+::: {#def-RoHS}
+## RoHS
+- **RoHS**(Restriction of the use Hazardous Substance in EEE)는 전기 및 전자제품을 제조함에 있어 특정 유해물질 사용을 제한하는 규정으로, 유럽연합에서 발효한 환경규제이다. 규정한 유해물질로는 납(Pb), 카드뮬(Cd), 수은(Hg), 6가크롬($Cr^{6+}$), PBBs(Ploybrominated Phenyls), PBDEs(Ploybrominated Diphenyl Ethers)이다. 유럽 내 생산 및 수입되는 모든 제품에 대해 WEEE(EU 전자제품 페기물 지침)로 인한 인체와 환견에 대한 위험을 감소시키기 위한 규정으로 2006년 7월부터 시행하고 있다.
+:::
+
+
+
+
