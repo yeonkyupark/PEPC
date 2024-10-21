@@ -79,6 +79,20 @@
 - **RoHS**(Restriction of the use Hazardous Substance in EEE)는 전기 및 전자제품을 제조함에 있어 특정 유해물질 사용을 제한하는 규정으로, 유럽연합에서 발효한 환경규제이다. 규정한 유해물질로는 납(Pb), 카드뮬(Cd), 수은(Hg), 6가크롬($Cr^{6+}$), PBBs(Ploybrominated Phenyls), PBDEs(Ploybrominated Diphenyl Ethers)이다. 유럽 내 생산 및 수입되는 모든 제품에 대해 WEEE(EU 전자제품 페기물 지침)로 인한 인체와 환견에 대한 위험을 감소시키기 위한 규정으로 2006년 7월부터 시행하고 있다.
 :::
 
+:::{.callout-tip title="기출"}
+100-1-6
+:::
+
+::: {#def-DEA}
+## DEA
+- **DEA**(Data Envelopment Analysis)는 1978년 Charnes, Cooper, Rhodes에 의해 처음으로 제안되었으며, OR/M(Operations Research/Management, 운영과학/경영)에서 가장 널리 활용되는 방법 중 하나이다. 가장 큰 DEA 특징은 '**과제 중심적 접근**'과 '**중요한 과제에 추점**'을 맞추어 DMU(Decision Making Units, 의사결정 단위) 성과를 평가한다는 점이다.
+
+주요 특징 및 장점
+: - 투입과 산출에 대한 관계설정이 필요 없다.
+- 효율적 자원 배분이 가능하다.
+- 비효율적인 개선 가능성을 도출할 수 있다.
+- 벤치마킹 대상을 도출할 수 있다.
+:::
 
 
 
