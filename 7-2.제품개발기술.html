@@ -411,6 +411,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#동시공학-효과" id="toc-동시공학-효과" class="nav-link" data-scroll-target="#동시공학-효과">동시공학 효과</a></li>
   </ul></li>
   <li><a href="#모듈러-설계" id="toc-모듈러-설계" class="nav-link" data-scroll-target="#모듈러-설계">모듈러 설계</a></li>
+  <li><a href="#신뢰도-설계기법" id="toc-신뢰도-설계기법" class="nav-link" data-scroll-target="#신뢰도-설계기법">신뢰도 설계기법</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2.제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
@@ -638,6 +639,72 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-info" data-icon="false" title="모듈러 생상(Modular Production)">
 <p>표준 부품 조합으로 조립품 다양화를 경제적으로 도모하는 <strong>생산방식</strong>이다. 즉 다양하게 결합할 수 있는 부분품을 설계, 제조하여 최소 종류 부분품으로 최다 종류 제품을 생산하는 방식이다. 전통적인 대량생산에서는 부분품 호환성(interchangeability)을 주요 요건으로하여 단일제품을 대량생산하였지만, 모듈러 생산에서는 부분품 호환성을 다른 품종에까지 확장시킨다는 점에서 차이가 있다. 모듈러 생산 본질은 초대한 결할될 수 있는 부품을 설계, 개발, 생삼함이다. 제품 가짓수는 수요 다양성과 규모의 경제, 그리고 한계이익 등을 고려하여 적절한 제품 구성(Adequate Product Mix)을 도모할 수 있는 범위 내에서 결정한다.</p>
 </div>
+</section>
+<section id="신뢰도-설계기법" class="level3">
+<h3 class="anchored" data-anchor-id="신뢰도-설계기법">신뢰도 설계기법</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>100-1-9</p>
+</div>
+</div>
+<p><strong>신뢰도</strong>(Reliability)는 부품, 장치, 기기 및 시스템이 주어진 사용 조건에서 주어진 일정 기간 동안 의도한 기능을 수행하는 확률을 뜻한다.</p>
+<dl>
+<dt>신뢰도 구성요소</dt>
+<dd>
+<ul>
+<li>시스템이 운영되는 조건과 관련</li>
+<li>수명과 관련</li>
+<li>수치로 나타낸 확률값</li>
+<li>시스템이 의도했던 성능과 조건</li>
+</ul>
+</dd>
+</dl>
+<p>신뢰도 설계기법은 다음과 같다.</p>
+<dl>
+<dt>신뢰도 분배</dt>
+<dd>
+<ul>
+<li>제품 신뢰도 목표치를 제품을 구성하는 부품, 유닛별로 분배하는 것</li>
+</ul>
+</dd>
+<dt>Fool Proof(실수방지)</dt>
+<dd>
+<ul>
+<li>사용자가 그릇된 조작을 하더라도 고장이나 사고가가없도록 설계하는 것</li>
+<li>컴퓨터 오류 시 화면에 에러 메시지를 출력</li>
+</ul>
+</dd>
+<dt>Fail Safe(고장 안전)</dt>
+<dd>
+<ul>
+<li>기기가 고장났을 때 이로 인한 사고를 막을 수 있도록 안전하게 설계하는 것</li>
+<li>전자제품에 붙어 있는 퓨즈로 과전류에 의한 고장 및 화제 방지</li>
+</ul>
+</dd>
+<dt>Safe Life(안전 수명)</dt>
+<dd>
+<ul>
+<li>절대 고장을 일으켜서는 안되는 완벽한 안전구조로 설계하는 방식, 특히 보전이 어렵고 높은 신뢰도를 유지하는 않으면 안되는 시스템에 적용</li>
+<li>원자로, 항공기 엔지 등 고도 안전을 도모</li>
+</ul>
+</dd>
+<dt>용장성(Redundancy)</dt>
+<dd>
+<ul>
+<li>많은 부품으로 구성되어 있는 기기 장치는 부품 하나가 고장나더라도 전체 기능이 정지될 수 있어 여분 회로나 구성품으로전체 기능 정지를 방지하도록 설계</li>
+<li>대기용장방식: 동종 기기를 복수로 설치하여 작동 중 1대가 고장 나면 곧 예비기기가 작동</li>
+<li>병렬용장방식: 여러 대를 동시에 가동시켜서그중 1대가 고장 나더라도 전체에 지장이 없도록 하는 것</li>
+</ul>
+</dd>
+</dl>
 
 
 </section>
