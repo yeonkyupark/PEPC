@@ -1,5 +1,16 @@
 # 생산성관리 {#sec-productability-management}
 
+:::{.callout-tip title="기출"}
+100-1-3
+:::
+
+제조기업에서 중요시 되고 있는 KPI는 다음과 같다.
+
+- 제조리드타임, Takt(Tact) Time, 재고 회전율, 납기 준수율
+- 인적능률, 설비종합효율
+- 공정 부적합품률, 완제품 부적합품률
+- 이외 생산성 및 품질 관련 지표
+
 ## 생산성 지표
 
 :::{.callout-tip title="기출"}
