@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -392,11 +421,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#워크샘플링" id="toc-워크샘플링" class="nav-link active" data-scroll-target="#워크샘플링">워크샘플링</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-1.작업방법 및 시간 연구.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5-1.작업방법 및 시간 연구.html">5. 작업 및 생산성과 측정과 개선</a></li><li class="breadcrumb-item"><a href="./5-1.작업방법 및 시간 연구.html"><span class="chapter-title">작업방법 및 시간 연구</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -405,7 +440,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -417,8 +452,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-simple callout-none no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>100-1-5</p>
+</div>
+</div>
+<section id="워크샘플링" class="level2">
+<h2 class="anchored" data-anchor-id="워크샘플링">워크샘플링</h2>
+<p><strong>워크샘플링</strong>(work sampling)법은 확률을 기반으로 최소한 샘픙을 순간적으로 관측하여, 관측 대상으로 하는 현장 전체 모습을 실용상 만족할만한 신뢰구간과 정확도를 가지고추정하는 작업측정 기법이다.</p>
+<dl>
+<dt>장점</dt>
+<dd>
+<ul>
+<li>내용이나 실시 절차가 복잡하지 않기 때문에 관측 담당자에 대한 고도 훈련이 필요치 않다.</li>
+<li>비용면에서도 시간 연구법에 비해 저렴하다.</li>
+<li>작업자에게 주는 심리적 압박을 배제할 수 있다.</li>
+</ul>
+</dd>
+<dt>단점</dt>
+<dd>
+<ul>
+<li>작업을 요소별로 분할해서 관측할 수 없다.</li>
+<li>관측결과 오차가 시간연구법보다 크다.</li>
+</ul>
+</dd>
+<dt>워크샘플 표준시간 선정 절차</dt>
+<dd>
+<ol type="1">
+<li>관측 대상과 목적을 정한다.</li>
+<li>특정 활동 발생률(유휴율 내지 가동률)을 추정한다.</li>
+<li>관측에서 요구되는 신뢰수준과 정확도(오차율)를 정한다.</li>
+<li>관측이 행해질 관측시간을 랜덤으로 정한다.</li>
+<li>조사기간 중 두세 차례에 걸쳐 필요한 관측 수를 재계산하여 조정한다.</li>
+<li>관측겨로가에 의해서 정상시간과 표준시간을 산성한다.</li>
+</ol>
+</dd>
+<dt>워크샘플링 표준시간 계산 방법</dt>
+<dd>
+<ol type="1">
+<li>관측수(N) 결정, <span class="math inline">\(N = (\frac{K}{S})^2\frac{1-p}{p}\)</span>
+<ul>
+<li>N: 랜덤 관측 횟수(샘플 크기)</li>
+<li>K: 신뢰수준에 따라 정해지는 표준편차 배수</li>
+<li>S: p에 대한 상대적 정도(허용오차)</li>
+<li>p: 구하는 비율(발생률)</li>
+</ul></li>
+<li>표준시간 산정
+<ul>
+<li><span class="math inline">\(정상시간(단위당)=\frac{총관측시간x발생률x수행도평가(레이팅)}{생산량}\)</span></li>
+<li>여기서 여유시간을 가산하여 단위당 표준시간 산정
+<ul>
+<li>표준시간 = 정상시간(1+여유률)</li>
+<li>표준시간 = 정상시간 x <span class="math inline">\((frac{1}{1-여유율})\)</span></li>
+</ul></li>
+</ul></li>
+</ol>
+</dd>
+<dt>워크샘플링 적용 대상</dt>
+<dd>
+<ul>
+<li>시간연구법으로 적용하기 어려운 비반복적인 업무에 효과적</li>
+<li>기계수리, 세탁, 토목공사 등과 같은 업무에 활용</li>
+</ul>
+</dd>
+</dl>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -841,7 +949,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="./4-5.공장자동화 기술.html" class="pagination-link" aria-label="공장자동화 기술">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">공장자동화 기술</span></span>
@@ -858,4 +966,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-1.작업방법 및 시간 연구.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-1.작업방법 및 시간 연구.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
