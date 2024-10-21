@@ -65,7 +65,7 @@ CE는 제품 개발과 그 제품을 생산하는 공정, 판매와 유통, 구�
 
 :::{.callout-tip, title="기출"}
 97-1-4
-:::
+:::  
 
 ![https://en.wikipedia.org/wiki/Modular_design](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Framework_Laptop_-_the_Design_Museum.jpg/330px-Framework_Laptop_-_the_Design_Museum.jpg)  
 
