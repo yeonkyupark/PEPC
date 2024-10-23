@@ -679,11 +679,11 @@
     ]
   },
   {
-    "objectID": "5-2.프로세스 분석과 개선.html#카노kano-모델",
-    "href": "5-2.프로세스 분석과 개선.html#카노kano-모델",
+    "objectID": "5-2.프로세스 분석과 개선.html#sec-kano-model",
+    "href": "5-2.프로세스 분석과 개선.html#sec-kano-model",
     "title": "프로세스 분석과 개선",
     "section": "카노(Kano) 모델",
-    "text": "카노(Kano) 모델\n\n\n\n\n\n\n기출\n\n\n\n100-2-3",
+    "text": "카노(Kano) 모델\n\n\n\n\n\n\n기출\n\n\n\n100-2-3\n\n\n카노 모델은 카노 노리아키(狩野紀昭)에 의해 1980년대에 연구된 제품 개발을 논하는 상품기획이론이다. 어떤 상품을 기획할 때 각각의 구성요소에 대해 소비자가 기대하는 것의 충족, 불충족이라는 객관적 관계와 소비자의 만족, 불만족이라는 주관적 관계 사이의 상호관계를 통해 5가지 품질요소로 구분하여 설명한다. 카노 노리아키는 일본 도쿄 리카대학의 교수이다.1\n\n\n\n출처:https://ko.wikipedia.org/wiki/카노_모델\n\n\n\n매력적 품질요소(Attractive Quality Element): 충족되는 경우 만족을 주지만 충족이 안 되더라도 크게 불만없는 품질요소를 말한다. 고객이 미처 기대하지 못했던 것 혹은 기대를 초과하는 만족을 주는 품질요소가 될 수 있다. 이는 단순한 만족에서 고객감동(Customer Delight)의 수준을 달성할 수 있게 한다. 한편 이러한 요소의 존재는 고객들은 모르거나 기대하지 않았기 때문에, 충족이 되지 않더라도 불만을 느끼지 않는다.\n일차원적 품질요소(One-Dimensional Quality Element): 충족이 되면 만족하고 충족되지 않으면 고객들의 불만을 일으키는 품질요소이다. 가장 일반적인 품질인식요소이다.\n당위적 품질요소(Must-Be Quality Element): 반드시 있어야만 만족하는 품질요소이다.\n무차별 품질요소(Indifferent Quality Element): 만족하는 것과 만족하지 못하는 것 사이에 품질의 차이가 느껴지지 않는 요소이다.\n역 품질요소(Reverse Quality Element): 충족되면 불만족을 일으키고 충족되지 못하면 만족되는 거꾸된 요소이다.",
     "crumbs": [
       "5. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
@@ -701,11 +701,11 @@
     ]
   },
   {
-    "objectID": "5-2.프로세스 분석과 개선.html#qfd",
-    "href": "5-2.프로세스 분석과 개선.html#qfd",
+    "objectID": "5-2.프로세스 분석과 개선.html#품질기능전개qfd",
+    "href": "5-2.프로세스 분석과 개선.html#품질기능전개qfd",
     "title": "프로세스 분석과 개선",
-    "section": "QFD",
-    "text": "QFD",
+    "section": "품질기능전개(QFD)",
+    "text": "품질기능전개(QFD)\n품질기능전개(QFD,Quality function deployment)는 고객의 목소리(VOC)를 제품 엔지니어링 특성으로 변환하기 위해 1966년 일본에서 개발된 방법이다.\n품질의 집(HOQ, House of quality)은 QFD를 구현하기 위한 기본 도구이다.\n?sec-kano-model을 이용한 분석을 통해 QFD 매트릭스를 만들 수 있다.\n\n\n\nSource: https://en.wikipedia.org/wiki/Quality_function_deployment",
     "crumbs": [
       "5. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
@@ -717,6 +717,28 @@
     "title": "프로세스 분석과 개선",
     "section": "DFSS(Design For Six Sigma)",
     "text": "DFSS(Design For Six Sigma)",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#참고자료",
+    "href": "5-2.프로세스 분석과 개선.html#참고자료",
+    "title": "프로세스 분석과 개선",
+    "section": "참고자료",
+    "text": "참고자료",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#footnotes",
+    "href": "5-2.프로세스 분석과 개선.html#footnotes",
+    "title": "프로세스 분석과 개선",
+    "section": "",
+    "text": "https://ko.wikipedia.org/wiki/카노_모델↩︎",
     "crumbs": [
       "5. 작업 및 생산성과 측정과 개선",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
