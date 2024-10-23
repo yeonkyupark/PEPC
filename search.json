@@ -657,6 +657,72 @@
     ]
   },
   {
+    "objectID": "5-2.프로세스 분석과 개선.html",
+    "href": "5-2.프로세스 분석과 개선.html",
+    "title": "프로세스 분석과 개선",
+    "section": "",
+    "text": "TRIZ",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#triz",
+    "href": "5-2.프로세스 분석과 개선.html#triz",
+    "title": "프로세스 분석과 개선",
+    "section": "",
+    "text": "기출\n\n\n\n100-2-2",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#카노kano-모델",
+    "href": "5-2.프로세스 분석과 개선.html#카노kano-모델",
+    "title": "프로세스 분석과 개선",
+    "section": "카노(Kano) 모델",
+    "text": "카노(Kano) 모델\n\n\n\n\n\n\n기출\n\n\n\n100-2-3",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#가치흐름지도vsm",
+    "href": "5-2.프로세스 분석과 개선.html#가치흐름지도vsm",
+    "title": "프로세스 분석과 개선",
+    "section": "가치흐름지도(VSM)",
+    "text": "가치흐름지도(VSM)",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#qfd",
+    "href": "5-2.프로세스 분석과 개선.html#qfd",
+    "title": "프로세스 분석과 개선",
+    "section": "QFD",
+    "text": "QFD",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
+    "objectID": "5-2.프로세스 분석과 개선.html#dfssdesign-for-six-sigma",
+    "href": "5-2.프로세스 분석과 개선.html#dfssdesign-for-six-sigma",
+    "title": "프로세스 분석과 개선",
+    "section": "DFSS(Design For Six Sigma)",
+    "text": "DFSS(Design For Six Sigma)",
+    "crumbs": [
+      "5. 작업 및 생산성과 측정과 개선",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>프로세스 분석과 개선</span>"
+    ]
+  },
+  {
     "objectID": "5-3.생산성관리.html",
     "href": "5-3.생산성관리.html",
     "title": "생산성관리",
