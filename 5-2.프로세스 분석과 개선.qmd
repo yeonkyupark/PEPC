@@ -1,1 +1,23 @@
 # 프로세스 분석과 개선 {#sec-process-analysis-improvement}
+
+## TRIZ
+
+:::{.callout-tip icon=false title="기출"}
+100-2-2
+:::
+
+## 카노(Kano) 모델
+
+:::{.callout-tip icon=false title="기출"}
+100-2-3
+:::
+
+
+
+## 가치흐름지도(VSM)
+
+## QFD
+
+## DFSS(Design For Six Sigma)
+
+
