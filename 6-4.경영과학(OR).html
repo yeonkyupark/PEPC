@@ -441,6 +441,11 @@ window.Quarto = {
   <li><a href="#수학적-모델" id="toc-수학적-모델" class="nav-link" data-scroll-target="#수학적-모델">수학적 모델</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#의사결정-도구" id="toc-의사결정-도구" class="nav-link" data-scroll-target="#의사결정-도구">의사결정 도구</a></li>
+  <li><a href="#불확실성-하에서의-의사결정" id="toc-불확실성-하에서의-의사결정" class="nav-link" data-scroll-target="#불확실성-하에서의-의사결정">불확실성 하에서의 의사결정</a>
+  <ul>
+  <li><a href="#의사결정론" id="toc-의사결정론" class="nav-link" data-scroll-target="#의사결정론">의사결정론</a></li>
+  </ul></li>
   <li><a href="#선형계획법" id="toc-선형계획법" class="nav-link" data-scroll-target="#선형계획법">선형계획법</a>
   <ul>
   <li><a href="#최대화-모델-예제" id="toc-최대화-모델-예제" class="nav-link" data-scroll-target="#최대화-모델-예제">최대화 모델 예제</a>
@@ -882,21 +887,295 @@ end
 </section>
 </section>
 </section>
-<section id="선형계획법" class="level2">
-<h2 class="anchored" data-anchor-id="선형계획법">선형계획법</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="의사결정-도구" class="level2">
+<h2 class="anchored" data-anchor-id="의사결정-도구">의사결정 도구</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+0[의사결정 도구]
+subgraph s1[불확실성 하 미래예측]
+direction LR
+11[의사결정론]
+12[의사결정나무]
+13[몬테카를로 시뮬레이션]
+14[마코프 체인 분석]
+end
+subgraph s2[여러 가지 대안 평가]
+direction LR
+21[손인분기점 평가]
+22[선호도 행렬]
+23[선형/비선형 계획법]
+24[AHP/ANP]
+end
+subgraph s3[상호 영향]
+direction LR
+31[게임이론]
+end
+
+0 --&gt; s1 &amp; s2 &amp; s3
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="불확실성-하에서의-의사결정" class="level2">
+<h2 class="anchored" data-anchor-id="불확실성-하에서의-의사결정">불확실성 하에서의 의사결정</h2>
+<p>어떠한 사건에 대해 과거 경험이 전무하여 발생 가능확률이 알려지지 않아거나 미래에 대한 확실한 근거를 가지고 예측하기 매우 어려운 경우에 이루어지는 의사결정으로 경영활동 상 대부분이 이 경우에 해당된다.</p>
+<section id="의사결정론" class="level3">
+<h3 class="anchored" data-anchor-id="의사결정론">의사결정론</h3>
+<div class="callout callout-style-simple callout-none no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>#97-2-5</p>
+<p>100-2-1</p>
 </div>
 </div>
+<p>의사결정론에 있어 <strong>의사결정</strong>이란 무엇을 어떻게 결정해야 하느냐에 대한 물음에 답하는 것으로 의사결정자가 선택할 행위가 복수개여야 한다. 참고로, 관리 불가능 변수란 의사 결정권자 결정과는 관계없이 의사결정 결과에 영향을 주는 요소를 의미한다.</p>
+<p>불확실한 상황 하에서의 의사결정은 선택 가능한 대안, 발생 가능성, 여러 상황에 있어 각 대안들 간 수익성 그리고 알려지지 않은 여러 상황들의 발생 확률 속에서 의사결정자 성향이나 의사결정 상황에 따라 기준이 마련된다.</p>
+<dl>
+<dt>최대최소(Maximin, Wald) 기준</dt>
+<dd>
+<ul>
+<li>비관적인 관점에서 미래 수요가 낮은 것을 선택</li>
+<li>미래에 대해 비관적인 예측에 준해 의사결정한 최악의 대안 중 가장 좋은 결과를 보상해 주는 대안을 선택</li>
+<li>안전제일 주장으로 각 상황별로 손실이 가장 작은 경우를 의사결정 기준으로 삼음</li>
+</ul>
+</dd>
+<dt>최대최대(Maximax) 기준</dt>
+<dd>
+<ul>
+<li>최대로 낙관적인 수익을 예상하며 미래 수요가 높은 것을 선택</li>
+<li>미래에 대해 낙관적인 예측에 준해 의사결정한 대안 중 가장 좋은 결과를 보상해 주는 대안을 선택</li>
+</ul>
+</dd>
+<dt>라플라스(Laplace, Equal; Likeihood) 기준</dt>
+<dd>
+<ul>
+<li>가중평균 보상이 가장 좋은 것을 선택</li>
+<li>미래를 정확히 예측할 수 없기 때문에 모든 상황이 동일한 확률로 발생한다는 가정(사건이 n가지일 경우 각 사건 비중은 1/n 임)하에 각 대안별로 기댓값을 계산하여 가장 좋은 값을 갖는 대안을 선택</li>
+<li>“불충분 이유 원칙”이라고 하며 각 상황에 따른 평균을 의사결정 기준으로 삼음</li>
+</ul>
+</dd>
+<dt>최소최대후회(Minimax Regret, 세비지 Savage) 기준</dt>
+<dd>
+<ul>
+<li>최악의 후회(최소 투자를 하였는데 수요가 많은 경우)가 가장 작은 대안을 선택</li>
+<li>최대후회 최소화(minimax, savage) 원칙은 의사결정자가 자기 행동 결과를 후회하지 않으려 하며 적어도 의사결정에서 오는 최대 후회를 최소화 하려고 하는 가정에 근거</li>
+<li>결과표를 후회표(주어진 사건 하에서 최선 대안안인 최대치에서 해당 값을 빼주어 얼마나 손해 보는가를 나타냄)로 전환하여 그 중 가장 작은 값을 가지는 대안 선택</li>
+</ul>
+</dd>
+<dt>- 후르비치(Huwicz) 기준</dt>
+<dd>
+<ul>
+<li>최대최대원책과 최대최소원칙의 가중평균</li>
+<li>대부분 의사결정자는 현실적으로 극단적으로 비관적 또는 낙관적 기준이 아닌 중간 어느 지점을 선택함</li>
+<li>비관주의와낙관주의를 절충하기 위해서 의사결정자가 으느 정도 미래에 대한 낙관적인 견해를 가지고 있는 정도를 나타내는 낙관지수(<span class="math inline">\(\alpha\)</span>)를 가중치로 사용하며 이 지수는 0 ~ 1 사이 값을 가지고 낙관지수가 0일 때는 의사결정자가 자연 결과에대해 비관적(최대최소원칙)이며, 반면 1일 때는 자연에 대낙관적(최대최대)이라는 것을 의미함</li>
+</ul>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="100회 2교시 문제1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+100회 2교시 문제1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>대안이 아래와 같이 주어졌을 때 각 기준별로 최선 대안을 선택하시오.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>불황</th>
+<th>중간</th>
+<th>호황</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>장기계약</td>
+<td>50</td>
+<td>55</td>
+<td>70</td>
+</tr>
+<tr class="even">
+<td>단기계약</td>
+<td>40</td>
+<td>60</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>1회계약</td>
+<td>30</td>
+<td>65</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wald 기준</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>불황</th>
+<th>중간</th>
+<th>호황</th>
+<th>최대이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>장기계약</td>
+<td>50</td>
+<td>55</td>
+<td>70</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>단기계약</td>
+<td>40</td>
+<td>60</td>
+<td>120</td>
+<td>40</td>
+</tr>
+<tr class="odd">
+<td>1회계약</td>
+<td>30</td>
+<td>65</td>
+<td>200</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<p>최대이익 50인 “장기계약”을 선택한다.</p>
+<p><strong>최대최대 기준</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>불황</th>
+<th>중간</th>
+<th>호황</th>
+<th>최대이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>장기계약</td>
+<td>50</td>
+<td>55</td>
+<td>70</td>
+<td>70</td>
+</tr>
+<tr class="even">
+<td>단기계약</td>
+<td>40</td>
+<td>60</td>
+<td>120</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>1회계약</td>
+<td>30</td>
+<td>65</td>
+<td>200</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p>최대이익 200인 “1회계약”을 선택한다.</p>
+<p><strong>Savage 기준</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>불황</th>
+<th>중간</th>
+<th>호황</th>
+<th>최대후회</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>장기계약</td>
+<td>50(0)</td>
+<td>55(10)</td>
+<td>70(130)</td>
+<td>130</td>
+</tr>
+<tr class="even">
+<td>단기계약</td>
+<td>40(10)</td>
+<td>60(5)</td>
+<td>120(80)</td>
+<td>80</td>
+</tr>
+<tr class="odd">
+<td>1회계약</td>
+<td>30(20)</td>
+<td>65(0)</td>
+<td>200(0)</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<p>괄호() 안이 후회, 즉 대안 최대치에서 해당 안 값을 빼 준 값이며, 최대후회는 대안별 최대값을 나타낸다. 따라서 Savage기준에서는 최대후회가 가장 작은 “1회계약”을 선택한다.</p>
+<p><strong>라플라스 기준</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>불황</th>
+<th>중간</th>
+<th>호황</th>
+<th>가중평균</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>장기계약</td>
+<td>50</td>
+<td>55</td>
+<td>70</td>
+<td>(50+55+70)/3</td>
+</tr>
+<tr class="even">
+<td>단기계약</td>
+<td>40</td>
+<td>60</td>
+<td>120</td>
+<td>(40+60+120)/3</td>
+</tr>
+<tr class="odd">
+<td>1회계약</td>
+<td>30</td>
+<td>65</td>
+<td>200</td>
+<td>(30+65+200)/3</td>
+</tr>
+</tbody>
+</table>
+<p>가중평균이 가장 높은 “1회계약”을 선택한다.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="선형계획법" class="level2">
+<h2 class="anchored" data-anchor-id="선형계획법">선형계획법</h2>
+<p>::: {callout-tip title=“기출” icon=false} 97-2-5 :::</p>
 <p><strong>선형계획법</strong>(linear programming, LP)은 선형(linearity) 조건이 갖추어진 수리계획법으로 변수 간 함수적 관계가 직선으로 표현된다.</p>
 <dl>
 <dt>수리계획법(mathematical programming)</dt>
