@@ -413,6 +413,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#모듈러-설계" id="toc-모듈러-설계" class="nav-link" data-scroll-target="#모듈러-설계">모듈러 설계</a></li>
   <li><a href="#신뢰도-설계기법" id="toc-신뢰도-설계기법" class="nav-link" data-scroll-target="#신뢰도-설계기법">신뢰도 설계기법</a></li>
   </ul></li>
+  <li><a href="#강건설계" id="toc-강건설계" class="nav-link" data-scroll-target="#강건설계">강건설계</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2.제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -717,9 +718,59 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </dd>
 </dl>
-
-
 </section>
+</section>
+<section id="강건설계" class="level2">
+<h2 class="anchored" data-anchor-id="강건설계">강건설계</h2>
+<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>100-1-110</p>
+</div>
+</div>
+<p><strong>강건설계</strong>(Robust Design)는 다구찌 실험설계라고도 하며, 일본 다구찌 바사가 구현한 제품 품질 개선 기법으로 제어 가능한 인자로 제어 불가능한 노이즈(Noise, 환경잡음인자)에 강건하게 설계하는 방법이다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+01["시스템 설계"] --&gt; 02["파라미터 설계"] --&gt; 03["허용차(공차) 설계"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>시스템 설계</dt>
+<dd>
+<ul>
+<li>기능 설계로서 관련 기술이 중심이 되고, 시스템은 어떤 방식으로 할 것인가를 연구하는 단계로 1차 설계라고도 한다.</li>
+</ul>
+</dd>
+<dt>파라미터 설계</dt>
+<dd>
+<ul>
+<li>제품설계에 채택되는 파라미터 최적수준을 결정하는 방법으로 품질을 좋게하고 비용(cost)은 낮게 하는 방법으로써 2차 설계라고도 한다.</li>
+</ul>
+</dd>
+<dt>허용차(공차) 설계</dt>
+<dd>
+<ul>
+<li>설계 변수 변동 범위에 대하여 손실비용을 고려한 허용범위를 정하는 단계이다.</li>
+</ul>
+</dd>
+</dl>
+
+
 </section>
 
 </main> <!-- /main -->
