@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>생산능력 결정 전략 – 공장관리기술사</title>
+<title>생산계획수립 – 공장관리기술사</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html">3. 공정관리</a></li><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html"><span class="chapter-title">생산능력 결정 전략</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html">3. 공정관리</a></li><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html"><span class="chapter-title">생산계획수립</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -195,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3-1.생산계획수립.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">생산능력 결정 전략</span></a>
+  <a href="./3-1.생산계획수립.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">생산계획수립</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -397,16 +426,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#생산능력-전략-사전-검토-사항" id="toc-생산능력-전략-사전-검토-사항" class="nav-link active" data-scroll-target="#생산능력-전략-사전-검토-사항">생산능력 전략 사전 검토 사항</a></li>
+  <li><a href="#sec-productibility-strategy" id="toc-sec-productibility-strategy" class="nav-link active" data-scroll-target="#sec-productibility-strategy">생산능력 결정 전략</a>
+  <ul>
+  <li><a href="#생산능력-전략-사전-검토-사항" id="toc-생산능력-전략-사전-검토-사항" class="nav-link" data-scroll-target="#생산능력-전략-사전-검토-사항">생산능력 전략 사전 검토 사항</a></li>
+  <li><a href="#전략-대안-평가" id="toc-전략-대안-평가" class="nav-link" data-scroll-target="#전략-대안-평가">전략 대안 평가</a></li>
+  <li><a href="#능력비율cr-capacity-ratio" id="toc-능력비율cr-capacity-ratio" class="nav-link" data-scroll-target="#능력비율cr-capacity-ratio">능력비율(CR, capacity ratio)</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-1.생산계획수립.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html">3. 공정관리</a></li><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html"><span class="chapter-title">생산능력 결정 전략</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html">3. 공정관리</a></li><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html"><span class="chapter-title">생산계획수립</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-productibility-strategy" class="quarto-section-identifier"><span class="chapter-title">생산능력 결정 전략</span></span></h1>
+<h1 class="title"><span id="sec-production-planning" class="quarto-section-identifier"><span class="chapter-title">생산계획수립</span></span></h1>
 </div>
 
 
@@ -423,7 +457,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>e# 생산계획수립 {#sec-production-planning}</p>
+<section id="sec-productibility-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="sec-productibility-strategy">생산능력 결정 전략</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -559,8 +594,87 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </dd>
 </dl>
+</section>
+<section id="전략-대안-평가" class="level3">
+<h3 class="anchored" data-anchor-id="전략-대안-평가">전략 대안 평가</h3>
+<p>간편한 전략평가 방법으로 단위당 품절 손실과 함게 잉여 능력 비용을 추정하는 능력비율(Capacity Ratio, CR)을 산정하여 판단할 수 있다.</p>
+<dl>
+<dt>질적요인</dt>
+<dd>
+<ul>
+<li>시설투자 자금 동원 능력</li>
+<li>주변 생활 환경</li>
+<li>지역 기술 및 교육수준</li>
+<li>고객과 근접성으로 인한 수요 창출</li>
+</ul>
+</dd>
+<dt>비용요인</dt>
+<dd>
+<ul>
+<li>지역별로 차이가 날 수 있는 인건비</li>
+<li>세금 및 보험료</li>
+<li>전기, 가스, 수도 등 공공사업 비용</li>
+<li>수송 비용</li>
+<li>토지, 건물 및 설비비용</li>
+</ul>
+</dd>
+<dt>용량 계획 평가 도구</dt>
+<dd>
+<ul>
+<li>수요 불확실성과 변동을 보다 공식적으로 분석 가능한 도구
+<ul>
+<li>대기행렬 모형 - 무작위적이고 독립적인 고객들의 행동을 도착 시간과 서비스 요구 측면에서 검토</li>
+<li>시뮬레이션 - 복잡한 대기 열 문제를 시뮬레이션을 통해 프로세스 병목과 여유 용량을 찾아냄</li>
+<li>의사결정 나무 - 수요가 불확실하고 이어지는 의사결정이 포함될 경우 다양한 설비확장안 평가 시 사용</li>
+</ul></li>
+</ul>
+</dd>
+<dt>생산능력 결정 기법</dt>
+<dd>
+<ul>
+<li>생산능력 결정 기법으로 일반적인 방법은 선형계획법과 확률계획법이다.
+<ul>
+<li>선형계획법은 장래 제품 수요와 경쟁기업 공급능력을 비교적 정확하게 예측할 수 있는 확실한 상황에서 유용</li>
+<li>확률계획법은 장기적 제품 수요를 추정하지만 미래 제품 수요와 공쟁기업 공급 능력을 상대적으로 정확하게 예측하기 어려운 경우 유용, 대표적으로 대기행렬, 시뮬레이션, Decision Tree Approach 등</li>
+</ul></li>
+<li>생산능력은 조직 전체에 걸쳐 전략 및 프로세스와 밀접하게 연계되어야 함</li>
+<li>입지 문제, 자원 유연성, 재고 같은 분야의 의사결정을 할 때 여유 용량에 미치는 효과를 고려함</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="능력비율cr-capacity-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="능력비율cr-capacity-ratio">능력비율(CR, capacity ratio)</h3>
+<p>CR은 단위당 품절 손실과 함게 잉여 능력을 추정하여 능력 비율을 산정, 평가하는 지표이다.</p>
+<p><span class="math display">\[
+능력비율(CR) = \frac{(C_s - C_e)}{C_s}
+\]</span> <span class="math display">\[
+여기서 \ C_s는 \ 단위당 \ 품절 \ 손신, C_e는 \ 단위당 \ 잉영능력 \ 유지 \ 비용
+\]</span></p>
+<dl>
+<dt>CR에 따른 생산능력 전략</dt>
+<dd>
+<ul>
+<li>CR &lt;= 0.5
+<ul>
+<li>품절 비용 &lt; 0.67 x 잉여 능력 유지 비용</li>
+<li>사후 증설 전략</li>
+</ul></li>
+<li>-0.5 &lt; CR &lt; 0.5
+<ul>
+<li>기대 가치 유지 전략</li>
+</ul></li>
+<li>CR &gt;= 0.5
+<ul>
+<li>품절비용 &gt; 2 x 잉여 능력 비용</li>
+<li>사전 확장 전략</li>
+</ul></li>
+</ul>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
