@@ -190,7 +190,7 @@ flowchart TB
 ## 네트워크 기법
 
 ::: {.callout-tip title="기출"}
-97-3-6
+97-3-6, 100-3-1
 :::
 
 **네트워크 기법**(Network, 화살도 arrow diagram, 활동 네트워크 activity network diagram)은 필요한 활동 선후관계를 네트워크로 표시하는 방식으로 <u>간트차트 결점을 보완</u>하기 위하여 개발되었다. 대표적인 기법으로 [-@sec-pert] (Program Evaluation & Review Technique)와 [-@sec-cpm] (Critical Path Method)이 있다.
