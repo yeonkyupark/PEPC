@@ -1092,6 +1092,122 @@ window.Quarto = {
 <li>필요하다면 주경로, 완료 일자를 추정한다.</li>
 </ol>
 <p><br></p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="100-3-1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+100-3-1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre class="mermaid"><code>flowchart LR
+1[1]
+2[2]
+3[3]
+4[4]
+5[5]
+6[6]
+
+1 --3,4,5--&gt; 2
+2 --4,5,6--&gt;3
+1 --4,6,8--&gt;3
+2 --5,7,9--&gt;4
+4 --d1--&gt;5
+3 --3,6,9--&gt;5
+4 --7,8,15--&gt;6
+5 --6,8,16--&gt;6</code></pre>
+<p>위 AON을 표로 정리하면 다음과 같다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>선행단계</th>
+<th>후행단계</th>
+<th>낙관치(a)</th>
+<th>정상치{}</th>
+<th>비관치()</th>
+<th>기대시간</th>
+<th>분산</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>0.11</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>6</td>
+<td>0.44</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>5</td>
+<td>0.11</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>7</td>
+<td>9</td>
+<td>7</td>
+<td>0.11</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>6</td>
+<td>1.00</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>15</td>
+<td>9</td>
+<td>1.78</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+<td>16</td>
+<td>9</td>
+<td>2.78</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+기대분산(t_e) = \frac{a + 4m + b}{6},  \quard 분산(\sigma^2) = (\frac{b-a}{6f})^2
+\]</span></p>
+<p>단순열거법으로 주경로를 찾게되면 1 - 2 - 3 - 5 - 6이고 기대완료 시간은 24(4+5+6+9)일이다.</p>
+<p>프로젝트를 24일만에 끝낼 확률을 구하기 위해서는 정규분포 z 값을 계산한다.</p>
+<p><span class="math display">\[
+z = \frac{TS-TE}{\sqrt(\sum{\(\sigma^2)})} = \frac{24-24}{\sqrt{\sum{(0.11+0.11+1.00+2.78)}}} = 0
+\]</span></p>
+<p>따라서 z = 0 값을 표준정규분포에서 찾아보면 0.5를 값는다. 그러므로 해당 프로젝트를 24일만에 끝낼 확룰은 50%이다.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="주요-기법" class="level3">
