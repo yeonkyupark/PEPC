@@ -4,7 +4,7 @@
 
 ## 제품설계
 
-### 동시공학
+### 동시공학 {#sec-concurrent-engineering}
 
 :::{.callout-tip title="기출"}
 97-1-6, 100-1-8
