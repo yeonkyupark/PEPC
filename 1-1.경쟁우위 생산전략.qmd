@@ -225,6 +225,8 @@ flowchart TB
 100-3-2
 :::
 
+![https://altcraft.com/glossary/product-life-cycle](https://altcraft.com/uploads/product_life_cycle_stages_a68fe32579.png)
+
 계획기
 : - 신제품 혹은 서비스에 대한 아이디어가 창출되고 선정되는 과정을 거쳐서 최종 설계가 이루어진다. 이 단계에서는 아직 제품이 출시되지 않았기 때문에 제품이나 서비스에 대한 이익은 음(-)이 된다.
 - 수입은 없지만 개발과 관련된 제반비용은 발생하게 된다. 신제품 혹은 서비스가 생산능력과 잘 부합되도록 하귀 위해 생산부서도 이 단계에 참여하여야 한다(@sec-concurrent-engineering 참고).
