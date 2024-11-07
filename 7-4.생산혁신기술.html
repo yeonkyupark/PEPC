@@ -405,12 +405,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#칸판-운영-규칙" id="toc-칸판-운영-규칙" class="nav-link" data-scroll-target="#칸판-운영-규칙">칸판 운영 규칙</a></li>
   <li><a href="#칸반-운영-조건" id="toc-칸반-운영-조건" class="nav-link" data-scroll-target="#칸반-운영-조건">칸반 운영 조건</a></li>
   </ul></li>
-  <li><a href="#toc" id="toc-toc" class="nav-link" data-scroll-target="#toc">TOC</a>
+  <li><a href="#sec-toc" id="toc-sec-toc" class="nav-link" data-scroll-target="#sec-toc">TOC</a>
   <ul>
   <li><a href="#toc-개념" id="toc-toc-개념" class="nav-link" data-scroll-target="#toc-개념">TOC 개념</a></li>
   <li><a href="#toc-문제해결-도구" id="toc-toc-문제해결-도구" class="nav-link" data-scroll-target="#toc-문제해결-도구">TOC 문제해결 도구</a></li>
   <li><a href="#focusing-step" id="toc-focusing-step" class="nav-link" data-scroll-target="#focusing-step">5 Focusing Step</a></li>
   </ul></li>
+  <li><a href="#sec-dbr" id="toc-sec-dbr" class="nav-link" data-scroll-target="#sec-dbr">DBR</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-4.생산혁신기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -544,8 +545,8 @@ ul.task-list li input[type="checkbox"] {
 <p>칸반 방식 ::: {.callout-warning icon=“false” title=“칸판 방식 적용이 어려운 이융”} 1. 원칙을 준수하며 속도 있게 진행하기 어려움 2. 거듭되는 시행착오에 의한 좌절, 피로감 3. 당장 혼란과 손해를 두려워함 4. 칸판 방식 적용을 기법적인 측면에서만 접근 (종업원 인식 부족) 5. 기법 적용과 접근 방법 오류 6. 지속적인 관리 부재 ```</p>
 </section>
 </section>
-<section id="toc" class="level2">
-<h2 class="anchored" data-anchor-id="toc">TOC</h2>
+<section id="sec-toc" class="level2">
+<h2 class="anchored" data-anchor-id="sec-toc">TOC</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -624,14 +625,74 @@ ul.task-list li input[type="checkbox"] {
 <li>제약 능력을 확장한다.</li>
 <li>타성에 젖지 말고 1단계로 돌아간다.</li>
 </ol>
-
-
 </section>
+</section>
+<section id="sec-dbr" class="level2">
+<h2 class="anchored" data-anchor-id="sec-dbr">DBR</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://de.m.wikipedia.org/wiki/Datei:Herbie_in_a_queue.png" class="img-fluid figure-img"></p>
+<figcaption>https://de.m.wikipedia.org/wiki/Drum-Buffer-Rope</figcaption>
+</figure>
+</div>
+<p><strong>DBR</strong>(Drum-Buffer-Rope)은 내부 물리적인 제약일 때, 제약 자원을 최대한 활용하기 위한 생산일정 수립 방법이다.</p>
+<dl>
+<dt>드럼(Drum)</dt>
+<dd>
+<ul>
+<li>제약자원 상세 일정</li>
+</ul>
+</dd>
+<dt>버퍼(Buffer)</dt>
+<dd>
+<ul>
+<li>혼란발생에 대응하기 위해세업시간과 가공시간 외에 여유시간을 추가함(제약버퍼, 조립버퍼, 출하버퍼)</li>
+</ul>
+</dd>
+<dt>로프(Rope)</dt>
+<dd>
+<ul>
+<li>제약자원 상세일정에 근거한 첫공정 자재투입 일정</li>
+</ul>
+</dd>
+</dl>
+<p>외부 시장제약일 때, 적용하는 단순화된 DBR도 있으며, 이것은 제약자원 상세일정을 수립하지 않는 방법으로써 아주 단순하며 실제 수요에 따라 우선순위가 변동된다.</p>
+<p>병목을 잘 활용하여 공장을 운영하면 생산능력 낭비를 줄일 수 있다. 병목공정 생산량이 공장 전체 생산량을 결정하기 때문이다. DBR을 ’집중개선프로세스 5단계’를 따라 설명하면 다음과 같다.</p>
+<dl>
+<dt>1단계 - 병목공정을 찾는다.</dt>
+<dd>
+<ul>
+<li>병목은 작업량을 생산능력과 비교하여 판단한다. 병목은 생산능력 대비 작업량 비율이 가장 큰 곳이다. 그리고 이곳은 재공재고가 가장 많이 쌓여 있고, 현장 관리자가 가장 많이 독촉받는 곳이기도 하다.</li>
+</ul>
+</dd>
+<dt>2단계 - 병록공정을 최대한 활용한다.</dt>
+<dd>
+<ul>
+<li>많은 관리자들은 병목은 즉시 해소되어야 한다고 주장한다. 그렇지만 해소하기이전에 이를 적극적으로 활용하는 과정이 필요하다. 그 핵심은 병목공정 생산 스케쥴을 작성하는데 있다. 우리는 이 스케쥴을 <strong>드럽</strong>(drum)이라 부른다. 개선활동 초점을 이곳에 맞추어 병목공정 가동율(효율)을 최대한 높인다. 아무튼 병목 생산량이 공장 전체 공급능력을 결정한다는 사실을 잊지 말아야 한다.</li>
+</ul>
+</dd>
+<dt>3단계 - 비병목공정 활동을 병목공정 스케쥴에 맞춘다.</dt>
+<dd>
+<ul>
+<li>첫 공정에서는 병목공정 스케쥴 수량과 시기에맞추어 자재를 투입한다. 우리는 이것을 ’<strong>로프</strong>(rope)를 연결한다’라고 말한다. 비병목공정은 병록공정이 100% 효율로 가동될 수 있도록 가공품 공급에 차질이 없어야 한다.이를 위해서 가공품이 병목공정에 스케쥴보다 일찍 도착하도록 작업한다. 우리는 이 여ㅑ유시간을 <strong>버퍼</strong>(buffer)라 부른다. 또 불량 때문에 수장이 부족하지 않도록 주의한다.</li>
+</ul>
+</dd>
+<dt>4단계 - 병목공정 능력을 향상시킨다.</dt>
+<dd>
+<ul>
+<li>시장 수요가증가하여 생산량을 늘려야 할 상황이라면, 병목공정 능력을 키우는 것으로 생산량이 늘어난다. 그렇지만 비병목공정 능력도 기울 필요가 생긴다. 이것은 병목공정을 보호하기 위해서 여유능력을 추가로 필요한 경우이다.</li>
+</ul>
+</dd>
+</dl>
+<p>많은 공장에서는 3단계까지만 적용하더라도 생산량이 늘어난다. 대부분 공장은 생산능력이 실제 알고 있는 것보다 더 크며 단지 능력이 허비되는 것이 잘 드러나지 않아 모르고 있을 뿐이다. 이와같은 병목 활용법은 이런 사실을 알려 주고 설비투자를 감소시킬 수 있다.</p>
+<p>DBR은 병목공정을 최대한 활용할 수 있는 스케줄링 방법과 버퍼관리 방법을 제공한다. DBR은 납기 단축과 재고감축을 동시에달성하려는 일에 획기적인 성과를 달성한다. 병목공정에 초점을 맞추므로 시간이 적게 걸리고 비용도 적게 된다.</p>
+
+
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>https://www.tockorea.org/what-is-toc<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://www.tockorea.org/what-is-toc">https://www.tockorea.org/what-is-toc</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
