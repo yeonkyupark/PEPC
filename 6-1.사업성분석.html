@@ -426,7 +426,7 @@ window.Quarto = {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#손익분기점" id="toc-손익분기점" class="nav-link active" data-scroll-target="#손익분기점">손익분기점</a></li>
+  <li><a href="#sec-bep" id="toc-sec-bep" class="nav-link active" data-scroll-target="#sec-bep">손익분기점</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-1.사업성분석.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -452,21 +452,21 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<section id="sec-bep" class="level2">
+<h2 class="anchored" data-anchor-id="sec-bep">손익분기점</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>#97-3-4</p>
+<p>97-3-4, 100-4-6</p>
 </div>
 </div>
-<section id="손익분기점" class="level2">
-<h2 class="anchored" data-anchor-id="손익분기점">손익분기점</h2>
 <p><strong>손익분기점</strong>(Break Even Point)이란 총 매출과 이를 위해 지출된 총 비용이 일치되는 매출액을 의미한다. 즉, 일정기간 매출액이 그 기간에 지출된 비용과 같아서 이익도 손실도 발생하지 않는(이익 금액 - 손실 금액 = 0) 지점을 가리킨다. 손익분기점분석은 조업도 변동에 따라 수익과 비용 변동 상황을 나타냄으로써 기업 채산성 파악을 위한 중요한 수단이 됨은 물론 장래 경영 계획과 통제 수잔으로 널리 이용되고 있다.</p>
 <p><span class="math display">\[
 손익분기점 \ 매출액 \ = \ \frac{고정비}{1 \ - \ \frac{변동비}{매출액}}
@@ -475,6 +475,66 @@ window.Quarto = {
 <p><span class="math display">\[
 손익분기점률(\%) \ = \ \frac{손익분기점 \ 매출액}{매출액} \times \ 100
 \]</span></p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="손익분기점 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+손익분기점 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt>영업관련 자료</dt>
+<dd>
+<ul>
+<li>매출액: 300,000원</li>
+<li>고정제조원가: 120,000원</li>
+<li>고정판매관리비: 20,000원</li>
+<li>총변동원가: 100,000원</li>
+<li>단위당 판매가격: 15원</li>
+<li>단위당 변동제조원가: 5원</li>
+<li>단위당 변동판매비: 1원</li>
+</ul>
+</dd>
+</dl>
+<ol type="1">
+<li>영업이익을 구하시오.</li>
+</ol>
+<p>영업이익 = 매출액 - 총원가 = 300,000 - (120,000 + 20,000 + 100,000) = 60,000(원)</p>
+<ol start="2" type="1">
+<li>손익분기점 판매수량과 매출액을 구하시오.</li>
+</ol>
+<p><span class="math display">\[
+손익분기점_수량 = \frac{고정비}{판매가-변동비} = \frac{120,000 + 20,000}{15 + 1} = 15,555.6(개)
+\]</span></p>
+<p><span class="math display">\[
+손익분기점_매출액 = \frac{고정비}{1-\frac{변동비}{판매가}} = \frac{140,000}{1-\frac{6}{15}} = 233,333.3(원)
+\]</span></p>
+<ol start="3" type="1">
+<li>안전한계와 한전한계율</li>
+</ol>
+<p><span class="math display">\[
+안전한계 = 매출액 - 손익분기점_판매액 = 300,000 - 233,333.3 = 66,666.7(원)
+\]</span></p>
+<p><span class="math display">\[
+안전한계율 = \frac{안전한계}{매출액} = \frac{66.666.7}{300,000} \times 100 = 22.2(%)
+\]</span></p>
+<ol start="4" type="1">
+<li>목표영업이익이 50,000원인 경우 판매량을 구하시오.</li>
+</ol>
+<p><span class="math display">\[
+판매량 = \frac{고정비+목표이익}{판매비-변동비} = \frac{140,000+50,000}{15-6} = 21,111.1(개)
+\]</span></p>
+<ol start="5" type="1">
+<li>매출액이 30,000원 증가할 경우 순이익증가액을 구하시오.</li>
+</ol>
+<p><span class="math display">\[
+순이익증가액 = 판매액 \times 공헌(한계)이익률 = 30,000 \times (1-\frac{1+5}{15}) = 20,000(원)
+\]</span></p>
+</div>
+</div>
 
 
 </section>
