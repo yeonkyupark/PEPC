@@ -427,6 +427,8 @@ end
 :::{.callout-important icon=false title="Laplace 기준 의사결정"}
 
 ```{r}
+#| echo: false
+
 tb <- data.frame(
   stringsAsFactors = FALSE,
                 구분 = c("소형설비", "중형설비", "대형설비"),
@@ -440,6 +442,8 @@ knitr::kable(tb)
 Laplace 기준은 동일 확률 기준으로 평균 최대 이익을 선택한다.
 
 ```{r}
+#| echo: false
+
 tb <- data.frame(
               stringsAsFactors = FALSE,
                    check.names = FALSE,

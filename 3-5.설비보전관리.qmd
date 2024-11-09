@@ -242,6 +242,7 @@ flowchart LR
 장치산업 8대 로스는 다음과 같다.
 
 ```{r}
+#| echo: false
 #| tbl-colwidths: [15,40,10,35]
 
 
