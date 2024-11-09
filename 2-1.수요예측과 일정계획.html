@@ -602,13 +602,13 @@ end
 <section id="추적지표" class="level4">
 <h4 class="anchored" data-anchor-id="추적지표">추적지표</h4>
 <p><strong>추적지표</strong>(TS)는 <font color="blue">예측기법이 실제수요변화를 정확히 예측하고 있는지</font>를 나타내는 지표이다. 예측치가 실측치를 잘 따라가고 있으면 TS는 0에 가까운 값을 갖는다. 예측치가 실제치보다 낮은 경우 TS는 양수값을 갖게 되고 이는 과소예측을 의미한다. 반면 예측치가 실측치보다 높은 경우 TS는 음수값을 가지며 과다예측을 의미한다.</p>
-<div class="callout callout-style-default callout-important no-icon callout-titled" title="예제: 97-4-6">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="추적지표">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-예제: 97-4-6
+추적지표
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -754,6 +754,70 @@ end
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="추적지표 관리도">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+추적지표 관리도
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">V1</th>
+<th style="text-align: right;">V2</th>
+<th style="text-align: right;">V3</th>
+<th style="text-align: right;">V4</th>
+<th style="text-align: right;">V5</th>
+<th style="text-align: right;">V6</th>
+<th style="text-align: right;">V7</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">월</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">실제판매량</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">110</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">수요예측치</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">95</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>주어진 식에서 추적지표(TS) 계산을 위하여 아래 지표를 산출한다.</p>
+<p>계산된 TS은 위와 같다. ±4MAD 관리도를 적용하면 다음과 같이 작성된다.</p>
+<center>
+<img src="images/ts_chart.png" class="img-fluid">
+</center>
+<p>TS가 ±4MAD 내 관리되므로 예측모델이 유효하다고 판단할 수 있다.</p>
 </div>
 </div>
 </section>
