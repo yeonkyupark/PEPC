@@ -467,6 +467,7 @@ window.Quarto = {
   <li><a href="#대기행렬이론" id="toc-대기행렬이론" class="nav-link" data-scroll-target="#대기행렬이론">대기행렬이론</a>
   <ul>
   <li><a href="#대기행렬-가정" id="toc-대기행렬-가정" class="nav-link" data-scroll-target="#대기행렬-가정">대기행렬 가정</a></li>
+  <li><a href="#대기행렬-모형" id="toc-대기행렬-모형" class="nav-link" data-scroll-target="#대기행렬-모형">대기행렬 모형</a></li>
   <li><a href="#sec-little" id="toc-sec-little" class="nav-link" data-scroll-target="#sec-little">리틀(Little) 공식</a></li>
   </ul></li>
   <li><a href="#투자안-평가" id="toc-투자안-평가" class="nav-link" data-scroll-target="#투자안-평가">투자안 평가</a>
@@ -1661,23 +1662,23 @@ end
 <p><span class="math display">\[(0.6 \times 0.9억 원 + 0.4 \times 0.1억 원) \times 10년 = 5.8억 원/년\]</span></p>
 <p>소규모 투자에 대한 기대수익도 같은 수식으로 계산하면 4.4억 원/년이다.</p>
 <p>따라서 투자비를 고려한 기대수익은 <strong>대규모투자</strong> 시 3.8억, 소규모투자 시 3.4억이므로대규모 투자가 유리한 전략이다.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+</section>
+</section>
+<section id="대기행렬이론" class="level2">
+<h2 class="anchored" data-anchor-id="대기행렬이론">대기행렬이론</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>#97-3-5</p>
+<p>97-3-5, 103-2-3</p>
 </div>
 </div>
-</section>
-</section>
-<section id="대기행렬이론" class="level2">
-<h2 class="anchored" data-anchor-id="대기행렬이론">대기행렬이론</h2>
 <p><strong>대기행렬이론</strong>(Queueing Theory)은 고객과 서비스 시설 간 관계를 확률 이론을 적용하여 모형을 작성하고 고객 도착 상황에 대응할 수 있는 경제적 규모를 결정하고자 하는 의사결정 기법이다. 총 대기 비용을 최소화시키는 최적 서비스 시설 결정을 위한 기법으로 대기행렬 분석에 따라 프로세스 설계, 용량 계획, 프로세스 성과가 달라지게 된다.</p>
 <p>다음과 같은 경우 대기행렬이 생기거나 서비스 시설이 휴지상태에 이르게 된다.</p>
 <ul>
@@ -1721,6 +1722,42 @@ end
 대기행렬 \ 평균길이 \ L_q \ = \ \frac{\lambda^2}{\mu(\mu - \lambda)}
 \]</span> 여기서 <span class="math inline">\(\lambda\)</span>는 단위시간 동안 도착하는 평균 고객 수이고, <span class="math inline">\(\mu\)</span>는 단위시간 동안 서버 1명에게 서비스를 제공받는 평균 고객 수이다.</p>
 </section>
+<section id="대기행렬-모형" class="level3">
+<h3 class="anchored" data-anchor-id="대기행렬-모형">대기행렬 모형</h3>
+<dl>
+<dt>M/M/1</dt>
+<dd>
+<ul>
+<li>M: 고객도착 시간 간격으로 포아송 분포를 따른다.</li>
+<li>M: 서비스 시간 간격으로 지수 분포를 따른다.</li>
+<li>1: 단일경로 단일과정 시스템으로 서비스 시설은 하나다.</li>
+</ul>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="대기행렬 시스템">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+대기행렬 시스템
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>홍길동은 혼자 이발소를 운영 중이다. 근무시간 10시간 동안 (식사시간이나 휴식시간은 빈 시간을 활용하여 해결하므로 없다고 가정한다.) 일일 평균 고객 수는 40명이고 한 명당 이발시간은 평균 10분이다. 이 이발소가 M/M/1 조건을 만족하고 있을 때, 도착률(<span class="math inline">\(\lambda\)</span>), 서비스율(<span class="math inline">\(\mu\)</span>), 시스템 내의 평균 고객 수(LS：Length in System)를 계산하시오.</p>
+<hr>
+<p>도착률(<span class="math inline">\(\lambda\)</span>)는 단위시간당 도착하는 고객수이다. 따라서 다음과 같이 계산된다.</p>
+<p><span class="math display">\[
+평균도착시간 = \frac{근무시간}{평균고객수} = \frac{10 \times 60}{40} = 15(명)
+\]</span> 따라서 도착률 <span class="math inline">\(\lambda = 60/15 = 4\)</span>이다.</p>
+<p>서비스율(<span class="math inline">\(\mu\)</span>)은 단위시간당 처리할 수 있는 고객수로 <span class="math inline">\(\mu = 60/10 = 6\)</span>이다.</p>
+<p>평균고객수(LS)는 산식에 따라 다음과 같이 계산할 수 있다.</p>
+<p><span class="math display">\[
+LS = \frac{\lambda}{\mu - \lambda} = \frac{4}{6-4} = 2
+\]</span></p>
+</div>
+</div>
+</section>
 <section id="sec-little" class="level3">
 <h3 class="anchored" data-anchor-id="sec-little">리틀(Little) 공식</h3>
 <p>시스템 선능척도 간 관계식을 정의한 공식으로 <span class="math inline">\(L\)</span>, <span class="math inline">\(L_q\)</span>, <span class="math inline">\(W\)</span>, <span class="math inline">\(W_q\)</span> 중 하나만 알고 있어도 나머지 세 값을 구할 수 있다. 즉, <span class="math display">\[
@@ -1733,17 +1770,17 @@ W = W_q + \frac{1}{\mu}
 </section>
 <section id="투자안-평가" class="level2">
 <h2 class="anchored" data-anchor-id="투자안-평가">투자안 평가</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>#97-4-4</p>
+<p>97-4-4</p>
 </div>
 </div>
 <p>투자안으로부터 예상되는 미래 현금흐름과 자본비용을 알고 잇다고 가정할 때 각 투자안이 기업 가치 증가에 어느정도 공헌하는지에 따라 투자안 경제성을 평가한다. 미래 현금 흐름을 고려 유무에 따라 전통적인 분석방법과 현금흐름할인법(DCF, discounted cash flow)으로 구분할 수 있다.</p>
