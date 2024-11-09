@@ -432,6 +432,11 @@ window.Quarto = {
   <li><a href="#전략-대안-평가" id="toc-전략-대안-평가" class="nav-link" data-scroll-target="#전략-대안-평가">전략 대안 평가</a></li>
   <li><a href="#능력비율cr-capacity-ratio" id="toc-능력비율cr-capacity-ratio" class="nav-link" data-scroll-target="#능력비율cr-capacity-ratio">능력비율(CR, capacity ratio)</a></li>
   </ul></li>
+  <li><a href="#mrp" id="toc-mrp" class="nav-link" data-scroll-target="#mrp">MRP</a>
+  <ul>
+  <li><a href="#mrp-3대-필수요소" id="toc-mrp-3대-필수요소" class="nav-link" data-scroll-target="#mrp-3대-필수요소">MRP 3대 필수요소</a></li>
+  <li><a href="#sec-bom" id="toc-sec-bom" class="nav-link" data-scroll-target="#sec-bom">BOM</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-1.생산계획수립.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -672,6 +677,63 @@ window.Quarto = {
 </ul>
 </dd>
 </dl>
+</section>
+</section>
+<section id="mrp" class="level2">
+<h2 class="anchored" data-anchor-id="mrp">MRP</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>103-1-9</p>
+</div>
+</div>
+<section id="mrp-3대-필수요소" class="level3">
+<h3 class="anchored" data-anchor-id="mrp-3대-필수요소">MRP 3대 필수요소</h3>
+<p>MRP 3대 필수요소는 기준일정계획(MPS), 자재명세서(BOM) 그리고 재고기록파일(IRF)이다.</p>
+<dl>
+<dt>MPS</dt>
+<dd>
+<ul>
+<li>MPS 참고</li>
+</ul>
+</dd>
+<dt>BOM</dt>
+<dd>
+<ul>
+<li><a href="#sec-bom" class="quarto-xref"><span>BOM</span></a> 참고</li>
+</ul>
+</dd>
+<dt>IRF</dt>
+<dd>
+<ul>
+<li>재고관리에 기본이 되는 자재별 수불현황과 현재고, 조달 기간 명시</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="sec-bom" class="level3">
+<h3 class="anchored" data-anchor-id="sec-bom">BOM</h3>
+<p><strong>BOM</strong>(bill of material)은 상위 품목과 부품 간 관계와 사용량, 단위 등을 표시한 리스트로 도표 또는 그림을 의미한다. 상위 품목이란 하나 이상 부품으로 제조되는 품목이며, 부품은 상위 품목으로 전환되기 위해 적어도 하나 이상 공정을 거쳐야 하는 품목이다. 즉 BOM은 제품을 구성하는데 필요한 원자재, 부품 또는 부분조립품 소용량과 조립순서, 가공순서를 나타낸다. MRP 시스템을 운영하는데 기본적으로 사용되는 입력자료이다.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="BOP">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+BOP
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>BOP</strong>(bill of process)는 제품을 구성하고 있는 부품이 어떤 공정에서 언제 생산을 해야 할지가 분단위로 이루어진 것으로 BOM 부품구성정보와 부품 정보에서 개당 작업공수와 부품 가공공정 정보 조합이다. BOM에 각 부품 제작공정을 표시하여 부품과 공정 선후관계를 네트워크(network) 형태로 표현한다.</p>
+</div>
+</div>
 
 
 </section>
