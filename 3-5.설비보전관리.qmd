@@ -206,7 +206,7 @@ flowchart LR
 :::
 
 <center>
-![https://eibery77.tistory.com/340](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrMhrB%2FbtrlKe5HFdN%2FFEJBS7K7Tk0QYIzEFrN8l1%2Fimg.png)
+![설비 6대 로스](images/ooe.png)
 </center>
 
 고장 로스
