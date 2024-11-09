@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -439,7 +473,7 @@ window.Quarto = {
   <li><a href="#자주보전-7단계" id="toc-자주보전-7단계" class="nav-link" data-scroll-target="#자주보전-7단계">자주보전 7단계</a></li>
   <li><a href="#설비-6대-로스" id="toc-설비-6대-로스" class="nav-link" data-scroll-target="#설비-6대-로스">설비 6대 로스</a>
   <ul>
-  <li><a href="#장치산업-설비-8대-로스" id="toc-장치산업-설비-8대-로스" class="nav-link" data-scroll-target="#장치산업-설비-8대-로스">장치산업 설비 8대 로스</a></li>
+  <li><a href="#장치산업-8대-로스" id="toc-장치산업-8대-로스" class="nav-link" data-scroll-target="#장치산업-8대-로스">장치산업 8대 로스</a></li>
   </ul></li>
   <li><a href="#설비-보전-지표" id="toc-설비-보전-지표" class="nav-link" data-scroll-target="#설비-보전-지표">설비 보전 지표</a>
   <ul>
@@ -910,6 +944,14 @@ window.Quarto = {
 <p>100-4-5</p>
 </div>
 </div>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrMhrB%2FbtrlKe5HFdN%2FFEJBS7K7Tk0QYIzEFrN8l1%2Fimg.png" class="img-fluid figure-img"></p>
+<figcaption>https://eibery77.tistory.com/340</figcaption>
+</figure>
+</div>
+</center>
 <dl>
 <dt>고장 로스</dt>
 <dd>
@@ -954,8 +996,104 @@ window.Quarto = {
 </ul>
 </dd>
 </dl>
-<section id="장치산업-설비-8대-로스" class="level3">
-<h3 class="anchored" data-anchor-id="장치산업-설비-8대-로스">장치산업 설비 8대 로스</h3>
+<section id="장치산업-8대-로스" class="level3">
+<h3 class="anchored" data-anchor-id="장치산업-8대-로스">장치산업 8대 로스</h3>
+<div class="callout-t" title="기출" data-icon="false">
+<p>103-1-8</p>
+</div>
+<p>장치산업 8대 로스는 다음과 같다.</p>
+<div class="cell" data-tbl-colwidths="[15,40,10,35]">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>tb <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                   로스.명칭 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"ShutDown"</span>,<span class="st">"생산조정"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"설비고장"</span>,<span class="st">"프로세스 고장"</span>,<span class="st">"정상생산"</span>,<span class="st">"비정상생산"</span>,<span class="st">"품질불량"</span>,<span class="st">"재가공"</span>),</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                      정의 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"연간보전계획에 의한 SD공사 및 정기정비 등에 의한 휴지시간 로스"</span>,<span class="st">"수급간계에 의한 생산계획상 조정 시간"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"설비, 기기가 규정 성능을 잃어 돌발적으로 정지하는 로스 시간"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"공정 내에서 취급 물질의 화학적, 물리적인 물성 변화나 기타 조업 실수 등으로 플랜트가 정지하는 로스"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"플랜트 Start, 정지 및 교체 때문에 발생하는 로스"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"플랜트 불량, 이상 때문에 생산 rate를 down시킨 성능 로스"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"불량품을 만들어 내고 있는 로스와 폐각품 물적 로스, 2등급 이하 로스"</span>,<span class="st">"공정 back에 의한 리사이클 로스"</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                      단위 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"시간(일)"</span>,<span class="st">"시간(일)"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"시간"</span>,<span class="st">"시간"</span>,<span class="st">"rate down"</span>,<span class="st">"rate down"</span>,<span class="st">"시간, ton, 금액"</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"시간, ton, 금액"</span>),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                      사례 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"SD공사, 정비정비, 법정검사, 자주검사, 일반보수공사 등"</span>,<span class="st">"생산조정정지, 재고조정정지 등"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"펌프고장, 베어링 파손, 축 부러짐 등"</span>,<span class="st">"누설, 먼지, 막힘, 부식, 분진비산, 조작 실수 등"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"Start 후 첫 동작, 정지 전 멈춤 동작, 품질교체에 따른 rate down"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"저부하운전, 속도운전, 기준생산 rate 이하로 운전하는 경우"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"품질표준에서 벗어난 제품을 만드어 냄에 의한 물량, 시간 로스"</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                             <span class="st">"최종 공정에서 불량품을 원류 공정에 리사이클하여 합격품으로 변환"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 40%">
+<col style="width: 10%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">로스.명칭</th>
+<th style="text-align: left;">정의</th>
+<th style="text-align: left;">단위</th>
+<th style="text-align: left;">사례</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ShutDown</td>
+<td style="text-align: left;">연간보전계획에 의한 SD공사 및 정기정비 등에 의한 휴지시간 로스</td>
+<td style="text-align: left;">시간(일)</td>
+<td style="text-align: left;">SD공사, 정비정비, 법정검사, 자주검사, 일반보수공사 등</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">생산조정</td>
+<td style="text-align: left;">수급간계에 의한 생산계획상 조정 시간</td>
+<td style="text-align: left;">시간(일)</td>
+<td style="text-align: left;">생산조정정지, 재고조정정지 등</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">설비고장</td>
+<td style="text-align: left;">설비, 기기가 규정 성능을 잃어 돌발적으로 정지하는 로스 시간</td>
+<td style="text-align: left;">시간</td>
+<td style="text-align: left;">펌프고장, 베어링 파손, 축 부러짐 등</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">프로세스 고장</td>
+<td style="text-align: left;">공정 내에서 취급 물질의 화학적, 물리적인 물성 변화나 기타 조업 실수 등으로 플랜트가 정지하는 로스</td>
+<td style="text-align: left;">시간</td>
+<td style="text-align: left;">누설, 먼지, 막힘, 부식, 분진비산, 조작 실수 등</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">정상생산</td>
+<td style="text-align: left;">플랜트 Start, 정지 및 교체 때문에 발생하는 로스</td>
+<td style="text-align: left;">rate down</td>
+<td style="text-align: left;">Start 후 첫 동작, 정지 전 멈춤 동작, 품질교체에 따른 rate down</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">비정상생산</td>
+<td style="text-align: left;">플랜트 불량, 이상 때문에 생산 rate를 down시킨 성능 로스</td>
+<td style="text-align: left;">rate down</td>
+<td style="text-align: left;">저부하운전, 속도운전, 기준생산 rate 이하로 운전하는 경우</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">품질불량</td>
+<td style="text-align: left;">불량품을 만들어 내고 있는 로스와 폐각품 물적 로스, 2등급 이하 로스</td>
+<td style="text-align: left;">시간, ton, 금액</td>
+<td style="text-align: left;">품질표준에서 벗어난 제품을 만드어 냄에 의한 물량, 시간 로스</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">재가공</td>
+<td style="text-align: left;">공정 back에 의한 리사이클 로스</td>
+<td style="text-align: left;">시간, ton, 금액</td>
+<td style="text-align: left;">최종 공정에서 불량품을 원류 공정에 리사이클하여 합격품으로 변환</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 </section>
 <section id="설비-보전-지표" class="level2">
