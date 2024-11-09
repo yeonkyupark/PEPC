@@ -235,7 +235,7 @@ flowchart LR
 
 ### 장치산업 8대 로스
 
-:::{.callout-t title="기출" icon=false}
+:::{.callout-tip title="기출" icon=false}
 103-1-8
 :::
 
