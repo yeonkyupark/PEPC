@@ -89,7 +89,7 @@ end
 
 **추적지표**(TS)는 <font color='blue'>예측기법이 실제수요변화를 정확히 예측하고 있는지</font>를 나타내는 지표이다. 예측치가 실측치를 잘 따라가고 있으면 TS는 0에 가까운 값을 갖는다. 예측치가 실제치보다 낮은 경우 TS는 양수값을 갖게 되고 이는 과소예측을 의미한다. 반면 예측치가 실측치보다 높은 경우 TS는 음수값을 가지며 과다예측을 의미한다.
 
-::: {.callout-important icon=false title="예제: 97-4-6"}
+::: {.callout-important icon=false title="추적지표"}
 
 실제수요와 예측치가 아래와 같을 때 CFE, MAD, TS를 계산하시오.
 
@@ -115,6 +115,54 @@ end
 | 6   | 120 | 111 | 9        | 2                | 4                   | 0.5   |
 
 :::
+
+:::{.callout-important title="추적지표 관리도" icon=false}
+
+```{r}
+#| echo: false
+
+tb <- data.frame(
+  stringsAsFactors = FALSE,
+                V1 = c("월", "실제판매량", "수요예측치"),
+                V2 = c(1L, 90L, 95L),
+                V3 = c(2L, 100L, 95L),
+                V4 = c(3L, 105L, 100L),
+                V5 = c(4L, 100L, 105L),
+                V6 = c(5L, 95L, 100L),
+                V7 = c(6L, 110L, 95L)
+      )
+knitr::kable(tb)
+```
+
+주어진 식에서 추적지표(TS) 계산을 위하여 아래 지표를 산출한다.
+
+```{r}
+#| echo: false
+
+tb <- data.frame(
+  check.names = FALSE,
+            월 = c(1L, 2L, 3L, 4L, 5L, 6L),
+            A = c(90L, 100L, 105L, 100L, 95L, 110L),
+            F = c(95L, 95L, 100L, 105L, 100L, 95L),
+        `A-F` = c(-5L, 5L, 5L, -5L, -5L, 15L),
+         RSFE = c(-5L, 0L, 5L, 0L, -5L, 10L),
+      `|A-F|` = c(5L, 5L, 5L, 5L, 5L, 15L),
+     `∑|A-F|` = c(5L, 10L, 15L, 20L, 25L, 40L),
+          MAD = c(5, 5, 5, 5, 5, 6.666666667),
+           TS = c(-1, 0, 1, 0, -1, 1.5)
+      )
+```
+
+계산된 TS은 위와 같다. ±4MAD 관리도를 적용하면 다음과 같이 작성된다.
+
+<center>
+![](images/ts_chart.png)
+</center>
+
+TS가 ±4MAD 내 관리되므로 예측모델이 유효하다고 판단할 수 있다.
+
+:::
+
 
 ## CRM
 
