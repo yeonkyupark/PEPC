@@ -187,5 +187,5 @@ flowchart TB
 - 재활용 및 재자원화 극대화
 - 자재나 제조공정 상 소모자원이나 오염물질 종류를 분석, 환경 평가
 
-제품에 대한 환경 전과정 영향평가(@def-lca, life cycle assessment)와 총비용분석(TCA, total cost analysis)을 기초로 분해를 고려한 설계(**DfD**, design for disassembly)와 재활용을 고려한 설계(**DfR**, design for recycling), 회수 및 재사용을 고려한 설계(**DfR**, design for resue) 등을 주된 내용으로 하는 제품 설계기법이다.
+제품에 대한 환경 전과정 영향평가([-@def-lca], life cycle assessment)와 총비용분석(TCA, total cost analysis)을 기초로 분해를 고려한 설계(**DfD**, design for disassembly)와 재활용을 고려한 설계(**DfR**, design for recycling), 회수 및 재사용을 고려한 설계(**DfR**, design for resue) 등을 주된 내용으로 하는 제품 설계기법이다.
 

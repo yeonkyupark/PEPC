@@ -131,8 +131,8 @@ do the right things | do the things right
 
 ::: {#def-lca}
 
-## LCA(Life Cycle Assessment, 환경전과정평가)
+## LCA
 
-제품 및 서비스의 원료 채취부터 제조, 유통, 사용 및 폐기에 이르기까지 전과정에 걸친 환경 영향을 정량적으로 분석・평가하는 방법이다.
+LCA(Life Cycle Assessment, 환경전과정평가)는 제품 및 서비스의 원료 채취부터 제조, 유통, 사용 및 폐기에 이르기까지 전과정에 걸친 환경 영향을 정량적으로 분석・평가하는 방법이다.
 
 :::
