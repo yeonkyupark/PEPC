@@ -147,6 +147,7 @@ knitr::kable(tb)
 
 ```{r}
 #| echo: false
+#| tbl-colwidths: [20,10,10,10,10,10,10,10,10]
 
 tb <- data.frame(
   check.names = FALSE,
