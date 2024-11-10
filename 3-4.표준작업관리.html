@@ -433,7 +433,9 @@ window.Quarto = {
   <li><a href="#표준시간" id="toc-표준시간" class="nav-link active" data-scroll-target="#표준시간">표준시간</a>
   <ul>
   <li><a href="#여유시간" id="toc-여유시간" class="nav-link" data-scroll-target="#여유시간">여유시간</a></li>
+  <li><a href="#여유율-계산" id="toc-여유율-계산" class="nav-link" data-scroll-target="#여유율-계산">여유율 계산</a></li>
   </ul></li>
+  <li><a href="#작업시간-산정" id="toc-작업시간-산정" class="nav-link" data-scroll-target="#작업시간-산정">작업시간 산정</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-4.표준작업관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -472,7 +474,99 @@ window.Quarto = {
 <dd>
 <ul>
 <li><span class="math inline">\(정미시간 = 관측시간 대표치 \times (1+평준화계수합)\)</span></li>
-<li>평준화 요소인 <code>숙련도</code>, <code>노력도</code>, <code>작업조건</code>, <code>일치성에</code> 대한 평준화 계수 계산한 후 정미시간에 반영한다.</li>
+<li>평준화 요소인 <code>숙련도</code>, <code>노력도</code>, <code>작업조건</code>, <code>일치성</code>에 대한 평준화 계수 계산한 후 정미시간에 반영한다.</li>
+</ul>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="평준화법을 이용한 작업시간 산출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+평준화법을 이용한 작업시간 산출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>관측시간 대표치가 0.5분이고, 평준화 등급이 아래와 같이 계산되었을 때 정미시간을 계산하시오.</p>
+<div class="cell" data-tbl-colwidths="[25,25,25,25]">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">숙련도</th>
+<th style="text-align: left;">노력도</th>
+<th style="text-align: left;">작업조건</th>
+<th style="text-align: left;">일치성</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0.08</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">0.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<p><span class="math display">\[
+정미시간(NT) = 관측시간 대표치 \times (1 + 평준화계수합) = 0.5 \times (1 + 0.13) = 0.565
+\]</span></p>
+</div>
+</div>
+<dl>
+<dt>속도레이팅(speed rating)법 - 주관적 평가법</dt>
+<dd>
+<ul>
+<li>속도레이팅을 수행도 평가법(performance rating)이라고도 하며, 이 방법은 작업환경과 작업조건, 그리고 작업바법이 일정하다면 수행도는 작업능력과 작업의욕에 따라 변화게 된다는 가정에 기초를 둠</li>
+<li>작업 수행도 기준을 100%으로 한다면 변동요인(능력, 의욕 등)에 따라 수행도 평가치를 120%로 할 때 평가계수는 (120/100)을 사용하여 관측시간을 수정함</li>
+<li><span class="math inline">\(NT = 관측시간 대표치 \times \frac{평가치}{기준수행도}\)</span></li>
+</ul>
+</dd>
+<dt>객관적 레이팅(objective rating)법</dt>
+<dd>
+<ul>
+<li>M.E. Mundel이 발표한 것으로 제1평가(작업속도)와 제2평가(작업 곤란성)를 고려하여 정미시간을 계산하는 방식</li>
+<li><span class="math inline">\(NT = P \times S \times O\)</span>, P는 속도평가 계수
+<ul>
+<li>S는 2차 조정계수(작업시간 증가분을 100분율로 표시), O는 관측시간 평균치 또는 대표치</li>
+</ul></li>
+</ul>
+</dd>
+<dt>합성레이팅(synthetic rating)법</dt>
+<dd>
+<ul>
+<li>작업을 요소작업으로 구분한 후 요소별 관측시간을 산출(O)</li>
+<li>요소작업 중 임의 작업자 요소작업을 몇개 선정함</li>
+<li>선정된 요소작업에 대해 PTS법으로 분석하여 시간치(F)를 계산</li>
+<li>실제관측치(O)와 PTS에 의한 시간치(F) 간 비율 <span class="math inline">\(P = \frac{F}{O}\)</span>이나 비율 평균치를 레이팅 계수로 구한 후 다른 요소작업에 적용</li>
+</ul>
+</dd>
+<dt>노력평가(effort rating)법</dt>
+<dd>
+<ul>
+<li>동작속도 외에 작업 곤란성, 작업자 숙련도와 노력도, 작업조건 등을 고려하여 작업 페이스를 직접 레이팅 하는 방법</li>
+</ul>
+</dd>
+<dt>SAM 레이팅 필름</dt>
+<dd>
+<ul>
+<li>시간연구자 레이팅 훈련용으로 널리 사용되는 SAM(society for advancement of management) 레이팅 필름에 의한 공정한 1일 작업량을 선정하는 방법</li>
 </ul>
 </dd>
 </dl>
@@ -486,18 +580,18 @@ window.Quarto = {
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
 
-00[여유]
-01[일반여유]
-02[특수여유]
-03[장려여유]
-110"[개인여유(용무여유)"]
-12[피로여유]
-13[작업여유]
+00["여유"]
+01["일반여유"]
+02["특수여유"]
+03["장려여유"]
+11["개인여유(용무여유)"]
+12["피로여유"]
+13["작업여유"]
 14["관리여유(직장여유)"]
-21[기계간섭여유]
-22[조여유]
-23[소로트여유]
-24[긴사이클여유]
+21["기계간섭여유"]
+22["조여유"]
+23["소로트여유"]
+24["긴사이클여유"]
 
 00 --- 01 &amp; 02 &amp; 03
 01 --- 11 &amp; 12 &amp; 13 &amp; 14
@@ -537,9 +631,76 @@ window.Quarto = {
 </ul>
 </dd>
 </dl>
-
-
 </section>
+<section id="여유율-계산" class="level3">
+<h3 class="anchored" data-anchor-id="여유율-계산">여유율 계산</h3>
+<p>여유율은 외경법과 내경법으로 계산할 수 있다.</p>
+<dl>
+<dt>외경법</dt>
+<dd>
+<ul>
+<li>정미시간에 대한 비율을 여유율로 사용함</li>
+<li><span class="math inline">\(여유율(A) = (여유시간/정미시간)\times100 = (AT/NT)\times100(\%)\)</span></li>
+</ul>
+</dd>
+<dt>내경법</dt>
+<dd>
+<ul>
+<li>실동시간에 대한 비율을 여유율로 사용함</li>
+<li><span class="math inline">\(여유율(A) = (여유시간/실동시간)\times100 = \frac{여유시간}{(정미시간+여유시간)}\times100 = \frac{AT}{NT+AT}\times100(\%)\)</span></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+<section id="작업시간-산정" class="level2">
+<h2 class="anchored" data-anchor-id="작업시간-산정">작업시간 산정</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+00[작업시간 산정]
+01[통계적 방법]
+02[관측법]
+03[합성법]
+
+11[경험 견적법]
+12[실적 자료법]
+
+21[직접 관측법]
+211["시간연구법(Stop watch)"]
+212["작업표본 분석법(Work sampling)"]
+22[간접 관측법]
+221[미세동작 연구법]
+222[동작궤적 분석법]
+
+31["기정시간 표준법(PTS)"]
+311["작업요소시간 표준법(Work factor)"]
+312["방법시간 표준법(MTM)"] --- 혼다
+32[표준시간 자료법] ---- D
+313["MODAPTS"] --- D[도요다]
+321["컴퓨터 시뮬레이션 기법(CAPES"]
+
+00 --- 01 &amp; 02 &amp; 03
+
+01 --- 11 &amp; 12
+
+02 --- 21 --- 211 &amp; 212
+02 --- 22 --- 221 &amp; 222
+
+03 --- 31 --- 311 &amp; 312 &amp; 313
+03 --- 32 --- 321
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
