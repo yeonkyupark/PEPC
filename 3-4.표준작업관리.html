@@ -68,7 +68,40 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -392,11 +425,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#표준시간" id="toc-표준시간" class="nav-link active" data-scroll-target="#표준시간">표준시간</a>
+  <ul>
+  <li><a href="#여유시간" id="toc-여유시간" class="nav-link" data-scroll-target="#여유시간">여유시간</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-4.표준작업관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html">3. 공정관리</a></li><li class="breadcrumb-item"><a href="./3-4.표준작업관리.html"><span class="chapter-title">표준작업관리</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -405,7 +447,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -417,8 +459,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="표준시간" class="level2">
+<h2 class="anchored" data-anchor-id="표준시간">표준시간</h2>
+<p>표준시간(ST, standard time)이란 - 표준 작업환경에서 - 표준작업방법으로 - 숙련된 작업자가 - 보통의 노력으로 - 성실하게 작업을 실시하는데 필요한 시간을 말한다.</p>
+<p>표준시간은 정미작업시간(NT, normal time)과 여유시간(AT, allowance time)으로 구성된다.</p>
+<p>정미(작업)시간은 레이팅(rating 또는 normalizing, 정상화)을 반영한다. 여기서 레이팅이란 관측대상 작업속도와 정상적인 속도를 비교, 판단하여 관측시간치를 수정하는 것이다. 레이팅은 시간분석자 자격요건 일환으로 여러가지가 개발되어 운용되고 있다.</p>
+<p><span class="math display">\[
+표준시간(ST) = 정미시간(NT) + 여유시간(AT) = 관측시간 \times(1+레이팅) + 여유시간
+\]</span></p>
+<section id="여유시간" class="level3">
+<h3 class="anchored" data-anchor-id="여유시간">여유시간</h3>
+<p>여유시간은 작업에 있어서 불가피한 시간을 의미한다. 작업자 휴식 또는 작업 중 여러가지 원인으로 지연이 발생하기 때문에 표준시간 설정 시 적당한 여유를 주어야 하는데 이에 해당하는 시간이 여유시간이다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+
+00[여유]
+01[일반여유]
+02[특수여유]
+03[장려여유]
+110"[개인여유(용무여유)"]
+12[피로여유]
+13[작업여유]
+14["관리여유(직장여유)"]
+21[기계간섭여유]
+22[조여유]
+23[소로트여유]
+24[긴사이클여유]
+
+00 --- 01 &amp; 02 &amp; 03
+01 --- 11 &amp; 12 &amp; 13 &amp; 14
+02 --- 21 &amp; 22 &amp; 23 &amp; 24
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>일반여유</dt>
+<dd>
+<ul>
+<li>어떤 작업에 대해서 공통적으로 감안해 주는 기본적인 여유</li>
+<li>개인여유: 인적여유, 용우여유, 생리여유로서 일반적으로 2~5%(남자 5%, 여자 7%)</li>
+<li>피로여유: 일반적으로 중노동 20~30%, 경노동 5~10%로 피로 발생은 작업강도, 환경, 육체적 근육노동, 정신적 건강에 기인함</li>
+<li>작업여유: 3~5% 부여, 작업여유는 재료취급시간, 불량공구 연마 및 교환, 기계수리, 조정, 주유, 청소 등 불규칙적으로 발생되는 여유</li>
+<li>관리여유: 3~5% 부여, 작업 중 발생하는 작업상 업무연락, 협의, 짧은 시간 작업 대기 등에 해당</li>
+</ul>
+</dd>
+</dl>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -841,7 +937,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="./3-3.작업계획수립.html" class="pagination-link" aria-label="작업계획수립">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">작업계획수립</span></span>
@@ -858,4 +954,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-4.표준작업관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-4.표준작업관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
