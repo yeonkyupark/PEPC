@@ -446,6 +446,10 @@ window.Quarto = {
   <li><a href="#정량발주방식과-정기발주방식" id="toc-정량발주방식과-정기발주방식" class="nav-link" data-scroll-target="#정량발주방식과-정기발주방식">정량발주방식과 정기발주방식</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#재고-비용-및-재고-성과-척도" id="toc-재고-비용-및-재고-성과-척도" class="nav-link" data-scroll-target="#재고-비용-및-재고-성과-척도">재고 비용 및 재고 성과 척도</a>
+  <ul>
+  <li><a href="#재고-척도" id="toc-재고-척도" class="nav-link" data-scroll-target="#재고-척도">재고 척도</a></li>
+  </ul></li>
   <li><a href="#유닛로드" id="toc-유닛로드" class="nav-link" data-scroll-target="#유닛로드">유닛로드</a></li>
   <li><a href="#활성지수" id="toc-활성지수" class="nav-link" data-scroll-target="#활성지수">활성지수</a></li>
   </ul>
@@ -967,6 +971,167 @@ end
 </div>
 </div>
 </section>
+</section>
+</section>
+<section id="재고-비용-및-재고-성과-척도" class="level2">
+<h2 class="anchored" data-anchor-id="재고-비용-및-재고-성과-척도">재고 비용 및 재고 성과 척도</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>103-3-2</p>
+</div>
+</div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+00[재고관련비용]
+01["주문비용&lt;br&gt;Procurement costs"]
+02["재고유지비용&lt;br&gt;Inventory carrying costs"]
+03["품절비용&lt;br&gt;Out-of-stock costs]
+00 --- 01 &amp; 02 &amp; 03
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><span class="math display">\[
+총 \ 재고비 = 재고비용 \ 합 = 주문/구매 \ 준비 \ 비용 + 재고 \ 유지 \ 비용 + 품절 \ 비용(재고 \ 부족비)
+\]</span></p>
+<p>재고관련 비용은 일반적으로 제품 가치 15~35% 발생한다(이자, 보관비용, 세금, 보험료, 상품 훼손 비용 등).</p>
+<dl>
+<dt>주문/준비 비용 (order/setup cost)</dt>
+<dd>
+<ul>
+<li>주문비용이란 창고에 입하를 위한 주문 행위를 할 때 발생하는 비용</li>
+<li>주문 또는 준비 횟수에 비례하지만, 주문 크기에는 전혀 관계가 없다고 가정</li>
+</ul>
+</dd>
+</dl>
+<p>:::{.callout-tip icon=false title=“생산 준비 비용(Setup or production change cost)” - 특정 제품을 생산하기 위하여 생산 공정 변경이나 기계 및 공구 교환 등으로 발생되는 비용 - 새로 주문할 때마다 발생되는 고정비적 성격을 띤 비용으로 주문 횟수나 생산 횟수 크기에 비례 - 준비 시간 중 발생되는 기계 유휴 비용, 준비 인원 직접 노무비, 사무 처리비, 공구 비용 등이 포함 :::</p>
+<dl>
+<dt>재고 유지 비용 (holding cost)</dt>
+<dd>
+<ul>
+<li>재고 유지비란 일정 수준 재고품을 보유하고유지할 경우 발생하는 비용</li>
+<li>재고 유지비는 재고량 변화에 따라서 직접적으로 비례하여 변화하므로 변동비로 취급</li>
+</ul>
+</dd>
+<dt>품절비용 (stock out cost)</dt>
+<dd>
+<ul>
+<li>외적 및 내적 재고 부족</li>
+<li>재고 부족(품절)으로 발생되는 비용으로 판매기회나 고객 상실인 기회 상실 비용</li>
+</ul>
+</dd>
+</dl>
+<section id="재고-척도" class="level3">
+<h3 class="anchored" data-anchor-id="재고-척도">재고 척도</h3>
+<p>공급사슬 첫오가 척도, 재고 측정을 위한 기본 형태로 다음 4가지가 있다.</p>
+<ul>
+<li>평균 총 재고액(Average aggregate inventory value)</li>
+<li>재고 회전율</li>
+<li>재고 공급 주수</li>
+<li>재고 공급일수(Day of supply)</li>
+</ul>
+<dl>
+<dt>평균 총 재고액</dt>
+<dd>
+<ul>
+<li>현재 재고로 보유하고 있는 품목 가치 합, 재고 총 평균 가액</li>
+<li>기업이 어떤 기간 동안 재고로 보유하고 있는 모든 품목(원자재, 재공품, 완제품 등) 총 평균 가치(원가 기준)</li>
+<li>평균 총괄 재고가치는 기업이 얼마나 많은 자산이 재고에 묶여 있는가를 나타내는 지표</li>
+<li>총 자산 대비 평균적으로 제조업은 25%, 유통업체는 75% 수준</li>
+</ul>
+</dd>
+</dl>
+<p><span class="math display">\[
+평균총재고액 = \frac{기초재고액 + 기말재고액}{2}
+\]</span></p>
+<dl>
+<dt>재고 공급일수</dt>
+<dd>
+<ul>
+<li>현재 보관 중인 재고를 이용할 경우 기대 판매 가능일 수(현재 재고로 며칠을 공급할 수 있는가)</li>
+</ul>
+</dd>
+</dl>
+<p><span class="math display">\[
+재고 \ 공급일수 = \frac{평균재고가액}{일당매출원가}
+\]</span></p>
+<dl>
+<dt>재고 공급주수</dt>
+<dd>
+<ul>
+<li>평균 총괄 재고 가치를 주당 매출원가로 나눈 값</li>
+</ul>
+</dd>
+</dl>
+<p><span class="math display">\[
+재고 \ 공급주수 = \frac{평균재고가액}{주당매출원가}
+\]</span></p>
+<dl>
+<dt>재고 회전율</dt>
+<dd>
+<ul>
+<li>연간 매출원가를 연간 평균 총재고액으로 나눈 재고 측정치</li>
+<li>회전율은 일정한 기간을 전제로 하고그 사이에 판매 활동이 어떻게 공헌했는지 측정하는 지표로 회전율이 높은수록 좋음</li>
+</ul>
+</dd>
+</dl>
+<p><span class="math display">\[
+회전율 = \frac{(연간)매출액(원가)}{(평균)재고액}
+\]</span></p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="재고 성과 척도">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+재고 성과 척도
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>평균 총 재고액 2억원, 연간 매출원가 10억원, 연간 50주 영업, 연간 운영일수가 250일일 때, 재고회전율, 재고공급주수, 재고공급일수를 계산하시오. 만약 재고회전율이 10회/년으로 향상되었다면 평균총재고액을 계산하시오.</p>
+<hr>
+<dl>
+<dt>재고회전율</dt>
+<dd>
+<ul>
+<li>재고회전율 = 10억/2억 = 5(회/년)</li>
+</ul>
+</dd>
+<dt>재고공급주수</dt>
+<dd>
+<ul>
+<li>재고공급주수 = 2억/(10억/50주) = 10주</li>
+</ul>
+</dd>
+<dt>재고공급일수</dt>
+<dd>
+<ul>
+<li>재고공급일수 = 2억/(10억/250일) = 50일</li>
+</ul>
+</dd>
+<dt>재고회전율이 10회/년이면</dt>
+<dd>
+<ul>
+<li>재고회전율 = 10 = 10/<span class="math inline">\(x\)</span>, 따라서 평균재고액은 1억원</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
 </section>
 </section>
 <section id="유닛로드" class="level2">
