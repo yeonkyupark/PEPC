@@ -638,7 +638,7 @@ $$
 
 ## 분석적 계층화 과정 (AHP)
 
-::: callout-tip icon=false title="기출"}
+::: {.callout-tip icon=false title="기출"}
 97-1-3
 :::
 
