@@ -632,6 +632,10 @@ $$
 비음조건
 : - $x1, \ x2 \ge 0$
 
+<center>
+![picture by https://www.desmos.com/calculator?lang=ko](images/linear_01.png)
+</center>
+
 위 선행계획모델을 연립방적으로 풀면 $1$ = 200, $x2$ = 300 값을 갖는다. 따라서 최대 이익은 목적함수로 계산하면 $z = 20000 \times 200 + 10000 \times 300 = 700,000$(원)이다.
 
 :::
