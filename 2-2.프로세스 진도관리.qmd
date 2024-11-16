@@ -189,8 +189,8 @@ flowchart TB
 
 ## 네트워크 기법
 
-::: {.callout-tip title="기출"}
-97-3-6, 100-3-1
+::: {.callout-tip title="기출", icon=false}
+97-3-6, 100-3-1, 103-4-4
 :::
 
 **네트워크 기법**(Network, 화살도 arrow diagram, 활동 네트워크 activity network diagram)은 필요한 활동 선후관계를 네트워크로 표시하는 방식으로 <u>간트차트 결점을 보완</u>하기 위하여 개발되었다. 대표적인 기법으로 [-@sec-pert] (Program Evaluation & Review Technique)와 [-@sec-cpm] (Critical Path Method)이 있다.
@@ -284,24 +284,27 @@ AOA 작성 시 원칙
         -   SL은 여유시간, FL은 가장 늦은 완료 시간, SE는 가장 빠른 시작 시간
     4.  프로젝트 최단 완료 시간과 주공정 계산
 
-<br>
 
-::: {#exm-aoa}
-## 기출 97-3-6
+:::{.callout-important title="주공정 계산" icon=false}
+```{r}
+#| echo: false
+# #| tbl-colwidths: [10,90]
 
-| 활동                      | 기대시간(일) | 선행활동 |
-|---------------------------|--------------|----------|
-| A 제품전략 결정           | 1            | \-       |
-| B 입지선정                | 7            | \-       |
-| C 제조설비선정            | 3            | A        |
-| D 배치결정                | 4            | C        |
-| E 전기, 수도시설 설치     | 11           | C        |
-| F 직원 모집               | 4            | B, C     |
-| G 설비 설치               | 5            | D        |
-| H 사무동 등 인테리어 공사 | 2            | E, F     |
-| I 정보시스템 설치         | 4            | E, G     |
-| J 종업원 교육             | 2            | H, I     |
-:::
+options(knitr.kable.NA = '')
+
+tb <- data.frame(
+  stringsAsFactors = FALSE,
+       check.names = FALSE,
+                활동 = c("A 제품전략 결정","B 입지선정",
+                       "C 제조설비선정","D 배치결정","E 전기, 수도시설 설치","F 직원 모집","G 설비 설치",
+                       "H 사무동 등 인테리어 공사","I 정보시스템 설치","J 종업원 교육"),
+         `기대시간(일)` = c(1L, 7L, 3L, 4L, 11L, 4L, 5L, 2L, 4L, 2L),
+              선행활동 = c("-","-","A","C","C","B, C",
+                       "D","E, F","E, G","H, I")
+)
+
+knitr::kable(tb)
+```
 
 ```{mermaid}
 flowchart LR
@@ -323,6 +326,8 @@ flowchart LR
 ```
 
 단순열거법에 따라 주공정은 `A-C-E-I-J`이고, 기대완료시간은 21일(1+3+11+4+2)이다.
+
+:::
 
 ::: {.callout-note title="프로젝트 관리 목표" icon="false"}
 최적화를 위한 프로젝트 관리 목표로 제시되는 3가지 요소는 다음과 같다.
@@ -357,7 +362,7 @@ flowchart LR
 
 :::{.callout-important icon=false title="100-3-1"}
 
-```mermaid
+```{mermaid}
 flowchart LR
 1[1]
 2[2]
@@ -378,18 +383,28 @@ flowchart LR
 
 위 AON을 표로 정리하면 다음과 같다.
 
-선행단계|후행단계|낙관치(a)|정상치{}|비관치()|기대시간|분산
--|-|-|-|-|-|-
-1|2|3|4|5|4|0.11
-1|3|4|6|8|6|0.44
-2|3|4|5|6|5|0.11
-2|4|5|7|9|7|0.11
-3|5|3|6|9|6|1.00
-4|6|7|8|15|9|1.78
-5|6|6|8|16|9|2.78
+```{r}
+#| echo: false
+# #| tbl-colwidths: [10,90]
+
+options(knitr.kable.NA = '')
+
+tb <- data.frame(
+  check.names = FALSE,
+         선행단계 = c(1L, 1L, 2L, 2L, 3L, 4L, 5L),
+         후행단계 = c(2L, 3L, 3L, 4L, 5L, 6L, 6L),
+     `낙관치(a)` = c(3L, 4L, 4L, 5L, 3L, 7L, 6L),
+      `정상치(m)` = c(4L, 6L, 5L, 7L, 6L, 8L, 8L),
+      `비관치(b)` = c(5L, 8L, 6L, 9L, 9L, 15L, 16L),
+         기대시간 = c(4L, 6L, 5L, 7L, 6L, 9L, 9L),
+           분산 = c(0.11, 0.44, 0.11, 0.11, 1, 1.78, 2.78)
+)
+
+knitr::kable(tb)
+```
 
 $$
-기대분산(t_e) = \frac{a + 4m + b}{6},  \quard 분산(\sigma^2) = (\frac{b-a}{6f})^2
+기대분산(t_e) = \frac{a + 4m + b}{6},  \quad 분산(\sigma^2) = (\frac{b-a}{6})^2
 $$
 
 단순열거법으로 주경로를 찾게되면 1 - 2 - 3 - 5 - 6이고 기대완료 시간은 24(4+5+6+9)일이다.
@@ -397,7 +412,7 @@ $$
 프로젝트를 24일만에 끝낼 확률을 구하기 위해서는 정규분포 z 값을 계산한다.
 
 $$
-z = \frac{TS-TE}{\sqrt(\sum{\(\sigma^2)})} = \frac{24-24}{\sqrt{\sum{(0.11+0.11+1.00+2.78)}}} = 0
+z = \frac{TS-TE}{\sqrt{(\sum{(\sigma^2)}}} = \frac{24-24}{\sqrt{\sum{(0.11+0.11+1.00+2.78)}}} = 0
 $$
 
 따라서 z = 0 값을 표준정규분포에서 찾아보면 0.5를 값는다. 그러므로 해당 프로젝트를 24일만에 끝낼 확룰은 50%이다.
@@ -406,7 +421,6 @@ $$
 
 ### 주요 기법
 
-<br>
 
 #### PERT {#sec-pert}
 
