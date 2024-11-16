@@ -160,6 +160,8 @@ MPS가 계획된 주
 ```{r}
 #| echo: false
 # #| tbl-colwidths: [10,90]
+options(knitr.kable.NA = '')
+
 tb <- data.frame(
   stringsAsFactors = FALSE,
        check.names = FALSE,
@@ -177,8 +179,11 @@ tb <- data.frame(
 knitr::kable(tb)
 ```
 
-1주차 경우, 현재고 - 예측된 수요(55) = 5
-2주차 경우, 보유재고(5) + MPS수량(200) - 예측된 수요(50) = 155
+1주차 경우
+: - 현재고 - 예측된 수요(55) = 5
+
+2주차 경우
+: - 보유재고(5) + MPS수량(200) - 예측된 수요(50) = 155
 :::
 
 
