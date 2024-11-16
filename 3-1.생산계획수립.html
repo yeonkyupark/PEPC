@@ -735,24 +735,10 @@ window.Quarto = {
 <p><span id="eq-atp"><span class="math display">\[
 ATP=
 \begin{cases}
-기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
+(기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
 (MPS\, 수량) - (다음\, 번\, MPS가\, 도래하기\, 전까지\, 확정된\, 고객주문량),\quad MPS가\, 계획된\, 주
 \end{cases}
 \tag{10.1}\]</span></span></p>
-<dl>
-<dt>첫째 주</dt>
-<dd>
-<ul>
-<li>ATP = (</li>
-</ul>
-</dd>
-<dt>MPS가 계획된 주</dt>
-<dd>
-<ul>
-<li>ATP =</li>
-</ul>
-</dd>
-</dl>
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="MPS 작성">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -866,7 +852,7 @@ ATP 계산
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>리드타임 2주, Lot 크기 100개, 현재고 80개일 때, <a href="#eq-atp" class="quarto-xref">Equation&nbsp;<span>10.1</span></a>에 따라 ATP를 계산하면 다음과 같다.</p>
+<p>리드타임 2주, Lot 크기 100개, 현재고 80개일 때, <a href="#eq-atp" class="quarto-xref"><span>10.1</span></a>에 따라 ATP를 계산하면 다음과 같다.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -954,6 +940,26 @@ ATP 계산
 </table>
 </div>
 </div>
+<dl>
+<dt>첫째 주</dt>
+<dd>
+<ul>
+<li>ATP = 80 + 0 + (25+35) = 20</li>
+</ul>
+</dd>
+<dt>3째 주</dt>
+<dd>
+<ul>
+<li>ATP = 100 - (20+10) = 70</li>
+</ul>
+</dd>
+<dt>5째 주</dt>
+<dd>
+<ul>
+<li>ATP = 100 - (5+0+0+0) = 95</li>
+</ul>
+</dd>
+</dl>
 </div>
 </div>
 </section>
