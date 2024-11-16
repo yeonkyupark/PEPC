@@ -809,19 +809,7 @@ window.Quarto = {
 </section>
 <section id="네트워크-기법" class="level2">
 <h2 class="anchored" data-anchor-id="네트워크-기법">네트워크 기법</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-기출
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>97-3-6, 100-3-1</p>
-</div>
-</div>
+<p>::: {.callout-tip title=“기출”, icon=false} 97-3-6, 100-3-1, 103-4-4 :::</p>
 <p><strong>네트워크 기법</strong>(Network, 화살도 arrow diagram, 활동 네트워크 activity network diagram)은 필요한 활동 선후관계를 네트워크로 표시하는 방식으로 <u>간트차트 결점을 보완</u>하기 위하여 개발되었다. 대표적인 기법으로 <a href="#sec-pert" class="quarto-xref"><span>PERT</span></a> (Program Evaluation &amp; Review Technique)와 <a href="#sec-cpm" class="quarto-xref"><span>CPM</span></a> (Critical Path Method)이 있다.</p>
 <section id="주경로" class="level3">
 <h3 class="anchored" data-anchor-id="주경로">주경로</h3>
@@ -953,70 +941,80 @@ window.Quarto = {
 </ol>
 </dd>
 </dl>
-<p><br></p>
-<div id="exm-aoa" class="theorem example">
-<p><span class="theorem-title"><strong>예제 7.1 (기출 97-3-6)</strong></span> &nbsp;</p>
-<table class="caption-top table">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="주공정 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+주공정 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th>활동</th>
-<th>기대시간(일)</th>
-<th>선행활동</th>
+<th style="text-align: left;">활동</th>
+<th style="text-align: right;">기대시간(일)</th>
+<th style="text-align: left;">선행활동</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A 제품전략 결정</td>
-<td>1</td>
-<td>-</td>
+<td style="text-align: left;">A 제품전략 결정</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr class="even">
-<td>B 입지선정</td>
-<td>7</td>
-<td>-</td>
+<td style="text-align: left;">B 입지선정</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr class="odd">
-<td>C 제조설비선정</td>
-<td>3</td>
-<td>A</td>
+<td style="text-align: left;">C 제조설비선정</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A</td>
 </tr>
 <tr class="even">
-<td>D 배치결정</td>
-<td>4</td>
-<td>C</td>
+<td style="text-align: left;">D 배치결정</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">C</td>
 </tr>
 <tr class="odd">
-<td>E 전기, 수도시설 설치</td>
-<td>11</td>
-<td>C</td>
+<td style="text-align: left;">E 전기, 수도시설 설치</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">C</td>
 </tr>
 <tr class="even">
-<td>F 직원 모집</td>
-<td>4</td>
-<td>B, C</td>
+<td style="text-align: left;">F 직원 모집</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">B, C</td>
 </tr>
 <tr class="odd">
-<td>G 설비 설치</td>
-<td>5</td>
-<td>D</td>
+<td style="text-align: left;">G 설비 설치</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">D</td>
 </tr>
 <tr class="even">
-<td>H 사무동 등 인테리어 공사</td>
-<td>2</td>
-<td>E, F</td>
+<td style="text-align: left;">H 사무동 등 인테리어 공사</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">E, F</td>
 </tr>
 <tr class="odd">
-<td>I 정보시스템 설치</td>
-<td>4</td>
-<td>E, G</td>
+<td style="text-align: left;">I 정보시스템 설치</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">E, G</td>
 </tr>
 <tr class="even">
-<td>J 종업원 교육</td>
-<td>2</td>
-<td>H, I</td>
+<td style="text-align: left;">J 종업원 교육</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">H, I</td>
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -1046,6 +1044,8 @@ window.Quarto = {
 </div>
 </div>
 <p>단순열거법에 따라 주공정은 <code>A-C-E-I-J</code>이고, 기대완료시간은 21일(1+3+11+4+2)이다.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="프로젝트 관리 목표">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1102,7 +1102,12 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<pre class="mermaid"><code>flowchart LR
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
 1[1]
 2[2]
 3[3]
@@ -1117,93 +1122,103 @@ window.Quarto = {
 4 --d1--&gt;5
 3 --3,6,9--&gt;5
 4 --7,8,15--&gt;6
-5 --6,8,16--&gt;6</code></pre>
+5 --6,8,16--&gt;6
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>위 AON을 표로 정리하면 다음과 같다.</p>
-<table class="caption-top table">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th>선행단계</th>
-<th>후행단계</th>
-<th>낙관치(a)</th>
-<th>정상치{}</th>
-<th>비관치()</th>
-<th>기대시간</th>
-<th>분산</th>
+<th style="text-align: right;">선행단계</th>
+<th style="text-align: right;">후행단계</th>
+<th style="text-align: right;">낙관치(a)</th>
+<th style="text-align: right;">정상치(m)</th>
+<th style="text-align: right;">비관치(b)</th>
+<th style="text-align: right;">기대시간</th>
+<th style="text-align: right;">분산</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>4</td>
-<td>0.11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.11</td>
 </tr>
 <tr class="even">
-<td>1</td>
-<td>3</td>
-<td>4</td>
-<td>6</td>
-<td>8</td>
-<td>6</td>
-<td>0.44</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.44</td>
 </tr>
 <tr class="odd">
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>5</td>
-<td>0.11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.11</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>4</td>
-<td>5</td>
-<td>7</td>
-<td>9</td>
-<td>7</td>
-<td>0.11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.11</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td>5</td>
-<td>3</td>
-<td>6</td>
-<td>9</td>
-<td>6</td>
-<td>1.00</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.00</td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>6</td>
-<td>7</td>
-<td>8</td>
-<td>15</td>
-<td>9</td>
-<td>1.78</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1.78</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>6</td>
-<td>6</td>
-<td>8</td>
-<td>16</td>
-<td>9</td>
-<td>2.78</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2.78</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p><span class="math display">\[
-기대분산(t_e) = \frac{a + 4m + b}{6},  \quard 분산(\sigma^2) = (\frac{b-a}{6f})^2
+기대분산(t_e) = \frac{a + 4m + b}{6},  \quad 분산(\sigma^2) = (\frac{b-a}{6})^2
 \]</span></p>
 <p>단순열거법으로 주경로를 찾게되면 1 - 2 - 3 - 5 - 6이고 기대완료 시간은 24(4+5+6+9)일이다.</p>
 <p>프로젝트를 24일만에 끝낼 확률을 구하기 위해서는 정규분포 z 값을 계산한다.</p>
 <p><span class="math display">\[
-z = \frac{TS-TE}{\sqrt(\sum{\(\sigma^2)})} = \frac{24-24}{\sqrt{\sum{(0.11+0.11+1.00+2.78)}}} = 0
+z = \frac{TS-TE}{\sqrt{(\sum{(\sigma^2)}}} = \frac{24-24}{\sqrt{\sum{(0.11+0.11+1.00+2.78)}}} = 0
 \]</span></p>
 <p>따라서 z = 0 값을 표준정규분포에서 찾아보면 0.5를 값는다. 그러므로 해당 프로젝트를 24일만에 끝낼 확룰은 50%이다.</p>
 </div>
@@ -1212,7 +1227,6 @@ z = \frac{TS-TE}{\sqrt(\sum{\(\sigma^2)})} = \frac{24-24}{\sqrt{\sum{(0.11+0.11+
 </section>
 <section id="주요-기법" class="level3">
 <h3 class="anchored" data-anchor-id="주요-기법">주요 기법</h3>
-<p><br></p>
 <section id="sec-pert" class="level4">
 <h4 class="anchored" data-anchor-id="sec-pert">PERT</h4>
 <p><strong>PERT</strong>(program evaluation and review technique, 프로그램 평기 검토 기법)은 1958년 미국 해군에서 Polaris missile 프로젝트 일정 계획 및 통제를 위한 관리 기법으로 개발되었으며, 시간을 가장 중요한 요소로 통제하는 프로젝트 관리 방법이다. 연구 개발 프로세스에서 프로젝트 진행 상황을 통계 방법을 활용하여 파악하고 이를 통해 일정 계획 및 통제 수단으로 활용되었다. 과거 경험이 없는 불확실한 대상이나 여러 가지 유형의 프로그램 연구 개발에 적합하다.</p>
