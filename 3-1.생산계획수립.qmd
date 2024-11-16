@@ -151,17 +151,10 @@ $$
 $$
 ATP=
 \begin{cases}
-기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
+(기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
 (MPS\, 수량) - (다음\, 번\, MPS가\, 도래하기\, 전까지\, 확정된\, 고객주문량),\quad MPS가\, 계획된\, 주
 \end{cases}
 $$ {#eq-atp}
-
-
-첫째 주
-: - ATP = (
-
-MPS가 계획된 주
-: - ATP = 
 
 :::{.callout-important title="MPS 작성" icon=false}
 제품 Lot 사이즈는 200개, 리드타임은 1주, 안전재고는 없고 현재고가 60개일 때 MPS는 다음과 같이 작성할 수 있다.
@@ -197,7 +190,7 @@ knitr::kable(tb)
 
 :::{.callout-important title="ATP 계산" icon=false}
 
-리드타임 2주, Lot 크기 100개, 현재고 80개일 때, [@eq-atp]에 따라 ATP를 계산하면 다음과 같다.
+리드타임 2주, Lot 크기 100개, 현재고 80개일 때, [-@eq-atp]에 따라 ATP를 계산하면 다음과 같다.
 
 ```{r}
 #| echo: false
@@ -220,7 +213,17 @@ tb <- data.frame(
 
 knitr::kable(tb)
 ```
+
+첫째 주
+: - ATP = 80 + 0 + (25+35) = 20
+
+3째 주
+: - ATP = 100 - (20+10) = 70
+
+5째 주
+: - ATP = 100 - (5+0+0+0) = 95
 :::
+
 
 
 ## 생산능력 결정 전략 {#sec-productibility-strategy}
