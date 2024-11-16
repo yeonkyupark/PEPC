@@ -162,7 +162,7 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 
 ## 설비 배치
 
-:::{.callout-tip title="기출"}
+:::{.callout-tip title="기출" icon=false}
 97-2-1
 :::
 
@@ -294,6 +294,54 @@ U자형 배치는 다음과 같은 장점이 있다.
 -   운반을 최소화한다.
 -   작업자 간 의사소통을 증진시킨다.
 -   작업 유연성을 증가시킨다.
+
+#### Group Technology
+
+**GT**(group technology)는 다품종 소량생산을 위한 유사부품 집단가공법이다.
+
+접근방식
+: - 부품분류법(C&C)
+- 생산흐름분석법(PFA)
+
+```{r}
+#| echo: false
+# #| tbl-colwidths: [10,90]
+
+options(knitr.kable.NA = '')
+
+tb <- data.frame(
+  stringsAsFactors = FALSE,
+                장점 = c("설계 용이", "일정계획 용이", "준비시간 감소", "품질향상 및 원가절감"),
+                단점 = c("부품분류 복잡 및 업무증대", "공정품과 제품재고 증대", NA, NA)
+)
+
+knitr::kable(tb)
+```
+
+#### CMS
+
+:::{.callout-tip title="기출" icon=false}
+106-1-7
+:::
+
+**CMS**(cellular manufacturing system)는 GT와 FMS 중간 형태로 단일 조직 개체 또는 셀(cell) 내에서 원자재를 구성품이나 제품으로 바꾸는 시스템을 말한다. GT 개념을 NC 공작기계와 산업용 Robot을 사용하는 생산공정에 연결해 생산 유연성을 높이고 생산성을 향상시키는 기법이다.
+
+```{r}
+#| echo: false
+# #| tbl-colwidths: [10,90]
+
+options(knitr.kable.NA = '')
+
+tb <- data.frame(
+  stringsAsFactors = FALSE,
+                장점 = c("운반비용 감소", "공구사용 감소", "인간관계 개선", "전문 기술 향상"),
+                단점 = c("시설투자비 증대", "기계 이용률 감소", NA, NA)
+)
+
+knitr::kable(tb)
+```
+
+
 
 ### 기종장제
 
