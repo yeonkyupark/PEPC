@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -433,6 +437,11 @@ window.Quarto = {
   </ul></li>
   <li><a href="#sec-mps" id="toc-sec-mps" class="nav-link" data-scroll-target="#sec-mps">주일정계획(MPS)</a></li>
   <li><a href="#rccp" id="toc-rccp" class="nav-link" data-scroll-target="#rccp">RCCP</a></li>
+  <li><a href="#일정계획" id="toc-일정계획" class="nav-link" data-scroll-target="#일정계획">일정계획</a></li>
+  <li><a href="#순서계획" id="toc-순서계획" class="nav-link" data-scroll-target="#순서계획">순서계획</a>
+  <ul>
+  <li><a href="#sec-johnson-rule" id="toc-sec-johnson-rule" class="nav-link" data-scroll-target="#sec-johnson-rule">존슨법</a></li>
+  </ul></li>
   <li><a href="#sec-productibility-strategy" id="toc-sec-productibility-strategy" class="nav-link" data-scroll-target="#sec-productibility-strategy">생산능력 결정 전략</a>
   <ul>
   <li><a href="#생산능력-전략-사전-검토-사항" id="toc-생산능력-전략-사전-검토-사항" class="nav-link" data-scroll-target="#생산능력-전략-사전-검토-사항">생산능력 전략 사전 검토 사항</a></li>
@@ -996,6 +1005,356 @@ ATP 계산
 </ul>
 </dd>
 </dl>
+</section>
+<section id="일정계획" class="level2">
+<h2 class="anchored" data-anchor-id="일정계획">일정계획</h2>
+<p>일정계획(scheduling)이란 생산계획 내지 제조명령을 시간적으로 구체화 하는 과정이다. 생산자원을 합리적으로 이용하여 생산할 품목과 생산량을 예정된 시간에 생산할 수 있도록 계획하고 통제하는 것이다.</p>
+<dl>
+<dt>일정계획 종류</dt>
+<dd>
+<ul>
+<li>대 일정계획(master scheduling), 주일정계획이라고도 하며 수주에서 출하까지 일정계획을 말함</li>
+<li>중 일정계획(operating scheduling), 대 일정계획을 토대로 공정 개시일과 완료일을 작성</li>
+<li>소 일정계획(detail scheduling), 세부일정계획으로 작업자, 기계별 일정계획을 말함</li>
+</ul>
+</dd>
+<dt>일정계획 기능</dt>
+<dd>
+<ul>
+<li>부하결정 → 작업우선순위결정 → 작업할당 → 작업배정 → 진도관리 순으로 진행</li>
+</ul>
+</dd>
+<dt>기준일정</dt>
+<dd>
+<ul>
+<li>작업시간 + 준비작업시간 + 여유시간 + 정체시간</li>
+</ul>
+</dd>
+</dl>
+<p>공정관리는 계획기능과 통제기능으로 구분할 수 있다.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">계획기능</th>
+<th style="text-align: left;">통제기능</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">절차계획(순서계획)</td>
+<td style="text-align: left;">작업배정(우선순위 통제)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">공수계획(능력소요계획)</td>
+<td style="text-align: left;">여력관리</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">일정계획</td>
+<td style="text-align: left;">진도관리</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<dl>
+<dt>절차계획(routing)</dt>
+<dd>
+<ul>
+<li>작업계시에 앞서 능률적이고 경제적인 작업절차를 결정하기 위한 것(<strong>작업방법과 순서가 정해짐</strong>)</li>
+</ul>
+</dd>
+<dt>공수계획(loading)</dt>
+<dd>
+<ul>
+<li>생산계획량을 완성하는데 필요한 <strong>인원이나 기계 부하를 결정</strong>하게 됨</li>
+</ul>
+</dd>
+<dt>일정계획(scheduling)</dt>
+<dd>
+<ul>
+<li>작업순서와 방법이 결정되고(절차계획), 생산량이 공수로 환산되면(공수계획), 작업 <strong>시작시간과 종료시간을 결정</strong>하는 과정</li>
+</ul>
+</dd>
+<dt>작업배정(dispatching)</dt>
+<dd>
+<ul>
+<li>절차계획과 일정계획표에 따라서 생산을 개시하도록 허락</li>
+</ul>
+</dd>
+<dt>여력관리(capacity control)</dt>
+<dd>
+<ul>
+<li>통제단계에서 실제 능력과 부하를 조사하여 양자 균형을 이루도록 조정</li>
+</ul>
+</dd>
+<dt>진도관리(expedition or follow up)</dt>
+<dd>
+<ul>
+<li>작업배정(작업지시)에 의해 작업 진도상황이나 과정을 수량적으로 관리하는 것</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="순서계획" class="level2">
+<h2 class="anchored" data-anchor-id="순서계획">순서계획</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>97-1-12</p>
+</div>
+</div>
+<p>주문생산은 다양한 일감이 상이한 순서로 작업하므로 작업순서 결정과 부하 결정문제가 생산성에 영향을 미친다. 통상 공장에서는 작업 순서가 동일할 경우를 대비하여 서너개의 작업 우선순위 규칙(Priority rule), 작업배정규칙(Dispatching rule)을 함께 사용한다.</p>
+<p>우선순위 규칙 평가 기준은 다음과 같다.</p>
+<ul>
+<li>납기 이행</li>
+<li>작업 진행 시간(flow time) 최소화</li>
+<li>재공품(WIP) 최소화</li>
+<li>기계/작업 유휴시간 최소화</li>
+</ul>
+<p>작업순서 결정하는 방법은 크게 지역특성을 고려한 방법과 전체특성을 고려한 방법이 있다. <strong>지역특성 순위규칙</strong>(local sequencing rule)은 현재 작업장에서 주어진 상황을 고려하여 작업순서를 결정하는 방식이고 <strong>전체특성 순위규칙</strong>(global sequencing rule)은 후속 잔여 작업장 특성까지 고려하여 작업우선순위를 결정하는 방식이다.</p>
+<p><font color="blue"><strong>단일 설비 일정 계획 기준</strong></font> 다음과 같은 작업 순서 결정 방식이 있다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    subgraph s01[지역특성 순위규칙]
+    direction LR
+    11[선착우선]
+    12[최소작업시간 우선]
+    13[최소납기우선]
+    end
+    subgraph s02[전체특성 순위규칙]
+    direction LR
+    21[긴급률법]
+    22[최소여유시간 우선]
+    23["잔여작업&lt;br&gt;최소여유시간 우선"]
+    end
+  작업순서 --- s01 &amp; s02
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>작업순서 결정 방법</dt>
+<dd>
+<ul>
+<li>선착순 우선(FCFS, first come first served): 도착 순서에 따라 처리</li>
+<li>최단 처리 시간법(SPT, shortest process time): 처리 시간이 짧은 작업부터 실행</li>
+<li>납기 우선법(EDD, earliest due date): 납기일이 도래하는 작업부터 실행</li>
+<li>긴급률 법(CR, critical ratio): 최종 잔여일까지 남은 시간과 작업을 처리하기 위해 소요되는 시간 간 비율을 나타내며 비율이 작은 작업부터 처리하는 규칙
+<ul>
+<li>CR이 1보다 작으면 작업이 지연된 상태임</li>
+</ul></li>
+<li>최소 여유 시간법(s): 납기일까지 남은 여유시간이 가장 짧은 작업부터 진행</li>
+<li>잔여 작업 최소 여유시간 우선 처리법(s/RO): (최종납기 잔여작업 처리 소요시간)/(잔여작업일수), 즉 잔여작업 평균유휴시간 크기를 산출하여 이 값이 가장 작은 것부터 처리함, 작업이 지연되는 경우 s/RO값이 음(-) 값을 가짐</li>
+</ul>
+</dd>
+</dl>
+<p><font color="blue"><strong>n개 작업을 2대 기계에서 작업할 경우</strong></font> 우선 순위 규칙은 <strong>존슨법</strong>(Johnson’s rule(<a href="#sec-johnson-rule" class="quarto-xref"><span>존슨법</span></a>))을 적용할 수 있다.</p>
+<section id="sec-johnson-rule" class="level3">
+<h3 class="anchored" data-anchor-id="sec-johnson-rule">존슨법</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>100-3-5, 103-1-11</p>
+</div>
+</div>
+<p>존슨법은 두 개 사업장을 거치는 경우 또는 2대 기계에서 작업을 할 경우 우선순위를 결정하는 방법이다.</p>
+<p>다음과 같은 가정과 기준으로 수행한다.</p>
+<ul>
+<li>각 작업이 동일한 순서로 두 개 작업장을 거침
+<ul>
+<li>작업장(기계)1 → 작업장(기계)2</li>
+</ul></li>
+<li>최종 작업이 두 번째 작업장에서 완료되는 시간이 모든 작업이 끝나는 시간(makespan)이 최소가 되도록 작업 순서를 결정
+<ul>
+<li>두 작업장 총유휴 시간 최소화</li>
+</ul></li>
+</ul>
+<p>우선 순위 규칙은 다음과 같다. = = = = = 1. 작업장별 작업 시간치를 표에 기입 2. 작업장 1, 2에 관계없이 처리시간이 가장 짧은 작업(<strong>최소 작업시간</strong>) 선택 - <font color="blue">가장 짧은 처리 시간이 작업장1에서 발생하면 그 작업을 가장 앞 순위에 놓고, 작업장2에서 발생하면 가장 뒤 순위에 놓음</font> 3. 2.에서 순위가 결정된 작업은 고려 대상에서 제외 4. 모든 작업 순서가 결정될 때까지 2와 3을 반복</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>작업</th>
+<th>작업1(일)</th>
+<th>작업2(일)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>6</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>존슨법 규칙에 따라 작업 순서는 [B-D-E-C-A]로 결정된다. 작업순서에 따른 작업시간과 유휴 시간은 다음과 같다.</p>
+<ul>
+<li>작업장1: B(2) + D(3) + E(6) +C6) + A(5) = 22(일)</li>
+<li>작업장2: 유휴(2) + B(3) + D(4) + 유휴(2) + E(7) + C(5) + A(4) = 27(일)</li>
+</ul>
+<p>작업장1은 22일만에 작업 완료되지만 작업장2가 27일 완료되므로 5일간의 유휴시간이 발생한다. 작업장2는 작업장1에서 완료되어야 진행할 수 있어 4일간의 유휴일이 발생한다.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="Petrov방법">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Petrov방법
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A, B, C3대의 기계를 거쳐야 하는 5개 작업(J1 ~ J5)의 기계별 가공시간이 다음 표와 같을 때 Petrov방법을 사용하여 총 처리시간을 최소화(SPT법)하는 가공순서와 이때의 총 처리시간을 구하시오.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J1</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>J2</td>
+<td>7</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>J3</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>J4</td>
+<td>3</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>J5</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Petrov방법은 존슨규칙을 확장한 방법으로 여러 개 작업을 여려 개 작업장에서 이루어지는 경우 우선순위를 결정한다.</p>
+<p>위 문제처럼 작업장이 3개, A,B,C인 경우 A-B를 합쳐서 가상 작업장 하나를, B-C를 합쳐서 가상 작업장 하나를 만들어 존슨규칙을 적용한다. 참고로, 작업장이 A,B,C,D 4개로 구성된 경우 A-B, C-D를 각각 합쳐서 2개 가상 작업장을 만들어 존슨규칙을 적용한다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>A-B</th>
+<th>B-C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J1</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>J2</td>
+<td>7</td>
+<td>1</td>
+<td>1</td>
+<td>8</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>J3</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>J4</td>
+<td>3</td>
+<td>0</td>
+<td>9</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>J5</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>A-B, B-C 작업장을 기준으로 작업 순서를 결정하면 다음과 같다.</p>
+<ul>
+<li>J4 - J3 - J5 - J1 - J2
+<ul>
+<li>A작업장: 작업시간(3-5-3-4-7) + 유휴시간 2 = 24시간</li>
+<li>B작업장: 작업시간(2-1-2-0-4) + 유휴시간 17 = 24시간</li>
+<li>C작업장: 작업시간(1-1-3-9-2) + 유휴시간 8 = 22시간</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
 </section>
 <section id="sec-productibility-strategy" class="level2">
 <h2 class="anchored" data-anchor-id="sec-productibility-strategy">생산능력 결정 전략</h2>
