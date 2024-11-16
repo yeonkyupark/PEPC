@@ -190,7 +190,7 @@ knitr::kable(tb)
 
 :::{.callout-important title="ATP 계산" icon=false}
 
-리드타임 2주, Lot 크기 100개, 현재고 80개일 때, [-@eq-atp]에 따라 ATP를 계산하면 다음과 같다.
+리드타임 2주, Lot 크기 100개, 현재고 80개일 때, ATP 계산 산식([-@eq-atp])에 따라 ATP를 계산하면 다음과 같다.
 
 ```{r}
 #| echo: false
@@ -223,6 +223,25 @@ knitr::kable(tb)
 5째 주
 : - ATP = 100 - (5+0+0+0) = 95
 :::
+
+## RCCP
+
+<center>
+![https://www.allics.be/blog/rough-cut-capacity-plan/](https://www.allics.be/wp-content/uploads/RCCP-Graph-1280x571.png.webp)
+</center>
+
+**RCCP**(개략적 생산능력계획, rough-cut capacity planning)은 MPS 실행에 소요되는 생산능력을 추정하여 이를 효과적으로 확보하기 위한 개략적인 계획 활동을 의미한다. RCCP 목적은 생산 소요계획과 가용 생산이 일치하도록 하여 특정 자원 과대 또는 과부하가 걸리지 않도록 한다.
+
+종합계수법
+: - RCCP 기법중 가장 단순한 방법으로 제품 수량, 제품 단 단위단 노동시간, 각 작업장 가동실적 등 3가지 데이터를 이용하여 계획을 수립함
+
+생산능력 명세서법
+: - 제품 하나를 생산하는데 각 작업장별(또는 공정별)소요시간을 파악하여 생산능력 명세표를 DB화하여 각 작업장에 배분하는 방식
+
+부하프로필법
+: - 일, 주, 분기별 생산능력 소욜를 도표로 나타내는 것으로 정상능력을 초과하는 기간에 대해 부하를 조정함
+- 부하조정법: 잔업, 이동배치, 생산조정 등 조정불가시 MPS 조정
+
 
 
 
