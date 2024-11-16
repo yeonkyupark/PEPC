@@ -432,6 +432,7 @@ window.Quarto = {
   <li><a href="#총괄생산전략-종류" id="toc-총괄생산전략-종류" class="nav-link" data-scroll-target="#총괄생산전략-종류">총괄생산전략 종류</a></li>
   </ul></li>
   <li><a href="#sec-mps" id="toc-sec-mps" class="nav-link" data-scroll-target="#sec-mps">주일정계획(MPS)</a></li>
+  <li><a href="#rccp" id="toc-rccp" class="nav-link" data-scroll-target="#rccp">RCCP</a></li>
   <li><a href="#sec-productibility-strategy" id="toc-sec-productibility-strategy" class="nav-link" data-scroll-target="#sec-productibility-strategy">생산능력 결정 전략</a>
   <ul>
   <li><a href="#생산능력-전략-사전-검토-사항" id="toc-생산능력-전략-사전-검토-사항" class="nav-link" data-scroll-target="#생산능력-전략-사전-검토-사항">생산능력 전략 사전 검토 사항</a></li>
@@ -852,7 +853,7 @@ ATP 계산
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>리드타임 2주, Lot 크기 100개, 현재고 80개일 때, <a href="#eq-atp" class="quarto-xref"><span>10.1</span></a>에 따라 ATP를 계산하면 다음과 같다.</p>
+<p>리드타임 2주, Lot 크기 100개, 현재고 80개일 때, ATP 계산 산식(<a href="#eq-atp" class="quarto-xref"><span>10.1</span></a>)에 따라 ATP를 계산하면 다음과 같다.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -962,6 +963,39 @@ ATP 계산
 </dl>
 </div>
 </div>
+</section>
+<section id="rccp" class="level2">
+<h2 class="anchored" data-anchor-id="rccp">RCCP</h2>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.allics.be/wp-content/uploads/RCCP-Graph-1280x571.png.webp" class="img-fluid figure-img"></p>
+<figcaption>https://www.allics.be/blog/rough-cut-capacity-plan/</figcaption>
+</figure>
+</div>
+</center>
+<p><strong>RCCP</strong>(개략적 생산능력계획, rough-cut capacity planning)은 MPS 실행에 소요되는 생산능력을 추정하여 이를 효과적으로 확보하기 위한 개략적인 계획 활동을 의미한다. RCCP 목적은 생산 소요계획과 가용 생산이 일치하도록 하여 특정 자원 과대 또는 과부하가 걸리지 않도록 한다.</p>
+<dl>
+<dt>종합계수법</dt>
+<dd>
+<ul>
+<li>RCCP 기법중 가장 단순한 방법으로 제품 수량, 제품 단 단위단 노동시간, 각 작업장 가동실적 등 3가지 데이터를 이용하여 계획을 수립함</li>
+</ul>
+</dd>
+<dt>생산능력 명세서법</dt>
+<dd>
+<ul>
+<li>제품 하나를 생산하는데 각 작업장별(또는 공정별)소요시간을 파악하여 생산능력 명세표를 DB화하여 각 작업장에 배분하는 방식</li>
+</ul>
+</dd>
+<dt>부하프로필법</dt>
+<dd>
+<ul>
+<li>일, 주, 분기별 생산능력 소욜를 도표로 나타내는 것으로 정상능력을 초과하는 기간에 대해 부하를 조정함</li>
+<li>부하조정법: 잔업, 이동배치, 생산조정 등 조정불가시 MPS 조정</li>
+</ul>
+</dd>
+</dl>
 </section>
 <section id="sec-productibility-strategy" class="level2">
 <h2 class="anchored" data-anchor-id="sec-productibility-strategy">생산능력 결정 전략</h2>
