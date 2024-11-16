@@ -148,13 +148,22 @@ $$
 $$
 약속 가능수량(ATP, available to promise quantities)은 고객과 약속한 제품이나 서비스 수량을 의미하며 다음과 같이 계산한다.
 
+$$
+ATP=
+\begin{cases}
+기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
+(MPS\, 수량) - (다음\, 번\, MPS가\, 도래하기\, 전까지\, 확정된\, 고객주문량),\quad MPS가\, 계획된\, 주
+\end{cases}
+$$ {#eq-atp}
+
+
 첫째 주
-: - ATP = (기초재고보유량) + (MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된  고객주문량)
+: - ATP = (
 
 MPS가 계획된 주
-: - ATP = (MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된 고객주문량)
+: - ATP = 
 
-:::{.callout-note title="MPS 작성" icon=false}
+:::{.callout-important title="MPS 작성" icon=false}
 제품 Lot 사이즈는 200개, 리드타임은 1주, 안전재고는 없고 현재고가 60개일 때 MPS는 다음과 같이 작성할 수 있다.
 
 ```{r}
@@ -186,6 +195,32 @@ knitr::kable(tb)
 : - 보유재고(5) + MPS수량(200) - 예측된 수요(50) = 155
 :::
 
+:::{.callout-important title="ATP 계산" icon=false}
+
+리드타임 2주, Lot 크기 100개, 현재고 80개일 때, [@eq-atp]에 따라 ATP를 계산하면 다음과 같다.
+
+```{r}
+#| echo: false
+# #| tbl-colwidths: [10,90]
+options(knitr.kable.NA = '')
+
+tb <- data.frame(
+  stringsAsFactors = FALSE,
+       check.names = FALSE,
+                주별 = c("수요 예측치", "확정된 주문량", "예측 보유재고", "MPS", "MPS 생산", "ATP"),
+              `1주` = c(20L, 25L, 55L, NA, 100L, 20L),
+              `2주` = c(50L, 35L, 5L, NA, NA, NA),
+              `3주` = c(40L, 20L, 65L, 100L, 100L, 70L),
+              `4주` = c(40L, 10L, 25L, NA, 100L, NA),
+              `5주` = c(80L, 5L, 45L, 100L, 100L, 95L),
+              `6주` = c(80L, 0L, 65L, 100L, NA, NA),
+              `7주` = c(80L, 0L, 85L, 100L, NA, NA),
+              `8주` = c(40L, 0L, 45L, NA, NA, NA)
+)
+
+knitr::kable(tb)
+```
+:::
 
 
 ## 생산능력 결정 전략 {#sec-productibility-strategy}
