@@ -431,6 +431,7 @@ window.Quarto = {
   <li><a href="#생산-계획-구조" id="toc-생산-계획-구조" class="nav-link" data-scroll-target="#생산-계획-구조">생산 계획 구조</a></li>
   <li><a href="#총괄생산전략-종류" id="toc-총괄생산전략-종류" class="nav-link" data-scroll-target="#총괄생산전략-종류">총괄생산전략 종류</a></li>
   </ul></li>
+  <li><a href="#sec-mps" id="toc-sec-mps" class="nav-link" data-scroll-target="#sec-mps">주일정계획(MPS)</a></li>
   <li><a href="#sec-productibility-strategy" id="toc-sec-productibility-strategy" class="nav-link" data-scroll-target="#sec-productibility-strategy">생산능력 결정 전략</a>
   <ul>
   <li><a href="#생산능력-전략-사전-검토-사항" id="toc-생산능력-전략-사전-검토-사항" class="nav-link" data-scroll-target="#생산능력-전략-사전-검토-사항">생산능력 전략 사전 검토 사항</a></li>
@@ -640,9 +641,14 @@ window.Quarto = {
 </dd>
 </dl>
 <p>수요추종 전략과 생산평준화 전략을 비교하면 다음과 같다.</p>
-<div class="cell">
+<div class="cell" data-tbl-colwidths="[60,20,20]">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 60%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">요인</th>
@@ -696,6 +702,140 @@ window.Quarto = {
 </div>
 </div>
 </section>
+</section>
+<section id="sec-mps" class="level2">
+<h2 class="anchored" data-anchor-id="sec-mps">주일정계획(MPS)</h2>
+<p><strong>주일정계획</strong>(MPS, master production schedule)이란 생산시스템에서 생산되는 <strong>개별 최종품목</strong>에 대한 <strong>단기생산계획</strong>으로 주단위로 총괄수요를 분해한 개별품목 수요에 대한 충족계획이다.</p>
+<dl>
+<dt>MPS 수립 목표</dt>
+<dd>
+<ul>
+<li>납기준수 - 고객과 약속한 일정에 맞출 수 있는지 일정 수립 → 생산 신속성</li>
+<li>생산비용 최소화 - 생산설비에 대한 과중한 부하 또는 적정한 생산 능력 효율적 활용 → 생산비용 최소화</li>
+</ul>
+</dd>
+<dt>MPS 시간 구역</dt>
+<dd>
+<ul>
+<li>동결된 시간(frozen): 특별상황 관리책임자 허가 없이 생산일정 변경 불가</li>
+<li>확정된 구간(fixed): 예외적인 상황 발생에 한하여 변경 가능</li>
+<li>채워진 구간(full): 일정변경, 사용 가능한 생산능력 및 주문처리를 위해 할당되었으나 일정 변경으로 인한 비용에는 큰 영향을 미치지 않음</li>
+<li>개방된 구간(open): 새 주문을 자유롭게 반영 가능, 아지 생산능력 미 반영</li>
+</ul>
+</dd>
+</dl>
+<p>MPS 작성 절차는 다음과 같다.</p>
+<ol type="1">
+<li>재고량 예측치 및 확정된 주문량에 따라 예측 보유재고량 산출</li>
+<li>수요량 대비 재고 부족 시 생산 LOT 크기 감안하여 MPS 수량 계획 수립</li>
+</ol>
+<p><span class="math display">\[
+예측된 \ 재고보유 \ 수량 \ = \ (직전기간 \ 말 \ 재고 \ 수준) + (MPS \ 수량) - (예측된 \ 수요량)
+\]</span> 약속 가능수량(ATP, available to promise quantities)은 고객과 약속한 제품이나 서비스 수량을 의미하며 다음과 같이 계산한다.</p>
+<dl>
+<dt>첫째 주</dt>
+<dd>
+<ul>
+<li>ATP = (기초재고보유량) + (MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된 고객주문량)</li>
+</ul>
+</dd>
+<dt>MPS가 계획된 주</dt>
+<dd>
+<ul>
+<li>ATP = (MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된 고객주문량)</li>
+</ul>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="MPS 작성">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MPS 작성
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>제품 Lot 사이즈는 200개, 리드타임은 1주, 안전재고는 없고 현재고가 60개일 때 MPS는 다음과 같이 작성할 수 있다.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">주별</th>
+<th style="text-align: right;">1주</th>
+<th style="text-align: right;">2주</th>
+<th style="text-align: right;">3주</th>
+<th style="text-align: right;">4주</th>
+<th style="text-align: right;">5주</th>
+<th style="text-align: right;">6주</th>
+<th style="text-align: right;">7주</th>
+<th style="text-align: right;">8주</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">수요 예측치</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">확정된 주문량</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">예측 보유재고</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">165</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">135</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MPS</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MPS 생산</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>1주차 경우, 현재고 - 예측된 수요(55) = 5 2주차 경우, 보유재고(5) + MPS수량(200) - 예측된 수요(50) = 155</p>
+</div>
+</div>
 </section>
 <section id="sec-productibility-strategy" class="level2">
 <h2 class="anchored" data-anchor-id="sec-productibility-strategy">생산능력 결정 전략</h2>
@@ -795,7 +935,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="생산능력-전략-사전-검토-사항">생산능력 전략 사전 검토 사항</h3>
 <p>경영자는 생산능력을 결정하기 앞서 생산능력 전략 차원에서 <strong>여유능력 크기</strong>와 <strong>확장 시기 및 규모</strong>를 검토해야 한다.</p>
 <dl>
-<dt>여유능력 결정(Sizing Capacity Cushinon)</dt>
+<dt>여유능력 결정(Sizing Capacity Cushion)</dt>
 <dd>
 <ul>
 <li><strong>여유능력</strong>(capacity cushion)은 기대를 초과하는 잉여 능력으로 최적 여유 능력은 산업 분야별 차이가 있다.</li>
