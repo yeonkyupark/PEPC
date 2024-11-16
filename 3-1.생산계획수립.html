@@ -732,21 +732,28 @@ window.Quarto = {
 <p><span class="math display">\[
 예측된 \ 재고보유 \ 수량 \ = \ (직전기간 \ 말 \ 재고 \ 수준) + (MPS \ 수량) - (예측된 \ 수요량)
 \]</span> 약속 가능수량(ATP, available to promise quantities)은 고객과 약속한 제품이나 서비스 수량을 의미하며 다음과 같이 계산한다.</p>
+<p><span id="eq-atp"><span class="math display">\[
+ATP=
+\begin{cases}
+기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
+(MPS\, 수량) - (다음\, 번\, MPS가\, 도래하기\, 전까지\, 확정된\, 고객주문량),\quad MPS가\, 계획된\, 주
+\end{cases}
+\tag{10.1}\]</span></span></p>
 <dl>
 <dt>첫째 주</dt>
 <dd>
 <ul>
-<li>ATP = (기초재고보유량) + (MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된 고객주문량)</li>
+<li>ATP = (</li>
 </ul>
 </dd>
 <dt>MPS가 계획된 주</dt>
 <dd>
 <ul>
-<li>ATP = (MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된 고객주문량)</li>
+<li>ATP =</li>
 </ul>
 </dd>
 </dl>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="MPS 작성">
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="MPS 작성">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -847,6 +854,106 @@ MPS 작성
 </ul>
 </dd>
 </dl>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="ATP 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ATP 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>리드타임 2주, Lot 크기 100개, 현재고 80개일 때, <a href="#eq-atp" class="quarto-xref">Equation&nbsp;<span>10.1</span></a>에 따라 ATP를 계산하면 다음과 같다.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">주별</th>
+<th style="text-align: right;">1주</th>
+<th style="text-align: right;">2주</th>
+<th style="text-align: right;">3주</th>
+<th style="text-align: right;">4주</th>
+<th style="text-align: right;">5주</th>
+<th style="text-align: right;">6주</th>
+<th style="text-align: right;">7주</th>
+<th style="text-align: right;">8주</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">수요 예측치</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">확정된 주문량</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">예측 보유재고</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MPS</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MPS 생산</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ATP</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 </section>
