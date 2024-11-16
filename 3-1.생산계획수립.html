@@ -435,7 +435,7 @@ window.Quarto = {
   <li><a href="#생산-계획-구조" id="toc-생산-계획-구조" class="nav-link" data-scroll-target="#생산-계획-구조">생산 계획 구조</a></li>
   <li><a href="#총괄생산전략-종류" id="toc-총괄생산전략-종류" class="nav-link" data-scroll-target="#총괄생산전략-종류">총괄생산전략 종류</a></li>
   </ul></li>
-  <li><a href="#sec-mps" id="toc-sec-mps" class="nav-link" data-scroll-target="#sec-mps">주일정계획(MPS)</a></li>
+  <li><a href="#sec-mps" id="toc-sec-mps" class="nav-link" data-scroll-target="#sec-mps">기준일정계획(MPS)</a></li>
   <li><a href="#rccp" id="toc-rccp" class="nav-link" data-scroll-target="#rccp">RCCP</a></li>
   <li><a href="#일정계획" id="toc-일정계획" class="nav-link" data-scroll-target="#일정계획">일정계획</a></li>
   <li><a href="#순서계획" id="toc-순서계획" class="nav-link" data-scroll-target="#순서계획">순서계획</a>
@@ -603,7 +603,50 @@ window.Quarto = {
 </section>
 <section id="총괄생산전략-종류" class="level3">
 <h3 class="anchored" data-anchor-id="총괄생산전략-종류">총괄생산전략 종류</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>103-4-3</p>
+</div>
+</div>
 <p>총괄생산계획은 변화하는 수요 대처와 기업 이윤 극대화를 위해 손실과 비용이 최소화 되도록 결정한다. 생산계획전략에는 <strong>수요추종</strong> 전략, <strong>생산평준화</strong> 전략, <strong>혼합</strong> 전략이 있다.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">전략</th>
+<th style="text-align: left;">수요추종전략</th>
+<th style="text-align: left;">생산평준화</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">고용수준</td>
+<td style="text-align: left;">변동</td>
+<td style="text-align: left;">일정</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">생산율</td>
+<td style="text-align: left;">변동</td>
+<td style="text-align: left;">일정</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">재고수준</td>
+<td style="text-align: left;">최소화</td>
+<td style="text-align: left;">일정 보유</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><strong>수요추종 전략</strong>은 수요변동에 따라 <strong>생산량과 고용수준을 변화</strong>시키는 방법이다. 즉, 수요량이 증가하게 되면 고용을 하고, 반면 수요가 감소하게 되면 해고하는 방법이다. 단, 종업원수를 다음과 같은 방법으로 일정하게 유지할 수 있다.</p>
 <dl>
 <dt>종업원수 일정 유지</dt>
@@ -641,7 +684,9 @@ window.Quarto = {
 <dl>
 <dt>자동차, 전자업종 등 숙력된 작업자 확보가 어려운 경우</dt>
 <dd>
--점진적 고용증대를 통한 생산능력 확충과 동시에 잔업, 하청을 활용
+<ul>
+<li>점진적 고용증대를 통한 생산능력 확충과 동시에 잔업, 하청을 활용</li>
+</ul>
 </dd>
 <dt>노동 집약적이며 노동력확보가 용이한 경우</dt>
 <dd>
@@ -714,8 +759,8 @@ window.Quarto = {
 </section>
 </section>
 <section id="sec-mps" class="level2">
-<h2 class="anchored" data-anchor-id="sec-mps">주일정계획(MPS)</h2>
-<p><strong>주일정계획</strong>(MPS, master production schedule)이란 생산시스템에서 생산되는 <strong>개별 최종품목</strong>에 대한 <strong>단기생산계획</strong>으로 주단위로 총괄수요를 분해한 개별품목 수요에 대한 충족계획이다.</p>
+<h2 class="anchored" data-anchor-id="sec-mps">기준일정계획(MPS)</h2>
+<p><strong>기준일정계획</strong>(MPS, master production schedule)이란 생산시스템에서 생산되는 <strong>개별 최종품목</strong>에 대한 <strong>단기생산계획</strong>으로 주단위로 총괄수요를 분해한 개별품목 수요에 대한 충족계획이다.</p>
 <dl>
 <dt>MPS 수립 목표</dt>
 <dd>
@@ -745,8 +790,8 @@ window.Quarto = {
 <p><span id="eq-atp"><span class="math display">\[
 ATP=
 \begin{cases}
-(기초재고보유량) + (MPS\,수량) - (다음\,번\, MPS가\, 도래하기\, 전까지\, 확정된\,  고객주문량),\quad첫째 주\\
-(MPS\, 수량) - (다음\, 번\, MPS가\, 도래하기\, 전까지\, 확정된\, 고객주문량),\quad MPS가\, 계획된\, 주
+\text{(기초재고보유량) + (MPS 수량) - (다음번 MPS가 도래하기 전까지 확정된  고객주문량), 첫째 주}\\
+\text{(MPS 수량) - (다음 번 MPS가 도래하기 전까지 확정된 고객주문량),                                     MPS가 계획된 주}
 \end{cases}
 \tag{10.1}\]</span></span></p>
 <div class="callout callout-style-default callout-important no-icon callout-titled" title="MPS 작성">
@@ -1013,7 +1058,7 @@ ATP 계산
 <dt>일정계획 종류</dt>
 <dd>
 <ul>
-<li>대 일정계획(master scheduling), 주일정계획이라고도 하며 수주에서 출하까지 일정계획을 말함</li>
+<li>대 일정계획(master scheduling), 기준일정계획이라고도 하며 수주에서 출하까지 일정계획을 말함</li>
 <li>중 일정계획(operating scheduling), 대 일정계획을 토대로 공정 개시일과 완료일을 작성</li>
 <li>소 일정계획(detail scheduling), 세부일정계획으로 작업자, 기계별 일정계획을 말함</li>
 </ul>
@@ -1159,11 +1204,126 @@ ATP 계산
 <li>CR이 1보다 작으면 작업이 지연된 상태임</li>
 </ul></li>
 <li>최소 여유 시간법(s): 납기일까지 남은 여유시간이 가장 짧은 작업부터 진행</li>
-<li>잔여 작업 최소 여유시간 우선 처리법(s/RO): (최종납기 잔여작업 처리 소요시간)/(잔여작업일수), 즉 잔여작업 평균유휴시간 크기를 산출하여 이 값이 가장 작은 것부터 처리함, 작업이 지연되는 경우 s/RO값이 음(-) 값을 가짐</li>
+<li>잔여 작업 최소 여유시간 우선 처리법(STP/OP): (최종납기 잔여작업 처리 소요시간)/(잔여작업일수), 즉 잔여작업 평균유휴시간 크기를 산출하여 이 값이 가장 작은 것부터 처리함, 작업이 지연되는 경우 STP/OP 값이 음(-) 값을 가짐</li>
 </ul>
 </dd>
 </dl>
-<p><font color="blue"><strong>n개 작업을 2대 기계에서 작업할 경우</strong></font> 우선 순위 규칙은 <strong>존슨법</strong>(Johnson’s rule(<a href="#sec-johnson-rule" class="quarto-xref"><span>존슨법</span></a>))을 적용할 수 있다.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="작업우선순위 규칙">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+작업우선순위 규칙
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">주문제품</th>
+<th style="text-align: left;">주문도착순서</th>
+<th style="text-align: left;">잔여처리일수</th>
+<th style="text-align: left;">잔여납기일수</th>
+<th style="text-align: left;">잔여공정수</th>
+<th style="text-align: left;">CR</th>
+<th style="text-align: left;">여유납기일수</th>
+<th style="text-align: left;">STP/OP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">수식</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">E = C/B</td>
+<td style="text-align: left;">F = C-B</td>
+<td style="text-align: left;">G = F/D</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">가: 책장</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">2.5</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">2.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">나: 책상</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">1.1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">0.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">다: 테이블</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1.4</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<dl>
+<dt>선착우선(FCFS)</dt>
+<dd>
+<ul>
+<li>가 - 나 - 다</li>
+</ul>
+</dd>
+<dt>최소작업시간 우선(SPT)</dt>
+<dd>
+<ul>
+<li>가 - 다 - 나</li>
+</ul>
+</dd>
+<dt>최소납기 우선(EDD)</dt>
+<dd>
+<ul>
+<li>다 - 나 - 가</li>
+</ul>
+</dd>
+<dt>긴급율법(CR)</dt>
+<dd>
+<ul>
+<li>나 - 다 - 가</li>
+</ul>
+</dd>
+<dt>잔여작업 최소여유시간 우선(STR/OP)</dt>
+<dd>
+<ul>
+<li>나 - 가 - 다</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p><font color="blue"><strong>n개 작업을 2대 기계에서 작업할 경우</strong></font> 우선 순위 규칙은 <a href="Johnson's rule">-<span class="quarto-xref"><span>존슨법</span></span></a>을 적용할 수 있다.</p>
 <section id="sec-johnson-rule" class="level3">
 <h3 class="anchored" data-anchor-id="sec-johnson-rule">존슨법</h3>
 <div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
@@ -1191,43 +1351,56 @@ ATP 계산
 <li>두 작업장 총유휴 시간 최소화</li>
 </ul></li>
 </ul>
-<p>우선 순위 규칙은 다음과 같다. = = = = = 1. 작업장별 작업 시간치를 표에 기입 2. 작업장 1, 2에 관계없이 처리시간이 가장 짧은 작업(<strong>최소 작업시간</strong>) 선택 - <font color="blue">가장 짧은 처리 시간이 작업장1에서 발생하면 그 작업을 가장 앞 순위에 놓고, 작업장2에서 발생하면 가장 뒤 순위에 놓음</font> 3. 2.에서 순위가 결정된 작업은 고려 대상에서 제외 4. 모든 작업 순서가 결정될 때까지 2와 3을 반복</p>
-<table class="caption-top table">
+<p>우선 순위 규칙은 다음과 같다.</p>
+<ol type="1">
+<li>작업장별 작업 시간치를 표에 기입</li>
+<li>작업장 1, 2에 관계없이 처리시간이 가장 짧은 작업(<strong>최소 작업시간</strong>) 선택
+<ul>
+<li><font color="blue">가장 짧은 처리 시간이 작업장1에서 발생하면 그 작업을 가장 앞 순위에 놓고, 작업장2에서 발생하면 가장 뒤 순위에 놓음</font></li>
+</ul></li>
+<li>2.에서 순위가 결정된 작업은 고려 대상에서 제외</li>
+<li>모든 작업 순서가 결정될 때까지 2와 3을 반복</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th>작업</th>
-<th>작업1(일)</th>
-<th>작업2(일)</th>
+<th style="text-align: left;">작업</th>
+<th style="text-align: right;">작업1(일)</th>
+<th style="text-align: right;">작업2(일)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>A</td>
-<td>5</td>
-<td>4</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="even">
-<td>B</td>
-<td>2</td>
-<td>3</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
-<td>C</td>
-<td>6</td>
-<td>5</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
-<td>D</td>
-<td>3</td>
-<td>4</td>
+<td style="text-align: left;">D</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="odd">
-<td>E</td>
-<td>6</td>
-<td>7</td>
+<td style="text-align: left;">E</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>존슨법 규칙에 따라 작업 순서는 [B-D-E-C-A]로 결정된다. 작업순서에 따른 작업시간과 유휴 시간은 다음과 같다.</p>
 <ul>
 <li>작업장1: B(2) + D(3) + E(6) +C6) + A(5) = 22(일)</li>
@@ -1245,107 +1418,115 @@ Petrov방법
 </div>
 <div class="callout-body-container callout-body">
 <p>A, B, C3대의 기계를 거쳐야 하는 5개 작업(J1 ~ J5)의 기계별 가공시간이 다음 표와 같을 때 Petrov방법을 사용하여 총 처리시간을 최소화(SPT법)하는 가공순서와 이때의 총 처리시간을 구하시오.</p>
-<table class="caption-top table">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th>구분</th>
-<th>A</th>
-<th>B</th>
-<th>C</th>
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">A</th>
+<th style="text-align: right;">B</th>
+<th style="text-align: right;">C</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>J1</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
+<td style="text-align: left;">J1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
-<td>J2</td>
-<td>7</td>
-<td>1</td>
-<td>1</td>
+<td style="text-align: left;">J2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
-<td>J3</td>
-<td>5</td>
-<td>2</td>
-<td>3</td>
+<td style="text-align: left;">J3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
-<td>J4</td>
-<td>3</td>
-<td>0</td>
-<td>9</td>
+<td style="text-align: left;">J4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9</td>
 </tr>
 <tr class="odd">
-<td>J5</td>
-<td>3</td>
-<td>2</td>
-<td>2</td>
+<td style="text-align: left;">J5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>Petrov방법은 존슨규칙을 확장한 방법으로 여러 개 작업을 여려 개 작업장에서 이루어지는 경우 우선순위를 결정한다.</p>
 <p>위 문제처럼 작업장이 3개, A,B,C인 경우 A-B를 합쳐서 가상 작업장 하나를, B-C를 합쳐서 가상 작업장 하나를 만들어 존슨규칙을 적용한다. 참고로, 작업장이 A,B,C,D 4개로 구성된 경우 A-B, C-D를 각각 합쳐서 2개 가상 작업장을 만들어 존슨규칙을 적용한다.</p>
-<table class="caption-top table">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th>구분</th>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-<th>A-B</th>
-<th>B-C</th>
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">A</th>
+<th style="text-align: right;">B</th>
+<th style="text-align: right;">C</th>
+<th style="text-align: right;">A-B</th>
+<th style="text-align: right;">B-C</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>J1</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-<td>6</td>
-<td>3</td>
+<td style="text-align: left;">J1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
-<td>J2</td>
-<td>7</td>
-<td>1</td>
-<td>1</td>
-<td>8</td>
-<td>2</td>
+<td style="text-align: left;">J2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
-<td>J3</td>
-<td>5</td>
-<td>2</td>
-<td>3</td>
-<td>7</td>
-<td>5</td>
+<td style="text-align: left;">J3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
-<td>J4</td>
-<td>3</td>
-<td>0</td>
-<td>9</td>
-<td>3</td>
-<td>9</td>
+<td style="text-align: left;">J4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
 </tr>
 <tr class="odd">
-<td>J5</td>
-<td>3</td>
-<td>2</td>
-<td>2</td>
-<td>5</td>
-<td>4</td>
+<td style="text-align: left;">J5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>A-B, B-C 작업장을 기준으로 작업 순서를 결정하면 다음과 같다.</p>
 <ul>
-<li>J4 - J3 - J5 - J1 - J2
+<li>J4 → J3 → J5 → J1 → J2
 <ul>
 <li>A작업장: 작업시간(3-5-3-4-7) + 유휴시간 2 = 24시간</li>
 <li>B작업장: 작업시간(2-1-2-0-4) + 유휴시간 17 = 24시간</li>
@@ -1595,7 +1776,7 @@ Petrov방법
 <dt>MPS</dt>
 <dd>
 <ul>
-<li>MPS 참고</li>
+<li><a href="#sec-mps" class="quarto-xref"><span>기준일정계획(MPS)</span></a> 참고</li>
 </ul>
 </dd>
 <dt>BOM</dt>
