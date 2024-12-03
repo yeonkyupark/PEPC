@@ -441,7 +441,10 @@ window.Quarto = {
   <li><a href="#수학적-모델" id="toc-수학적-모델" class="nav-link" data-scroll-target="#수학적-모델">수학적 모델</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#의사결정-도구" id="toc-의사결정-도구" class="nav-link" data-scroll-target="#의사결정-도구">의사결정 도구</a></li>
+  <li><a href="#의사결정-도구" id="toc-의사결정-도구" class="nav-link" data-scroll-target="#의사결정-도구">의사결정 도구</a>
+  <ul>
+  <li><a href="#의사결정-환경" id="toc-의사결정-환경" class="nav-link" data-scroll-target="#의사결정-환경">의사결정 환경</a></li>
+  </ul></li>
   <li><a href="#불확실성-하에서의-의사결정" id="toc-불확실성-하에서의-의사결정" class="nav-link" data-scroll-target="#불확실성-하에서의-의사결정">불확실성 하에서의 의사결정</a>
   <ul>
   <li><a href="#의사결정론" id="toc-의사결정론" class="nav-link" data-scroll-target="#의사결정론">의사결정론</a></li>
@@ -923,6 +926,53 @@ end
 </div>
 </div>
 </div>
+<section id="의사결정-환경" class="level3">
+<h3 class="anchored" data-anchor-id="의사결정-환경">의사결정 환경</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>106-2-1</p>
+</div>
+</div>
+<dl>
+<dt>확실성하 의사결정</dt>
+<dd>
+<ul>
+<li>대안을 선택할 때 어떤한 상황이 발생할 것인지를 확실하게 알고 있는 경우</li>
+<li>고전적 최적화 기법, 손익분기점분석, 선형계획법, 비선형계획법, 수송법, 할당법(배정법), 목표 계획법, 정수계획법, 동적계획법 등</li>
+</ul>
+</dd>
+<dt>위험하 의사결정</dt>
+<dd>
+<ul>
+<li>대안을 선택할 때 상황 발생 여부를 확률적으로 알고 있는 경우</li>
+<li>사전정보를 이용한 의사결정, 의사결정, 재고모형이론</li>
+<li>사전정보와 표본정보를 이용한 의사결정, PERT/CPM, 대기행렬이론, 시뮬레이션, 마코브연쇄모형 등</li>
+</ul>
+</dd>
+<dt>불확실성하 의사결정</dt>
+<dd>
+<ul>
+<li>대안을 선택할 때 상황발생 확률을 전혀 모르는 경우</li>
+<li>라플라스 준거, 맥시맥스 준거, 맥시민 준거, 후르비츠 준거, 유감 준거</li>
+</ul>
+</dd>
+<dt>상충하 의사결정</dt>
+<dd>
+<ul>
+<li>서로 상충적인 이해관계를 가진 의사결정자들이 상대방에 대응하여 의사결정을 하게 되는 경우(게임모형, Game Mode)</li>
+<li>게임이론</li>
+</ul>
+</dd>
+</dl>
+</section>
 </section>
 <section id="불확실성-하에서의-의사결정" class="level2">
 <h2 class="anchored" data-anchor-id="불확실성-하에서의-의사결정">불확실성 하에서의 의사결정</h2>
@@ -939,7 +989,7 @@ end
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>100-2-1, 103-1-6</p>
+<p>100-2-1, 103-1-6, 106-2-1</p>
 </div>
 </div>
 <p>의사결정론에 있어 <strong>의사결정</strong>이란 무엇을 어떻게 결정해야 하느냐에 대한 물음에 답하는 것으로 의사결정자가 선택할 행위가 복수개여야 한다. 참고로, 관리 불가능 변수란 의사 결정권자 결정과는 관계없이 의사결정 결과에 영향을 주는 요소를 의미한다.</p>
@@ -1276,6 +1326,265 @@ Laplace 기준 의사결정
 </div>
 </div>
 <p>따라서 대형설비에 투자하는 안을 선택한다.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="최선대안 결정">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+최선대안 결정
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>아래 대안에 대해 1) Laplace 기준, 2) Wald 기준, 3) Maximax 기준, 4) Savage 기준, 5) Hurvicz 기준(단, <span class="math inline">\(\alpha = 0.4\)</span>)으로 각각 최선 대안을 결정하시오.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">낮음</th>
+<th style="text-align: right;">보통</th>
+<th style="text-align: right;">낮은</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">소규모</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">중규모</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">대규모</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">130</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<ol type="1">
+<li>Laplace 기준: 동일확률 기준</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">낮음</th>
+<th style="text-align: right;">보통</th>
+<th style="text-align: right;">낮은</th>
+<th style="text-align: left;">최대이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">소규모</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">(50+55+75)/3=60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">중규모</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">(40+80+120)/3=80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">대규모</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: left;">(30+65+130)/3=75</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>중규모 대안을 선택한다.</p>
+<ol start="2" type="1">
+<li>Wald 기준: Maximin, 최대최소기준, 비관적 성향</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">낮음</th>
+<th style="text-align: right;">보통</th>
+<th style="text-align: right;">낮은</th>
+<th style="text-align: left;">최대이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">소규모</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">중규모</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">40</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">대규모</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: left;">30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>소규모 대안을 선택한다.</p>
+<ol start="3" type="1">
+<li>Maximax: 최대최대기준, 낙관주의 성형</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">낮음</th>
+<th style="text-align: right;">보통</th>
+<th style="text-align: right;">낮은</th>
+<th style="text-align: left;">최대이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">소규모</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">중규모</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">120</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">대규모</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: left;">130</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>대규모 대안을 선택한다.</p>
+<ol start="4" type="1">
+<li>Savage 기준: minimax, 최소최대 후회</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">구분</th>
+<th style="text-align: left;">낮음</th>
+<th style="text-align: left;">보통</th>
+<th style="text-align: left;">낮은</th>
+<th style="text-align: left;">최대후회</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">소규모</td>
+<td style="text-align: left;">50(0)</td>
+<td style="text-align: left;">55(25)</td>
+<td style="text-align: left;">75(55)</td>
+<td style="text-align: left;">55</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">중규모</td>
+<td style="text-align: left;">40(10)</td>
+<td style="text-align: left;">80(0)</td>
+<td style="text-align: left;">120(10)</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">대규모</td>
+<td style="text-align: left;">30(20)</td>
+<td style="text-align: left;">65(15)</td>
+<td style="text-align: left;">130(0)</td>
+<td style="text-align: left;">20</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>대안 내 괄호는 기회손실을 나타낸다.</p>
+<p>중규모 대안을 선택한다.</p>
+<ol start="5" type="1">
+<li>Hurwicz 기준: 낙관계수 <span class="math inline">\(\alpha\)</span> 도입 - 가중이익 = [최대이익 x <span class="math inline">\(\alpha\)</span>] + [최소이익 x (1 - <span class="math inline">\(\alpha\)</span>)]</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">구분</th>
+<th style="text-align: right;">낮음</th>
+<th style="text-align: right;">보통</th>
+<th style="text-align: right;">낮은</th>
+<th style="text-align: left;">가중이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">소규모</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">75x0.4 + 50x0.6 = 60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">중규모</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">120x0.4 + 40x0.6 = 72</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">대규모</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: left;">130x0.4 + 30x0.6 = 70</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>중규모 대안을 선택한다.</p>
 </div>
 </div>
 </section>
