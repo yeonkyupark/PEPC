@@ -452,6 +452,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#유닛로드" id="toc-유닛로드" class="nav-link" data-scroll-target="#유닛로드">유닛로드</a></li>
   <li><a href="#활성지수" id="toc-활성지수" class="nav-link" data-scroll-target="#활성지수">활성지수</a></li>
+  <li><a href="#오더피킹" id="toc-오더피킹" class="nav-link" data-scroll-target="#오더피킹">오더피킹</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/2-4.물류관리(자재 및 재고관리).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -1234,6 +1235,76 @@ end
 <dd>
 <ul>
 <li>컨베이어, 슈트 등을 사용했을 때</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="오더피킹" class="level2">
+<h2 class="anchored" data-anchor-id="오더피킹">오더피킹</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>106-2-2</p>
+</div>
+</div>
+<p>오더피킹(Order picking)은 고객 주문을 처리하기 위해 물류창고 또는 보관 시설에서 품목을 선택하고 모으는 과정을 뜻한다. 오더피킹에는 품목 유형, 수량 및 특정한 고객 요구사항과 같은 주문 세부 정보를 기반으로 각 위치에서 지정된 제품을 출고하는 작업이 포함된다.</p>
+<p>일반적으로 물류센터 내 물류활동 비중 중 오더피킹에 소요되는 비용은 55%로 보관이 차지하는 비중인 15%를 함치면 전체 비용 대비 70%를 차지한다.</p>
+<p>제품 손상을 최소화하고 처리 시간 단축 및 피킹 정확도 향상을 위해 아래와 같은 원칙을 검토해야 한다.</p>
+<dl>
+<dt>오더피킹 생상선 향상을 위한 원칙</dt>
+<dd>
+<ol type="1">
+<li>가능한 작업 종류 축소</li>
+<li>피킹 빈도가높은 품목일수록 피커접근이 용이한 장소에 저장</li>
+<li>혼잡을 피하기 위해 피킹 장소 간 피킹 활동 조절</li>
+<li>같이 주문될 가능성이 높아 보통 함께 피킹하는 경우가 많은 물품은 동일 또는 인접한 장소에 배치</li>
+<li>피킹 지역을 forward picking area와 reserve picking area로 구분할 것</li>
+<li>총 이동시간을 줄이기 위해 고객 주문을 일괄 처리할 것</li>
+<li>이동 시ㅏㄱㄴ을 줄이기 위해 피킹 장소 간 피킹 순서를 결정</li>
+<li>찾기 시간 오류를 최소화할 수 있도록 피킹 문서와 피킹 장소 표시를 체계화할 것</li>
+<li>분류 시간 오류를 최소화하고 작업자 편의성을 최대화할 수 있는 운반 기기를 설계할 것</li>
+<li>자사 환경 요건에 맞추어 최적 오더 피킹 설비를 설택할 것</li>
+</ol>
+</dd>
+</dl>
+<p>오더피킹 종류는 다음과 같다.</p>
+<dl>
+<dt>일괄패킹(Batch picking)</dt>
+<dd>
+<ul>
+<li>2단계 피킹 또는 다단계 피킹이라고도 하며 동시에 여러주문에서 여러 품목을 피킹하는 것을 의미</li>
+</ul>
+</dd>
+<dt>클러스터 피킹(Cluster picking)</dt>
+<dd>
+<ul>
+<li>일괄 피킹과 유사하게 작업을 하지만 주문이 한 영역에서 여러 SKU로 피킹되는 경우를 의미</li>
+</ul>
+</dd>
+<dt>개별 오더 피킹(Dscrete order picking)</dt>
+<dd>
+<ul>
+<li>주문을 피킹하는 가장 일반적인 방법으로 주문이 완료될 때까지 항목별로 주문을 단순하게 피킹하는 것을 의미</li>
+</ul>
+</dd>
+<dt>웨이브 피킹(Wave picking)</dt>
+<dd>
+<ul>
+<li>일괄피킹과 유사하며 주문이 여러 교대 시간과 직원에 걸쳐 피킹되는 형태를 의미</li>
+</ul>
+</dd>
+<dt>존 피킹(Zone picking)</dt>
+<dd>
+<ul>
+<li>풀필먼트 센터를 별도 영역 또는 구역으로 나누고 직원은 교대 근무하는 동안 한 구역에서 근무하고 해당 구역 내에서 피킹하도록 지정</li>
+<li>주문에서 여러 구역 SKU가 필요한 경우 SKU는 한 구역에서 피킹되어 다른 구역으로이동해서 주문을 처리(순차구역피킹 또는 픽 앤 패스 피킹)</li>
 </ul>
 </dd>
 </dl>
