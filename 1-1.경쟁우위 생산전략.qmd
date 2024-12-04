@@ -200,7 +200,7 @@ flowchart TB
 ## 고객요구 납기에 다른 생상방식
 
 :::{.callout-tip title="기출" icon=false}
-100-2-6
+100-2-6, 106-2-4
 :::
 
 ![https://www.researchgate.net/figure/Material-flow-decoupling-points-and-strategic-inventory_fig2_247628650](https://www.researchgate.net/profile/Martin-Christopher-2/publication/247628650/figure/fig2/AS:298253707956243@1448120633663/Material-flow-decoupling-points-and-strategic-inventory.png)
