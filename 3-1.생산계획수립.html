@@ -1154,7 +1154,7 @@ ATP 계산
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>97-1-12</p>
+<p>97-1-12, 106-2-6</p>
 </div>
 </div>
 <p>주문생산은 다양한 일감이 상이한 순서로 작업하므로 작업순서 결정과 부하 결정문제가 생산성에 영향을 미친다. 통상 공장에서는 작업 순서가 동일할 경우를 대비하여 서너개의 작업 우선순위 규칙(Priority rule), 작업배정규칙(Dispatching rule)을 함께 사용한다.</p>
@@ -1162,9 +1162,45 @@ ATP 계산
 <ul>
 <li>납기 이행</li>
 <li>작업 진행 시간(flow time) 최소화</li>
-<li>재공품(WIP) 최소화</li>
+<li>재공작업 내지 재공품(WIP) 최소화</li>
 <li>기계/작업 유휴시간 최소화</li>
 </ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기준</th>
+<th>정의</th>
+<th>목표</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>총소요시간<br>(Makespan)</td>
+<td>일련 작업 수행에 소요되는 시간</td>
+<td>소요시간 최소화</td>
+</tr>
+<tr class="even">
+<td>작업진행시간<br>(Flow time)</td>
+<td>특정 작업을 시작해서 끝나는 시간</td>
+<td>평균흐름 시간 최소화</td>
+</tr>
+<tr class="odd">
+<td>지연시간<br>(Tardiness)</td>
+<td>그 작업이 납기를 초과한 시간 분량</td>
+<td>작업지연과 최대지연 최소화</td>
+</tr>
+<tr class="even">
+<td>늦은시간<br>(Lateness)</td>
+<td>납기와 작업 완료 시간 차이</td>
+<td>지각시간 최소화</td>
+</tr>
+</tbody>
+</table>
 <p>작업순서 결정하는 방법은 크게 지역특성을 고려한 방법과 전체특성을 고려한 방법이 있다. <strong>지역특성 순위규칙</strong>(local sequencing rule)은 현재 작업장에서 주어진 상황을 고려하여 작업순서를 결정하는 방식이고 <strong>전체특성 순위규칙</strong>(global sequencing rule)은 후속 잔여 작업장 특성까지 고려하여 작업우선순위를 결정하는 방식이다.</p>
 <p><font color="blue"><strong>단일 설비 일정 계획 기준</strong></font> 다음과 같은 작업 순서 결정 방식이 있다.</p>
 <div class="cell" data-layout-align="default">
