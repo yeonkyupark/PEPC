@@ -436,6 +436,7 @@ window.Quarto = {
   <li><a href="#설비종합효율-용어" id="toc-설비종합효율-용어" class="nav-link" data-scroll-target="#설비종합효율-용어">설비종합효율 용어</a></li>
   <li><a href="#설비종합효율-산출" id="toc-설비종합효율-산출" class="nav-link" data-scroll-target="#설비종합효율-산출">설비종합효율 산출</a></li>
   </ul></li>
+  <li><a href="#공정설비계획" id="toc-공정설비계획" class="nav-link" data-scroll-target="#공정설비계획">공정설비계획</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/4-1.설비계획 및 관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -463,10 +464,10 @@ window.Quarto = {
 
 <section id="강제열화와-자연열화" class="level2">
 <h2 class="anchored" data-anchor-id="강제열화와-자연열화">강제열화와 자연열화</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
@@ -494,10 +495,10 @@ window.Quarto = {
 </section>
 <section id="설비종합효율" class="level2">
 <h2 class="anchored" data-anchor-id="설비종합효율">설비종합효율</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
@@ -654,9 +655,123 @@ window.Quarto = {
 <p><span class="math inline">\(양품률 = \frac{총생산량-불량품수}{총생산량} \times 100 = \frac{4250-250}{4250} \times 100 = 94.1(\%)\)</span></p>
 <p>따라서 종합설비효율은 다음과 같다.</p>
 <p><span class="math display">\[OEE = 시간가동률 \times 성능가동률 \times 양품률 = 91.4 \times 81.6 \times 94.1 = 70.2(\%)\]</span></p>
-
-
 </section>
+</section>
+<section id="공정설비계획" class="level2">
+<h2 class="anchored" data-anchor-id="공정설비계획">공정설비계획</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>106-3-3</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="설비 수량 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+설비 수량 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>표준작업시간</th>
+<th>효율</th>
+<th>신뢰도</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공정1</td>
+<td>4분</td>
+<td>93%</td>
+<td>95%</td>
+</tr>
+<tr class="even">
+<td>공정2</td>
+<td>5분</td>
+<td>95%</td>
+<td>90%</td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>문제1</dt>
+<dd>
+1일 8시간, 1주 5일간 작업하여 주당 2,000개 제품을 생산하려 한다. 표를 참고하여 생산 목표를 달성하기 위해필요한 공정 1과 공정 2에 대한 기계대수를 각각 구하시오.
+</dd>
+<dt>문제2</dt>
+<dd>
+제품 A는 공정 1과 공정 2를 거쳐 생산되며, 공정 1 불량률은 5%, 공정 2 불량률은 3%이다. 양품 1,000개 생산을 목표로 할 때 공정 1에대한 원자재 투입량을 구하시오.
+</dd>
+<dt>문제3</dt>
+<dd>
+제품 A에 대한 공정 1 공정비용은 개당 1,000원, 공정 2 공정비용은 개당 2,000원이다. 공정 2를 거친 완성품은 전수검사를 하며 완성품 검사비용은 개당 100원이다. 공정 1과 공정 2 사이 공정간 검사비용은 80원인 경우, 공정 간 검사를 실시하는 것이 경제적 측면에서 유리한지 판단하시오.
+</dd>
+</dl>
+<hr>
+<dl>
+<dt>문제1</dt>
+<dd>
+<ul>
+<li>기계능력 = 유효가동시간 x 기계대수 = 가동일수 x 1일 가동시간 x 가동률 x 기계대수</li>
+<li>공정1 <span class="math display">\[
+기계대수 = \frac{2000개 \times 4분}{5일/주 8시간/일 \times 60분/시간 \times (.093 \times 0.95) = 3.8대}
+\]</span></li>
+<li>공정2 <span class="math display">\[
+기계대수 = \frac{2000개 \times 5분}{5일/주 8시간/일 \times 60분/시간 \times (.095 \times 0.90) = 4.9대}
+\]</span></li>
+</ul>
+</dd>
+</dl>
+<p>따라서, 공정1은 4대, 공정2는 5대 기계설비가 필요하다.</p>
+<dl>
+<dt>문제2</dt>
+<dd>
+<ul>
+<li>원자재 투입량 x (0.95 x 0.97) = 1000(개)</li>
+</ul>
+</dd>
+</dl>
+<p>따라서 양품 1,000개를 생산하기 위한 원자재 투입량은 1,086개이다.</p>
+<dl>
+<dt>문제3</dt>
+<dd>
+<ul>
+<li>공정별 Lot 크기
+<ul>
+<li>원자재 투입량 1086 -&gt; 공정1 불량률 5% 시 1032 -&gt; 공정2 불량률 3% 시 1000</li>
+</ul></li>
+<li>전수검사 시 비용: 366,000(원)
+<ul>
+<li>전수검사 비용: 1086 x 100 = 108,600</li>
+<li>불량 생산 비용: 86 x (1,000 + 2,000) = 258,000</li>
+</ul></li>
+<li>공정검사 시 비용: 308,080(원)
+<ul>
+<li>공정1 검사 비용: 1,086 x 80 = 86,880</li>
+<li>공정2 검사 비용: 1032 x 100 = 103,200</li>
+<li>불량 생산 비용 = (54 x 1,000) + (32 x 2000) = 118,000</li>
+</ul></li>
+</ul>
+</dd>
+</dl>
+<p>따라서 공정검사를 실시하는 것이 전수검사를 실시하는 것보다 경제적으로 유리하다.</p>
+</div>
+</div>
+
+
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
