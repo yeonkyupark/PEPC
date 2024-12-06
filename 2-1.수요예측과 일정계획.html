@@ -494,7 +494,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>97-2-2, 97-4-6, 103-2-2</p>
+<p>97-2-2, 97-4-6, 103-2-2, 106-3-5</p>
 </div>
 </div>
 <section id="수요예측-기법" class="level3">
@@ -551,6 +551,47 @@ end
 <section id="시계열분해법" class="level4">
 <h4 class="anchored" data-anchor-id="시계열분해법">시계열분해법</h4>
 <p><strong>시계열 분석</strong>이란 시계열(연, 월, 주, 일 등 시간 간격)에 따라 제시된 <font color="blue">과거 자료(수요량, 매출액 등)로부터 그 추세나 경향을 파악</font>하여 장래 수요를 예측하는 것이다. 이 경우 과거 자료를 미래 예측 길잡이로 이용하는데 시간이 독립변수가 되며 수요량 또는 매출액은 종속변수가 된다. 따라서 시계열 분석 초점은 과거에 발생한 수요와 관련된 시계열성에 있다고 볼 수 있다. 분석 방법에 따라 단순이동평균법, 가중이동평균법, 지수평활법 등이 있다.</p>
+<section id="이동평균법" class="level5">
+<h5 class="anchored" data-anchor-id="이동평균법">이동평균법</h5>
+<dl>
+<dt><strong>이동평균법</strong>(Moving average method)</dt>
+<dd>
+<blockquote class="blockquote">
+<p>전기수요법을 좀 더 발전시킨 것으로 과거 일정 기간 실적을 평균해서 예측하는 방법이다.</p>
+</blockquote>
+</dd>
+<dt>단순이동평균법</dt>
+<dd>
+<ul>
+<li>과거 여러 기간 실적치에 동일한 가중치를 부여하는 방법</li>
+<li>공식 <span class="math display">\[
+F_t = \frac{\sum{A_{t-i}}}{n}
+\]</span>
+<ul>
+<li>단, <span class="math inline">\(F_t = t\)</span>기간 예측치, <span class="math inline">\(A_{i-i} = (t-i)\)</span> 기간 실적치, n = 기간 수</li>
+</ul></li>
+</ul>
+</dd>
+<dt>가중이동평균법</dt>
+<dd>
+<ul>
+<li>단순이동평균법에서 추세경향을 고려한 수요 예측기법</li>
+<li>공식 <span class="math display">\[
+\sum{w_i}=1일 ￦ 때, F_{t+1} = w_tA_t + w_{t-1}A_{t-1} + ... + w_{t-N}A_{t-N}
+\]</span></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="지수평활법" class="level5">
+<h5 class="anchored" data-anchor-id="지수평활법">지수평활법</h5>
+<p>최소자승법이나 이동평균법에는 장기간 과거실적을 필요로 하지만 지수평활법은 최근 데이터만으로 예측이 가능한 장점이 있다.</p>
+<p>현 시점에 가까운 실측치에 큰 비중을 주면서 과거로 거슬러 올라갈수록 그 비중을 지수적으로 적게 주는 지수가중 이동평균법이다.</p>
+<p>차기 예측치 = 당기 예측치 + <span class="math inline">\(\alpha\)</span>(당기실적치 - 당기예측치)로 계산되면 공식은 아래와 같다.</p>
+<p><span class="math display">\[
+F_t = F_{t-1} + \alpha (A_{t-1} - F_{t-1}) = \alpha A_{t-1} + (1-\alpha)F_{t-1}
+\]</span> 단, ()는 지수평활계수로 <span class="math inline">\(0 &lt; \alpha &lt; 1\)</span> 범위를 갖는다.</p>
+</section>
 </section>
 </section>
 <section id="예측오차" class="level3">
