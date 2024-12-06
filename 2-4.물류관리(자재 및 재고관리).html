@@ -496,17 +496,17 @@ window.Quarto = {
 </div>
 <section id="sec-invenory-management" class="level2">
 <h2 class="anchored" data-anchor-id="sec-invenory-management">재고관리</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>97-4-1</p>
+<p>97-4-1, 106-4-1</p>
 </div>
 </div>
 <p><strong>재고</strong>란 조직에서 판매를 목적으로 보관중인 물품이나 자원으로, 많이 보유하면 빠르게 시장에 대응할 수 있고 재고주문비용이나 생산준비비용이 절감되지만, 재고 저장 비용이나 이자비용, 기회비용이 증가하는 문제점이 발생한다.</p>
@@ -515,17 +515,23 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="재고-종류">재고 종류</h3>
 <p>재고는 사용 목적에 따라 다음과 같이 분류된다.</p>
 <dl>
-<dt>안전재고</dt>
+<dt>안전재고(Safety Inventory)</dt>
 <dd>
 <ul>
-<li>완충재고, 불확실성을 대비하기 위해 평균적으로 소요되는 수량을 초과하여 보유하는 재고</li>
-<li>변동성이 증가할수록 안전재고량 증가</li>
+<li>완충재고라고도 하며, 고객 서비스 차질과 부품 부족으로 인한 기회비용을 예방하기 위하여 비축하는 재고</li>
+<li>제품수요, 리드타임, 부품공급 등 불확실성에 대처하기 위한 것</li>
+<li>수요예측을 개선하며, 구매 또는 생산할 품목 리드타임을 줄여서 그 기간 동안 수요 불확실성을 감소</li>
+<li>공급 불확실성 감소</li>
+<li>생산계획을 부품납품업체들에게 알려 주면 예측이 정확해져 공급 신뢰도 향상</li>
 </ul>
 </dd>
-<dt>예상재고</dt>
+<dt>예상재고(Anticipation stock)</dt>
 <dd>
 <ul>
-<li>예비재고, 장재 예상되는 수요에 대비하기 위하여 보유하는 재고</li>
+<li>계절재고라고도 하며, 사업상 직면하게 되는 불규칙한 수요와 공급에 대응하기 위한 재고</li>
+<li>수요 절정기에 생산수준을 많이 높이지 않기 위하여 수요가 적은 기간 동안 재고를 비축하거나 부품 납품 업체가 파악이나 생산능력 제한 때문에 위협을 받을 경우 비축한 재고</li>
+<li>수요율과 산출률을 일치시키는 것, 그러나 수요 변동이 심하면 생산을 조절하기 어려우므로 수요를 평준화 하는 것이 바람직</li>
+<li>수요 평준화 방안으로, 비수기에 가격을 인하하고 비수기에 판매 촉진을 강화하며, 기존 제품과 수요 사이클이 정반대가 되는 신제품을 제품 라인에 추가하는 방법</li>
 </ul>
 </dd>
 <dt>수송재고</dt>
@@ -534,14 +540,16 @@ window.Quarto = {
 <li>물품 대금은 지급하였으나 아직 입고되지 않은 상태, 즉 수송 중인 상태인 재고</li>
 </ul>
 </dd>
-<dt>주기재고</dt>
+<dt>주기재고(Cycle Inventory)</dt>
 <dd>
 <ul>
-<li>경재적 주문량에 따라 발생하는 재고</li>
+<li>연간 주문횟수를 줄여서 비용을 절감하려면 일회 주문량이 늘어나는데, 이로 인해 발생하는 재고</li>
+<li>주문을 얼마나 자주 하고 한 번에 얼마나 할 것인가를 결정하는 것을 크기 결정이라 함</li>
+<li>외주 또는 생산 로트 사이즈(발주량 Q)를 줄이면 주기재고를 줄일 수 있다. 로트사이즈를 소형화하면 그에 반비례하여 발주(작업준비) 횟수가 많아지므로 발주비(작업준비비)가 증대함</li>
+<li>소로트화를 위해서는 먼저 발주(작업준비) 과정을 개선하여 발주와 작업준비에 소비되는 시간과 비용을 최소화해야 함</li>
 </ul>
 </dd>
 </dl>
-<p><br></p>
 </section>
 <section id="재고-비용" class="level3">
 <h3 class="anchored" data-anchor-id="재고-비용">재고 비용</h3>
@@ -632,7 +640,6 @@ window.Quarto = {
 </ul>
 </dd>
 </dl>
-<p><br></p>
 </section>
 <section id="재고관리-모형" class="level3">
 <h3 class="anchored" data-anchor-id="재고관리-모형">재고관리 모형</h3>
@@ -998,7 +1005,7 @@ end
 00[재고관련비용]
 01["주문비용&lt;br&gt;Procurement costs"]
 02["재고유지비용&lt;br&gt;Inventory carrying costs"]
-03["품절비용&lt;br&gt;Out-of-stock costs]
+03["품절비용&lt;br&gt;Out-of-stock costs"]
 00 --- 01 &amp; 02 &amp; 03
 </pre>
 </div>
@@ -1019,7 +1026,23 @@ end
 </ul>
 </dd>
 </dl>
-<p>:::{.callout-tip icon=false title=“생산 준비 비용(Setup or production change cost)” - 특정 제품을 생산하기 위하여 생산 공정 변경이나 기계 및 공구 교환 등으로 발생되는 비용 - 새로 주문할 때마다 발생되는 고정비적 성격을 띤 비용으로 주문 횟수나 생산 횟수 크기에 비례 - 준비 시간 중 발생되는 기계 유휴 비용, 준비 인원 직접 노무비, 사무 처리비, 공구 비용 등이 포함 :::</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="생산 준비 비용(Setup or production change cost)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+생산 준비 비용(Setup or production change cost)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>특정 제품을 생산하기 위하여 생산 공정 변경이나 기계 및 공구 교환 등으로 발생되는 비용</li>
+<li>새로 주문할 때마다 발생되는 고정비적 성격을 띤 비용으로 주문 횟수나 생산 횟수 크기에 비례</li>
+<li>준비 시간 중 발생되는 기계 유휴 비용, 준비 인원 직접 노무비, 사무 처리비, 공구 비용 등이 포함</li>
+</ul>
+</div>
+</div>
 <dl>
 <dt>재고 유지 비용 (holding cost)</dt>
 <dd>
