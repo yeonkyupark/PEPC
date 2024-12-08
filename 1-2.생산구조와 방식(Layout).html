@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -426,6 +455,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#체계적-설비-배치" id="toc-체계적-설비-배치" class="nav-link" data-scroll-target="#체계적-설비-배치">체계적 설비 배치</a></li>
   </ul></li>
   <li><a href="#대량맞춤생산" id="toc-대량맞춤생산" class="nav-link" data-scroll-target="#대량맞춤생산">대량맞춤생산</a></li>
+  <li><a href="#sec-takt-time" id="toc-sec-takt-time" class="nav-link" data-scroll-target="#sec-takt-time">택트타임 생산방식</a>
+  <ul>
+  <li><a href="#택트타임-생산방식-장단점" id="toc-택트타임-생산방식-장단점" class="nav-link" data-scroll-target="#택트타임-생산방식-장단점">택트타임 생산방식 장단점</a></li>
+  <li><a href="#택트타임-구축을-위한-8가지-전제조건" id="toc-택트타임-구축을-위한-8가지-전제조건" class="nav-link" data-scroll-target="#택트타임-구축을-위한-8가지-전제조건">택트타임 구축을 위한 8가지 전제조건</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/1-2.생산구조와 방식(Layout).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -1259,8 +1293,102 @@ end
 <h2 class="anchored" data-anchor-id="대량맞춤생산">대량맞춤생산</h2>
 <p>:::{.callout-tip icon-false title=“기출”} 106-2-4 :::</p>
 <p><strong>대량맞춤생산</strong>(Mass customization)은 개개 소비자가 다양하게 요구하는 대로 제품 서비스를 비교적 싼 가걱으로 제공하는 저가격, 고품질 고객화된 제품을 생산하는 것이다.대량맞춤생산을 추구하는 전략 목표는 차별화된 제품을 싸게 공급하는 것으로 자동차 혼류생산이나 주문형 반도체, 주문배달파자등이 등이 있다. 최종 조립단계를 제외하 ㄴ나머지 생산과정은 모두 완료해 놓은 상태에서 고객 주문이 들어왔을 때 주문요구에 맞춰 최종 조립하여 완성된 제품을 제공하는 것을 연기(postpone)라 한다. Dell Computer는 부품업체 간 가상통합으로 다양한 고객 요구를 충족시켰다.</p>
+</section>
+<section id="sec-takt-time" class="level2">
+<h2 class="anchored" data-anchor-id="sec-takt-time">택트타임 생산방식</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>106-4-3</p>
+</div>
+</div>
+<dl>
+<dt>택트타임(Takt Time) 생산방식</dt>
+<dd>
+<blockquote class="blockquote">
+<p>생산 과정에서 “생산속도”를 측정하고 이를 통해 생산 활동을 조정하는 방식이다. 택트타임은 주어진 시간 동안 생산해야 할 제품 양을 결정하는 지표로 고객 수요를 충족하기 위한 이상적인 생산 속도를 의미한다. “Takt”는 독일어로 리듬 또는 박자를 뜻하고, 이는 마치 오케스트라에서 각 악기가 일정한 리듬을 따라 연주하는 것처럼 생산 과정도 일정한 리듬에 맞춰 이루어져야 한다는 의미를 담고 있다.</p>
+</blockquote>
+</dd>
+</dl>
+<p>택트타임 계산 : <span class="math display">\[
+\text{택트타임} = \frac{\text{가용 시간}}{\text{고객 요구수량}}
+\]</span> - 가용 시간: 생산라인에서 실제 가동되는 총 시간(하루 근무시간에서 휴식시간 및 식사시간 등을 제외한 시간) - 고객 요구수량: 일정한 기간 동안 생산해야 할 제품 수(하루 고객이 요구하는 제품 개수)</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="예시">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+예시
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>하루 8시간(480분) 근무하는 공장에서 고객이 240개 제품을 요구할 때, 택트타임을 계산하시오.</p>
+<p><span class="math display">\[
+택트타임 = \frac{480분}{240개} = 2(분)
+\]</span> 즉, 각 제품은 2분마다 생산해야 고객 수요를 충족할 수 있다는 의미이다.</p>
+</div>
+</div>
+<p>택트타임은 아래와 같이 활용할 수 있다.</p>
+<dl>
+<dt>생산계획 조정</dt>
+<dd>
+<ul>
+<li>텍트 타임을 기준으로 생산 계획을 세우면 생산속도를 맞출 수 있고, 이를 통해 적절한 생산 인원 배치와 작업을 분배할 수 있다.</li>
+</ul>
+</dd>
+<dt>작업 균등화</dt>
+<dd>
+<ul>
+<li>생산 과정에서 각 작업 시간을 조정하여 균등하게 분배하고, 전체 시스템이 효율적으로 작동하도록 할 수 있다.</li>
+</ul>
+</dd>
+<dt>재고 관리</dt>
+<dd>
+<ul>
+<li>수요에 맞춰 생산량을 조절함으로써 불필요한 재고를 줄이고 효율적인 재고 관리가 가능하다.</li>
+</ul>
+</dd>
+<dt>납기 준수</dt>
+<dd>
+<ul>
+<li>택트타임에 맞추면 고객 요구 사항에 맞춰 제품을 적시에 납품할 수 있다.</li>
+</ul>
+</dd>
+</dl>
+<p>택트타임 생산 방식은 주로 <strong>린 생산</strong>(Lean Production)이나 <strong>JIT</strong>(Just-in-time) 시스템에서 사용하며 생산성을 극대화하고 낭비를 최소화하는데 중요한 역할을 한다.</p>
+<section id="택트타임-생산방식-장단점" class="level3">
+<h3 class="anchored" data-anchor-id="택트타임-생산방식-장단점">택트타임 생산방식 장단점</h3>
+<p>장점 | 단점 불필요한 작업 대기시간 감소 | 반복 생산, 흐름 생산이 아니면 적용이 곤란 공정 간 균형 개선으로 효율 향상 | 공정 트러블 발생 시 생산 계획 차질 설비와 공정 간 작업자 낭비 최소화 | 인원 변동 시효율 저하로 손실 초래 가능 평균(균등)화, 동기화 생산 가능 | 작업자 간 실력 편차가 심하여 택트타임 설정 어려움 작업 이상 발생 시 후 공정 진행 불가로 문제점 즉시 파악 | 정해진 시간 내 작업으로 심리적 부담 증가</p>
+</section>
+<section id="택트타임-구축을-위한-8가지-전제조건" class="level3">
+<h3 class="anchored" data-anchor-id="택트타임-구축을-위한-8가지-전제조건">택트타임 구축을 위한 8가지 전제조건</h3>
+<p>택트타임을 구축하기 위해서는 다음 전제조건이 필요하다.</p>
+<dl>
+<dt>전제조건</dt>
+<dd>
+<ol type="1">
+<li>1개 흐름 생산 체제 구축</li>
+<li>설비 최소화</li>
+<li>공정 순서에 따른 설비 배치</li>
+<li>U자형 배치</li>
+<li>작업자 다기능공화</li>
+<li>작업자 다공정 담당</li>
+<li>입식 작업 배치</li>
+<li>전 공정 동기화 생산체제(텍트타임 생산)</li>
+</ol>
+</dd>
+</dl>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
