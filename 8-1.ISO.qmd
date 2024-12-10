@@ -91,7 +91,7 @@ Tolerate 감수
 : 위험요소 재정적 또는 잠재적 손실 측면에 대해 공동 책임을 질 수 있는가 또는 전문업체에 의뢰
 :::
 
-### ISO 21500
+## ISO 21500
 
 ::: {.callout-tip icon=false title="기출"}
 106-4-5
@@ -99,7 +99,7 @@ Tolerate 감수
 
 ISO 21500은 국제적인 "프로젝트 관리에 대한 원칙과 절차"를 정립하기 위해 국제 표준화 기구 ISO에 제안한 프로젝트 관리에 대한 국제 표준이다.
 
- :: {.callout-note icon=false title="일정관리 도구"}
+::: {.callout-note icon=false title="일정관리 도구"}
 
 간트차트(Gantt charts)
 : - 일정계획 및 통제를 위한 시각적 도구
