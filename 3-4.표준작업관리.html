@@ -443,6 +443,7 @@ window.Quarto = {
   <li><a href="#워크-샘플링" id="toc-워크-샘플링" class="nav-link" data-scroll-target="#워크-샘플링">워크 샘플링</a></li>
   <li><a href="#wf" id="toc-wf" class="nav-link" data-scroll-target="#wf">WF</a></li>
   </ul></li>
+  <li><a href="#학습곡선" id="toc-학습곡선" class="nav-link" data-scroll-target="#학습곡선">학습곡선</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-4.표준작업관리.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -1046,9 +1047,59 @@ WF --- 11[사용되는 신체부위] &amp; 12[이동거리] &amp; 13[동작 또�
 </ul>
 </dd>
 </dl>
-
-
 </section>
+</section>
+<section id="학습곡선" class="level2">
+<h2 class="anchored" data-anchor-id="학습곡선">학습곡선</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>109-2-3</p>
+</div>
+</div>
+<p>작업을 반복함에 다라 작업 소요시간 즉, 공수(Man hour)가 체감되는데 이와 같은 현상을 공수 체감 현상이라고 한다. 이 공수 체감 현상 내지 능률 개선율을 그래프나 수식으로 나타낸 것을 <strong>학습곡선</strong>(Learning curve)이라고 한다. 학습현상 혹은 학습효과란 동일한 업무를 반복적으로 수행함에 따라 숙련도가 증가되어 단위당 작업시간이 감소하여 단위당 원가가 감소하는 현상을 말한다.</p>
+<p>학습효과는 생산량이 2배 증가함에 따른 단위당 노동시간 감소를 뜻하며, 학습률이 80%라면 학습효과는 20%가 된다. 즉, 첫 번째 단위 생산에 100시간 노동이 필요하다고 가정하면 2번째 단위 생산에서는 80시간이 필요하고, 4번째 단위 생산에서는 64시간이 소요된다. 따라서 n번째 단위를 생산하는데 소요되는 시간은 첫 번째 단위 생산하는데 소요되는 시간과 지수함수 관계를 갖게 된다.</p>
+<p>학습률에 따른 평균원가 변화 수식은 다음과 같다.</p>
+<p><span class="math display">\[
+Y_n = Y_1 \times n^R
+\]</span></p>
+<ul>
+<li><span class="math inline">\(Y_n\)</span>: n번째 생산에 소요되는 공수</li>
+<li><span class="math inline">\(Y_1\)</span>: 첫 번째 생산단위 공수</li>
+<li>n: n번째 시점 생산량</li>
+<li>R: <span class="math inline">\(\frac{log^b}{log^2}\)</span></li>
+<li>b: 학습률</li>
+</ul>
+<p>::: {.callout-important icon-false title=“1호기 공수가 10시간일 때 학습률이 80%인 경우”} 누적생산량|단위당 평균 노동시간|총노동시간 -|-|- 1|10|10 2|8|16 4|6.4|25.6 8|5.12|40.96 :::</p>
+<dl>
+<dt>학습곡선 이용</dt>
+<dd>
+<ul>
+<li>원가 관리 및 가격 결정</li>
+<li>인력 계획</li>
+<li>표준시간 설정</li>
+<li>예산, 구매 및 재고계획</li>
+</ul>
+</dd>
+<dt>학습곡선 제약</dt>
+<dd>
+<ul>
+<li>학습률은 기업, 작업 형태, 작업자에 따라 상이하다. 그러므로 실증조사가 필요하다.</li>
+<li>시간추정치는 첫 단위 생산시간에 크게 의존하므로 이의 결정에 신중을 기해야 한다.</li>
+<li>노동집약적 산업에 유효하다.</li>
+<li>다품종 소량생산에는 불리하다.</li>
+</ul>
+</dd>
+</dl>
+
+
 </section>
 
 </main> <!-- /main -->
