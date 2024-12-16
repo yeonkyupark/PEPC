@@ -255,4 +255,10 @@ CSR(Corporate Social Responsibility, 기업의 사회적 책임)은 기업이 �
 자선적 책임
 : - 좋은 기업 시민이 된다. 공동체 자원을 제공한다. 삶의 질을 개선한다.
 
+## FEA
 
+::: {.callout-tip icon=false title="기출"}
+109-1-13
+:::
+
+**FEA**(Finaancial effect analyst)란 린 6시그마 프로젝트 재무성과를 평가하고 검증하는 전문가로 프로젝트 재무평가 산정 방법을 수립하고 6시그마 재무성과를 검증하는 업무를 수행한다. 즉, 6시그마 프로젝트에 있어 감사와 회계 전문가이다.
