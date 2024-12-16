@@ -224,7 +224,7 @@ TS가 ±4MAD 내 관리되므로 예측모델이 유효하다고 판단할 수 �
 :::
 
 
-## CRM
+## CRM {#sec-crm}
 
 :::{.callout-tip title="기출" icon=false}
 97-1-8
