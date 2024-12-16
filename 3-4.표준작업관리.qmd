@@ -203,6 +203,10 @@ $$
 
 ### PTS
 
+::: {.callout-tip icon=false title="기출"}
+109-2-2
+:::
+
 **PTS**(predetermined time standard)는 이미 작성된 작업요소들을 이용하여 표준시간을 계산하는 방식이다. 1940년대 말 Method Engineering Council이 개발한 방법시간측정(MTM, Methods-time measurement)을 주로 사용했다.
 
 ```{mermaid}
