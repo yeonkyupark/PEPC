@@ -55,6 +55,10 @@ end
 
 ##### 이동평균법
 
+::: {.callout-tip icon=false title="기출"}
+109-1-9
+:::
+
 **이동평균법**(Moving average method)
 : > 전기수요법을 좀 더 발전시킨 것으로 과거 일정 기간 실적을 평균해서 예측하는 방법이다.
 
@@ -220,7 +224,7 @@ TS가 ±4MAD 내 관리되므로 예측모델이 유효하다고 판단할 수 �
 :::
 
 
-## CRM
+## CRM {#sec-crm}
 
 :::{.callout-tip title="기출" icon=false}
 97-1-8
