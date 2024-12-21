@@ -643,6 +643,19 @@ window.Quarto = {
 </section>
 <section id="재고관리-모형" class="level3">
 <h3 class="anchored" data-anchor-id="재고관리-모형">재고관리 모형</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>109-4-6</p>
+</div>
+</div>
 <p>재고관리 모형은 수용 특성에 따라 <strong>확정적 재고관리 모형</strong>과 <strong>확률적 재고관리 모형</strong>으로 나눌 수 있다. 또한 특수한 경우 사용할 수 있는 <strong>단일기간 재고관리 모형</strong>이나 <strong>ABC 재고관리 모형</strong>도 있다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -722,104 +735,116 @@ end
 <dd>
 <ul>
 <li><p>기호 및 설명</p>
-<table class="caption-top table">
+<div class="cell" data-tbl-colwidths="[20,80]">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 20%">
+<col style="width: 80%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>기호</th>
-<th>설명</th>
+<th style="text-align: left;">기호</th>
+<th style="text-align: left;">설명</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>TC</td>
-<td>연간 재고관련 총 비용</td>
+<td style="text-align: left;">TC</td>
+<td style="text-align: left;">연간 재고관련 총 비용</td>
 </tr>
 <tr class="even">
-<td>D</td>
-<td>연간 수요량</td>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">연간 수요량</td>
 </tr>
 <tr class="odd">
-<td>Q</td>
-<td>1회 주문량</td>
+<td style="text-align: left;">Q</td>
+<td style="text-align: left;">1회 주문량</td>
 </tr>
 <tr class="even">
-<td>EOQ 또는 Q*</td>
-<td>경제적 주문량 (최적 주문량)</td>
+<td style="text-align: left;">EOQ 또는 Q*</td>
+<td style="text-align: left;">경제적 주문량 (최적 주문량)</td>
 </tr>
 <tr class="odd">
-<td>C</td>
-<td>단위당 구입가격(생산인 경우 생산 비용)</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">단위당 구입가격(생산인 경우 생산 비용)</td>
 </tr>
 <tr class="even">
-<td>S</td>
-<td>1회 주문비용 또는 준비비용</td>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;">1회 주문비용 또는 준비비용</td>
 </tr>
 <tr class="odd">
-<td>H</td>
-<td>연간 단위당 재고유지비용, 1단위를 1년간 재고로 유지하는데 소요되는 비용, 보통 단위당 가입가격의 몇 %로 산정, H = C x 몇 %</td>
+<td style="text-align: left;">H</td>
+<td style="text-align: left;">연간 단위당 재고유지비용, 1단위를 1년간 재고로 유지하는데 소요되는 비용, 보통 단위당 가입가격의 몇 %로 산정, H = C x 몇 %</td>
 </tr>
 <tr class="even">
-<td>d</td>
-<td>일일 평균 수요</td>
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">일일 평균 수요</td>
 </tr>
 <tr class="odd">
-<td>L</td>
-<td>조달 기간</td>
+<td style="text-align: left;">L</td>
+<td style="text-align: left;">조달 기간</td>
 </tr>
 <tr class="even">
-<td>R</td>
-<td>재주문점</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;">재주문점</td>
 </tr>
 <tr class="odd">
-<td>N*</td>
-<td>연가 최적 주문 횟수</td>
+<td style="text-align: left;">N*</td>
+<td style="text-align: left;">연가 최적 주문 횟수</td>
 </tr>
 <tr class="even">
-<td>T*</td>
-<td>연간 최적 주문 주기</td>
+<td style="text-align: left;">T*</td>
+<td style="text-align: left;">연간 최적 주문 주기</td>
 </tr>
 <tr class="odd">
-<td>P</td>
-<td>연간생산율</td>
+<td style="text-align: left;">P</td>
+<td style="text-align: left;">연간생산율</td>
 </tr>
 </tbody>
-</table></li>
+</table>
+</div>
+</div></li>
 </ul>
 </dd>
 </dl>
 <section id="경제적-주문량-모형eoq" class="level5">
 <h5 class="anchored" data-anchor-id="경제적-주문량-모형eoq">경제적 주문량 모형(EOQ)</h5>
 <p>주문량에 따른 특징은 다음과 같다.</p>
-<table class="caption-top table">
+<div class="cell" data-tbl-colwidths="[50,50]">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>주문량이 적을 경우</th>
-<th>주문량이 많을 경우</th>
+<th style="text-align: left;">주문량이.적을.경우</th>
+<th style="text-align: left;">주문량이.많을.경우</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>평균재고 감소</td>
-<td>평균재고 증가</td>
+<td style="text-align: left;">평균재고 감소</td>
+<td style="text-align: left;">평균재고 증가</td>
 </tr>
 <tr class="even">
-<td>재고 유지비용 감소</td>
-<td>재고유지비용 감소</td>
+<td style="text-align: left;">재고 유지비용 감소</td>
+<td style="text-align: left;">재고유지비용 감소</td>
 </tr>
 <tr class="odd">
-<td>연간 주문횟수 증가</td>
-<td>연간 주문 횟수 감소</td>
+<td style="text-align: left;">연간 주문횟수 증가</td>
+<td style="text-align: left;">연간 주문 횟수 감소</td>
 </tr>
 <tr class="even">
-<td>연간 주문비용 증가</td>
-<td>연간 주문비용 감소</td>
+<td style="text-align: left;">연간 주문비용 증가</td>
+<td style="text-align: left;">연간 주문비용 감소</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 <p>이상적인 주문량, 즉 최적주문량은 주문비용과 재고유지비용이 적정한 수준에서 결정된 수량이다.</p>
 <p><strong>경제적 주문량</strong>(EOQ,economic order quantity) 모형이란 가장 단순한 형태를 갖는 재고 모형으로 연간 재고유지비용과 연간 주문비용의 합을 최소화하는 1회 주문량(EOQ 또는 Q*)을 구하는 것으로 이 때 주문량 크기를 경제적 로트 사이즈(ELS, economic lot size)라고도 한다.</p>
 <p>!!! 그림 추가</p>
