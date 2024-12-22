@@ -152,6 +152,11 @@ R관리도
 
 ## 공정능력지수 {#sec-cpk}
 
+:::{.callout-tip icon=false title="기출"}
+112-1-7
+:::
+
+
 **공정능력지수**(Process Capability Index)는 산포와 규격 간 상대적 크기를 나타내는 지표이다.
 
 산포
