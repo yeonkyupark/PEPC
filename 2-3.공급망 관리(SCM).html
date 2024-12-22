@@ -400,8 +400,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#구성요소" id="toc-구성요소" class="nav-link active" data-scroll-target="#구성요소">구성요소</a>
+  <li><a href="#sec-scm" id="toc-sec-scm" class="nav-link active" data-scroll-target="#sec-scm">공급망 관리(SCM)</a>
   <ul>
+  <li><a href="#구성요소" id="toc-구성요소" class="nav-link" data-scroll-target="#구성요소">구성요소</a>
+  <ul class="collapse">
   <li><a href="#공급망-계획" id="toc-공급망-계획" class="nav-link" data-scroll-target="#공급망-계획">공급망 계획</a></li>
   <li><a href="#공급망-실행" id="toc-공급망-실행" class="nav-link" data-scroll-target="#공급망-실행">공급망 실행</a></li>
   </ul></li>
@@ -409,6 +411,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#도입-필요성" id="toc-도입-필요성" class="nav-link" data-scroll-target="#도입-필요성">도입 필요성</a></li>
   <li><a href="#핵심이슈와-기대효과" id="toc-핵심이슈와-기대효과" class="nav-link" data-scroll-target="#핵심이슈와-기대효과">핵심이슈와 기대효과</a></li>
   <li><a href="#수직적-통합" id="toc-수직적-통합" class="nav-link" data-scroll-target="#수직적-통합">수직적 통합</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/2-3.공급망 관리(SCM).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -417,7 +420,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-1.수요예측과 일정계획.html">2. 생산운영 및 물류관리</a></li><li class="breadcrumb-item"><a href="./2-3.공급망 관리(SCM).html"><span class="chapter-title">공급망 관리(SCM)</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-scm" class="quarto-section-identifier"><span class="chapter-title">공급망 관리(SCM)</span></span></h1>
+<h1 class="title"><span class="chapter-title">공급망 관리(SCM)</span></h1>
 </div>
 
 
@@ -434,6 +437,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="sec-scm" class="level1">
+<h1>공급망 관리(SCM)</h1>
 <p><strong>공급망 관리</strong>(SCM, supply chain management) 또는 공급사슬 관리는 공급사슬 상에서 발생하는 모든 활동을 효과적으로 운영하기 위한 관리이다. 수요계획부터 생산을 거쳐 물류를 통해 제품이 고객에 이르기까지 최적의 공급망을 관리하는 역할을 뜻한다. 즉, 부품 제공자로부터 생산자, 배포자, 고객에 이르는 물류 흐름을 하나의 가치사슬 관점에서 파악하고 필요한 정보가 원활히 흐르도록 지원하는 시스템이다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>기업 내 부문별 또는 개별 기업 단위 최적화에서 탈피하여 공급망 구성요소 간 전체 프로세스 최적화를 다성하고자 하는 경영기법이다.</p>
 <div class="cell" data-layout-align="default">
@@ -632,7 +637,7 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 <dt>예측 불확실성</dt>
 <dd>
 <blockquote class="blockquote">
-<p><strong>채찍효과</strong>(<a href="8-2.용어.html#def-bullwhip-effect" class="quarto-xref"><span>34.27</span></a>)에 의해 공급사슬 가장 마지막 소매단계의 주문과 고객 수요 성향에 대한 정보가 도매상과 지역유통센터 등의 공급사슬로 전다되는 과정에서 지연이나 왜곡되어 결품, 과잉재고 등의 문제가 발생한다.</p>
+<p><strong>채찍효과</strong>(<a href="8-2.용어.html#def-bullwhip-effect" class="quarto-xref">정의&nbsp;<span>34.27</span></a>)에 의해 공급사슬 가장 마지막 소매단계의 주문과 고객 수요 성향에 대한 정보가 도매상과 지역유통센터 등의 공급사슬로 전다되는 과정에서 지연이나 왜곡되어 결품, 과잉재고 등의 문제가 발생한다.</p>
 </blockquote>
 </dd>
 <dt>세계화 (Globalization)</dt>
@@ -785,6 +790,7 @@ Note
 </div>
 
 
+</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
