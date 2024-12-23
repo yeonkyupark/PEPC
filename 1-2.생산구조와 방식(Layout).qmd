@@ -2,8 +2,8 @@
 
 ## 입지 조건
 
-:::{.callout-tip title="기출" icon=false}
-103-1-9
+:::{.callout-tip icon=false title="기출"}
+103-1-9, 112-1-13
 :::
 
 
