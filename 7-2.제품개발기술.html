@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -413,7 +442,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#모듈러-설계" id="toc-모듈러-설계" class="nav-link" data-scroll-target="#모듈러-설계">모듈러 설계</a></li>
   <li><a href="#신뢰도-설계기법" id="toc-신뢰도-설계기법" class="nav-link" data-scroll-target="#신뢰도-설계기법">신뢰도 설계기법</a></li>
   </ul></li>
-  <li><a href="#강건설계" id="toc-강건설계" class="nav-link" data-scroll-target="#강건설계">강건설계</a></li>
+  <li><a href="#강건설계" id="toc-강건설계" class="nav-link" data-scroll-target="#강건설계">강건설계</a>
+  <ul>
+  <li><a href="#품질-정의" id="toc-품질-정의" class="nav-link" data-scroll-target="#품질-정의">품질 정의</a></li>
+  <li><a href="#품질손실함수" id="toc-품질손실함수" class="nav-link" data-scroll-target="#품질손실함수">품질손실함수</a></li>
+  <li><a href="#품질설계-단계" id="toc-품질설계-단계" class="nav-link" data-scroll-target="#품질설계-단계">품질설계 단계</a></li>
+  </ul></li>
   <li><a href="#친환경설계" id="toc-친환경설계" class="nav-link" data-scroll-target="#친환경설계">친환경설계</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/7-2.제품개발기술.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
@@ -730,20 +764,47 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="강건설계" class="level2">
 <h2 class="anchored" data-anchor-id="강건설계">강건설계</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="기출">
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 기출
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>100-1-11, 106-1-13</p>
+<p>100-1-11, 106-1-13, 112-3-2</p>
 </div>
 </div>
 <p><strong>강건설계</strong>(Robust Design)는 다구찌 실험설계라고도 하며, 일본 다구찌 바사가 구현한 제품 품질 개선 기법으로 제어 가능한 인자로 제어 불가능한 노이즈(Noise, 환경잡음인자)에 강건하게 설계하는 방법이다.</p>
+<section id="품질-정의" class="level3">
+<h3 class="anchored" data-anchor-id="품질-정의">품질 정의</h3>
+<dl>
+<dt>품질 정의 (Definition of Quality)</dt>
+<dd>
+<ul>
+<li>다구찌 품질공학에서 품질 정의는 단순히 “불량이 없는 제품”으로서 품질을 정의하는 전통적인 접근법과 차별화된다. 다구찌는 품질을 <strong>“고객 기대에 부합하는 제품 성능”</strong>으로 정의한다. 여기서 중요한 점은 고객이 요구하는 성능을 최소 변동으로 유지하는 것이 품질이라는 점이다. 즉, 제품이나 서비스가 의도한 성능을 일정하게 유지하고, 고객 기대를 일관되게 충족시키는 것을 품질의 핵심으로 본다.</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="품질손실함수" class="level3">
+<h3 class="anchored" data-anchor-id="품질손실함수">품질손실함수</h3>
+<p>다구찌 품질공학에서 품질 손실 함수는 품질을 경제적으로 측정하기 위한 수단이다. 다구찌는 품질 손실을 <strong>“기준값에서 벗어난 정도”</strong>로 정의하고, 이 손실이 고객에게 얼마나 불편을 주는지와 연결지었다. 품질 손실 함수는 다음과 같이 표현된다.</p>
+<p><span class="math display">\[
+L(y) = k(y-m)^2
+\]</span></p>
+<ul>
+<li>L(y): 손실함수</li>
+<li>y: 제품 실제 성능</li>
+<li>T: 목표 성능</li>
+<li>k: 손실 크기를 결정하는 상수</li>
+</ul>
+<p>위 식에서 손실은 목표값(T)에서 벗어난 정도에 비례하며, 이는 편차가 클수록 품질 손실이 커진다는 의미이다. 다구찌는 제품이 목표값을 중심으로 일정한 범위 내에서 생산될수록 품질이 향상된다고 주장했다. 목표값을 벗어난 정도가 커질수록 고객에게는 더 큰 불만족을 줄 수 있기 때문에, 품질 손실은 가격적 손실로도 이어질 수 있다.</p>
+</section>
+<section id="품질설계-단계" class="level3">
+<h3 class="anchored" data-anchor-id="품질설계-단계">품질설계 단계</h3>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -777,6 +838,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </dd>
 </dl>
+</section>
 </section>
 <section id="친환경설계" class="level2">
 <h2 class="anchored" data-anchor-id="친환경설계">친환경설계</h2>
