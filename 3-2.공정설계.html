@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3df5346c35b800f24a803ca2112b771e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1fd9abd6f065d77e209982a00db0eb71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -392,11 +421,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#라인-밸런싱" id="toc-라인-밸런싱" class="nav-link active" data-scroll-target="#라인-밸런싱">라인 밸런싱</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-2.공정설계.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-1.생산계획수립.html">3. 공정관리</a></li><li class="breadcrumb-item"><a href="./3-2.공정설계.html"><span class="chapter-title">공정설계</span></a></li></ol></nav>
 <div class="quarto-title">
@@ -405,7 +440,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -417,8 +452,101 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="라인-밸런싱" class="level2">
+<h2 class="anchored" data-anchor-id="라인-밸런싱">라인 밸런싱</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>112-2-6</p>
+</div>
+</div>
+<p>라인 밸런싱은 공정 분석에 있어 중요한 요소이다. 작업장 내 여러 작업 사이에 균형을 맞추는 활동이다. 이는 각 작업이 동일한 시간 동안 수행되도록 하여 전체 라인 효율성을 높이는데 목표를 두고 있다. 라인 밸런싱을 통해 생산 시간을 줄이고 병목 현상을 방지하며 자원 활용을 최적화할 수 있다.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="라인 밸런스 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+라인 밸런스 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>1대씩 기계가 배치된 흐름공정 작업시간이 다음 표와 같을 경우, 일일 생산량이 15개/일 이상일때까지 기계를 추가로 배치하여 공정분할을 실시하고, 그 때 일일 생산량 및 라인 밸런스 효율을 구하시오(실제 가동시간 = 8시간/일).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>공정</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시간(분)</td>
+<td>30</td>
+<td>30</td>
+<td>42</td>
+<td>31</td>
+<td>32</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><span class="math display">\[
+\frac{\text{가동시간 8시간 x 60분}}{15개} = 32(분)
+\]</span></p>
+<p>주어진 조건에서는 일 15개 생산을 위해서는 각 공정이 32분 이내가 되도록 공정을 설계해야 한다. 따라서 3, 6, 7번 공정은 추가 기계를 배치하여 32분 이내로 공정이 진행될 수 있도록 구성한다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>공정</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>시간(분)</td>
+<td>30</td>
+<td>30</td>
+<td>21</td>
+<td>21</td>
+<td>31</td>
+<td>32</td>
+<td>18</td>
+<td>17</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+<p>위 조건으로 라인 밸런스 효율을 계산하면 다음과 같다.</p>
+<p><span class="math display">\[
+E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.75(%)
+\]</span></p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -838,7 +966,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="./3-1.생산계획수립.html" class="pagination-link" aria-label="생산계획수립">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">생산계획수립</span></span>
@@ -855,4 +983,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-2.공정설계.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-2.공정설계.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
