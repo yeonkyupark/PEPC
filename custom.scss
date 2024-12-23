@@ -2,14 +2,14 @@
 $headings-font-weight:  bold !default;
 
 /*-- scss:rules --*/
-h4.anchored {
+h1.anchored, h2.anchored, h3.anchored, h4.anchored {
+  position: relative;
   color: white;
+  text-shadow: 0 -1px rgba(0,0,0,0.6);
 }
 
 h1, .h1, h2, .h2, h3, .h3,  h4, .h4 {
   position: relative;
-  color: white;
-  text-shadow: 0 -1px rgba(0,0,0,0.6);
   background-color: rgba(53, 86, 129, 0.8);
   border: 1px solid #fff;
   border-radius: 0 10px 0 10px;
