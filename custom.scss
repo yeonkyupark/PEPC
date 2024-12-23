@@ -1,9 +1,9 @@
 /*-- scss:defaults --*/
 $headings-font-weight:  bold !default;
+$headings-font-color: white;
 
 /*-- scss:rules --*/ 
 h1, h2, h3, h4 {
-  color: #fff;
   position: relative;
   text-shadow: 0 -1px rgba(0,0,0,0.6);
   background: rgba(53, 86, 129, 0.8);
