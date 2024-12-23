@@ -1,7 +1,11 @@
 /*-- scss:defaults --*/
 $headings-font-weight:  bold !default;
 
-/*-- scss:rules --*/ 
+/*-- scss:rules --*/
+h4.anchored {
+  color: white;
+}
+
 h1, .h1, h2, .h2, h3, .h3,  h4, .h4 {
   position: relative;
   color: white;
