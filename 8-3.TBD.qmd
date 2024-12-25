@@ -1,6 +1,6 @@
 ## TBD {#sec-tbd .unnumbered}
 
-::: {.callout title="기출" icon=false}
+::: {.callout icon=false title="기출"}
 97-2-6  
 : 생산 공장의 생산정보관리에 있어서 생산정보를 생산계획 정보, 생산통제 정보, 생산성 정보로 구분하였을 때, 각각의 세부적인 정보의 항목과 내용을 설명하시오.
 :::
@@ -67,7 +67,7 @@ JIT|O|O||O|O
 운영의사결정| |
 :::
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 106-4-2
 : 공급사슬에서 협력이 결여되면 생산비용, 재고비용, 보충리드타임, 수송비용, 선적과 하역비용 등이 증가하고 제품 가용성 수준 및 수익성이 감소한다. 공급사슬에서 협력 결여 발생요인과 협력을 이루어 내기 위한 관리수단에 대하여 설명하시오.
 
@@ -75,7 +75,7 @@ JIT|O|O||O|O
 
 :::
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 106-4-6
 : 시간은 비용, 생산성, 품질, 혁신에 버금가는 중요한 전략수단이다. 기업의 경쟁력 제고를 위한 시간단축 경영을 하고자 할 때 고려되어야 할 4가지 사항에 대하여 설명하시오.
 
@@ -83,7 +83,7 @@ JIT|O|O||O|O
 
 :::
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 109-1-12
 : 생산기간의 정의, 구성 및 단축 필요성에 대하여 각각 설명하시오.
 
@@ -91,7 +91,7 @@ JIT|O|O||O|O
 
 :::
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 109-2-4
 : ZD(Zero Defect) 프로그램의 실패요인에 대하여 설명하시오.
 
@@ -109,7 +109,7 @@ ZD 프로그램 실패 이유
 이러한 이유로 ZD 프로그램은 항상 성공하지 않을 수 있다.
 :::
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 109-3-6
 : 기업경쟁력의 원천인 제안제도의 성공요소를 설명하시오.
 
@@ -133,7 +133,7 @@ ZD 프로그램 실패 이유
 : - 제안제도가 성공적으로 운영되더라도 거기서 만족하지 않고 지속적으로 개선 발전
 :::
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 109-4-1
 : 모든 제조기업에서는 생산성 향상이 경쟁력 확보의 주요한 문제이다. 생산성 향상의 저해 범주를 크게 3가지로 분류하여 저해요인을 각각 기술하고 향상시킬 수 있는 방안을 관리 방법 위주로 제시하시오.
 
@@ -141,3 +141,10 @@ ZD 프로그램 실패 이유
 
 :::
 
+:::{.callout-tip icon=false title="기출"}
+112-4-2
+: 공정관리에서 통제기능에 관하여 4가지만 설명하시오.
+
+----
+
+:::
