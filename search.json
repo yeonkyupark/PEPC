@@ -855,11 +855,11 @@
     ]
   },
   {
-    "objectID": "3-5.설비보전관리.html#rams",
-    "href": "3-5.설비보전관리.html#rams",
+    "objectID": "3-5.설비보전관리.html#sec-rams",
+    "href": "3-5.설비보전관리.html#sec-rams",
     "title": "설비보전관리",
     "section": "RAMS",
-    "text": "RAMS\nRAMS(Reliability, Availability, Maintainability, Safety)는 제품 신뢰성과 안전성 평가를 위한 지표이다. 제품이나 시스템의 신뢰성, 가용성, 유지보수성 그리고 안전성을 평가한다.\n\n\n\n\n\nflowchart TB\nRAMS --- 신뢰성 & 가용성 & 유지보수성 & 안전성\n\n\n\n\n\n\n\n신뢰성(reliability)\n\n\n제품이 일정 기간 동안 얼마나 정상적으로 동작하는지를 나타내는 지표\n고장없이 예상대로 동작하는 능력\n\n\n가용성(availability)\n\n\n제품이나 시스템이 사용 가능한 상태에 있는 비율을 나타내는 지표\n장애로 인한 중단 시간을 최소화하여 시스템 가동 시간을 최대한 확보하는 것이 목표\n\n\n유지보수성(maintainability)\n\n\n제품이나 시스템이 고장 났을 때 빠르게 복구 또는 유지보수를 수행할 수 있는지를 나타내는 지표\n유지보수성이 높으면 고장 시간을 최소화하고 장애복구를 빠르게 수행 가능\n\n\n안전성(safety)\n\n\n제품이나 시스템을 사용하는 중 사용ㅈ바나 환경에 어떠한 유해한 영향도 미치지 않는 능력\n제품 사용자와 주변 환경을 보호하는 중요한 역할\n\n\n\n\n측정 방법\n\n\n\n\n\n\n\n항목\n측정방법\n\n\n\n\n신뢰성\nMTBF, 실페 확률(특정 기간 내 고장이 발생할 확률, 과거 데이터 및 통계 기반으로 계산)\n\n\n가용성\nMTTR\n\n\n유지보수성\n복구 시간, 유지 보수 작업 복잡성, 필요한 기술 및 장비 등을 고려하여 평가\n\n\n안전성\nHAZOP(hazard and operability study), FMEA(failure modes and effects analysis), FTA(fault tree analysis)",
+    "text": "RAMS\n\n\n\n\n\n\n기출\n\n\n\n112-4-4\n\n\nRAMS(Reliability, Availability, Maintainability, Safety)는 제품 신뢰성과 안전성 평가를 위한 지표이다. 제품이나 시스템의 신뢰성, 가용성, 유지보수성 그리고 안전성을 평가한다.\n\n\n\n\n\nflowchart TB\nRAMS --- 신뢰성 & 가용성 & 유지보수성 & 안전성\n\n\n\n\n\n\n\n신뢰성(reliability)\n\n\n제품이 일정 기간 동안 얼마나 정상적으로 동작하는지를 나타내는 지표\n고장없이 예상대로 동작하는 능력\n\n\n가용성(availability)\n\n\n제품이나 시스템이 사용 가능한 상태에 있는 비율을 나타내는 지표\n장애로 인한 중단 시간을 최소화하여 시스템 가동 시간을 최대한 확보하는 것이 목표\n\n\n유지보수성(maintainability)\n\n\n제품이나 시스템이 고장 났을 때 빠르게 복구 또는 유지보수를 수행할 수 있는지를 나타내는 지표\n유지보수성이 높으면 고장 시간을 최소화하고 장애복구를 빠르게 수행 가능\n\n\n안전성(safety)\n\n\n제품이나 시스템을 사용하는 중 사용ㅈ바나 환경에 어떠한 유해한 영향도 미치지 않는 능력\n제품 사용자와 주변 환경을 보호하는 중요한 역할\n\n\n\n\n측정 방법\n\n\n\n\n\n\n\n항목\n측정방법\n\n\n\n\n신뢰성\nMTBF, 실페 확률(특정 기간 내 고장이 발생할 확률, 과거 데이터 및 통계 기반으로 계산)\n\n\n가용성\nMTTR\n\n\n유지보수성\n복구 시간, 유지 보수 작업 복잡성, 필요한 기술 및 장비 등을 고려하여 평가\n\n\n안전성\nHAZOP(hazard and operability study), FMEA(failure modes and effects analysis), FTA(fault tree analysis)",
     "crumbs": [
       "3. 공정관리",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>설비보전관리</span>"
