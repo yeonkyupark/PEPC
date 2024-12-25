@@ -159,6 +159,10 @@ TOC는 한 단어로압축하면 초점(focus)이다. 초점이란 "해야 할 �
 
 ## DBR {#sec-dbr}
 
+:::{.callout-tip icon=false title="기출"}
+112-4-3
+:::
+
 ![https://de.m.wikipedia.org/wiki/Drum-Buffer-Rope](https://upload.wikimedia.org/wikipedia/de/7/75/Herbie_in_a_queue.png)
 
 **DBR**(Drum-Buffer-Rope)은 내부 물리적인 제약일 때, 제약 자원을 최대한 활용하기 위한 생산일정 수립 방법이다.
