@@ -1563,7 +1563,7 @@
     "href": "7-2.제품개발기술.html#친환경설계",
     "title": "제품개발기술",
     "section": "친환경설계",
-    "text": "친환경설계\n\n103-1-7\n\n친환경설계(DFE, design for environment)는 제품 전 수명주기, 모든 분야에서 환경, 안전, 보건에 맞게 설계를 수행하는 기법이다. 재생된 부품을 이용하도록 제품을 설계하거나 소비자가 사용 후 회사가 제품을 수거하여 사용 가능한 부품을 쉽게 재활용할 수 있도록 제품을 설계한다.\n\n특징\n\n\n가격, 품질, 성능을 만족시키면서 환경적으로 적합한 제품 개발\n제품 설계과정에 환경부하를 최소화\n재활용 및 재자원화 극대화\n자재나 제조공정 상 소모자원이나 오염물질 종류를 분석, 환경 평가\n\n\n\n제품에 대한 환경 전과정 영향평가(LCA, life cycle assessment)정의: 31와 총비용분석(TCA, total cost analysis)을 기초로 분해를 고려한 설계(DfD, design for disassembly)와 재활용을 고려한 설계(DfR, design for recycling), 회수 및 재사용을 고려한 설계(DfR, design for resue) 등을 주된 내용으로 하는 제품 설계기법이다.",
+    "text": "친환경설계\n:::{.callout-tipicon=false title=“기출”} 103-1-7 :::\n친환경설계(DFE, design for environment)는 제품 전 수명주기, 모든 분야에서 환경, 안전, 보건에 맞게 설계를 수행하는 기법이다. 재생된 부품을 이용하도록 제품을 설계하거나 소비자가 사용 후 회사가 제품을 수거하여 사용 가능한 부품을 쉽게 재활용할 수 있도록 제품을 설계한다.\n\n특징\n\n\n가격, 품질, 성능을 만족시키면서 환경적으로 적합한 제품 개발\n제품 설계과정에 환경부하를 최소화\n재활용 및 재자원화 극대화\n자재나 제조공정 상 소모자원이나 오염물질 종류를 분석, 환경 평가\n\n\n\n제품에 대한 환경 전과정 영향평가(LCA, life cycle assessment, 31)와 총비용분석(TCA, total cost analysis)을 기초로 분해를 고려한 설계(DfD, design for disassembly)와 재활용을 고려한 설계(DfR, design for recycling), 회수 및 재사용을 고려한 설계(DfR, design for resue) 등을 주된 내용으로 하는 제품 설계기법이다.",
     "crumbs": [
       "7. 생산지원기술 및 기타",
       "<span class='chapter-number'>30</span>  <span class='chapter-title'>제품개발기술</span>"
