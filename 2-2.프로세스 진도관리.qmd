@@ -140,7 +140,7 @@ flowchart TB
 생산에 필요한 재료, 순서, 공수 및 일정에 대한 계획을 수립하고 적시에 작업 분배를 하더라도 상황 변화에 따라 작업 진도는 불가피하게 계획과 차이가 발생할 수 있다. 진도 차이가 발생하는 일반적인 원인은 다음과 같다.
 
 ```{mermaid}
-flowchart TB
+flowchart LR
 0[일반적인 진도 차이 원인]
 11[무리한 수주]
 12[부정확한 계획]
@@ -189,7 +189,7 @@ flowchart TB
 
 ## 네트워크 기법
 
-::: {.callout-tip title="기출", icon=false}
+::: {.callout-tip title="기출" icon=false}
 97-3-6, 100-3-1, 103-4-4
 :::
 
