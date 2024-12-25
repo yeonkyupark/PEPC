@@ -364,7 +364,7 @@ end
 
 ### 의사결정론
 
-:::{.callout-tip title="기출" icon=false}
+:::{.callout-tip icon=false title="기출"}
 100-2-1, 103-1-6, 106-2-1
 :::
 
@@ -679,7 +679,7 @@ knitr::kable(tb)
 
 ## 선형계획법
 
-::: {.callout-tip title="기출" icon=false}
+::: {.callout-tip icon=false title="기출"}
 97-2-5, 103-4-2
 :::
 
@@ -1014,6 +1014,10 @@ end
 
 ## 분석 네트워크 프로세스 (ANP)
 
+:::{.callout-tip icon=false title="기출"}
+115-1-2
+:::
+
 **분석 네트워크 프로세스**(ANP, Analytic Network Process)는 AHP 분석
 한계로 인해 1996년 Saaty 교수가 기존 AHP 기법을 보완하여 개발되었다.
 AHP는 구성요소간 독립성을 가정하였지만 현실에서는 수평적 상호관계,
@@ -1023,7 +1027,7 @@ AHP는 구성요소간 독립성을 가정하였지만 현실에서는 수평적
 
 ```{r}
 #| echo: false
-# #| tbl-colwidths: [25,25,25,25]
+#| tbl-colwidths: [10,45,45]
 options(knitr.kable.NA = '')
 tb <- data.frame(
   stringsAsFactors = FALSE,
@@ -1037,7 +1041,7 @@ knitr::kable(tb)
 
 ## 의사결정 나무
 
-::: {.callout-tip title="기출" icon=false}
+::: {.callout-tip icon=false title="기출"}
 97-3-3
 :::
 
@@ -1120,7 +1124,7 @@ $$(0.6 \times 0.9억 원 + 0.4 \times 0.1억 원) \times 10년 = 5.8억 원/년$
 
 ## 대기행렬이론
 
-::: {.callout-tip title="기출" icon=false}
+::: {.callout-tip icon=false title="기출"}
 97-3-5, 103-2-3
 :::
 
