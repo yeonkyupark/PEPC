@@ -362,7 +362,11 @@ $$
 
 여기서 **[-@sec-mtbf]**(Mean Time Between Failure)는 평균고장간격으로, 즉 수리할 수 있는 시스템 또는 설비에서 고장 발생 시점부터 다음 고장 발생 시점까지의 평균 시간이다.
 
-## RAMS
+## RAMS {#sec-rams}
+
+:::{.callout-tip icon=false title="기출"}
+112-4-4
+:::
 
 **RAMS**(Reliability, Availability, Maintainability, Safety)는 제품 신뢰성과 안전성 평가를 위한 지표이다. 제품이나 시스템의 신뢰성, 가용성, 유지보수성 그리고 안전성을 평가한다.
 
