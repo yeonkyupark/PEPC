@@ -68,6 +68,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -405,7 +409,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-kano-model" id="toc-sec-kano-model" class="nav-link" data-scroll-target="#sec-kano-model">카노(Kano) 모델</a></li>
   <li><a href="#가치흐름지도vsm" id="toc-가치흐름지도vsm" class="nav-link" data-scroll-target="#가치흐름지도vsm">가치흐름지도(VSM)</a></li>
   <li><a href="#품질기능전개qfd" id="toc-품질기능전개qfd" class="nav-link" data-scroll-target="#품질기능전개qfd">품질기능전개(QFD)</a></li>
-  <li><a href="#dfssdesign-for-six-sigma" id="toc-dfssdesign-for-six-sigma" class="nav-link" data-scroll-target="#dfssdesign-for-six-sigma">DFSS(Design For Six Sigma)</a></li>
+  <li><a href="#dfssdesign-for-six-sigma" id="toc-dfssdesign-for-six-sigma" class="nav-link" data-scroll-target="#dfssdesign-for-six-sigma">DFSS(Design For Six Sigma)</a>
+  <ul>
+  <li><a href="#dfss-핵심-요소" id="toc-dfss-핵심-요소" class="nav-link" data-scroll-target="#dfss-핵심-요소">DFSS 핵심 요소</a></li>
+  </ul></li>
   <li><a href="#참고자료" id="toc-참고자료" class="nav-link" data-scroll-target="#참고자료">참고자료</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/5-2.프로세스 분석과 개선.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
@@ -644,6 +651,104 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="dfssdesign-for-six-sigma" class="level2">
 <h2 class="anchored" data-anchor-id="dfssdesign-for-six-sigma">DFSS(Design For Six Sigma)</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>115-1-4</p>
+</div>
+</div>
+<p><strong>DFSS</strong>(Design For Six Sigma)는 제품이나 서비스를 설계하는 초기 단계부터 Six Sigma의 원칙을 적용하여 품질을 최적화하고 결함을 최소화하는 방법론이다. DFSS는 Six Sigma의 한 방법론으로, 제품이나 프로세스를 개선하는 기존 접근법인 <strong>DMAIC(Define, Measure, Analyze, Improve, Control)</strong>와는 달리 <strong>새로운 제품이나 프로세스를 설계하는 과정</strong>(DMADV)에서 품질을 보장하는 데 중점을 둔다.</p>
+<dl>
+<dt>DFSS의 목표</dt>
+<dd>
+<ul>
+<li><strong>고품질 제품 설계</strong>: 제품이나 서비스가 초기부터 높은 품질 기준을 만족하도록 설계하여, 출시 후 품질 문제를 방지한다.</li>
+<li><strong>고객 요구사항 반영</strong>: 고객 기대와 요구를 정확하게 반영하여 설계하고, 이를 충족시키기 위해 제품을 최적화한다.</li>
+<li><strong>결함 최소화</strong>: 설계 단계에서부터 결함을 사전에 예방하여, 최종 제품이 높은 품질 수준을 유지하도록 한다.</li>
+</ul>
+</dd>
+<dt>DFSS의 주요 이점</dt>
+<dd>
+<ul>
+<li>고객 만족도 향상: 제품 설계 단계에서부터 고객 요구와 기대를 충족시키는 것을 우선시하여, 고객 만족도를 높일 수 있다.</li>
+<li>결함 예방: 제품 설계 초기 단계에서부터 문제를 예방할 수 있어, 후속 공정에서 발생할 수 있는 결함을 미리 방지할 수 있다.</li>
+<li>비용 절감: 초기 단계에서 품질을 보장하고 결함을 예방함으로써, 후속 생산 과정에서 발생할 수 있는 리워크(rework)와 불량률을 줄여 비용을 절감할 수 있다.</li>
+<li>시장 경쟁력 강화: 높은 품질의 제품을 출시함으로써 기업은 시장에서 경쟁력을 강화할 수 있다.</li>
+</ul>
+</dd>
+<dt>DFSS의 활용 사례</dt>
+<dd>
+<ul>
+<li>자동차 산업: 고품질 차량 부품 설계와 생산을 위해 DFSS를 적용하여 결함률을 최소화하고, 고객 요구사항을 반영한 제품을 제공한다.</li>
+<li>소프트웨어 개발: 소프트웨어 개발 과정에서 DFSS를 활용하여 성능과 안정성을 극대화하고, 사용자 요구를 충족하는 제품을 설계한다.</li>
+<li>제약 산업: 제품 설계 단계에서부터 품질과 안전을 보장하기 위해 DFSS를 활용한다. 이를 통해 제품이 시장에 출시되기 전에 규제 요건을 충족하도록 한다.</li>
+</ul>
+</dd>
+</dl>
+<p>DFSS는 제품과 서비스를 설계하는 초기 단계에서부터 품질을 최적화하고 결함을 최소화하는 데 중점을 둔다. 고객 요구사항을 정확히 반영하고 이를 바탕으로 제품을 설계하는 방식으로 <a href="7-4.생산혁신기술.html#sec-six-sigma" class="quarto-xref"><span>6시그마</span></a> 원칙을 적용하여 높은 품질을 갖는 제품을 시장에 출시할 수 있도록 돕는다. DFSS는 효율적인 설계, 고객 만족도 향상, 비용 절감, 경쟁력 강화 등 많은 이점을 제공한다.</p>
+<section id="dfss-핵심-요소" class="level3">
+<h3 class="anchored" data-anchor-id="dfss-핵심-요소">DFSS 핵심 요소</h3>
+<p>DFSS는 주로 다섯 가지 핵심 단계로 구성된다. 이 단계들은 제품 설계와 관련된 프로세스를 구조적으로 개선하는 데 도움을 준다.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+00[DFSS]
+subgraph 10[DMADV]
+Define
+Measure
+Analyze
+D1[Design]
+Verify
+end
+
+subgraph 20[IDOV]
+Identify
+D2[Design]
+Optimize
+Validate
+
+end
+
+00 --- 10 &amp; 20
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<dl>
+<dt>DMADV (Define, Measure, Analyze, Design, Verify)</dt>
+<dd>
+<ul>
+<li>Define (정의): 프로젝트 목표와 고객 요구 사항을 정의하고, 성공적인 제품 또는 서비스 설계를 위한 목표를 설정한다.</li>
+<li>Measure (측정): 고객 요구사항을 충족시키기 위한 성과 지표를 정의하고, 해당 요구를 만족시킬 수 있는 측정 가능한 특성들을 파악한다.</li>
+<li>Analyze (분석): 설계 옵션을 분석하고, 최적 설계를 위한 다양한 대안들을 평가한다. 기술적, 경제적, 시장적 측면을 고려한다.</li>
+<li>Design (설계): 실제 제품이나 서비스 설계를 진행한다. 이 단계에서는 제품 설계가 고객 요구 사항과 품질 목표를 충족하도록 세부 사항을 결정한다.</li>
+<li>Verify (검증): 설계가 실제로 고객 요구를 충족하는지 확인하고, 필요한 경우 추가적인 수정과 개선을 통해 제품을 검증한다.</li>
+</ul>
+</dd>
+<dt>IDOV (Identify, Design, Optimize, Validate)</dt>
+<dd>
+<ul>
+<li>이 방법은 DFSS의 또 다른 접근 방식으로, IDOV는 특히 제품 설계에 필요한 각 단계를 좀 더 구체적으로 정의한다.</li>
+<li>Identify: 고객 요구 사항과 기대를 파악한다.</li>
+<li>Design: 그 요구를 충족할 수 있는 제품 설계를 한다.</li>
+<li>Optimize: 설계를 최적화하여 성능과 품질을 극대화한다.</li>
+<li>Validate: 최종 설계가 실제 환경에서 잘 작동하는지 검증한다.</li>
+</ul>
+</dd>
+</dl>
+</section>
 </section>
 <section id="참고자료" class="level2">
 <h2 class="anchored" data-anchor-id="참고자료">참고자료</h2>
