@@ -382,9 +382,9 @@ APS 고유기능
 - 생산계획(Manufacturing planning)
 - 수요충족(Demand fulfillment)
 
-## 6시그마
+## 6시그마 {#sec-six-sigma}
 
-## 린 6시그마
+## 린 6시그마 {#sec-lean-six-sigma}
 
 :::{.callout-tip icon=false title="기출"}
 106-2-5
