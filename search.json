@@ -1834,6 +1834,17 @@
     ]
   },
   {
+    "objectID": "7-4.생산혁신기술.html#sec-lean-thinking",
+    "href": "7-4.생산혁신기술.html#sec-lean-thinking",
+    "title": "생산혁신기술",
+    "section": "Lean thinking",
+    "text": "Lean thinking\n\n\n\n\n\n\n기출\n\n\n\n115-4-3\n\n\nLean Thinking의 5가지 사고(원칙)는 다음과 같다.\n\n가치 정의 (Define Value): 고객에게 가치를 제공하는 것이 무엇인지를 정의한다. 가치 있는 것은 고객이 기꺼이 비용을 지불할 의향이 있는 제품이나 서비스로, 불필요한 것들을 배제하고 고객의 요구에 맞는 가치를 찾아낸다.\n가치 흐름 식별 (Map the Value Stream): 가치가 고객에게 전달되는 모든 과정과 단계를 식별하고 분석한다. 이를 통해 낭비를 파악하고, 가치를 창출하는 데 불필요한 활동들을 제거하거나 개선한다.\n흐름 만들기 (Create Flow): 가치가 흐를 수 있도록 작업과 자원의 흐름을 최적화한다. 중단 없이 작업이 이어지도록 하여 지연이나 대기 시간을 최소화한다.\n풀 시스템 만들기 (Establish Pull): 고객의 수요에 맞춰 생산과 서비스를 제공한다. 미리 과잉 생산하는 대신, 고객의 실제 요구에 따라 필요한 만큼만 생산하는 시스템을 구축한다.\n완벽을 추구 (Seek Perfection): 지속적인 개선을 통해 낭비를 제거하고, 효율성을 높인다. 모든 과정에서 완벽을 추구하며, 작은 개선이라도 지속적으로 이루어져야 한다는 원칙이다.\n\n이 5가지 원칙을 통해 Lean Thinking은 효율성을 극대화하고, 낭비를 줄이며, 고객 가치를 증대시키는 데 집중한다.",
+    "crumbs": [
+      "7. 생산지원기술 및 기타",
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>생산혁신기술</span>"
+    ]
+  },
+  {
     "objectID": "7-4.생산혁신기술.html#footnotes",
     "href": "7-4.생산혁신기술.html#footnotes",
     "title": "생산혁신기술",
