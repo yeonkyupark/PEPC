@@ -921,6 +921,31 @@ end
 </ol>
 </dd>
 </dl>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="EOQ 항목 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+EOQ 항목 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>어떤 제품의 연간 수요량은 100,000단위, 연간 재고유지비용은 단위당 100원이며 매회 주문비용은 500원의 비용이 든다. 다음 각 항목을 구하시오(단, 연간 작업일수는 300일)</p>
+<p><span class="math display">\[
+경제적 주문량(Q) = \sqrt{\frac{2DS}{H}} = \sqrt{\frac{2 \times 100,000 \times 500}{100}} = 1,000(개)
+\]</span></p>
+<p><span class="math display">\[
+연간주문횟수 = \frac{D}{Q} \ \frac{100,000}{1,000} = 100(회)
+\]</span></p>
+<p><span class="math display">\[
+주문 \ 간 \ 간격 = \frac{연간작업일수}{연간주문횟수} = \frac{300}{100} = 3(일)
+\]</span></p>
+<p><span class="math display">\[
+연간 \ 총최소재고비용 = (\frac{1,000}{2} \times 100) + (\frac{100,000}{1,000} \times 500) = 50,000 + 50,000 = 100,000(원)
+\]</span></p>
+</div>
+</div>
 </section>
 <section id="경제적-생산량-모형epq" class="level5">
 <h5 class="anchored" data-anchor-id="경제적-생산량-모형epq">경제적 생산량 모형(EPQ)</h5>
