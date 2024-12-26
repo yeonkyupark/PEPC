@@ -196,7 +196,7 @@ flowchart LR
 ## 설비 6대 로스
 
 :::{.callout-tip icon=false title="기출"}
-100-4-5, 106-3-2
+100-4-5, 106-3-2, 118-1-11
 :::
 
 <center>
