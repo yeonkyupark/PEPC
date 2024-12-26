@@ -61,10 +61,10 @@ CE는 제품 개발과 그 제품을 생산하는 공정, 판매와 유통, 구�
 - 설계변경 횟수가 감소된다.
 - 재공품이 감소된다.
 
-### 모듈러 설계
+### 모듈러 설계 {#sec-modular-design}
 
 :::{.callout-tip title="기출"}
-97-1-4
+97-1-4, 115-3-6
 :::  
 
 ![https://en.wikipedia.org/wiki/Modular_design](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Framework_Laptop_-_the_Design_Museum.jpg/330px-Framework_Laptop_-_the_Design_Museum.jpg)  
