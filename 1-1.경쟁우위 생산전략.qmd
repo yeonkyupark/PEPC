@@ -199,8 +199,8 @@ flowchart TB
 
 ## 고객요구 납기에 다른 생상방식
 
-:::{.callout-tip title="기출" icon=false}
-100-2-6, 106-2-4
+:::{.callout-tip icon=false title="기출"}
+100-2-6, 106-2-4, 115-3-5
 :::
 
 ![https://www.researchgate.net/figure/Material-flow-decoupling-points-and-strategic-inventory_fig2_247628650](https://www.researchgate.net/profile/Martin-Christopher-2/publication/247628650/figure/fig2/AS:298253707956243@1448120633663/Material-flow-decoupling-points-and-strategic-inventory.png)
@@ -212,7 +212,7 @@ flowchart TB
 - 저가, 단일품목 특징으로 저렴한 가격으로 빠르 서비스를 고객에게 제공할 수 있다는 장점
 
 주문생산방식(MTO, make to order)
-: 고객 주문이 들어오면 원자재 가공, 반제품 생산 및 완제품 조립이 이루어지는 형태로 공작기계 생산업체들이 대개 이 방식으로 생산
+: - 고객 주문이 들어오면 원자재 가공, 반제품 생산 및 완제품 조립이 이루어지는 형태로 공작기계 생산업체들이 대개 이 방식으로 생산
 - 다양한 고객 요구에 맞는 맞춤형 제품 생산이 가능
 
 주문조립방식(ATO, assemble to order)
