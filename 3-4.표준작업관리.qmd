@@ -1,6 +1,6 @@
 # 표준작업관리 {#sec-standard-work-management}
 
-## 표준시간
+## 표준시간 {#sec-standard-time}
 
 표준시간(ST, standard time)이란 
 - 표준 작업환경에서
@@ -18,7 +18,7 @@ $$
 표준시간(ST) = 정미시간(NT) + 여유시간(AT) = 관측시간 \times(1+레이팅) + 여유시간
 $$
 
-### 레이팅
+### 레이팅 {#sec-rating}
 
 평준화(leveling)법 또는 Westing house법
 : - $정미시간 = 관측시간 대표치 \times (1+평준화계수합)$
@@ -71,7 +71,11 @@ $$
 SAM 레이팅 필름
 : - 시간연구자 레이팅 훈련용으로 널리 사용되는 SAM(society for advancement of management) 레이팅 필름에 의한 공정한 1일 작업량을 선정하는 방법
 
-### 여유시간
+### 여유시간 {#sec-allowance-time}
+
+::: {.callout-tip icon=false title="기출"}
+115-2-4
+:::
 
 여유시간은 작업에 있어서 불가피한 시간을 의미한다. 작업자 휴식 또는 작업 중 여러가지 원인으로 지연이 발생하기 때문에 표준시간 설정 시 적당한 여유를 주어야 하는데 이에 해당하는 시간이 여유시간이다.
 
