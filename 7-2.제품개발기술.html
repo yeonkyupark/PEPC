@@ -447,6 +447,7 @@ window.Quarto = {
   <li><a href="#품질-정의" id="toc-품질-정의" class="nav-link" data-scroll-target="#품질-정의">품질 정의</a></li>
   <li><a href="#품질손실함수" id="toc-품질손실함수" class="nav-link" data-scroll-target="#품질손실함수">품질손실함수</a></li>
   <li><a href="#품질설계-단계" id="toc-품질설계-단계" class="nav-link" data-scroll-target="#품질설계-단계">품질설계 단계</a></li>
+  <li><a href="#품질에-영향을-주는-인자" id="toc-품질에-영향을-주는-인자" class="nav-link" data-scroll-target="#품질에-영향을-주는-인자">품질에 영향을 주는 인자</a></li>
   </ul></li>
   <li><a href="#친환경설계" id="toc-친환경설계" class="nav-link" data-scroll-target="#친환경설계">친환경설계</a></li>
   <li><a href="#역공학" id="toc-역공학" class="nav-link" data-scroll-target="#역공학">역공학</a></li>
@@ -775,7 +776,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>100-1-11, 106-1-13, 112-3-2</p>
+<p>100-1-11, 106-1-13, 112-3-2, 115-2-1</p>
 </div>
 </div>
 <p><strong>강건설계</strong>(Robust Design)는 다구찌 실험설계라고도 하며, 일본 다구찌 바사가 구현한 제품 품질 개선 기법으로 제어 가능한 인자로 제어 불가능한 노이즈(Noise, 환경잡음인자)에 강건하게 설계하는 방법이다.</p>
@@ -837,6 +838,39 @@ L(y) = k(y-T)^2
 <dd>
 <ul>
 <li>설계 변수 변동 범위에 대하여 손실비용을 고려한 허용범위를 정하는 단계이다.</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="품질에-영향을-주는-인자" class="level3">
+<h3 class="anchored" data-anchor-id="품질에-영향을-주는-인자">품질에 영향을 주는 인자</h3>
+<dl>
+<dt>신호인자(Signal Factor, M)</dt>
+<dd>
+<ul>
+<li>최적화시키는 인자가 아니라 출력에 관련된 입력인자</li>
+<li>브레이크 시스템에 있어 브레이크를 밟는 힘에 해당</li>
+</ul>
+</dd>
+<dt>잡음인자(Noise Factor, X)</dt>
+<dd>
+<ul>
+<li>제품 특성에 영향을 주고 제어 불가능한 변수(실험 가능)</li>
+<li>브레이크 시스템에 있어 타이어 상태, 도로 상태 등</li>
+</ul>
+</dd>
+<dt>제어인자(Control Factor, Z)</dt>
+<dd>
+<ul>
+<li>제품 특성에 영향을 주고, 제어 가능한 변수</li>
+<li>브레이크 시스템 재료</li>
+</ul>
+</dd>
+<dt>오차인자</dt>
+<dd>
+<ul>
+<li>제품 특성에 영향을 미미하게 미치거나 제어 불가능하고 실험할 수 없는 인자</li>
+<li>브레이크 시스템에 있어 자동차 주위 온도</li>
 </ul>
 </dd>
 </dl>
