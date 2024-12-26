@@ -1685,16 +1685,35 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 <p>하지만 판매력, 하청 관리력, 기술력, 생산 평준화가 가능한 체제, 생산관리 체제의 정비 등 여러 조건이 갖춰져야 원활한 TPS 운영이 가능하다. 간판방식이 하청업체에게 큰 부담으로 작용하여 재고를 떠 안기도 하며 도요타 생산은 전후 공정 생산평준화 등으로 작업자에게 과도한 노동강도, 압박을 주는 비인간적 공장으로 묘사되기도 했다.</p>
 <section id="대-낭비" class="level5">
 <h5 class="anchored" data-anchor-id="대-낭비">7대 낭비</h5>
-<p>도요타 생상 방식은 본질적으로 다음 7가지 낭비 제거를 목적으로 한다.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>118-1-7</p>
+</div>
+</div>
+<p>도요타 생산 시스템(TPS)에서 강조하는 <strong>7대 낭비(7 Wastes)</strong>는 효율성을 높이고 불필요한 자원을 낭비하지 않도록 하기 위한 개념이다. 이 낭비들은 모두 <strong>Muda</strong>(무다)로 불리며, 조직의 생산성과 가치를 저하시킬 수 있다. 다음은 도요타에서 정의한 7대 낭비이다.</p>
+<dl>
+<dt>도요타 7대 낭비</dt>
+<dd>
 <ol type="1">
-<li>불량의 낭비</li>
-<li>재고의 낭비</li>
-<li>과잉생산의 낭비</li>
-<li>가공의 낭비</li>
-<li>동작의 낭비</li>
-<li>운반의 낭비</li>
-<li>대기의 낭비</li>
+<li><strong>과잉 생산 (Overproduction)</strong>: 고객의 수요를 초과하여 제품을 생산하는 낭비로, 불필요한 재고를 발생시키고 추가적인 저장 및 관리 비용을 초래한다.</li>
+<li><strong>대기 시간 (Waiting)</strong>: 작업자가 다음 작업을 시작하기 위해 기다리거나 기계가 멈춰서 대기하는 시간이다. 이는 생산 속도를 늦추고 작업 효율성을 저하시킨다.</li>
+<li><strong>운반 (Transportation)</strong>: 불필요하게 재료나 제품을 이동시키는 과정에서 발생하는 낭비로, 이는 시간과 자원을 낭비하며, 제품이 손상될 위험도 증가시킨다.</li>
+<li><strong>과잉 가공 (Overprocessing)</strong>: 필요한 것보다 더 많은 작업이나 처리를 하는 경우로, 자원을 낭비하고 불필요한 공정을 거치게 된다.</li>
+<li><strong>재고 (Inventory)</strong>: 과도한 재고를 보유하는 것은 자금을 묶어놓는 결과를 초래하며, 재고 관리와 저장 비용이 증가한다. 또한, 제품의 품질을 저하시킬 위험이 있다.</li>
+<li><strong>불필요한 이동 (Motion)</strong>: 작업자가 불필요하게 몸을 움직이거나 장비를 이동하는 과정에서 발생하는 낭비로, 시간이 낭비되고 노동 생산성이 저하된다.</li>
+<li><strong>불량 (Defects)</strong>: 불량품을 생산하거나 잘못된 작업을 하는 것에서 발생하는 낭비이다. 불량품을 수정하거나 폐기하는 데 드는 비용이 발생하며, 고객의 신뢰를 잃을 수 있다.</li>
 </ol>
+</dd>
+</dl>
+<p>이 7대 낭비를 줄이기 위해 도요타는 <strong>지속적인 개선(Kaizen)</strong>과 <strong>효율적인 프로세스</strong>를 도입하여 생산성을 극대화하고, 자원의 낭비를 최소화하려고 노력한다.</p>
 <p>이런 낭비 제거 및 근본 예방을 위해 다음과 같은 하위 시스템을 구축하였다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -1702,7 +1721,25 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 <p></p><figure class="figure"><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TB
-낭비제거 --- 1[JIT 생산] &amp; 2[소로트 생산] &amp; 3[자동화] &amp; 4[TQC 및 현장개선]
+00[낭비제거]
+10[JIT 생산]
+20[소로트 생산]
+30[자동화]
+40[TQC 및 현장개선]
+1[과잉생산]
+2[재고]
+3[운반]
+4[대기]
+5[가공]
+6[동작]
+7[불량]
+
+00 --- 10 &amp; 20 &amp; 30 &amp; 40
+
+10 --- 1 &amp; 2 &amp; 4
+20 --- 5 &amp; 6 &amp; 7
+30 --- 2
+40 --- 3 &amp; 5 &amp; 6 &amp; 7 
 
 classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 </pre>
