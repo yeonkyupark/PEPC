@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -710,6 +739,85 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p>공정관리에서 통제기능에 관하여 4가지만 설명하시오.</p>
+<hr>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출 115-3-4">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출 115-3-4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>K사는 단순지수평활법(평활계수 <span class="math inline">\(\alpha = 0.5\)</span>)으로 수요를 예측하여 생산계획을 수립하고자 한다. 이 방법이 당사에 적합한지를 평가하기 위해 다음 상반기 생산실적을 가지고 단순지수평활법으로 수요예측을 한 후 예측오차를 평가하여 적용여부를 결정하기로 하였다. 다음 물음에 답하시오.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>월</th>
+<th>1월</th>
+<th>2월</th>
+<th>3월</th>
+<th>5월</th>
+<th>5월</th>
+<th>6월</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>수요</td>
+<td>310</td>
+<td>295</td>
+<td>316</td>
+<td>296</td>
+<td>304</td>
+<td>299</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p>평활계수 <span class="math inline">\(\alpha = 0.5\)</span>라면 어떤 경우인지 설명하시오.</p></li>
+<li><p>2월부터 6월까지의 수요를 단순지수평활법으로 예측하여 다음 표를 완성하시오.(단 1월의 예측치는 300개이다).</p></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>월</th>
+<th>1월</th>
+<th>2월</th>
+<th>3월</th>
+<th>5월</th>
+<th>5월</th>
+<th>6월</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>수요</td>
+<td>310</td>
+<td>295</td>
+<td>316</td>
+<td>296</td>
+<td>304</td>
+<td>299</td>
+</tr>
+<tr class="even">
+<td>예측치</td>
+<td>300</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li><p>(2)의 예측치를 하ㅗㄹ용하여, 월별 누적예측오차(CFE: Culmulative Sum of Forecasting Error), 평균절대오차(MAD: Mean Absolute Deviation), 추적지표(TS: Tracking Signal)를 계산하여 다음 표를 완성하시오.</p></li>
+<li><p>월별 추적지표를 관리도법(<span class="math inline">\(\pm 3.75MAD\)</span>)을 적용하여 단순지수평활법(평활계수 <span class="math inline">\(\alpha=0.5\)</span>)의 적용가능 여부를 결정하시오.</p></li>
+</ol>
 <hr>
 </div>
 </div>
