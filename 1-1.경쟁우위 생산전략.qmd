@@ -780,7 +780,7 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 ##### 자동화
 
 :::{.callout-tip icon=false title="기출"}
-103-1-4, 115-3-2
+103-1-4, 115-3-2, 118-1-8
 :::
 
 TPS에서 자동화(Autonomation, automation + autonomy)는 성력화에 그치는 것이 아니라, 간단한 감지장치를 붙여 공정 이상을 자동으로감지하여 생산을 정지하는 것을 말한다. 일반 자동화와 차이는 다음과 같다.
