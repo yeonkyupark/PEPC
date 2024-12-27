@@ -740,6 +740,100 @@ end
 </section>
 <section id="관리도-해석" class="level2">
 <h2 class="anchored" data-anchor-id="관리도-해석">관리도 해석</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>118-2-5</p>
+</div>
+</div>
+<p><strong>관리한계</strong>(Control Limits)와 <strong>규격한계</strong>(Specification Limits)는 품질 관리에서 중요한 개념으로, 공정 성능과 품질을 평가하는 데 사용된다. 두 개념은 모두 제품 품질을 측정하고 평가하는 데 중요하지만, 그 의미와 목적은 다르다.</p>
+<dl>
+<dt>관리한계 (Control Limits)</dt>
+<dd>
+<ul>
+<li><strong>정의</strong>: 관리한계는 <strong>통계적 품질 관리</strong>(Statistical Quality Control, SQC)에서 사용되며, 공정의 변동성을 측정하기 위해 설정된 한계 값이다. 관리한계는 공정이 통계적으로 안정적인지 여부를 평가하는 기준으로, <strong>공정 내 변동</strong>을 기준으로 설정된다.</li>
+<li><strong>목적</strong>: 관리한계는 공정이 자연적인 변동(우연적 변동) 내에서 운영되고 있는지 확인하기 위해 사용된다. 관리한계는 <strong>공정의 안정성</strong>을 파악하기 위한 도구이다.</li>
+<li><strong>계산 방법</strong>: 관리한계는 <strong>공정의 표준편차</strong>(σ)나 <strong>범위</strong>(Range) 등을 기반으로 설정된다. 일반적으로, 공정의 평균에서 ±3σ를 기준으로 설정한다. 이를 통해 공정의 데이터가 <strong>3시그마</strong> 범위 내에 분포하는지 확인한다.
+<ul>
+<li><strong>상한 관리한계 (UCL)</strong>: 평균 + 3σ</li>
+<li><strong>하한 관리한계 (LCL)</strong>: 평균 - 3σ</li>
+</ul></li>
+<li><strong>의미</strong>: 관리한계 밖으로 벗어난 값은 공정이 비정상적이라는 신호로 해석되며, 이는 공정에 문제가 있거나 특수 원인(비정상적인 요인)이 존재할 수 있음을 나타낸다.</li>
+<li><strong>용도</strong>: 관리한계는 <strong>품질 관리 도표</strong>(예: 관리도, Control Chart)에 표시되어, 공정의 상태를 실시간으로 모니터링하는 데 사용된다.</li>
+</ul>
+</dd>
+<dt>규격한계 (Specification Limits)</dt>
+<dd>
+<ul>
+<li><strong>정의</strong>: 규격한계는 제품이나 서비스가 충족해야 하는 <strong>품질 기준</strong>을 정의한 한계 값이다. 이는 <strong>고객의 요구사항</strong> 또는 <strong>제품의 설계 규격</strong>에 기반한 한계이다.</li>
+<li><strong>목적</strong>: 규격한계는 제품이 고객의 요구를 만족하는지 여부를 평가하기 위해 설정된다. 규격한계는 제품이 <strong>허용 가능한 품질 수준</strong> 내에서 생산되는지를 확인하는 데 사용된다.</li>
+<li><strong>계산 방법</strong>: 규격한계는 제품의 설계 사양에 따라 설정되며, 주로 <strong>상한 규격(USL, Upper Specification Limit)</strong>과 <strong>하한 규격(LSL, Lower Specification Limit)</strong>으로 정의된다.
+<ul>
+<li><strong>상한 규격 (USL)</strong>: 제품의 허용 가능한 최대값</li>
+<li><strong>하한 규격 (LSL)</strong>: 제품의 허용 가능한 최소값</li>
+</ul></li>
+<li><strong>의미</strong>: 제품이 규격한계를 벗어나면 품질이 불량하거나, 고객의 요구사항을 충족하지 못한다고 판단된다.</li>
+<li><strong>용도</strong>: 규격한계는 제품이 설계된 품질 기준을 충족하는지 여부를 확인하는 데 사용된다. 고객이 원하는 품질 수준에 맞는 제품을 생산하는 것이 중요하다.</li>
+</ul>
+</dd>
+</dl>
+<p>관리한계와 규격한계의 차이점는 다음과 같다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 39%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>구분</strong></th>
+<th><strong>관리한계</strong> (Control Limits)</th>
+<th><strong>규격한계</strong> (Specification Limits)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>정의</strong></td>
+<td>공정의 변동 범위를 나타내는 한계 값</td>
+<td>제품의 품질을 나타내는 고객의 요구사항을 기준으로 설정한 한계 값</td>
+</tr>
+<tr class="even">
+<td><strong>목적</strong></td>
+<td>공정이 자연적인 변동 내에서 안정적으로 운영되고 있는지 확인</td>
+<td>제품이 고객의 요구를 충족하는지 여부를 평가</td>
+</tr>
+<tr class="odd">
+<td><strong>설정 기준</strong></td>
+<td>공정 내 변동(우연적 변동)을 기준으로 설정</td>
+<td>고객의 요구나 제품 설계 사양을 기준으로 설정</td>
+</tr>
+<tr class="even">
+<td><strong>계산 방법</strong></td>
+<td>평균 ± 3σ (시그마 기준)</td>
+<td>상한 규격(USL)과 하한 규격(LSL)을 기준으로 설정</td>
+</tr>
+<tr class="odd">
+<td><strong>의미</strong></td>
+<td>공정이 정상적으로 운영되고 있으면 관리한계 내에 있어야 한다</td>
+<td>제품이 규격한계를 벗어나면 불량품으로 간주된다</td>
+</tr>
+<tr class="even">
+<td><strong>용도</strong></td>
+<td>공정의 안정성 확인, 비정상적인 변동 감지</td>
+<td>고객 요구사항을 충족하는지 평가, 품질 기준 확인</td>
+</tr>
+</tbody>
+</table>
+<p><strong>관리한계</strong>는 공정 안정성과 변동을 평가하는 데 중점을 둔다. 공정이 일정한 범위 내에서 변동하는지 모니터링하고, 비정상적인 변동이 발생하면 문제를 해결하기 위한 조치를 취한다. <strong>규격한계</strong>는 제품이 고객 요구를 충족하는지 여부를 확인하는 데 사용된다. 제품이 규격한계를 벗어나면 품질 문제로 간주하고, 불량품으로 처리된다.</p>
+<p>따라서, <strong>관리한계</strong>는 공정 내 변동에 관한 기준이고, <strong>규격한계</strong>는 제품의 품질에 관한 기준이라고 할 수 있다.</p>
+<p>관리도에서 비관리상태로 판정하는 8가지 현상은 다음과 같다.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
