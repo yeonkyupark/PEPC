@@ -1098,7 +1098,7 @@ EOQ 항목 계산
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>103-1-12</p>
+<p>103-1-12, 118-3-3</p>
 </div>
 </div>
 <p>정기발주방식과 정량발주방식의 발주 시점에 따라 구분된다.</p>
@@ -1145,6 +1145,32 @@ EOQ 항목 계산
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="발주점 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+발주점 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt>상황</dt>
+<dd>
+<ul>
+<li>1일 평균 사용량: 100개</li>
+<li>평균구매에 걸리는 시간: 5일</li>
+<li>서비스율은 95%로 안전계수 1.65를 적용함</li>
+<li>연속 5일 동안 사용량 표준편차: 20개</li>
+</ul>
+</dd>
+</dl>
+<hr>
+<p>발주점 = 조달기간 수요량(d x L) + 안전계수($u_{1-}) x 조달기간 중 수요량 표준편차(_L) = (100x5) + 1.65x20 = 533</p>
+<p>정량발주시스템에 따라 계속적인 재고실사를 통해 재고량이 533개가 남게되면 발저점에 도달한 것으로 판단하여 발주를 진행한다.</p>
 </div>
 </div>
 </section>
