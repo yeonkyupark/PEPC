@@ -179,7 +179,7 @@ $$
 - **계산 방법**: Cp는 공정의 허용 범위(USL - LSL)와 공정의 표준편차(σ)를 비교하여 계산한다. 계산식은 다음과 같다.
 
   \[
-  Cp = \frac{USL - LSL}{6\sigma}
+  $C_p = \frac{USL - LSL}{6\sigma}$
   \]
 
   여기서,  
@@ -195,7 +195,7 @@ $$
 - **계산 방법**: Cpk는 공정 중심에서 규격 상한선 또는 하한선까지의 거리와 공정의 표준편차를 비교하여 계산한다. 계산식은 다음과 같다.
 
   \[
-  Cpk = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)
+  $$C_{pk} = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)$$
   \]
 
   여기서,  
