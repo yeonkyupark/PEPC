@@ -330,7 +330,7 @@ $$
 ## 욕조곡선
 
 ::: {.callout-tip title="기출"}
-97-4-3
+97-4-3, 118-1-13
 :::
 
 ![https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO201300024419](https://nrms.kisti.re.kr/bitextimages/TRKO201300024419/TRKO201300024419_129_image_89.jpg)
