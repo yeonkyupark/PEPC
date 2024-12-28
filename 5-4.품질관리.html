@@ -1303,10 +1303,31 @@ UCL = \bar{u} + 3\sqrt{\frac{\bar{u}}{n}} = 2.92 + 3\sqrt{\frac{2.92}{1.7}} = 6.
 </dd>
 </dl>
 <p>고장 통계에 따른 신뢰성 비율은 다음과 같다.</p>
-<p>flowchart LR 00[신뢰성] 01[고유신뢰성] 02[사용신뢰성]</p>
-<p>11[“부품, 재료에 의한 고장<br>30%”] 12[“설계 기술에 의한 고장<br>40%”] 13[“제조 기술에 의한 고장<br>10%”]</p>
-<p>21[“사용상 고장(운송,환경,조작,취급 등)<br>20%”]</p>
-<p>00 — 01 &amp; 02 01 — 11 &amp; 12 &amp; 13 02 — 21 ````</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+00[신뢰성]
+01[고유신뢰성]
+02[사용신뢰성]
+
+11["부품, 재료에 의한 고장&lt;br&gt;30%"]
+12["설계 기술에 의한 고장&lt;br&gt;40%"]
+13["제조 기술에 의한 고장&lt;br&gt;10%"]
+
+21["사용상 고장(운송,환경,조작,취급 등)&lt;br&gt;20%"]
+
+00 --- 01 &amp; 02
+01 --- 11 &amp; 12 &amp; 13
+02 --- 21
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>신뢰성 설계 3요소는 <strong>고유 기술적 요소</strong>, <strong>소리 통계적 요소</strong>, <strong>관리 기술적 요소</strong>이다.</p>
 <dl>
 <dt>고유 기술적 요소</dt>
@@ -1387,10 +1408,10 @@ UCL = \bar{u} + 3\sqrt{\frac{\bar{u}}{n}} = 2.92 + 3\sqrt{\frac{2.92}{1.7}} = 6.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>112-4-1</p>
+<p>112-4-1, 118-4-2</p>
 </div>
 </div>
-<p><strong>품질비용</strong>(Quality Costs)은 제품이나 서비스 품질을 유지하거나 향상시키기 위해 발생하는 모든 비용을 의미한다. 품질비용은 보통 4가지 주요 카테고리로 분류되며, 각 카테고리에서 발생하는 비용은 다음과 같다.</p>
+<p><strong>품질비용</strong>(Quality Costs, Q-cost)은 제품이나 서비스 품질을 유지하거나 향상시키기 위해 발생하는 모든 비용을 의미한다. 품질비용은 보통 4가지 주요 카테고리로 분류되며, 각 카테고리에서 발생하는 비용은 다음과 같다.</p>
 <dl>
 <dt>예방비용 (Prevention Costs)</dt>
 <dd>
