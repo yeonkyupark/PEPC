@@ -548,6 +548,19 @@ E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.
 </section>
 <section id="sec-activity-releationship-chart" class="level2">
 <h2 class="anchored" data-anchor-id="sec-activity-releationship-chart">공장 배치 활동관련도(Activity Relationship Chart)</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>121-1-2</p>
+</div>
+</div>
 <p>공장 배치에서 <strong>활동관련도(Activity Relationship Chart, ARC)</strong>는 각 작업장이나 부서 간의 <strong>공간적 배치 필요성</strong>을 평가하는 도구다. 이를 통해 <strong>작업 흐름의 효율성</strong>을 극대화하고, 물류 및 생산 동선을 최적화한다.</p>
 <table class="caption-top table">
 <colgroup>
@@ -605,13 +618,9 @@ E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.
 <ul>
 <li>인접하는 것이 <strong>매우 유리</strong>하며, 떨어질 경우 작업 효율이 크게 저하됨.<br>
 </li>
-</ul></li>
-</ol>
-<ul>
 <li>예) 가공 라인과 검사 구역, 포장 부서와 출하 구역.<br>
 </li>
-</ul>
-<ol start="3" type="1">
+</ul></li>
 <li><strong>I (Important, 중요)</strong>
 <ul>
 <li>인접하면 <strong>효율이 증가</strong>하지만, 떨어져 있어도 큰 문제가 되지 않음.<br>
@@ -634,15 +643,64 @@ E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.
 </ul></li>
 </ol>
 </dd>
+<dt><strong>활동관련도 예시</strong></dt>
+<dd>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>부서/작업장</th>
+<th>조립</th>
+<th>가공</th>
+<th>창고</th>
+<th>출하</th>
+<th>사무실</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>조립</td>
+<td>-</td>
+<td>A</td>
+<td>E</td>
+<td>I</td>
+<td>O</td>
+</tr>
+<tr class="even">
+<td>가공</td>
+<td>A</td>
+<td>-</td>
+<td>E</td>
+<td>I</td>
+<td>O</td>
+</tr>
+<tr class="odd">
+<td>창고</td>
+<td>E</td>
+<td>E</td>
+<td>-</td>
+<td>A</td>
+<td>U</td>
+</tr>
+<tr class="even">
+<td>출하</td>
+<td>I</td>
+<td>I</td>
+<td>A</td>
+<td>-</td>
+<td>U</td>
+</tr>
+<tr class="odd">
+<td>사무실</td>
+<td>O</td>
+<td>O</td>
+<td>U</td>
+<td>U</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</dd>
 </dl>
-<p><strong>활동관련도 예시</strong><br>
-: | 부서/작업장 | 조립 | 가공 | 창고 | 출하 | 사무실 |<br>
-|————-|——|——|——|——|——-|<br>
-| 조립 | - | A | E | I | O |<br>
-| 가공 | A | - | E | I | O |<br>
-| 창고 | E | E | - | A | U |<br>
-| 출하 | I | I | A | - | U |<br>
-| 사무실 | O | O | U | U | - |</p>
 <p>활동관련도는 공장 레이아웃 설계에서 <strong>공정의 효율성, 자재 흐름, 작업 동선</strong>을 개선하는 중요한 기준이다. 이를 통해 <strong>불필요한 이동을 줄이고, 생산성을 높이며, 비용을 절감</strong>할 수 있다.</p>
 
 
