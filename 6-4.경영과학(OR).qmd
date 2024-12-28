@@ -680,7 +680,7 @@ knitr::kable(tb)
 ## 선형계획법
 
 ::: {.callout-tip icon=false title="기출"}
-97-2-5, 103-4-2, 121-1-11
+97-2-5, 103-4-2, 121-1-11, 121-2-5
 :::
 
 **선형계획법**(linear programming, LP)은 선형(linearity) 조건이 갖추어진
