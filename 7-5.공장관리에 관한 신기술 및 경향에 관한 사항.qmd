@@ -1,3 +1,5 @@
+# 공장관리에 관한 신기술 및 경향에 관한 사항
+
 ## 산업혁명 {#sec--ndustrial-revolution}
 
 ::: {.callout-tip icon=false title="기출"}
