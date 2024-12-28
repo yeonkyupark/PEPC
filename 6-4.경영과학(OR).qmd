@@ -879,7 +879,7 @@ knitr::kable(tb)
 ## 분석적 계층화 과정 (AHP)
 
 ::: {.callout-tip icon=false title="기출"}
-97-1-3
+97-1-3, 121-1-3
 :::
 
 **분석적 계층화 과정**(AHP, Analytic Hierarchy Process)는 Thomas L.
