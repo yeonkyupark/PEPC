@@ -49,6 +49,33 @@ MES와 ERP의 차이
 
 ## 스마트팩토리 기술
 
+### 스마트팩토리
+
+:::{.callout-tip icon=false title="기출"}
+118-4-3
+:::
+
+스마트팩토리 단계적 구축
+:
+<center>
+![https://www.smart-factory.kr/usr/pr/sf/ma/smrtFctryIntrcn](images/smartfactory_5_levels.png)
+</center>
+
+5대 요건
+: - 4M + 1E의 디지털화
+        - 4M+1E의 각 요소 (Man, Machinery, Material, Method, Environment) 들의
+실시간으로 디지털 값을 인지하고, 측정 가능한 정보를 제공해야 하며, 통신을 통해 대화가 가능해야 함
+- 지능화
+        - 알고리즘 또는 인공지능 등의 솔루션을 이용, 최적해 또는 예측가능한 해를 제공해야 함
+- 통합
+        - 사회망과 가치사슬을 통해 단대단 (End-to-end) 의 정보 교류가 이뤄지도록 하는 수평적 통합과
+최하위 수준인 기계장치부터 기업비즈니스 수준까지 수직적 통합을 지향
+- 엔지니어링 지식의 창출
+        - 지속해서 정보를 확보하고 저장한 후, 이를 바탕으로 자동화를 위한 제조 지식을 점진적으로 창출할 수 있어야함
+- 스마트 시스템과의 연결
+        - 향후에 발전할 스마트 제품들과 통신 표준에 의거해 연결이 가능해야함
+
+
 ### CPS 
 
 :::{.callout-tip icon=false title="기출"}
