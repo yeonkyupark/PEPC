@@ -1956,19 +1956,25 @@ x_1 \ge 0, \ x_2 \ge 0
 <li>공장 2와 공장 3의 이용가능시간을 증가시키려 할 때 그래프를 활용한 민감도분석을 이용하여 공장 2와 공장 3의 1시간의 가치를 계산하시오.</li>
 </ol>
 <hr>
-<ol type="1">
-<li><dl>
+<dl>
 <dt>선형계획문제</dt>
 <dd>
 <ul>
-<li>의사결정변수 - 제품1: A 생산량 - 제품2: B 생산량</li>
+<li>의사결정변수
+<ul>
+<li>제품1: A 생산량</li>
+<li>제품2: B 생산량</li>
+</ul></li>
 <li>목적함수: Max Z = 30A + 50B</li>
-<li>제약조건 - 1A + 0B &lt;= 6 - 0A + 2B &lt;= 14 - 2A + 2B &lt;= 18</li>
+<li>제약조건
+<ul>
+<li>1A + 0B &lt;= 6</li>
+<li>0A + 2B &lt;= 14</li>
+<li>2A + 2B &lt;= 18</li>
+</ul></li>
 <li>비음조건: A, B &gt;= 0</li>
 </ul>
 </dd>
-</dl></li>
-<li><dl>
 <dt>최적화</dt>
 <dd>
 <ul>
@@ -1976,12 +1982,9 @@ x_1 \ge 0, \ x_2 \ge 0
 <li>2B = 14, B = 7</li>
 <li>2A + 2B = 18, B = -A +9</li>
 <li><span class="math inline">\(B = -\frac{3}{5}A + \frac{Z}{50}\)</span></li>
-<li>도식화: 최적해 A=2, B=7, Z = 30x2 + 50x7 = 410<br> <img src="images/121-2-5.png" class="img-fluid" width="480"></li>
+<li>도식화: 최적해 A=2, B=7, Z = 30x2 + 50x7 = 410<br> <img src="images/121-2-5.png" class="img-fluid" width="480"> 민감도 분석</li>
 </ul>
 </dd>
-</dl></li>
-<li><dl>
-<dt>민감도 분석</dt>
 <dd>
 <ul>
 <li>2B = 14 → 2B = 15, B = 7.5</li>
@@ -1990,8 +1993,7 @@ x_1 \ge 0, \ x_2 \ge 0
 <li>따라서 공장2와 공장3 이용가능한 시간을 1시간 증가함으로써, 제품1에 대한 생산량은 변함 없으나 제품 2 생산량 증가로 이어짐으로써 1시간 가치는 주당 이익 25만원(410 → 435만원) 증가함을 알 수 있다.</li>
 </ul>
 </dd>
-</dl></li>
-</ol>
+</dl>
 </div>
 </div>
 </section>
