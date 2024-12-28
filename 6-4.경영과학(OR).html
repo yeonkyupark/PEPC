@@ -2394,7 +2394,7 @@ W = W_q + \frac{1}{\mu}
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>97-4-4, 103-3-4, 112-3-3, 121-1-10</p>
+<p>97-4-4, 103-3-4, 112-3-3, 121-1-10, 121-2-4</p>
 </div>
 </div>
 <p>투자안으로부터 예상되는 미래 현금흐름과 자본비용을 알고 잇다고 가정할 때 각 투자안이 기업 가치 증가에 어느정도 공헌하는지에 따라 투자안 경제성을 평가한다. 미래 현금 흐름을 고려 유무에 따라 전통적인 분석방법과 현금흐름할인법(DCF, discounted cash flow)으로 구분할 수 있다.</p>
@@ -2941,7 +2941,142 @@ IRR \approx 7.88
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>//// 기출 112-3-3 내용 업데이트 예정</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 37%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>항목</th>
+<th>순현재가치법 (NPV)</th>
+<th>자본회수기간법 (Payback Period)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>평가 방식</strong></td>
+<td>모든 현금 흐름을 현재 가치로 환산</td>
+<td>초기 투자비용을 회수하는 데 걸리는 시간</td>
+</tr>
+<tr class="even">
+<td><strong>시간 가치 고려 여부</strong></td>
+<td>O</td>
+<td>X</td>
+</tr>
+<tr class="odd">
+<td><strong>계산 복잡성</strong></td>
+<td>상대적으로 복잡</td>
+<td>간단</td>
+</tr>
+<tr class="even">
+<td><strong>의사결정 기준</strong></td>
+<td>NPV &gt; 0이면 수락</td>
+<td>회수 기간이 기준 기간보다 짧으면 수락</td>
+</tr>
+<tr class="odd">
+<td><strong>장기 수익성 평가</strong></td>
+<td>O</td>
+<td>X</td>
+</tr>
+<tr class="even">
+<td><strong>단기 유동성 평가</strong></td>
+<td>X</td>
+<td>O</td>
+</tr>
+<tr class="odd">
+<td><strong>적용 범위</strong></td>
+<td>장기 투자 프로젝트</td>
+<td>단기 프로젝트 및 현금 유동성 중시 사업</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="투자안 평가">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+투자안 평가
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>투자안</th>
+<th>투자금액</th>
+<th>경제적 내용연수</th>
+<th>연간 수입예상액</th>
+<th>연간 감가상각비</th>
+<th>평균 연이익</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A기계</td>
+<td>2400만원</td>
+<td>5년</td>
+<td>950만원</td>
+<td>400만원</td>
+<td>550만원</td>
+</tr>
+<tr class="even">
+<td>B기계</td>
+<td>2200만원</td>
+<td>4년</td>
+<td>1050만원</td>
+<td>500만원</td>
+<td>600만원</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p>자본회수기간법으로 계산하고 평가하시오.</p></li>
+<li><p>투자이익률법으로 계산하고 평가하시오.</p></li>
+<li><p>자본비용(할인률) 20%일 때 순현재가치법으로 계산하고 평가하시오.</p></li>
+</ol>
+<hr>
+<dl>
+<dt>자본회수기간법</dt>
+<dd>
+<ul>
+<li>자본회수기간(년) = 순투자액 / (연간이익 + 감가상각비)</li>
+<li>A설비 = 2400/(550 + 400) = 2.5년</li>
+<li>B설비 = 2200/(600+500) = 2.0년</li>
+<li>따라서 회수기간이 짧은 B설비 안이 효과적이다.</li>
+</ul>
+</dd>
+<dt>투자이익률법</dt>
+<dd>
+<ul>
+<li>투자이익률법(%) = (평균이익액/순투자액) x 100</li>
+<li>A설비 = (550/2400)x100 = 22.9%</li>
+<li>B설비 = (600/2200)x100 = 27.3%</li>
+<li>따라서 투자이익률이 높으 B설비 안이 효과적이다.</li>
+</ul>
+</dd>
+<dt>순현재가치(NPV)</dt>
+<dd>
+<ul>
+<li>NPV 공식 참고, k = 0.2, 잔존가치 0로 가정</li>
+<li>A설비 = <span class="math inline">\(950(\frac{1}{(1+0.2))^1} + \frac{1}{(1+0.2))^2} + ... + \frac{1}{(1+0.2))^5}) - \frac{2400}{(1+0.2)^0} = 441.1\)</span></li>
+<li>B설비 = <span class="math inline">\(1050(\frac{1}{(1+0.2))^1} + \frac{1}{(1+0.2))^2} + ... + \frac{1}{(1+0.2))^4}) - \frac{2200}{(1+0.2)^0} = 518.2\)</span></li>
+<li>따라서 NVP가 큰 B설비 안이 효과적이다.</li>
+</ul>
+</dd>
+</dl>
 </div>
 </div>
 
