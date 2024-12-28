@@ -9,7 +9,7 @@
 ## BCG 매트릭스 {#sec-bcg-matrix}
 
 :::{.callout-tip icon=false title="기출"}
-121-1-6
+121-1-6, 121-2-1
 :::
 
 <center>
