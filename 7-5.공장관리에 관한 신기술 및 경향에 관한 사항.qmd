@@ -8,7 +8,7 @@
 ![https://itwiki.kr/w/산업혁명](https://itwiki.kr/images/b/b8/%EC%82%B0%EC%97%85%ED%98%81%EB%AA%85.jpg)
 </center>
 
-**산업혁명(Industrial Revolution)**^[산업혁명]은 총 4단계로 구분되며, 각 단계마다 기술 혁신과 생산 방식의 변화가 일어난다.  
+**산업혁명(Industrial Revolution)**[^산업혁명]은 총 4단계로 구분되며, 각 단계마다 기술 혁신과 생산 방식의 변화가 일어난다.  
 
 [^산업혁명]: https://itwiki.kr/w/산업혁명
 
