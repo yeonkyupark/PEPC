@@ -487,6 +487,11 @@ window.Quarto = {
   <li><a href="#내부수익률법" id="toc-내부수익률법" class="nav-link" data-scroll-target="#내부수익률법">내부수익률법</a></li>
   </ul></li>
   </ul></li>
+  <li><a href="#문제해결방법" id="toc-문제해결방법" class="nav-link" data-scroll-target="#문제해결방법">문제해결방법</a>
+  <ul>
+  <li><a href="#pugh-matrix" id="toc-pugh-matrix" class="nav-link" data-scroll-target="#pugh-matrix">Pugh Matrix</a></li>
+  <li><a href="#must-want-matrix-개요" id="toc-must-want-matrix-개요" class="nav-link" data-scroll-target="#must-want-matrix-개요">Must-Want Matrix 개요</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/6-4.경영과학(OR).qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -3162,9 +3167,277 @@ IRR \approx 7.88
 </dl>
 </div>
 </div>
-
-
 </section>
+</section>
+</section>
+<section id="문제해결방법" class="level2">
+<h2 class="anchored" data-anchor-id="문제해결방법">문제해결방법</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>121-2-6</p>
+</div>
+</div>
+<section id="pugh-matrix" class="level3">
+<h3 class="anchored" data-anchor-id="pugh-matrix">Pugh Matrix</h3>
+<p>Pugh Matrix는 여러 대안 중 최적의 선택을 하기 위해 각 대안을 기준에 따라 상대적으로 비교하는 방법이다.<br>
+기준 대안(Baseline Alternative)을 설정하고, 다른 대안들을 이에 비해 <strong>우수(+)</strong>, <strong>동등(0)</strong>, <strong>열등(-)</strong>으로 평가한다.<br>
+복잡한 수치 계산 없이 직관적으로 최적의 대안을 선정할 수 있다.</p>
+<dl>
+<dt>스마트폰 케이스 재료 선택</dt>
+<dd>
+<ul>
+<li><strong>목표:</strong> 가벼우면서도 내구성이 좋은 스마트폰 케이스 재료를 선정한다.<br>
+</li>
+<li><strong>후보 재료</strong>
+<ul>
+<li><strong>플라스틱</strong><br>
+</li>
+<li><strong>실리콘</strong><br>
+</li>
+<li><strong>알루미늄</strong><br>
+</li>
+<li><strong>탄소섬유</strong><br>
+</li>
+</ul></li>
+<li><strong>평가 기준</strong>
+<ul>
+<li><strong>무게(가벼움)</strong><br>
+</li>
+<li><strong>내구성(충격 저항력)</strong><br>
+</li>
+<li><strong>비용(생산 비용)</strong><br>
+</li>
+<li><strong>가공 용이성(생산 공정 난이도)</strong></li>
+</ul></li>
+</ul>
+</dd>
+<dt>Pugh Matrix 작성 예시</dt>
+<dd>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>평가 기준</th>
+<th>플라스틱</th>
+<th>실리콘</th>
+<th>알루미늄</th>
+<th>탄소섬유</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>무게</td>
+<td>0</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+</tr>
+<tr class="even">
+<td>내구성</td>
+<td>-</td>
+<td>0</td>
+<td>+</td>
+<td>++</td>
+</tr>
+<tr class="odd">
+<td>비용</td>
+<td>++</td>
+<td>+</td>
+<td>0</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>가공 용이성</td>
+<td>+</td>
+<td>++</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>총계</strong></td>
+<td>+1</td>
+<td>+1</td>
+<td>-1</td>
+<td>+1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>기준 대안:</strong> 실리콘(0)<br>
+</li>
+<li><strong>평가 방식:</strong>
+<ul>
+<li><strong>“+”</strong>: 기준 대안(실리콘)보다 우수하다.<br>
+</li>
+<li><strong>“0”</strong>: 기준 대안과 동등하다.<br>
+</li>
+<li><strong>“-”</strong>: 기준 대안보다 열등하다.</li>
+</ul></li>
+</ul>
+</dd>
+<dt>결과 분석 및 선택</dt>
+<dd>
+<ul>
+<li>탄소섬유, 플라스틱, 실리콘이 각각 +1로 가장 높은 평가를 받는다.<br>
+</li>
+<li>알루미늄은 가공이 어렵고 비용이 높아 총계가 -1로 나타난다.<br>
+</li>
+<li>최종적으로, 탄소섬유는 내구성이 매우 뛰어나며 무게도 가벼워 프리미엄 제품군에 적합하다.<br>
+</li>
+<li>비용 절감을 중시하는 경우에는 플라스틱을 선택한다.</li>
+</ul>
+</dd>
+<dt>Pugh Matrix 장점</dt>
+<dd>
+<ul>
+<li>복잡한 계산이 필요 없고 직관적으로 이해하기 쉽다.<br>
+</li>
+<li>다양한 대안을 동시에 평가하고 비교할 수 있다.<br>
+</li>
+<li>팀 의사결정 과정에서 명확하고 투명한 선택을 돕는다.</li>
+</ul>
+</dd>
+</dl>
+<p>Pugh Matrix는 재료 선택 과정에서 상대적 장단점을 명확하게 파악하고, 가장 적합한 재료를 선택하는 데 효과적인 방법이다.</p>
+</section>
+<section id="must-want-matrix-개요" class="level3">
+<h3 class="anchored" data-anchor-id="must-want-matrix-개요">Must-Want Matrix 개요</h3>
+<p>Must-Want Matrix는 의사결정에서 <strong>필수 기준(Must)</strong>과 <strong>선호 기준(Want)</strong>을 구분해 대안을 평가하는 방법이다.</p>
+<ul>
+<li><strong>Must 기준</strong>: 반드시 충족해야 하는 필수 조건<br>
+</li>
+<li><strong>Want 기준</strong>: 바람직하지만 필수가 아닌 선택적 조건</li>
+</ul>
+<dl>
+<dt>특징</dt>
+<dd>
+<ul>
+<li>Must 기준을 충족하지 못하는 대안은 바로 제외<br>
+</li>
+<li>Want 기준은 점수화하여 대안 중 우선순위를 결정</li>
+</ul>
+</dd>
+<dt>사례: 노트북 외장재 선택</dt>
+<dd>
+<ul>
+<li><strong>목표</strong>: 가벼우면서도 내구성이 높은 노트북 외장재 선정<br>
+</li>
+<li><strong>대안</strong>: 알루미늄, 마그네슘 합금, 플라스틱, 탄소섬유</li>
+<li><strong>Must 기준</strong>
+<ul>
+<li><strong>내구성</strong>: 일정 수준 이상의 내구성 확보<br>
+</li>
+<li><strong>열전도율</strong>: 과도한 발열 방지<br>
+</li>
+</ul></li>
+<li><strong>Want 기준</strong>:
+<ul>
+<li><strong>무게</strong>: 노트북의 휴대성에 영향을 미치는 요소<br>
+</li>
+<li><strong>비용</strong>: 생산 비용 절감<br>
+</li>
+<li><strong>디자인</strong>: 외관의 세련미와 고급스러움</li>
+</ul></li>
+</ul>
+</dd>
+<dt>Must-Want Matrix 작성</dt>
+<dd>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>기준</th>
+<th>알루미늄</th>
+<th>마그네슘 합금</th>
+<th>플라스틱</th>
+<th>탄소섬유</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>내구성 (Must)</strong></td>
+<td>O</td>
+<td>O</td>
+<td>X</td>
+<td>O</td>
+</tr>
+<tr class="even">
+<td><strong>열전도율 (Must)</strong></td>
+<td>O</td>
+<td>O</td>
+<td>O</td>
+<td>O</td>
+</tr>
+<tr class="odd">
+<td><strong>무게 (Want)</strong></td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td><strong>비용 (Want)</strong></td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td><strong>디자인 (Want)</strong></td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>플라스틱은 내구성 기준(Must)을 충족하지 못해 제외됨.</li>
+<li>Want 기준을 점수화해 합산
+<ul>
+<li><strong>알루미늄</strong>: 3 + 4 + 3 = 10점<br>
+</li>
+<li><strong>마그네슘 합금</strong>: 4 + 3 + 4 = 11점<br>
+</li>
+<li><strong>탄소섬유</strong>: 4 + 2 + 5 = 11점</li>
+</ul></li>
+</ul>
+</dd>
+<dt>평가 및 결론</dt>
+<dd>
+<ul>
+<li><strong>마그네슘 합금</strong>과 <strong>탄소섬유</strong>가 같은 점수를 받았으나, <strong>탄소섬유는 비용이 높은 단점</strong>이 있어 <strong>마그네슘 합금</strong>이 최종 선택됨.<br>
+</li>
+<li><strong>Must-Want Matrix</strong>를 통해 필수 기준을 충족하면서도 비용, 무게, 디자인에서 균형 잡힌 선택이 가능했음.</li>
+</ul>
+</dd>
+<dt>Must-Want Matrix 장점</dt>
+<dd>
+<ul>
+<li><strong>효율성</strong>: 불필요한 대안을 조기에 제거해 의사결정 속도 향상<br>
+</li>
+<li><strong>명확성</strong>: 필수 조건과 선택 조건을 명확하게 구분해 객관적인 평가 가능<br>
+</li>
+<li><strong>유연성</strong>: 다양한 제품 설계 및 재료 선택 과정에 적용 가능</li>
+</ul>
+</dd>
+</dl>
+<p>제품 개발 초기 단계에서 <strong>Must-Want Matrix</strong>는 명확한 기준을 바탕으로 신속하고 합리적인 결정을 내리는 데 효과적인 도구이다.</p>
+
+
 </section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
