@@ -31,7 +31,7 @@ $$
 위 조건으로 라인 밸런스 효율을 계산하면 다음과 같다.
 
 $$
-E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.75(%)
+E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.75(\%)
 $$
 
 :::
