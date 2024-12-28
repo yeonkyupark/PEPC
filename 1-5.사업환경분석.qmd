@@ -2,11 +2,15 @@
 
 ## SWOT 분석
 
+<center>
 ![https://en.wikipedia.org/wiki/SWOT_analysis](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/SWOT_en.svg/800px-SWOT_en.svg.png)
+</center>
 
 ## BCG 매트릭스 {#sec-bcg-matrix}
 
+<center>
 ![https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/BCG_Matrix_Stylised.png/1920px-BCG_Matrix_Stylised.png)
+</center>
 
 **BCG 매트릭스**는 1970년대에 **보스턴 컨설팅 그룹(BCG)**에서 개발한 **사업 포트폴리오 분석 도구**다. 기업이 보유한 **제품 및 사업 부문**을 **시장 성장률**과 **상대적 시장 점유율**이라는 두 가지 축으로 나누어 분석한다.  
 
@@ -61,20 +65,29 @@ BCG 매트릭스는 기업이 **한정된 자원을 효율적으로 배분**하�
 
 ## GE 매트릭스
 
+<center>
 ![https://changingminds.org/disciplines/marketing/understanding_markets/ge_matrix.htm](https://changingminds.org/images/ge_matrix.GIF)
+</center>
 
 ## PEST 분석
 
 
 ## Value chain diagram
 
+<center>
 ![https://en.wikipedia.org/wiki/Value_chain](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Porter_Value_Chain.png/1280px-Porter_Value_Chain.png)
+</center>
 
 ## BSC {#sec-bsc}
 
 ::: {.callout-tip icon=false title="기출"}
 118-1-2
 :::
+
+<center>
+![https://www.intrafocus.com/balanced-scorecard/](https://static.intrafocus.com/uploads/2019/10/What-is-the-Balanced-Scorecard.png)
+</center>
+
 
 **Balanced Scorecard (BSC)**는 조직의 성과를 측정하고 관리하는 전략적 관리 도구로, 1992년 Robert Kaplan과 David Norton에 의해 개발되었다. 이 도구는 **재무적인 지표뿐만 아니라 비재무적인 지표도 고려**하여 조직의 전체적인 성과를 평가하는데 사용된다. BSC는 조직의 전략적 목표를 실현하는 데 필요한 네 가지 관점으로 구성된다.
 
