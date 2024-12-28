@@ -478,13 +478,14 @@ window.Quarto = {
   <ul>
   <li><a href="#전통적-분석방법" id="toc-전통적-분석방법" class="nav-link" data-scroll-target="#전통적-분석방법">전통적 분석방법</a>
   <ul class="collapse">
+  <li><a href="#원가비교법" id="toc-원가비교법" class="nav-link" data-scroll-target="#원가비교법">원가비교법</a></li>
   <li><a href="#회수기간법" id="toc-회수기간법" class="nav-link" data-scroll-target="#회수기간법">회수기간법</a></li>
   <li><a href="#회계적-이익률법" id="toc-회계적-이익률법" class="nav-link" data-scroll-target="#회계적-이익률법">회계적 이익률법</a></li>
   </ul></li>
   <li><a href="#현금흐름할인법" id="toc-현금흐름할인법" class="nav-link" data-scroll-target="#현금흐름할인법">현금흐름할인법</a>
   <ul class="collapse">
-  <li><a href="#순현가법npv-method" id="toc-순현가법npv-method" class="nav-link" data-scroll-target="#순현가법npv-method">순현가법(NPV method)</a></li>
-  <li><a href="#내부수익률법irr-method" id="toc-내부수익률법irr-method" class="nav-link" data-scroll-target="#내부수익률법irr-method">내부수익률법(IRR method)</a></li>
+  <li><a href="#순현가법" id="toc-순현가법" class="nav-link" data-scroll-target="#순현가법">순현가법</a></li>
+  <li><a href="#내부수익률법" id="toc-내부수익률법" class="nav-link" data-scroll-target="#내부수익률법">내부수익률법</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -2128,7 +2129,7 @@ end
 <dt>(ㅡ) 가지</dt>
 <dd>
 <ul>
-<li>의사결정 또는 상황 발생점에서 뻗어 나온 가지로 의사결정 대안ㅇ을 표시하기도 하고 선택과 상황이 이루어질 때 다양한 결과를 의미하기도 함</li>
+<li>의사결정 또는 상황 발생점에서 뻗어 나온 가지로 의사결정 대안을 표시하기도 하고 선택과 상황이 이루어질 때 다양한 결과를 의미하기도 함</li>
 </ul>
 </dd>
 </dl>
@@ -2143,10 +2144,20 @@ end
 <li>의사결정 시 각 대안 위치 값을 비교하여최선 대안을 선택하여 기입</li>
 </ul></li>
 </ol>
-<div id="exm-97-3-3" class="theorem example">
-<p><span class="theorem-title"><strong>예제 28.1 (공장관리기술사 97회 3교시 문제3)</strong></span> 신제품을 생산할 공장의 신설을 검토하고 있다. 신제품은 앞으로 10년간 계속 판매될 것으로예상되는 수요가 높은 확률은 60%, 낮은 확률은 40%로 예측되었다. 이러한 상황에서공장규모를 대규모로 할 것인지의 전략을 결정하고자 한다. 시설투자를 대규모로 할 경우 2억 원, 소규모로 할 경우에는 1억 원이 필요하며, 시설물들에 대한 10년 후 잔존가치는 없다. 수익은 대규모시설에서 수요가 높으면 10년간 매년 9,000만 원, 대규모시설이나 수요가낮으면 1,000만 원이다. 소규모시설 시 수요가 높으면 4,000만원, 수요가 낮으면 5,000만 원이다. 어떤 전략이 유리한지 결정하고자할 때 디시전트리(Decision Tree)를 사용하여 작성하고, 기대수익을 계산한 후 유리한 전략을 선정하시오.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="의사결정나무">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<p>위 예제(<a href="#exm-97-3-3" class="quarto-xref"><span>28.1</span></a>)를 도식화 하면 아래와 같다.</p>
+<div class="callout-title-container flex-fill">
+의사결정나무
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>신제품을 생산할 공장의 신설을 검토하고 있다. 신제품은 앞으로 10년간 계속 판매될 것으로예상되는 수요가 높은 확률은 60%, 낮은 확률은 40%로 예측되었다. 이러한 상황에서 공장규모를 대규모로 할 것인지의 전략을 결정하고자 한다. 시설투자를 대규모로 할 경우 2억 원, 소규모로 할 경우에는 1억 원이 필요하며, 시설물들에 대한 10년 후 잔존가치는 없다. 수익은 대규모시설에서 수요가 높으면 10년간 매년 9,000만원, 대규모시설이나 수요가낮으면 1,000만 원이다. 소규모시설 시 수요가 높으면 4,000만원, 수요가 낮으면 5,000만 원이다. 어떤 전략이 유리한지 결정하고자할 때 디시전트리(Decision Tree)를 사용하여 작성하고, 기대수익을 계산한 후 유리한 전략을 선정하시오.</p>
+</div>
+</div>
+<p>위 예제(<span class="quarto-unresolved-ref">?exm-97-3-3</span>)를 도식화 하면 아래와 같다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -2189,8 +2200,7 @@ end
 <p>97-3-5, 103-2-3</p>
 </div>
 </div>
-<p><strong>대기행렬이론</strong>(Queueing Theory)은 고객과 서비스 시설 간 관계를 확률 이론을 적용하여 모형을 작성하고 고객 도착 상황에 대응할 수 있는 경제적 규모를 결정하고자 하는 의사결정 기법이다. 총 대기 비용을 최소화시키는 최적 서비스 시설 결정을 위한 기법으로 대기행렬 분석에 따라 프로세스 설계, 용량 계획, 프로세스 성과가 달라지게 된다.</p>
-<p>다음과 같은 경우 대기행렬이 생기거나 서비스 시설이 휴지상태에 이르게 된다.</p>
+<p><strong>대기행렬이론</strong>(Queueing Theory)은 고객과 서비스 시설 간 관계를 확률 이론을 적용하여 모형을 작성하고 고객 도착 상황에 대응할 수 있는 경제적 규모를 결정하고자 하는 의사결정 기법이다. 총 대기 비용을 최소화시키는 최적 서비스 시설 결정을 위한 기법으로 대기행렬 분석에 따라 프로세스 설계, 용량 계획, 프로세스 성과가 달라지게 된다. 다음과 같은 경우 대기행렬이 생기거나 서비스 시설이 휴지상태에 이르게 된다.</p>
 <ul>
 <li>불규칙한 고객 요구(도착)</li>
 <li>서비스 능력 크기</li>
@@ -2290,7 +2300,7 @@ W = W_q + \frac{1}{\mu}
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>97-4-4, 103-3-4, 112-3-3</p>
+<p>97-4-4, 103-3-4, 112-3-3, 121-1-10</p>
 </div>
 </div>
 <p>투자안으로부터 예상되는 미래 현금흐름과 자본비용을 알고 잇다고 가정할 때 각 투자안이 기업 가치 증가에 어느정도 공헌하는지에 따라 투자안 경제성을 평가한다. 미래 현금 흐름을 고려 유무에 따라 전통적인 분석방법과 현금흐름할인법(DCF, discounted cash flow)으로 구분할 수 있다.</p>
@@ -2303,12 +2313,13 @@ W = W_q + \frac{1}{\mu}
 0[경제성 평가방법]
 11[전통적 분석방법]
 12[현금흐름할인방법]
+13[원가비교법]
 21[회수기간법]
 22[회계적이익률법]
 23["순현가법(NPV)"]
 24["내부수익률법(IRR)"]
 
-0 --- 11 &amp; 12
+0 --- 11 &amp; 12 &amp; 13
 11 --- 21 &amp; 22
 12 --- 23 &amp; 24
 </pre>
@@ -2320,9 +2331,13 @@ W = W_q + \frac{1}{\mu}
 <section id="전통적-분석방법" class="level3">
 <h3 class="anchored" data-anchor-id="전통적-분석방법">전통적 분석방법</h3>
 <p>전통적 분석방법에는 회수기간법화 회계적 이익률법이 있다.</p>
+<section id="원가비교법" class="level4">
+<h4 class="anchored" data-anchor-id="원가비교법">원가비교법</h4>
+<p><strong>원가비교법(Minimum Cost Rule)</strong>은 최소비용법으로 Min{각 투자안의 투자액과 비용의 합계}로 대안을 선정하는 방법이다.</p>
+</section>
 <section id="회수기간법" class="level4">
 <h4 class="anchored" data-anchor-id="회수기간법">회수기간법</h4>
-<p><strong>회수기간법</strong>(payback period method)은 투자원금을 투자안을 통해 미래 현금유입으로부터 회수하는데 소요되는 기간을 산출하여 의사결정하는 방법이다.</p>
+<p><strong>회수기간법(payback period method)</strong>은 투자원금을 투자안을 통해 미래 현금유입으로부터 회수하는데 소요되는 기간을 산출하여 의사결정하는 방법이다.</p>
 <p><span class="math display">\[
 회수기간 = \frac{투자액}{연간현금유입액}
 \]</span></p>
@@ -2368,7 +2383,7 @@ W = W_q + \frac{1}{\mu}
 </tbody>
 </table>
 <p><br></p>
-<p><strong>할인회수기간법</strong>(discounted payback period method)은 미래 현금유입의 현재가치로부터 투자원금을 회수하는데 소요되는 기간으로 투자의사결정을 하는 방법이다. 화폐의 시간가치가 감안되어 있으나 회수기간 이후의 현금흐름름이 무시된다는 단점이 여전히 존재한다.</p>
+<p><strong>할인회수기간법(discounted payback period method)</strong>은 미래 현금유입의 현재가치로부터 투자원금을 회수하는데 소요되는 기간으로 투자의사결정을 하는 방법이다. 화폐의 시간가치가 감안되어 있으나 회수기간 이후의 현금흐름름이 무시된다는 단점이 여전히 존재한다.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled" title="예제">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2491,7 +2506,7 @@ W = W_q + \frac{1}{\mu}
 </section>
 <section id="회계적-이익률법" class="level4">
 <h4 class="anchored" data-anchor-id="회계적-이익률법">회계적 이익률법</h4>
-<p><strong>회계적 이익률</strong>(accounting rate of return)법은 장부가치기준으로 연평균투자액에 대한 연평균 회계적 순이익 비율을 구하여 투자결정을 하는 방법이다.</p>
+<p><strong>회계적 이익률(accounting rate of return)법</strong>은 장부가치기준으로 연평균투자액에 대한 연평균 회계적 순이익 비율을 구하여 투자결정을 하는 방법이다.</p>
 <p><span class="math display">\[
 회계적 \ 이익률 = \frac{연평균순이익}{연평균투자액(장부가치)}, \ 또는 \  \frac{연평균순이익}{\frac{총투자액}{2}}
 \]</span></p>
@@ -2535,9 +2550,9 @@ W = W_q + \frac{1}{\mu}
 <section id="현금흐름할인법" class="level3">
 <h3 class="anchored" data-anchor-id="현금흐름할인법">현금흐름할인법</h3>
 <p>현금흐름할인법에는 순현가(NPV)법과 내부수익률(IRR)법이 있다.</p>
-<section id="순현가법npv-method" class="level4">
-<h4 class="anchored" data-anchor-id="순현가법npv-method">순현가법(NPV method)</h4>
-<p>투자안과 관련된 현금 흐름은 편익에 해당되는 현금유입과 비용(투자액)에 해당되는 현금유출로 구분이 가능하다.</p>
+<section id="순현가법" class="level4">
+<h4 class="anchored" data-anchor-id="순현가법">순현가법</h4>
+<p><strong>순현가법(NPV method)</strong>은 투자안과 관련된 현금 흐름은 편익에 해당되는 현금유입과 비용(투자액)에 해당되는 현금유출로 구분이 가능하다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -2641,9 +2656,9 @@ B = \frac{300}{(1+0.1)^1} + \frac{450}{(1+0.1)^2} + \frac{750}{(1+0.1)^3} + \fra
 </div>
 </div>
 </section>
-<section id="내부수익률법irr-method" class="level4">
-<h4 class="anchored" data-anchor-id="내부수익률법irr-method">내부수익률법(IRR method)</h4>
-<p><strong>내부수익률</strong>(IRR, internal rate of return)법은 기대 현금유입 현과와 현금 유출 현가를 동일하게 하는 할인률인 IRR을 기준으로 투자를 결정하는 방식이다. 즉, 내부수익률(IRR)과 요구수익률(R)를 비교하여 투자를 결정한다.</p>
+<section id="내부수익률법" class="level4">
+<h4 class="anchored" data-anchor-id="내부수익률법">내부수익률법</h4>
+<p><strong>내부수익률(IRR, internal rate of return)법</strong>은 기대 현금유입 현과와 현금 유출 현가를 동일하게 하는 할인률인 IRR을 기준으로 투자를 결정하는 방식이다. 즉, 내부수익률(IRR)과 요구수익률(R)를 비교하여 투자를 결정한다.</p>
 <p>계산법은 좌변에 이익현가를 두고 우변에 투자액 현가를 두어 일치시키는 할인율로 화폐의 시간가치가 감안된 예상투자수익률을 계산한다.</p>
 <p><span class="math display">\[
 \sum^{n}_{t=1}\frac{CI_t}{(1+IRR)^t} = \ I_0 \quad (여기서 \ 식을 \ 만족시키는 \ IRR \ 계산)
