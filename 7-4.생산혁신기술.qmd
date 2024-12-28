@@ -160,7 +160,7 @@ TOC는 한 단어로압축하면 초점(focus)이다. 초점이란 "해야 할 �
 ## DBR {#sec-dbr}
 
 :::{.callout-tip icon=false title="기출"}
-112-4-3
+112-4-3, 121-1-12
 :::
 
 ![https://de.m.wikipedia.org/wiki/Drum-Buffer-Rope](https://upload.wikimedia.org/wikipedia/de/7/75/Herbie_in_a_queue.png)
