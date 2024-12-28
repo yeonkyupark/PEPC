@@ -704,7 +704,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>103-4-3, 112-2-3</p>
+<p>103-4-3, 112-2-3, 121-2-3</p>
 </div>
 </div>
 <div class="cell" data-layout-align="default">
@@ -712,20 +712,31 @@ window.Quarto = {
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js">flowchart LR
 00[총괄생산계획 전략]
 10[추종 전략]
 20[평준화 전략]
 30[혼합 전략]
 
 00 --- 10 &amp; 20 &amp; 30
+
+10 --- 101["고용수준 변동 전략"] &amp; 102["생산율 변동 전략"]
+20 --- 201["재고수준 변동 전략"]
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
-<p>총괄생산계획은 변화하는 수요 대처와 기업 이윤 극대화를 위해 손실과 비용이 최소화 되도록 결정한다. 생산계획전략에는 <strong>수요추종</strong> 전략, <strong>생산평준화</strong> 전략, <strong>혼합</strong> 전략이 있다.</p>
+<p>총괄생산계획은 변화하는 수요 대처와 기업 이윤 극대화를 위해 손실과 비용이 최소화되도록 결정한다. 생산계획전략에는 <strong>수요추종</strong> 전략, <strong>생산평준화</strong> 전략, <strong>혼합</strong> 전략이 있다.</p>
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://player.slideplayer.com/13/3897783/data/images/img9.png" class="img-fluid figure-img"></p>
+<figcaption>https://slideplayer.com/slide/3897783/</figcaption>
+</figure>
+</div>
+</center>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -879,7 +890,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>112-3-1, 121-2-3</p>
+<p>112-3-1</p>
 </div>
 </div>
 <p><strong>기준일정계획</strong>(MPS, master production schedule)이란 생산시스템에서 생산되는 <strong>개별 최종품목</strong>에 대한 <strong>단기생산계획</strong>으로 주단위로 총괄수요를 분해한 개별품목 수요에 대한 충족계획이다.</p>
@@ -1851,7 +1862,7 @@ Petrov방법
 <dt>확장 시기와 규모(Timing and sizing Expansion)</dt>
 <dd>
 <ul>
-<li>*사전 확장 전략**(proactive capacity strategy)
+<li><strong>사전 확장 전략</strong>(proactive capacity strategy)
 <ul>
 <li>재고 부족 손실 &gt; 잉어 능력 비용 x 2배</li>
 <li>여유 내지 초과 능력을 유지하는 비용보다 재고 부족(품질) 손실이 상당히 높을 때, 고성장 산업에서 보통 채택되는 확장주의 전략(Expansionist Strategy)</li>
