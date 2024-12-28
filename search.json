@@ -705,7 +705,18 @@
     "href": "3-2.공정설계.html#라인-밸런싱",
     "title": "공정설계",
     "section": "",
-    "text": "기출\n\n\n\n112-2-6\n\n\n\n\n\n\n\n\n\n라인 밸런스 계산\n\n\n\n1대씩 기계가 배치된 흐름공정 작업시간이 다음 표와 같을 경우, 일일 생산량이 15개/일 이상일때까지 기계를 추가로 배치하여 공정분할을 실시하고, 그 때 일일 생산량 및 라인 밸런스 효율을 구하시오(실제 가동시간 = 8시간/일).\n\n\n\n공정\n1\n2\n3\n4\n5\n6\n\n\n\n\n시간(분)\n30\n30\n42\n31\n32\n35\n\n\n\n\n\\[\n\\frac{\\text{가동시간 8시간 x 60분}}{15개} = 32(분)\n\\]\n주어진 조건에서는 일 15개 생산을 위해서는 각 공정이 32분 이내가 되도록 공정을 설계해야 한다. 따라서 3, 6, 7번 공정은 추가 기계를 배치하여 32분 이내로 공정이 진행될 수 있도록 구성한다.\n\n\n\n공정\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n시간(분)\n30\n30\n21\n21\n31\n32\n18\n17\n18\n\n\n\n위 조건으로 라인 밸런스 효율을 계산하면 다음과 같다.\n\\[\nE_b = \\frac{\\sum{T_i}}{n \\times c_T} = \\frac{236}{10 \\times 32} \\times 100 = 73.75(%)\n\\]",
+    "text": "기출\n\n\n\n112-2-6\n\n\n\n\n\n\n\n\n\n라인 밸런스 계산\n\n\n\n1대씩 기계가 배치된 흐름공정 작업시간이 다음 표와 같을 경우, 일일 생산량이 15개/일 이상일때까지 기계를 추가로 배치하여 공정분할을 실시하고, 그 때 일일 생산량 및 라인 밸런스 효율을 구하시오(실제 가동시간 = 8시간/일).\n\n\n\n공정\n1\n2\n3\n4\n5\n6\n\n\n\n\n시간(분)\n30\n30\n42\n31\n32\n35\n\n\n\n\n\\[\n\\frac{\\text{가동시간 8시간 x 60분}}{15개} = 32(분)\n\\]\n주어진 조건에서는 일 15개 생산을 위해서는 각 공정이 32분 이내가 되도록 공정을 설계해야 한다. 따라서 3, 6, 7번 공정은 추가 기계를 배치하여 32분 이내로 공정이 진행될 수 있도록 구성한다.\n\n\n\n공정\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\n\n시간(분)\n30\n30\n21\n21\n31\n32\n18\n17\n18\n\n\n\n위 조건으로 라인 밸런스 효율을 계산하면 다음과 같다.\n\\[\nE_b = \\frac{\\sum{T_i}}{n \\times c_T} = \\frac{236}{10 \\times 32} \\times 100 = 73.75(\\%)\n\\]",
+    "crumbs": [
+      "3. 공정관리",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>공정설계</span>"
+    ]
+  },
+  {
+    "objectID": "3-2.공정설계.html#sec-activity-releationship-chart",
+    "href": "3-2.공정설계.html#sec-activity-releationship-chart",
+    "title": "공정설계",
+    "section": "공장 배치 활동관련도(Activity Relationship Chart)",
+    "text": "공장 배치 활동관련도(Activity Relationship Chart)\n공장 배치에서 활동관련도(Activity Relationship Chart, ARC)는 각 작업장이나 부서 간의 공간적 배치 필요성을 평가하는 도구다. 이를 통해 작업 흐름의 효율성을 극대화하고, 물류 및 생산 동선을 최적화한다.\n\n\n\n\n\n\n\n\n근접도\n설명\n예시\n\n\n\n\nA\nAbsolutely Necessary (절대 필요)\n조립 라인 ↔︎ 부품 공급 구역\n\n\nE\nEspecially Important (특히 중요)\n가공 라인 ↔︎ 검사 구역\n\n\nI\nImportant (중요)\n창고 ↔︎ 생산 관리실\n\n\nO\nOrdinary (보통)\n직원 휴게실 ↔︎ 생산 현장\n\n\nU\nUnimportant (불필요)\n사무실 ↔︎ 원자재 보관 창고\n\n\n\n\n활동관련도의 5가지 근접도\n\n\nA (Absolutely Necessary, 절대적으로 필요)\n\n두 작업장은 반드시 인접해야 하며, 떨어질 경우 심각한 비효율 발생.\n\n예) 조립 라인과 부품 공급 구역, 용광로와 주조 구역.\n\n\nE (Especially Important, 특히 중요)\n\n인접하는 것이 매우 유리하며, 떨어질 경우 작업 효율이 크게 저하됨.\n\n\n\n\n예) 가공 라인과 검사 구역, 포장 부서와 출하 구역.\n\n\n\nI (Important, 중요)\n\n인접하면 효율이 증가하지만, 떨어져 있어도 큰 문제가 되지 않음.\n\n예) 사무실과 생산 관리실, 보관 창고와 생산 구역.\n\n\nO (Ordinary, 보통)\n\n인접 여부가 큰 영향이 없으며, 공간 상황에 따라 배치 가능.\n\n예) 직원 휴게실과 생산 현장, 기계 정비실과 생산 라인.\n\n\nU (Unimportant, 불필요)\n\n두 작업장은 서로 멀리 떨어져도 문제 없음.\n\n예) 관리 사무실과 원자재 보관 창고, 제품 전시실과 생산 현장.\n\n\n\n\n활동관련도 예시\n: | 부서/작업장 | 조립 | 가공 | 창고 | 출하 | 사무실 |\n|————-|——|——|——|——|——-|\n| 조립 | - | A | E | I | O |\n| 가공 | A | - | E | I | O |\n| 창고 | E | E | - | A | U |\n| 출하 | I | I | A | - | U |\n| 사무실 | O | O | U | U | - |\n활동관련도는 공장 레이아웃 설계에서 공정의 효율성, 자재 흐름, 작업 동선을 개선하는 중요한 기준이다. 이를 통해 불필요한 이동을 줄이고, 생산성을 높이며, 비용을 절감할 수 있다.",
     "crumbs": [
       "3. 공정관리",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>공정설계</span>"

@@ -427,6 +427,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#라인-밸런싱" id="toc-라인-밸런싱" class="nav-link active" data-scroll-target="#라인-밸런싱">라인 밸런싱</a></li>
+  <li><a href="#sec-activity-releationship-chart" id="toc-sec-activity-releationship-chart" class="nav-link" data-scroll-target="#sec-activity-releationship-chart">공장 배치 활동관련도(Activity Relationship Chart)</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/yeonkyupark/PEPC/edit/main/3-2.공정설계.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
@@ -540,10 +541,109 @@ window.Quarto = {
 </table>
 <p>위 조건으로 라인 밸런스 효율을 계산하면 다음과 같다.</p>
 <p><span class="math display">\[
-E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.75(%)
+E_b = \frac{\sum{T_i}}{n \times c_T} = \frac{236}{10 \times 32} \times 100 = 73.75(\%)
 \]</span></p>
 </div>
 </div>
+</section>
+<section id="sec-activity-releationship-chart" class="level2">
+<h2 class="anchored" data-anchor-id="sec-activity-releationship-chart">공장 배치 활동관련도(Activity Relationship Chart)</h2>
+<p>공장 배치에서 <strong>활동관련도(Activity Relationship Chart, ARC)</strong>는 각 작업장이나 부서 간의 <strong>공간적 배치 필요성</strong>을 평가하는 도구다. 이를 통해 <strong>작업 흐름의 효율성</strong>을 극대화하고, 물류 및 생산 동선을 최적화한다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 41%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>근접도</strong></th>
+<th><strong>설명</strong></th>
+<th><strong>예시</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A</strong></td>
+<td>Absolutely Necessary (절대 필요)</td>
+<td>조립 라인 ↔︎ 부품 공급 구역</td>
+</tr>
+<tr class="even">
+<td><strong>E</strong></td>
+<td>Especially Important (특히 중요)</td>
+<td>가공 라인 ↔︎ 검사 구역</td>
+</tr>
+<tr class="odd">
+<td><strong>I</strong></td>
+<td>Important (중요)</td>
+<td>창고 ↔︎ 생산 관리실</td>
+</tr>
+<tr class="even">
+<td><strong>O</strong></td>
+<td>Ordinary (보통)</td>
+<td>직원 휴게실 ↔︎ 생산 현장</td>
+</tr>
+<tr class="odd">
+<td><strong>U</strong></td>
+<td>Unimportant (불필요)</td>
+<td>사무실 ↔︎ 원자재 보관 창고</td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt><strong>활동관련도의 5가지 근접도</strong></dt>
+<dd>
+<ol type="1">
+<li><strong>A (Absolutely Necessary, 절대적으로 필요)</strong>
+<ul>
+<li>두 작업장은 <strong>반드시 인접해야</strong> 하며, 떨어질 경우 심각한 비효율 발생.<br>
+</li>
+<li>예) 조립 라인과 부품 공급 구역, 용광로와 주조 구역.<br>
+</li>
+</ul></li>
+<li><strong>E (Especially Important, 특히 중요)</strong>
+<ul>
+<li>인접하는 것이 <strong>매우 유리</strong>하며, 떨어질 경우 작업 효율이 크게 저하됨.<br>
+</li>
+</ul></li>
+</ol>
+<ul>
+<li>예) 가공 라인과 검사 구역, 포장 부서와 출하 구역.<br>
+</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>I (Important, 중요)</strong>
+<ul>
+<li>인접하면 <strong>효율이 증가</strong>하지만, 떨어져 있어도 큰 문제가 되지 않음.<br>
+</li>
+<li>예) 사무실과 생산 관리실, 보관 창고와 생산 구역.<br>
+</li>
+</ul></li>
+<li><strong>O (Ordinary, 보통)</strong>
+<ul>
+<li>인접 여부가 <strong>큰 영향이 없으며</strong>, 공간 상황에 따라 배치 가능.<br>
+</li>
+<li>예) 직원 휴게실과 생산 현장, 기계 정비실과 생산 라인.<br>
+</li>
+</ul></li>
+<li><strong>U (Unimportant, 불필요)</strong>
+<ul>
+<li>두 작업장은 <strong>서로 멀리 떨어져도 문제 없음</strong>.<br>
+</li>
+<li>예) 관리 사무실과 원자재 보관 창고, 제품 전시실과 생산 현장.</li>
+</ul></li>
+</ol>
+</dd>
+</dl>
+<p><strong>활동관련도 예시</strong><br>
+: | 부서/작업장 | 조립 | 가공 | 창고 | 출하 | 사무실 |<br>
+|————-|——|——|——|——|——-|<br>
+| 조립 | - | A | E | I | O |<br>
+| 가공 | A | - | E | I | O |<br>
+| 창고 | E | E | - | A | U |<br>
+| 출하 | I | I | A | - | U |<br>
+| 사무실 | O | O | U | U | - |</p>
+<p>활동관련도는 공장 레이아웃 설계에서 <strong>공정의 효율성, 자재 흐름, 작업 동선</strong>을 개선하는 중요한 기준이다. 이를 통해 <strong>불필요한 이동을 줄이고, 생산성을 높이며, 비용을 절감</strong>할 수 있다.</p>
 
 
 </section>
