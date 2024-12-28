@@ -204,7 +204,7 @@ knitr::kable(tb)
 ## 기준일정계획(MPS) {#sec-mps}
 
 :::{.callout-tip icon=false title="기출"}
-112-3-1
+112-3-1, 121-2-3
 :::
 
 **기준일정계획**(MPS, master production schedule)이란 생산시스템에서 생산되는 **개별 최종품목**에 대한 **단기생산계획**으로 주단위로 총괄수요를 분해한 개별품목 수요에 대한 충족계획이다.
