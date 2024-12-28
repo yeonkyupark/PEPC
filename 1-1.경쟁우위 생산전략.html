@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
 <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -1853,6 +1882,61 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 </dd>
 </dl>
 <p>TPS 자동화는 도요타 사조인 도요다 사키치가 발명한 자동직기에서 비롯했다. 자동직기는 날실이 끊어지거나 씨실이 빠지면 즉시 기계가 멈춰서 불량을 내지 않았다.</p>
+</section>
+<section id="가동률" class="level5">
+<h5 class="anchored" data-anchor-id="가동률">가동률</h5>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>118-3-4</p>
+</div>
+</div>
+<p>도요타 생산방식에서 <strong>가동률(稼動率)</strong>과 <strong>가동률(可動率)</strong>은 서로 다른 개념을 의미한다.</p>
+<dl>
+<dt><strong>稼動率(かどうりつ,稼動率)</strong></dt>
+<dd>
+<ul>
+<li>설비나 라인의 <strong>실제 가동 시간</strong>이 전체 계획된 시간에 대해 차지하는 비율을 의미한다.<br>
+</li>
+<li>쉽게 말해, 설비가 얼마나 <strong>실제로 움직이고 있었는지</strong>를 측정한다.<br>
+</li>
+<li>계산식:<br>
+<span class="math display">\[稼動率 = \frac{実稼動時間}{計画稼動時間} \times 100\]</span></li>
+<li>예시: 하루에 8시간 가동이 계획되었지만, 실제로는 6시간만 가동되었다면稼動率은 75%가 된다.</li>
+</ul>
+</dd>
+</dl>
+<ol start="2" type="1">
+<li><strong>可動率(かどうりつ,可動率)</strong>:<br>
+</li>
+</ol>
+<ul>
+<li>설비가 <strong>가동할 수 있는 상태</strong>에 있었던 비율을 의미한다.<br>
+</li>
+<li>설비가 정상적으로 작동 가능한 상태였는지를 측정하며, 설비 고장이나 정비로 인해 사용할 수 없는 시간을 제외한다.<br>
+</li>
+<li>계산식:<br>
+<span class="math display">\[可動率 = \frac{可動時間}{実稼動時間 + 故障時間} \times 100\]</span></li>
+<li>예시: 설비가 6시간 가동했고, 1시간은 고장으로 멈췄다면,可動率은 85.7%가 된다.</li>
+</ul>
+<dl>
+<dt>차이점</dt>
+<dd>
+<ul>
+<li><strong>稼動率</strong>: 설비가 실제로 <strong>얼마나 사용되었는가</strong><br>
+</li>
+<li><strong>可動率</strong>: 설비가 <strong>얼마나 사용할 수 있는 상태였는가</strong></li>
+</ul>
+</dd>
+</dl>
+<p>두 지표는 도요타 생산방식에서 설비의 효율성과 안정성을 높이기 위해 함께 관리한다.</p>
 </section>
 <section id="tqc-및-현장개선" class="level5">
 <h5 class="anchored" data-anchor-id="tqc-및-현장개선">TQC 및 현장개선</h5>
