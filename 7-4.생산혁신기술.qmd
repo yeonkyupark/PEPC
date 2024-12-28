@@ -386,7 +386,10 @@ APS 고유기능
 - 생산계획(Manufacturing planning)
 - 수요충족(Demand fulfillment)
 
-## 6시그마 {#sec-six-sigma}
+
+## 린 6시그마 {#sec-lean-six-sigma}
+
+### 6시그마 {#sec-six-sigma}
 
 :::{.callout-tip icon=false title="기출"}
 121-1-1
@@ -437,8 +440,7 @@ APS 고유기능
 
 **6 시그마**는 결함을 줄이고, 품질을 극대화하는 방법론으로, 고객 만족도와 프로세스 효율성을 동시에 향상시킬 수 있는 강력한 도구이다. 이를 통해 조직은 제품 품질을 지속적으로 개선하고, 비용을 절감하며, 경쟁력을 높일 수 있다.
 
-## 린 6시그마 {#sec-lean-six-sigma}
-
+### 린 6시그마 {#sec-lean-6-sigma}
 :::{.callout-tip icon=false title="기출"}
 106-2-5
 :::
