@@ -825,6 +825,19 @@ window.Quarto = {
 <p><strong>네트워크 기법</strong>(Network, 화살도 arrow diagram, 활동 네트워크 activity network diagram)은 필요한 활동 선후관계를 네트워크로 표시하는 방식으로 <u>간트차트 결점을 보완</u>하기 위하여 개발되었다. 대표적인 기법으로 <a href="#sec-pert" class="quarto-xref"><span>PERT</span></a> (Program Evaluation &amp; Review Technique)와 <a href="#sec-cpm" class="quarto-xref"><span>CPM</span></a> (Critical Path Method)이 있다.</p>
 <section id="주경로" class="level3">
 <h3 class="anchored" data-anchor-id="주경로">주경로</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>118-4-6</p>
+</div>
+</div>
 <p>네트워크 기법에서 <strong>주경로</strong>(critical path)는 다음과 같이 정의한다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -849,6 +862,72 @@ window.Quarto = {
 <li>최소 여유 단계에서 활동이 계획 일정보다 늦어지면 최종 단계에서 프로젝트 완성이 그만큰 지연되므로 주경로 상의 공정을 <strong>애로공정</strong>이라고 함</li>
 <li>네트워크 상 주공정은 굵은 색으로 표시하여 중점 관리 함</li>
 </ul>
+<dl>
+<dt>주공정 계산 방법</dt>
+<dd>
+<ol type="1">
+<li>작업 나열 및 의존 관계 정의</li>
+<li>작업 소요 시간 추정</li>
+<li>네트워크 다이어그램 작성</li>
+<li>전진계산(Forward pass) - 가장 빠른 완료 시간(Early Times, ES)</li>
+<li>후진계산(Backward pass) - 가장 늦은 완료 시간(Late Times, LS)</li>
+<li>여유 시간(부동소요, LS - ES) 계산</li>
+<li>크리티컬 패스 도출</li>
+</ol>
+</dd>
+</dl>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="주경로 계산">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+주경로 계산
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>아래 그림에서 주 공정(Critical Path) 및 총소요일을 구하시오. (단, 그림의 Path 위의 숫자는 해당 공정의 소요일이다.)</p>
+<center>
+<img src="images/118-4-6-01.png" class="img-fluid">
+</center>
+<hr>
+<center>
+<img src="images/118-4-6-02.png" class="img-fluid">
+</center>
+<p>각 공정 여유시간은 다음과 같다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>공정</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>여유시간</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>따라서 주공정은 여유시간이 최소가 되는 경로인 ⓪ → ① → ③ → ④ → ⑦ → ⑧이며, 총소요일은 20일이다.</p>
+</div>
+</div>
 </section>
 <section id="네트워크-구성" class="level3">
 <h3 class="anchored" data-anchor-id="네트워크-구성">네트워크 구성</h3>
