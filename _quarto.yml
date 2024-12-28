@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 book:
+  favicon: logo.png
   title: "공장관리기술사"
   author: "yeonkyu.park@gmail.com"
   date: last-modified
