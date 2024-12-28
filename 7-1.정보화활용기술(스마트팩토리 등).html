@@ -407,6 +407,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cps" id="toc-cps" class="nav-link" data-scroll-target="#cps">CPS</a></li>
   <li><a href="#sec-ar" id="toc-sec-ar" class="nav-link" data-scroll-target="#sec-ar">AR</a></li>
   <li><a href="#sec-ai" id="toc-sec-ai" class="nav-link" data-scroll-target="#sec-ai">인공지능(AI, Artificial Intelligence)</a></li>
+  <li><a href="#sec-rfid" id="toc-sec-rfid" class="nav-link" data-scroll-target="#sec-rfid">RFID (Radio Frequency Identification)</a></li>
   </ul></li>
   <li><a href="#공장자동화" id="toc-공장자동화" class="nav-link" data-scroll-target="#공장자동화">공장자동화</a>
   <ul>
@@ -838,6 +839,90 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </dd>
 </dl>
+</section>
+<section id="sec-rfid" class="level3">
+<h3 class="anchored" data-anchor-id="sec-rfid">RFID (Radio Frequency Identification)</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>121-1-13</p>
+</div>
+</div>
+<p><strong>RFID (Radio Frequency Identification)</strong>는 <strong>무선 주파수</strong>를 이용하여 <strong>객체</strong>나 <strong>사람</strong>의 <strong>정보</strong>를 자동으로 식별하고 <strong>추적</strong>할 수 있는 기술이다. RFID 시스템은 <strong>태그(Tag)</strong>, <strong>리더(Reader)</strong>, 그리고 <strong>백엔드 시스템</strong>으로 구성되며, 다양한 분야에서 <strong>자동화</strong>, <strong>효율성 향상</strong>, <strong>데이터 관리</strong> 등의 목적으로 사용된다.</p>
+<dl>
+<dt>RFID의 구성 요소</dt>
+<dd>
+<ul>
+<li><strong>RFID 태그 (Tag)</strong>: RFID 태그는 정보를 저장하고, <strong>리더</strong>의 신호를 수신하여 데이터를 <strong>전송</strong>하는 장치이다. 주로 두 가지 유형이 있다.
+<ul>
+<li><strong>수동형 태그 (Passive Tag)</strong>: 자체 전원이 없이 <strong>리더</strong>의 신호를 이용하여 작동하며, 주로 가격이 저렴하고 긴 배터리 수명을 가진다.</li>
+<li><strong>능동형 태그 (Active Tag)</strong>: 자체 전원을 가지고 있어, 보다 긴 거리에서 <strong>데이터 전송</strong>이 가능하다. 비쌌지만 <strong>긴 거리</strong>에서 사용된다.</li>
+</ul></li>
+<li><strong>RFID 리더 (Reader)</strong>: RFID 태그의 신호를 수신하여 데이터를 <strong>읽고 전송</strong>하는 장치로, 여러 <strong>주파수 대역</strong>에서 동작할 수 있다.</li>
+<li><strong>백엔드 시스템 (Backend System)</strong>: 리더로부터 수집된 데이터를 처리하고 저장하는 시스템으로, 보통 <strong>데이터베이스</strong>나 <strong>ERP 시스템</strong>과 연계된다.</li>
+</ul>
+</dd>
+<dt>## RFID의 동작 원리</dt>
+<dd>
+<ul>
+<li>RFID 시스템은 <strong>리더</strong>가 발산한 전파에 의해 태그가 활성화되고, <strong>태그</strong>는 <strong>자기 식별 정보</strong>를 <strong>무선</strong>으로 <strong>리더</strong>에 전송한다.</li>
+<li>리더는 이를 수신하고, 해당 정보를 <strong>백엔드 시스템</strong>에 전달하여 필요한 처리를 진행한다.</li>
+</ul>
+</dd>
+<dt>RFID의 주요 응용 분야</dt>
+<dd>
+<ul>
+<li><strong>물류 및 공급망 관리</strong>
+<ul>
+<li><strong>재고 관리</strong>: RFID를 사용하여 물품을 실시간으로 <strong>추적</strong>하고 <strong>재고 상황</strong>을 자동으로 파악할 수 있다.</li>
+<li><strong>제품 추적</strong>: 제품이 생산라인에서부터 <strong>유통망</strong>을 거쳐 <strong>소비자에게 도달</strong>하는 과정까지 <strong>자동으로 추적</strong>할 수 있다.</li>
+</ul></li>
+<li><strong>교통 및 차량 관리</strong>
+<ul>
+<li><strong>전자태그</strong>: RFID를 이용한 <strong>자동차 번호판 인식</strong>으로 주차장 통행료 징수, <strong>자동차 출입 관리</strong> 등이 가능하다.</li>
+<li><strong>교통 통제</strong>: <strong>자동차 운행 기록</strong>과 <strong>통행료 징수</strong>를 자동화하여 도로 시스템의 효율성을 높일 수 있다.</li>
+</ul></li>
+<li><strong>헬스케어</strong>
+<ul>
+<li><strong>환자 추적</strong>: RFID 태그를 환자에게 부착하여 <strong>병원 내 위치를 추적</strong>하고, <strong>의료 기록</strong>을 자동으로 업데이트할 수 있다.</li>
+<li><strong>약품 관리</strong>: 약품의 유통 및 재고를 RFID로 <strong>자동 추적</strong>하여 <strong>효율적인 관리</strong>를 할 수 있다.</li>
+</ul></li>
+<li><strong>소매업</strong>
+<ul>
+<li><strong>자산 추적</strong>: RFID를 이용하여 매장 내 <strong>상품 위치와 재고</strong>를 실시간으로 관리하고, <strong>도난 방지</strong> 기능을 제공한다.</li>
+<li><strong>자동 결제</strong>: RFID 태그가 부착된 제품을 <strong>리더</strong>에 태그하면 자동으로 결제가 이루어지는 시스템이 가능하다.</li>
+</ul></li>
+<li><strong>동물 관리</strong>
+<ul>
+<li><strong>동물 추적</strong>: RFID를 사용하여 <strong>애완동물</strong>이나 <strong>농장 동물</strong>을 추적하고, <strong>건강 관리</strong> 및 <strong>이동 경로 추적</strong>을 할 수 있다.</li>
+</ul></li>
+</ul>
+</dd>
+<dt>RFID의 장점</dt>
+<dd>
+<ul>
+<li><strong>자동화</strong>: 수작업 없이 <strong>자동으로 정보 추적</strong>이 가능하여 <strong>효율성</strong>을 크게 향상시킨다.</li>
+<li><strong>실시간 데이터 처리</strong>: 데이터를 <strong>실시간으로 추적</strong>하고, <strong>즉각적인 반응</strong>을 가능하게 한다.</li>
+<li><strong>비접촉식 작업</strong>: <strong>비접촉식</strong>으로 데이터를 읽을 수 있어 <strong>위생적이고 편리</strong>하다.</li>
+</ul>
+</dd>
+<dt>RFID의 한계</dt>
+<dd>
+<ul>
+<li><strong>비용 문제</strong>: 일부 <strong>능동형 태그</strong>나 <strong>고급 시스템</strong>은 높은 초기 비용을 요구할 수 있다.</li>
+<li><strong>신호 간섭</strong>: <strong>금속</strong>이나 <strong>액체</strong>가 신호를 방해할 수 있어 특정 환경에서 신호 간섭이 발생할 수 있다.</li>
+<li><strong>보안 문제</strong>: 데이터의 <strong>무선 전송</strong> 과정에서 <strong>해킹</strong>이나 <strong>위조</strong> 등의 보안 위협이 존재할 수 있다.</li>
+</ul>
+</dd>
+</dl>
+<p>RFID는 물류, 헬스케어, 교통 등 다양한 분야에서 <strong>효율적인 관리</strong>와 <strong>자동화</strong>를 가능하게 하는 혁신적인 기술이다. 다만, 초기 비용과 보안 문제 등의 한계가 있으므로, 이를 고려한 <strong>적절한 활용</strong>이 필요하다.</p>
 </section>
 </section>
 <section id="공장자동화" class="level2">
