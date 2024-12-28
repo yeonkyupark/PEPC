@@ -454,7 +454,7 @@ window.Quarto = {
   <ul>
   <li><a href="#최대화-모델-예제" id="toc-최대화-모델-예제" class="nav-link" data-scroll-target="#최대화-모델-예제">최대화 모델 예제</a></li>
   <li><a href="#최적해를-구하는-방법" id="toc-최적해를-구하는-방법" class="nav-link" data-scroll-target="#최적해를-구하는-방법">최적해를 구하는 방법</a></li>
-  <li><a href="#선형계획법이-주로-응용되는-분야-5가지" id="toc-선형계획법이-주로-응용되는-분야-5가지" class="nav-link" data-scroll-target="#선형계획법이-주로-응용되는-분야-5가지">선형계획법이 주로 응용되는 분야 5가지</a></li>
+  <li><a href="#선형계획법이-주로-응용되는-분야" id="toc-선형계획법이-주로-응용되는-분야" class="nav-link" data-scroll-target="#선형계획법이-주로-응용되는-분야">선형계획법이 주로 응용되는 분야</a></li>
   </ul></li>
   <li><a href="#분석적-계층화-과정-ahp" id="toc-분석적-계층화-과정-ahp" class="nav-link" data-scroll-target="#분석적-계층화-과정-ahp">분석적 계층화 과정 (AHP)</a>
   <ul>
@@ -1914,14 +1914,100 @@ x_1 \ge 0, \ x_2 \ge 0
 </div>
 </div>
 </section>
-<section id="선형계획법이-주로-응용되는-분야-5가지" class="level3">
-<h3 class="anchored" data-anchor-id="선형계획법이-주로-응용되는-분야-5가지">선형계획법이 주로 응용되는 분야 5가지</h3>
-<p>선형계획법(Linear Programming)은 <strong>최적화 문제</strong>를 해결하기 위한 수학적 기법으로, 여러 분야에서 활용되고 있다. 주요 응용 분야는 다음과 같다.</p>
-<p><strong>생산 계획</strong> : - <strong>생산량 최적화</strong>: 자원과 시간의 제약을 고려하여 제품을 생산하는 최적의 생산량을 결정한다. - <strong>비용 절감</strong>: 원자재, 인력, 기계 등의 자원을 최적화하여 최소 비용으로 최대의 이익을 창출한다.</p>
-<p><strong>운송 문제</strong> : - <strong>물류 경로 최적화</strong>: 상품을 여러 창고나 배송지로 배송할 때 <strong>운송비용을 최소화</strong>하는 경로를 찾는다. - <strong>배송 경로 및 자원 배분</strong>: 여러 물류 창고와 목적지 간의 물류 흐름을 최적화하여 효율적인 운송을 가능하게 한다.</p>
-<p><strong>자원 배분</strong> : - <strong>자원의 효율적 배분</strong>: 제한된 자원(인력, 자본, 시간 등)을 가장 효율적으로 배분하여 이익을 극대화한다. - <strong>프로젝트 관리</strong>: 여러 프로젝트가 있을 때, 각 프로젝트의 자원 배분을 최적화하여 전체적인 성과를 높인다.</p>
-<p><strong>금융 및 투자</strong> : - <strong>투자 포트폴리오 최적화</strong>: 여러 금융 자산에 대한 투자 비율을 결정하여 <strong>위험을 최소화</strong>하고 <strong>수익을 극대화</strong>한다. - <strong>자산 배분</strong>: 투자자의 목표에 맞춰 자산을 효율적으로 배분하여 투자 수익을 최적화한다.</p>
-<p><strong>공급망 관리</strong> : - <strong>재고 관리</strong>: 공급망에서 재고를 효율적으로 관리하여 과잉 재고나 부족을 피하고 비용을 절감한다. - <strong>공급업체 선택 및 계약</strong>: 여러 공급업체와의 계약을 최적화하여 공급망 비용을 최소화한다.</p>
+<section id="선형계획법이-주로-응용되는-분야" class="level3">
+<h3 class="anchored" data-anchor-id="선형계획법이-주로-응용되는-분야">선형계획법이 주로 응용되는 분야</h3>
+<p><strong>선형계획법(Linear Programming, LP)</strong>은 <strong>최적화 문제</strong>를 해결하는 수학적 방법으로, 주로 자원 배분이나 의사결정에 있어 최적의 해를 구하는 데 사용된다. 이 방법은 <strong>목표 함수</strong>와 <strong>제약 조건</strong>이 모두 선형인 경우에 적용된다. 선형계획법은 다양한 분야에서 효과적으로 활용되고 있다.</p>
+<dl>
+<dt><strong>산업 생산 계획</strong></dt>
+<dd>
+<ul>
+<li>선형계획법은 <strong>제조업</strong>에서 <strong>자원 할당, 생산 계획, 재고 관리</strong> 등 최적화 문제를 해결하는 데 사용된다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>예를 들어, 다양한 제품을 생산하는 공장에서 각 제품을 위한 <strong>원자재 사용량, 생산 시간, 인력 배분</strong> 등을 고려하여 생산 계획을 최적화할 수 있다.</li>
+</ul>
+</dd>
+<dt><strong>운송 및 물류</strong></dt>
+<dd>
+<ul>
+<li><strong>물류 네트워크 최적화</strong>: 제품을 제조지에서 소비지로 이동시키는 과정에서 <strong>운송비용 최소화</strong>를 목표로 한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>창고 관리</strong>: 여러 창고와 배급처에서 제품을 효율적으로 분배하여 운송 비용을 줄이는 문제를 해결한다.</li>
+</ul>
+</dd>
+<dt><strong>금융 및 투자 관리</strong></dt>
+<dd>
+<ul>
+<li><strong>포트폴리오 최적화</strong>: 주식, 채권 등 다양한 금융 자산을 조합하여 <strong>위험을 최소화하고, 수익을 최대화</strong>하는 포트폴리오를 구성한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>자산 배분</strong>: 투자 가능한 자금을 여러 투자처에 분배하여 리스크를 관리하고 최적의 수익을 추구한다.</li>
+</ul>
+</dd>
+<dt><strong>인적 자원 관리</strong></dt>
+<dd>
+<ul>
+<li><strong>인력 배치</strong>: 각 직무나 프로젝트에 대해 필요한 인력을 최적의 방법으로 배치하여 <strong>인건비 절감</strong>과 <strong>업무 효율성 향상</strong>을 도모한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>근로 시간 관리</strong>: 노동 시간이나 인력 배치 최적화를 통해 <strong>생산성 향상</strong> 및 <strong>비용 절감</strong>을 추구한다.</li>
+</ul>
+</dd>
+<dt><strong>농업</strong></dt>
+<dd>
+<ul>
+<li><strong>농작물 재배 계획</strong>: 다양한 농작물을 재배할 때, <strong>토지 면적</strong>, <strong>비료 사용량</strong>, <strong>노동력</strong> 등의 자원을 고려하여 <strong>최적의 재배 계획</strong>을 수립한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>수확량 최적화</strong>: 농업 자원을 효율적으로 배분하여 생산성을 극대화하는 데 사용된다.</li>
+</ul>
+</dd>
+<dt><strong>에너지 관리</strong></dt>
+<dd>
+<ul>
+<li><strong>전력 생산 및 분배</strong>: 여러 발전소에서 생산된 전기를 <strong>효율적으로 배분</strong>하여 에너지 비용을 최소화하고 안정적인 공급을 보장한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>자원 최적화</strong>: 다양한 에너지 자원을 활용하여 <strong>최적의 생산 계획</strong>을 세우고 비용을 절감한다.</li>
+</ul>
+</dd>
+<dt><strong>서비스 운영 최적화</strong></dt>
+<dd>
+<ul>
+<li><strong>병원 스케줄링</strong>: 의료 인력과 장비를 <strong>효율적으로 배치</strong>하여 병원의 운영 효율성을 극대화한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>호텔 예약 시스템</strong>: 객실 예약을 최적화하여 <strong>수익을 극대화</strong>하는 문제에 적용된다.</li>
+</ul>
+</dd>
+<dt><strong>마케팅 및 광고</strong></dt>
+<dd>
+<ul>
+<li><strong>광고 예산 최적화</strong>: 다양한 매체를 활용하여 광고 예산을 <strong>효율적으로 분배</strong>하고 <strong>목표 시장</strong>에 맞는 광고 전략을 수립한다.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>판매 전략</strong>: 제품이나 서비스의 가격, 프로모션, 판매 채널을 최적화하여 <strong>매출 증대</strong>를 도모한다.</li>
+</ul>
+</dd>
+</dl>
+<p>선형계획법은 다양한 분야에서 <strong>자원의 효율적인 배분</strong>을 위해 사용된다. <strong>산업 생산, 물류, 금융</strong> 등 많은 분야에서 최적의 해결책을 제공하며, <strong>비용 절감</strong>, <strong>수익 증대</strong>, <strong>효율적인 자원 관리</strong>를 위해 널리 활용된다.</p>
 </section>
 </section>
 <section id="분석적-계층화-과정-ahp" class="level2">
