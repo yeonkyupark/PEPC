@@ -1913,6 +1913,99 @@ x_1 \ge 0, \ x_2 \ge 0
 <p>위 선행계획모델을 연립방적으로 풀면 <span class="math inline">\(x_1\)</span> = 200, <span class="math inline">\(x_2\)</span> = 300 값을 갖는다. 따라서 최대 이익은 목적함수로 계산하면 <span class="math inline">\(z = 20000 \times 200 + 10000 \times 300 = 700,000\)</span>(원)이다.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="선형계획법">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+선형계획법
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>부품회사는 2개 제품을 생산하기 위하여 공장 1, 공장 2, 공장 3에서 주어진 시간만큼 가공시간이 필요하다. 제품 1과 제품 2의 개당 이익은 각각 30만 원과 50만 원이고, 주당 총이익을 최대화하려 한다. 3개 공장의 주당 이용가능시간은 각각 6, 14, 18(시간/주)이 다. 제품당 필요한 가공시간은 아래와 같고 가공순서는 고려하지 않는다. 다음 물음에 답하시오.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>제품1</th>
+<th>제품2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>공장1</td>
+<td>1시간</td>
+<td>0시간</td>
+</tr>
+<tr class="even">
+<td>공장2</td>
+<td>0시간</td>
+<td>2시간</td>
+</tr>
+<tr class="odd">
+<td>공장3</td>
+<td>2시간</td>
+<td>2시간</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>선형계획문제로 정식화(대수식)하시오.</li>
+<li>(1)항을 그래프로 도식화하고 최적해를 구하시오.</li>
+<li>공장 2와 공장 3의 이용가능시간을 증가시키려 할 때 그래프를 활용한 민감도분석을 이용하여 공장 2와 공장 3의 1시간의 가치를 계산하시오.</li>
+</ol>
+<hr>
+<ol type="1">
+<li><dl>
+<dt>선형계획문제</dt>
+<dd>
+<ul>
+<li>의사결정변수</li>
+<li>제품1: A 생산량</li>
+<li>제품2: B 생산량</li>
+</ul>
+</dd>
+</dl></li>
+</ol>
+<ul>
+<li>목적함수: Max Z = 30A + 50B</li>
+<li>제약조건 - 1A + 0B &lt;= 6 - 0A + 2B &lt;= 14 - 2A + 2B &lt;= 18</li>
+<li>비음조건: A, B &gt;= 0</li>
+</ul>
+<ol start="2" type="1">
+<li><dl>
+<dt>최적화</dt>
+<dd>
+<ul>
+<li>1A = 6</li>
+</ul>
+</dd>
+</dl></li>
+</ol>
+<ul>
+<li>2B = 14, B = 7</li>
+<li>2A + 2B = 18, B = -A +9</li>
+<li><span class="math inline">\(B = -\frac{3}{5}A + \frac{Z}{50}\)</span></li>
+<li>도식화: 최적해 A=2, B=7, Z = 30x2 + 50x7 = 410<br> <img src="images/121-2-5.png" class="img-fluid"></li>
+</ul>
+<ol start="3" type="1">
+<li><dl>
+<dt>민감도 분석</dt>
+<dd>
+<ul>
+<li>2B = 14 → 2B = 15, B = 7.5</li>
+</ul>
+</dd>
+</dl></li>
+</ol>
+<ul>
+<li>2A + 2B = 18 → 2A + 2B = 19, B = -A + 9.5</li>
+<li>도식화: A = 2, B = 7.5, Z = 30x2 + 50x9.5 = 435<br> <img src="images/121-2-5-1.png" class="img-fluid"></li>
+<li>따라서 공장2와 공장3 이용가능한 시간을 1시간 증가함으로써, 제품1에 대한 생산량은 변함 없으나 제품 2 생산량 증가로 이어짐으로써 1시간 가치는 주당 이익 25만원(410 → 435만원) 증가함을 알 수 있다.</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="선형계획법이-주로-응용되는-분야" class="level3">
 <h3 class="anchored" data-anchor-id="선형계획법이-주로-응용되는-분야">선형계획법이 주로 응용되는 분야</h3>
