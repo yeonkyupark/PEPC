@@ -8,6 +8,10 @@
 
 ## BCG 매트릭스 {#sec-bcg-matrix}
 
+:::{.callout-tip icon=false title="기출"}
+121-1-6
+:::
+
 <center>
 ![https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/BCG_Matrix_Stylised.png/1920px-BCG_Matrix_Stylised.png)
 </center>
