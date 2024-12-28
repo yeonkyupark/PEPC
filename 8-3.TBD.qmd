@@ -162,13 +162,23 @@ K사는 단순지수평활법(평활계수 $\alpha = 0.5$)으로 수요를 예�
 수요 | 310 | 295 | 316 | 296 | 304 | 299
 예측치|300| | | | | 
 
-(3) (2)의 예측치를 하ㅗㄹ용하여, 월별 누적예측오차(CFE: Culmulative Sum of Forecasting Error), 평균절대오차(MAD: Mean Absolute Deviation), 추적지표(TS: Tracking Signal)를 계산하여 다음 표를 완성하시오.
+(3) (2)의 예측치를 활활용하여, 월별 누적예측오차(CFE: Culmulative Sum of Forecasting Error), 평균절대오차(MAD: Mean Absolute Deviation), 추적지표(TS: Tracking Signal)를 계산하여 다음 표를 완성하시오.
 
 (4) 월별 추적지표를 관리도법($\pm 3.75MAD$)을 적용하여 단순지수평활법(평활계수 $\alpha=0.5$)의 적용가능 여부를 결정하시오.
 
 ----
 
 :::
+
+:::{.callout-tip icon=false title="기출 121-2-2"}
+생산운영전략(Operation Strategy)과 관련하여 다음 물음에 답하시오. 
+(1) 생산운영전략의 의미를 설명하시오. 
+(2) 생산기능 내의 3가지 의사결정 구조를 설명하시오.
+
+----
+
+:::
+
 
 115-4-1 MPS 계산
 115-4-5 의사결정모형
