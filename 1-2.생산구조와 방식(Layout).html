@@ -452,7 +452,10 @@ window.Quarto = {
   <li><a href="#설비배치-분석-기법" id="toc-설비배치-분석-기법" class="nav-link" data-scroll-target="#설비배치-분석-기법">설비배치 분석 기법</a>
   <ul>
   <li><a href="#컴퓨터를-활용한-분석" id="toc-컴퓨터를-활용한-분석" class="nav-link" data-scroll-target="#컴퓨터를-활용한-분석">컴퓨터를 활용한 분석</a></li>
-  <li><a href="#체계적-설비-배치" id="toc-체계적-설비-배치" class="nav-link" data-scroll-target="#체계적-설비-배치">체계적 설비 배치</a></li>
+  <li><a href="#sec-slp" id="toc-sec-slp" class="nav-link" data-scroll-target="#sec-slp">체계적 설비 배치 (SLP)</a>
+  <ul class="collapse">
+  <li><a href="#sec-activity-releationship-chart" id="toc-sec-activity-releationship-chart" class="nav-link" data-scroll-target="#sec-activity-releationship-chart">활동관련도(Activity Relationship Chart)</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#대량맞춤생산" id="toc-대량맞춤생산" class="nav-link" data-scroll-target="#대량맞춤생산">대량맞춤생산</a></li>
   <li><a href="#다품종-소량생산" id="toc-다품종-소량생산" class="nav-link" data-scroll-target="#다품종-소량생산">다품종 소량생산</a></li>
@@ -1333,8 +1336,8 @@ end
 </dd>
 </dl>
 </section>
-<section id="체계적-설비-배치" class="level3">
-<h3 class="anchored" data-anchor-id="체계적-설비-배치">체계적 설비 배치</h3>
+<section id="sec-slp" class="level3">
+<h3 class="anchored" data-anchor-id="sec-slp">체계적 설비 배치 (SLP)</h3>
 <p><strong>SLP</strong>(체계적 설비 배치, Systematic Layout Planning)는 설비 배치 시 효율적인 질적요인을 분석하기 위해 머더(Richard Muther)가 소개한 기법이다.</p>
 <ul>
 <li>물자 흐름 및 상호 관계 검토 후 활동 내용 작성</li>
@@ -1369,7 +1372,7 @@ end
 <li>공간 조건 설정
 <ul>
 <li>DOR, ENG, SEC, FOY, FIL, COP, STO 등</li>
-<li><strong>부문 상호관계표</strong>(Activity Relationship Chart), 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표<br>
+<li><a href="#sec-activity-releationship-chart" class="quarto-xref"><span>활동관련도(Activity Relationship Chart)</span></a>, 각 공정 관계를 한눈에 알아보기 쉽게 작성한 표<br>
 </li>
 </ul></li>
 <li>활동 관계도 작성
@@ -1393,6 +1396,163 @@ end
 </ol>
 </dd>
 </dl>
+<section id="sec-activity-releationship-chart" class="level4">
+<h4 class="anchored" data-anchor-id="sec-activity-releationship-chart">활동관련도(Activity Relationship Chart)</h4>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>121-1-2</p>
+</div>
+</div>
+<p>공장 배치에서 <strong>활동관련도(Activity Relationship Chart, ARC)</strong>는 각 작업장이나 부서 간의 <strong>공간적 배치 필요성</strong>을 평가하는 도구다. 이를 통해 <strong>작업 흐름의 효율성</strong>을 극대화하고, 물류 및 생산 동선을 최적화한다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 41%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>근접도</strong></th>
+<th><strong>설명</strong></th>
+<th><strong>예시</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A</strong></td>
+<td>Absolutely Necessary (절대 필요)</td>
+<td>조립 라인 ↔︎ 부품 공급 구역</td>
+</tr>
+<tr class="even">
+<td><strong>E</strong></td>
+<td>Especially Important (특히 중요)</td>
+<td>가공 라인 ↔︎ 검사 구역</td>
+</tr>
+<tr class="odd">
+<td><strong>I</strong></td>
+<td>Important (중요)</td>
+<td>창고 ↔︎ 생산 관리실</td>
+</tr>
+<tr class="even">
+<td><strong>O</strong></td>
+<td>Ordinary (보통)</td>
+<td>직원 휴게실 ↔︎ 생산 현장</td>
+</tr>
+<tr class="odd">
+<td><strong>U</strong></td>
+<td>Unimportant (불필요)</td>
+<td>사무실 ↔︎ 원자재 보관 창고</td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt><strong>활동관련도의 5가지 근접도</strong></dt>
+<dd>
+<ol type="1">
+<li><strong>A (Absolutely Necessary, 절대적으로 필요)</strong>
+<ul>
+<li>두 작업장은 <strong>반드시 인접해야</strong> 하며, 떨어질 경우 심각한 비효율 발생.<br>
+</li>
+<li>예) 조립 라인과 부품 공급 구역, 용광로와 주조 구역.<br>
+</li>
+</ul></li>
+<li><strong>E (Especially Important, 특히 중요)</strong>
+<ul>
+<li>인접하는 것이 <strong>매우 유리</strong>하며, 떨어질 경우 작업 효율이 크게 저하됨.<br>
+</li>
+<li>예) 가공 라인과 검사 구역, 포장 부서와 출하 구역.<br>
+</li>
+</ul></li>
+<li><strong>I (Important, 중요)</strong>
+<ul>
+<li>인접하면 <strong>효율이 증가</strong>하지만, 떨어져 있어도 큰 문제가 되지 않음.<br>
+</li>
+<li>예) 사무실과 생산 관리실, 보관 창고와 생산 구역.<br>
+</li>
+</ul></li>
+<li><strong>O (Ordinary, 보통)</strong>
+<ul>
+<li>인접 여부가 <strong>큰 영향이 없으며</strong>, 공간 상황에 따라 배치 가능.<br>
+</li>
+<li>예) 직원 휴게실과 생산 현장, 기계 정비실과 생산 라인.<br>
+</li>
+</ul></li>
+<li><strong>U (Unimportant, 불필요)</strong>
+<ul>
+<li>두 작업장은 <strong>서로 멀리 떨어져도 문제 없음</strong>.<br>
+</li>
+<li>예) 관리 사무실과 원자재 보관 창고, 제품 전시실과 생산 현장.</li>
+</ul></li>
+</ol>
+</dd>
+<dt><strong>활동관련도 예시</strong></dt>
+<dd>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>부서/작업장</th>
+<th>조립</th>
+<th>가공</th>
+<th>창고</th>
+<th>출하</th>
+<th>사무실</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>조립</td>
+<td>-</td>
+<td>A</td>
+<td>E</td>
+<td>I</td>
+<td>O</td>
+</tr>
+<tr class="even">
+<td>가공</td>
+<td>A</td>
+<td>-</td>
+<td>E</td>
+<td>I</td>
+<td>O</td>
+</tr>
+<tr class="odd">
+<td>창고</td>
+<td>E</td>
+<td>E</td>
+<td>-</td>
+<td>A</td>
+<td>U</td>
+</tr>
+<tr class="even">
+<td>출하</td>
+<td>I</td>
+<td>I</td>
+<td>A</td>
+<td>-</td>
+<td>U</td>
+</tr>
+<tr class="odd">
+<td>사무실</td>
+<td>O</td>
+<td>O</td>
+<td>U</td>
+<td>U</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+<p>활동관련도는 공장 레이아웃 설계에서 <strong>공정의 효율성, 자재 흐름, 작업 동선</strong>을 개선하는 중요한 기준이다. 이를 통해 <strong>불필요한 이동을 줄이고, 생산성을 높이며, 비용을 절감</strong>할 수 있다.</p>
+</section>
 </section>
 </section>
 <section id="대량맞춤생산" class="level2">
