@@ -4,7 +4,7 @@
 
 ::: {.callout-tip icon=false title="기출"}
 
-112-2-4
+112-2-4, 124-1-3
 
 :::
 
