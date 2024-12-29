@@ -1939,60 +1939,30 @@ end
 <dl>
 <dt>피치타임 계산식</dt>
 <dd>
-<span class="math display">\[
-피치타임 = \frac{Takt Time \times Pitch Quantity}{1}
-\]</span><br>
-- <strong>Takt Time</strong>: 고객의 수요에 맞춰 생산해야 하는 간격 - <strong>Pitch Quantity</strong>: 한 번의 피치 동안 생산되는 제품의 수량
+<ul>
+<li><span class="math inline">\(피치타임 = \frac{Takt Time \times Pitch Quantity}{1}\)</span></li>
+<li><strong>Takt Time</strong>: 고객의 수요에 맞춰 생산해야 하는 간격</li>
+<li><strong>Pitch Quantity</strong>: 한 번의 피치 동안 생산되는 제품의 수량</li>
+</ul>
 </dd>
 </dl>
 </section>
 <section id="균형손실률" class="level3">
 <h3 class="anchored" data-anchor-id="균형손실률">균형손실률</h3>
 <p><strong>균형손실률(Balance Loss Rate)</strong>은 각 공정 간의 작업 시간 불균형으로 인해 발생하는 비효율성을 나타낸다. 모든 공정이 동일한 시간에 작업을 완료하지 않으면 공정 간 대기나 자원의 낭비가 발생하게 된다.</p>
-<p>균형손실률 계산식<br>
-<span class="math display">\[
-균형손실률 = \frac{\sum{(표준작업시간 - 각 공정의 작업시간)}}{(표준작업시간 \times 공정수)} \times 100
-\]</span><br>
-- <strong>표준작업시간</strong>: 전체 공정 중 가장 긴 작업 시간<br>
-- <strong>각 공정의 작업시간</strong>: 개별 공정의 작업 시간<br>
-- <strong>공정수</strong>: 전체 공정의 개수</p>
 <dl>
-<dt>균형손실률 예시</dt>
+<dt>균형손실률 계산식</dt>
 <dd>
-
+<ul>
+<li><span class="math inline">\(균형손실률 = \frac{\sum{(표준작업시간 - 각 공정의 작업시간)}}{(표준작업시간 \times 공정수)} \times 100\)</span></li>
+<li><strong>표준작업시간</strong>: 전체 공정 중 가장 긴 작업 시간<br>
+</li>
+<li><strong>각 공정의 작업시간</strong>: 개별 공정의 작업 시간<br>
+</li>
+<li><strong>공정수</strong>: 전체 공정의 개수</li>
+</ul>
 </dd>
 </dl>
-<div class="cell">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<caption>공정별 작업 시간 예시</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">공정</th>
-<th style="text-align: right;">작업시간</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">A</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">B</td>
-<td style="text-align: right;">12</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C</td>
-<td style="text-align: right;">18</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: right;">14</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 
 
 </section>
