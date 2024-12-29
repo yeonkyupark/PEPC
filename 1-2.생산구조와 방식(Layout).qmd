@@ -163,7 +163,7 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 ## 설비 배치
 
 :::{.callout-tip title="기출" icon=false}
-97-2-1, 106-2-4, 109-4-3, 112-3-6
+97-2-1, 106-2-4, 109-4-3, 112-3-6, 121-3-3
 :::
 
 
