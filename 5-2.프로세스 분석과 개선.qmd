@@ -88,6 +88,11 @@
 
 ## 품질기능전개(QFD) {#sec-qfd}
 
+:::{.callout-tip icon=false title="기출"}
+121-4-3
+:::
+
+
 **품질기능전개**(QFD,Quality function deployment)는 고객의 목소리(VOC)를 제품 엔지니어링 특성으로 변환하기 위해 1966년 일본에서 개발된 방법이다. 
 
 **품질의 집**(HOQ, House of quality)은 QFD를 구현하기 위한 기본 도구이다.
