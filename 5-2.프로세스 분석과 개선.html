@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -727,16 +693,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 품질의 집은 각 요구사항이 어떻게 기술적 요구사항으로 변환되는지 보여주는 도표이다. 이 도표는 고객의 요구와 기술적 요구가 어떻게 관련되는지 시각적으로 표현한다. 아래는 품질의 집 예시이다:</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  고객의_요구사항 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"디자인"</span>, <span class="st">"배터리 수명"</span>, <span class="st">"카메라 성능"</span>, <span class="st">"가격"</span>, <span class="st">"화면 크기"</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_1_디자인 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"O"</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>),</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_2_배터리 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">"O"</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>),</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_3_카메라 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">""</span>, <span class="st">"O"</span>, <span class="st">""</span>, <span class="st">""</span>),</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_4_가격 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">"O"</span>, <span class="st">""</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_5_화면_크기 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">"O"</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data, <span class="at">caption =</span> <span class="st">"품질의 집 (House of Quality)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>품질의 집 (House of Quality)</caption>
