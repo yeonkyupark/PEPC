@@ -232,7 +232,7 @@ flowchart TB
 ## 제품 수명 주기에 따른 생산방식
 
 :::{.callout-tip icon=false title="기출"}
-100-3-2, 109-1-6, 118-1-3
+100-3-2, 109-1-6, 118-1-3, 121-3-1
 :::
 
 ![https://altcraft.com/glossary/product-life-cycle](https://altcraft.com/uploads/product_life_cycle_stages_a68fe32579.png)
@@ -679,7 +679,7 @@ classDef transclass fill:#fcfcfc, stroke:#fcfcfc
 차별적 성과급 제도는 목표한 과업을 달성한 경우 작업자에게 성과급을 지급하고, 달성하지 못하는 경우 작업자에게 상대적으로 저임금을 지급했다. 현대에는 많이 상용화되어 있지만 당시에는 획기적인 방법이었다.
 :::
 
-#### **Taylor의 과학적 관리법(Scientific Management)**  
+#### Taylor의 과학적 관리법(Scientific Management)
 
 **프레더릭 윈슬로 테일러(Frederick Winslow Taylor)**가 개발한 **과학적 관리법(Scientific Management)**은 **산업 현장의 생산성과 효율성을 극대화하기 위한 관리 기법**이다. 테일러는 **작업 방식의 표준화**와 **작업자의 능률 향상**을 통해 **생산성 향상**을 목표로 했다.  
 
