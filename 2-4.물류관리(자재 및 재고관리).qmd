@@ -58,6 +58,11 @@ flowchart TB
 
 ### 재고 종류
 
+:::{.callout-tip icon=false title="기출"}
+121-3-2
+:::
+
+
 재고는 사용 목적에 따라 다음과 같이 분류된다.
 
 안전재고(Safety Inventory)
