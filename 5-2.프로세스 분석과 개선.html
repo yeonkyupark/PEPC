@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -409,7 +443,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#triz" id="toc-triz" class="nav-link" data-scroll-target="#triz">TRIZ</a></li>
   <li><a href="#sec-kano-model" id="toc-sec-kano-model" class="nav-link" data-scroll-target="#sec-kano-model">카노(Kano) 모델</a></li>
   <li><a href="#가치흐름지도vsm" id="toc-가치흐름지도vsm" class="nav-link" data-scroll-target="#가치흐름지도vsm">가치흐름지도(VSM)</a></li>
-  <li><a href="#품질기능전개qfd" id="toc-품질기능전개qfd" class="nav-link" data-scroll-target="#품질기능전개qfd">품질기능전개(QFD)</a></li>
+  <li><a href="#sec-qfd" id="toc-sec-qfd" class="nav-link" data-scroll-target="#sec-qfd">품질기능전개(QFD)</a>
+  <ul>
+  <li><a href="#신제품-개발-사례-스마트폰의-품질기능전개" id="toc-신제품-개발-사례-스마트폰의-품질기능전개" class="nav-link" data-scroll-target="#신제품-개발-사례-스마트폰의-품질기능전개">신제품 개발 사례: 스마트폰의 품질기능전개</a></li>
+  </ul></li>
   <li><a href="#dfssdesign-for-six-sigma" id="toc-dfssdesign-for-six-sigma" class="nav-link" data-scroll-target="#dfssdesign-for-six-sigma">DFSS(Design For Six Sigma)</a>
   <ul>
   <li><a href="#dfss-핵심-요소" id="toc-dfss-핵심-요소" class="nav-link" data-scroll-target="#dfss-핵심-요소">DFSS 핵심 요소</a></li>
@@ -638,17 +675,131 @@ ul.task-list li input[type="checkbox"] {
 <section id="가치흐름지도vsm" class="level2">
 <h2 class="anchored" data-anchor-id="가치흐름지도vsm">가치흐름지도(VSM)</h2>
 </section>
-<section id="품질기능전개qfd" class="level2">
-<h2 class="anchored" data-anchor-id="품질기능전개qfd">품질기능전개(QFD)</h2>
+<section id="sec-qfd" class="level2">
+<h2 class="anchored" data-anchor-id="sec-qfd">품질기능전개(QFD)</h2>
 <p><strong>품질기능전개</strong>(QFD,Quality function deployment)는 고객의 목소리(VOC)를 제품 엔지니어링 특성으로 변환하기 위해 1966년 일본에서 개발된 방법이다.</p>
 <p><strong>품질의 집</strong>(HOQ, House of quality)은 QFD를 구현하기 위한 기본 도구이다.</p>
-<p><span class="quarto-unresolved-ref">?sec-kano-model을</span> 이용한 분석을 통해 QFD 매트릭스를 만들 수 있다.</p>
+<p><a href="#sec-kano-model" class="quarto-xref"><span>카노(Kano) 모델</span></a>을 이용한 분석을 통해 QFD 매트릭스를 만들 수 있다.</p>
+<center>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/A1_House_of_Quality.png/800px-A1_House_of_Quality.png" class="img-fluid figure-img"></p>
 <figcaption>Source: https://en.wikipedia.org/wiki/Quality_function_deployment</figcaption>
 </figure>
 </div>
+</center>
+<p>품질기능전개(QFD)는 고객의 요구사항을 제품 설계나 생산 과정에 반영하는 방법론이다. 품질의 집(House of Quality)은 QFD의 첫 번째 단계로, 고객의 요구사항을 제품의 기술적 요구사항으로 변환하는 구조화된 도구이다. 이 과정에서 고객의 목소리(Voice of the Customer, VOC)를 효과적으로 반영하여 품질을 향상시킬 수 있다.</p>
+<section id="신제품-개발-사례-스마트폰의-품질기능전개" class="level3">
+<h3 class="anchored" data-anchor-id="신제품-개발-사례-스마트폰의-품질기능전개">신제품 개발 사례: 스마트폰의 품질기능전개</h3>
+<p>스마트폰의 신제품 개발을 예로 들어 품질기능전개에서 품질의 집을 어떻게 활용하는지 설명하겠다.</p>
+<ol type="1">
+<li><strong>고객의 요구사항 수집</strong>
+<ul>
+<li><strong>디자인</strong>: 세련되고 가벼운 디자인</li>
+<li><strong>배터리 수명</strong>: 긴 배터리 사용 시간</li>
+<li><strong>카메라 성능</strong>: 고화질 사진 촬영</li>
+<li><strong>가격</strong>: 합리적인 가격</li>
+<li><strong>화면 크기</strong>: 적당한 크기와 해상도</li>
+</ul></li>
+<li><strong>기술적 요구사항 도출</strong><br>
+고객의 요구사항을 기술적인 측면에서 변환해야 한다. 예를 들어:
+<ul>
+<li><strong>디자인</strong>: 알루미늄 합금 바디, 초박형 디자인</li>
+<li><strong>배터리 수명</strong>: 대용량 배터리 (5000mAh 이상)</li>
+<li><strong>카메라 성능</strong>: 48MP 이상의 카메라, 고속 자동 초점 기능</li>
+<li><strong>가격</strong>: 원가 절감을 위한 최적화된 부품 조합</li>
+<li><strong>화면 크기</strong>: 6.5인치 OLED 디스플레이</li>
+</ul></li>
+<li><strong>품질의 집(House of Quality) 구성</strong><br>
+품질의 집은 각 요구사항이 어떻게 기술적 요구사항으로 변환되는지 보여주는 도표이다. 이 도표는 고객의 요구와 기술적 요구가 어떻게 관련되는지 시각적으로 표현한다. 아래는 품질의 집 예시이다:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  고객의_요구사항 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"디자인"</span>, <span class="st">"배터리 수명"</span>, <span class="st">"카메라 성능"</span>, <span class="st">"가격"</span>, <span class="st">"화면 크기"</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_1_디자인 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"O"</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_2_배터리 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">"O"</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>),</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_3_카메라 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">""</span>, <span class="st">"O"</span>, <span class="st">""</span>, <span class="st">""</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_4_가격 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">"O"</span>, <span class="st">""</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  기술적_요구사항_5_화면_크기 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">""</span>, <span class="st">"O"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data, <span class="at">caption =</span> <span class="st">"품질의 집 (House of Quality)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>품질의 집 (House of Quality)</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 16%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">고객의_요구사항</th>
+<th style="text-align: left;">기술적_요구사항_1_디자인</th>
+<th style="text-align: left;">기술적_요구사항_2_배터리</th>
+<th style="text-align: left;">기술적_요구사항_3_카메라</th>
+<th style="text-align: left;">기술적_요구사항_4_가격</th>
+<th style="text-align: left;">기술적_요구사항_5_화면_크기</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">디자인</td>
+<td style="text-align: left;">O</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">배터리 수명</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">O</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">카메라 성능</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">O</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">가격</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">O</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">화면 크기</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">O</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong>주요 항목 설명</strong><br>
+- <strong>O</strong>: 고객의 요구사항과 기술적 요구사항 간에 강한 관련성이 있음을 나타낸다. 예를 들어, “디자인” 요구사항은 “디자인” 기술적 요구사항과 밀접한 관련이 있다.<br>
+- <strong>배터리 수명</strong>은 “배터리” 기술적 요구사항에 주로 영향을 미친다.<br>
+- <strong>카메라 성능</strong>은 카메라 성능에 관련된 기술적 요구사항과 밀접한 관계가 있다.</p>
+<ol start="4" type="1">
+<li><strong>우선순위 결정</strong><br>
+품질의 집을 통해 각 기술적 요구사항의 중요도를 파악하고, 이를 바탕으로 제품 설계에 우선순위를 매긴다. 예를 들어, 고객이 “배터리 수명”을 가장 중요하게 생각한다고 하면, 대용량 배터리를 우선적으로 고려할 수 있다.</li>
+</ol>
+<p>품질의 집을 통해 고객의 요구를 기술적으로 구체화하고, 이를 바탕으로 신제품 개발을 진행하면 고객의 만족도를 극대화할 수 있다. 품질기능전개(QFD)는 신제품 개발에서 중요한 역할을 하며, 품질의 집은 이를 실행하는 핵심 도구이다.</p>
+</section>
 </section>
 <section id="dfssdesign-for-six-sigma" class="level2">
 <h2 class="anchored" data-anchor-id="dfssdesign-for-six-sigma">DFSS(Design For Six Sigma)</h2>
