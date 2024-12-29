@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -526,91 +492,101 @@ window.Quarto = {
 <p>124-1-9</p>
 </div>
 </div>
-<p>TQM(Total Quality Management, 전사적 품질 경영)은 조직의 모든 구성원이 참여하여 품질을 지속적으로 개선하는 경영 방식이다. TQM은 고객 만족을 최우선 목표로 하며, 프로세스의 효율성과 제품의 품질을 향상시키기 위해 전사적으로 품질 관리 활동을 수행한다.</p>
+<p>TQM(Total Quality Management, 전사적 품질 경영)은 조직의 모든 구성원이 품질 향상과 고객 만족을 목표로 참여하는 경영 철학이자 방식이다. 이는 제품이나 서비스의 품질을 개선하는 것에만 그치지 않고, 조직 전반의 프로세스와 문화를 품질 중심으로 전환하여 지속적인 개선을 추구한다.</p>
 <dl>
+<dt>TQM의 핵심 개념</dt>
+<dd>
+<ol type="1">
+<li>고객 중심<br>
+품질 경영의 최우선 목표는 고객 만족이다. 고객의 요구와 기대를 이해하고 이를 충족하거나 초과 달성하기 위해 노력한다. 내부 고객(직원)과 외부 고객(소비자)을 모두 중요하게 여긴다.</li>
+<li>전사적 참여<br>
+조직의 모든 구성원이 품질 개선 활동에 참여한다. 품질 관리는 특정 부서의 책임이 아니라, 전 직원이 협력하여 달성해야 할 공동 목표로 본다.</li>
+<li>프로세스 중심<br>
+품질 개선은 결과만이 아니라 결과를 만들어내는 과정(process)을 개선하는 데 초점을 둔다. 프로세스의 효율성과 효과성을 높이는 것이 중요하다.</li>
+<li>지속적인 개선<br>
+품질 향상은 일회성 활동이 아니라 지속적으로 이루어져야 한다. 작은 개선이라도 꾸준히 실행하여 장기적으로 큰 성과를 얻는다.</li>
+<li>의사 결정의 사실 기반<br>
+데이터와 분석을 기반으로 의사 결정을 내린다. 감이나 추측이 아닌 객관적인 정보를 바탕으로 문제를 해결한다.</li>
+<li>통합된 시스템<br>
+품질 경영은 조직 내의 모든 부서와 기능이 유기적으로 연결되어야 효과적이다. 조직의 비전, 사명, 목표를 품질 개선 활동과 연계한다.</li>
+<li>커뮤니케이션<br>
+조직 내에서 원활한 의사소통은 품질 문제를 발견하고 해결하는 데 중요한 역할을 한다. 직원 간, 부서 간의 협력과 피드백을 강조한다.</li>
+</ol>
+</dd>
 <dt>TQM의 주요 원칙</dt>
 <dd>
 <ul>
-<li><strong>고객 중심</strong>: 모든 품질 개선 활동은 고객의 요구와 기대를 충족시키는 데 집중한다.<br>
-</li>
-<li><strong>전 구성원의 참여</strong>: 품질 개선은 경영진부터 현장 직원까지 모든 구성원이 참여해야 한다.<br>
-</li>
-<li><strong>프로세스 중심</strong>: 프로세스의 효율성을 개선하여 품질 문제를 사전에 예방한다.<br>
-</li>
-<li><strong>지속적 개선</strong>: 품질 개선 활동은 일회성이 아닌 지속적으로 이루어져야 한다.<br>
-</li>
-<li><strong>데이터 기반 의사결정</strong>: 객관적인 데이터와 사실을 바탕으로 문제를 분석하고 개선한다.<br>
-</li>
-<li><strong>파트너십과 협력</strong>: 공급업체, 고객 등 이해관계자와 협력하여 품질을 개선한다.</li>
+<li><ol type="1">
+<li>고객 만족 최우선<br>
+고객의 요구사항을 정확히 이해하고 이를 만족시키는 것을 최우선 과제로 삼는다.</li>
+</ol></li>
 </ul>
-</dd>
-<dt>TQM 도입 단계</dt>
-<dd>
-<ol type="1">
-<li><strong>리더십과 목표 설정</strong>: 경영진이 품질 개선의 중요성을 인식하고 명확한 목표를 설정한다.<br>
-</li>
-<li><strong>품질 교육 및 훈련</strong>: 전 구성원을 대상으로 품질 관리와 관련된 교육을 실시한다.<br>
-</li>
-<li><strong>프로세스 분석 및 개선</strong>: 기존 프로세스를 분석하고 문제점을 찾아 개선한다.<br>
-</li>
-<li><strong>성과 측정 및 피드백</strong>: 개선 결과를 측정하고, 이를 바탕으로 지속적으로 피드백을 반영한다.<br>
-</li>
-<li><strong>문화 정착</strong>: 품질 중심의 조직 문화를 형성하여 TQM이 조직에 뿌리내리도록 한다.</li>
+<ol start="2" type="1">
+<li>품질 우선 경영<br>
+품질은 비용, 생산성, 속도보다 우선시되며, 품질을 개선함으로써 궁극적으로 조직의 성과를 향상시킨다.</li>
+<li>전사적 책임<br>
+최고 경영진부터 말단 직원까지 모두가 품질 개선에 책임을 진다.</li>
+<li>교육과 훈련<br>
+직원들의 역량 강화를 위해 지속적으로 교육과 훈련을 제공한다. 품질 관리 도구와 기법을 습득하도록 돕는다.</li>
+<li>장기적인 관점<br>
+단기적인 성과보다는 장기적인 품질 개선을 통해 지속 가능한 성장을 추구한다.</li>
 </ol>
 </dd>
-<dt>TQM의 기대 효과</dt>
+<dt>TQM의 도입 효과</dt>
 <dd>
 <ul>
-<li><strong>고객 만족도 향상</strong><br>
-</li>
-<li><strong>비용 절감</strong><br>
-</li>
-<li><strong>생산성 향상</strong><br>
-</li>
-<li><strong>경쟁력 강화</strong><br>
-</li>
-<li><strong>조직 내부의 의사소통 강화</strong></li>
+<li><ol type="1">
+<li>고객 만족도 향상<br>
+고객의 요구를 충족시키고 신뢰를 쌓음으로써 충성도를 높인다.</li>
+</ol></li>
 </ul>
+<ol start="2" type="1">
+<li>비용 절감<br>
+불량률 감소, 재작업 감소 등을 통해 품질 비용이 절감된다.</li>
+<li>생산성 향상<br>
+효율적인 프로세스 운영으로 생산성이 향상된다.</li>
+<li>조직 문화 개선<br>
+협력과 참여를 중시하는 조직 문화가 형성된다.</li>
+<li>시장 경쟁력 강화<br>
+고품질 제품과 서비스를 통해 경쟁 우위를 확보할 수 있다.</li>
+</ol>
 </dd>
-<dt>TQM 사례</dt>
+<dt>TQM의 주요 도구</dt>
 <dd>
-
+<ul>
+<li><ol type="1">
+<li>PDCA 사이클<br>
+Plan(계획)-Do(실행)-Check(검토)-Act(조치)로 구성된 품질 개선의 기본 프레임워크이다.</li>
+</ol></li>
+</ul>
+<ol start="2" type="1">
+<li>6시그마<br>
+결함률을 최소화하기 위한 품질 관리 방법론이다.</li>
+<li>품질 관리 7가지 도구(Q7)<br>
+체크시트, 히스토그램, 파레토 차트, 산점도, 관리도, 흐름도, 원인-결과도(피쉬본 다이어그램)가 있다.</li>
+<li>벤치마킹<br>
+우수 사례를 참고하여 품질을 개선한다.</li>
+<li>ISO 품질 인증<br>
+국제 표준을 준수하여 품질을 보증한다.</li>
+</ol>
+</dd>
+<dt>TQM의 성공 사례</dt>
+<dd>
+<ul>
+<li><ol type="1">
+<li>토요타(Toyota)<br>
+지속적인 개선(Kaizen)과 품질 중심 문화를 통해 자동차 업계의 글로벌 리더로 자리잡는다.</li>
+</ol></li>
+</ul>
+<ol start="2" type="1">
+<li>GE(General Electric)<br>
+TQM과 6시그마를 결합하여 생산성과 품질을 크게 향상시킨다.</li>
+<li>소니(Sony)<br>
+TQM 도입 후 기술력과 품질을 강화하여 전자 제품 시장에서 성공을 거둔다.</li>
+</ol>
 </dd>
 </dl>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  기업 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Toyota"</span>, <span class="st">"Samsung"</span>, <span class="st">"GE"</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  TQM_적용효과 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"불량률 감소 및 생산 효율성 향상"</span>, </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                <span class="st">"고객 신뢰도 상승 및 시장 점유율 확대"</span>, </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                <span class="st">"혁신 문화 조성과 품질 리더십 강화"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data, <span class="at">caption=</span><span class="st">"TQM 적용 사례"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<caption>TQM 적용 사례</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">기업</th>
-<th style="text-align: left;">TQM_적용효과</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Toyota</td>
-<td style="text-align: left;">불량률 감소 및 생산 효율성 향상</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Samsung</td>
-<td style="text-align: left;">고객 신뢰도 상승 및 시장 점유율 확대</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">GE</td>
-<td style="text-align: left;">혁신 문화 조성과 품질 리더십 강화</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<p>TQM은 품질을 단순한 목표가 아닌 조직 전체의 철학으로 받아들이게 하는 경영 방식이다. 이를 통해 고객 만족을 극대화하고 조직의 지속 가능한 성장을 도모할 수 있다. TQM은 단기적인 성과가 아닌 장기적인 경쟁력 확보를 목표로 하는 현대 경영의 핵심 요소 중 하나로 자리잡는다.</p>
 </section>
 <section id="관리도" class="level2">
 <h2 class="anchored" data-anchor-id="관리도">관리도</h2>
