@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -718,27 +684,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>경영 요인</strong>: 리더십, 자원 관리, 내부 프로세스 등 내부 경영에서의 주요 요소</li>
 </ul>
 </dd>
-</dl>
-<p>CSF 설정 과정<br>
-:1. <strong>조직의 목표와 전략 파악</strong><br>
-2. <strong>성공에 중요한 주요 분야 식별</strong><br>
-3. <strong>핵심성과지표(KPI)와 연계하여 측정 가능한 항목으로 구체화</strong><br>
-4. <strong>각 CSF에 대한 우선순위 설정 및 실행 계획 수립</strong></p>
-<dl>
+<dt>CSF 설정 과정</dt>
+<dd>
+<ol type="1">
+<li><strong>조직의 목표와 전략 파악</strong><br>
+</li>
+<li><strong>성공에 중요한 주요 분야 식별</strong><br>
+</li>
+<li><strong>핵심성과지표(KPI)와 연계하여 측정 가능한 항목으로 구체화</strong><br>
+</li>
+<li><strong>각 CSF에 대한 우선순위 설정 및 실행 계획 수립</strong></li>
+</ol>
+</dd>
 <dt>CSF 예시</dt>
 <dd>
 
 </dd>
 </dl>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">CSF =</span> <span class="fu">c</span>(<span class="st">"고객 만족도 향상"</span>, <span class="st">"기술 혁신"</span>, <span class="st">"운영 효율성 강화"</span>, <span class="st">"시장 점유율 확대"</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  설명 <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"서비스 품질과 고객 피드백을 기반으로 만족도 향상"</span>, </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">"신제품 개발과 기술 도입을 통한 경쟁력 확보"</span>, </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>          <span class="st">"프로세스 개선을 통해 비용 절감 및 생산성 향상"</span>, </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>          <span class="st">"적극적인 마케팅 전략을 통해 시장 내 점유율 확대"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(data, <span class="at">caption=</span><span class="st">"CSF 예시"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>CSF 예시</caption>
