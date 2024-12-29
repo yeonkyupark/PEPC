@@ -1570,54 +1570,59 @@ ATP 계산
 <li>평균 진행시간 최소 및 평균 납기 지연 최소의 규칙을 판정하시오.</li>
 </ol>
 <hr>
-<table class="caption-top table">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>우선순위 규칙에 따른 작업 평가</caption>
 <colgroup>
-<col style="width: 14%">
-<col style="width: 12%">
-<col style="width: 36%">
-<col style="width: 30%">
-<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 13%">
+<col style="width: 31%">
+<col style="width: 28%">
+<col style="width: 8%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>우선순위 규칙</th>
-<th>작업순서</th>
-<th>평균 진행시간</th>
-<th>평균 납기</th>
-<th>지연일수</th>
+<th style="text-align: left;">우선순위_규칙</th>
+<th style="text-align: left;">작업순서</th>
+<th style="text-align: left;">평균_진행시간</th>
+<th style="text-align: left;">평균_납기</th>
+<th style="text-align: right;">지연일수</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>(1) 선착순</td>
-<td>A－B－C－D－E</td>
-<td>(10＋25＋37＋51＋67) / 5 = 38.0</td>
-<td>(0＋0＋8＋21＋22) / 5 = 10.2</td>
-<td>10.2</td>
+<td style="text-align: left;">(1) 선착순</td>
+<td style="text-align: left;">A－B－C－D－E</td>
+<td style="text-align: left;">(10＋25＋37＋51＋67) / 5 = 38.0</td>
+<td style="text-align: left;">(0＋0＋8＋21＋22) / 5 = 10.2</td>
+<td style="text-align: right;">10.2</td>
 </tr>
 <tr class="even">
-<td>(2) 최소 작업시간</td>
-<td>A－C－D－B－E</td>
-<td>(10＋22＋36＋51＋67) / 5 = 37.2</td>
-<td>(0＋0＋6＋26＋22) / 5 = 10.8</td>
-<td>10.8</td>
+<td style="text-align: left;">(2) 최소 작업시간</td>
+<td style="text-align: left;">A－C－D－B－E</td>
+<td style="text-align: left;">(10＋22＋36＋51＋67) / 5 = 37.2</td>
+<td style="text-align: left;">(0＋0＋6＋26＋22) / 5 = 10.8</td>
+<td style="text-align: right;">10.8</td>
 </tr>
 <tr class="odd">
-<td>(3) 최소 납기</td>
-<td>A－B－C－D－E</td>
-<td>(10＋25＋37＋51＋67) / 5 = 38.0</td>
-<td>(0＋0＋8＋21＋22) / 5 = 10.2</td>
-<td>10.2</td>
+<td style="text-align: left;">(3) 최소 납기</td>
+<td style="text-align: left;">A－B－C－D－E</td>
+<td style="text-align: left;">(10＋25＋37＋51＋67) / 5 = 38.0</td>
+<td style="text-align: left;">(0＋0＋8＋21＋22) / 5 = 10.2</td>
+<td style="text-align: right;">10.2</td>
 </tr>
 <tr class="even">
-<td>(4) 최소 여유시간</td>
-<td>A－B－D－C－E</td>
-<td>(10＋25＋39＋51＋67) / 5 = 38.4</td>
-<td>(0＋0＋9＋22＋22) / 5 = 10.6</td>
-<td>10.6</td>
+<td style="text-align: left;">(4) 최소 여유시</td>
+<td style="text-align: left;">A－B－D－C－E</td>
+<td style="text-align: left;">(10＋25＋39＋51＋67) / 5 = 38.4</td>
+<td style="text-align: left;">(0＋0＋9＋22＋22) / 5 = 10.6</td>
+<td style="text-align: right;">10.6</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 </div>
 </div>
 <p><font color="blue"><strong>n개 작업을 2대 기계에서 작업할 경우</strong></font> 우선 순위 규칙은 <a href="Johnson's rule"><span class="quarto-xref"><span>존슨법</span></span></a>을 적용할 수 있다.</p>
