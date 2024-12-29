@@ -1298,7 +1298,7 @@ ATP 계산
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>97-1-12, 106-2-6</p>
+<p>97-1-12, 106-2-6, 121-3-6</p>
 </div>
 </div>
 <p>주문생산은 다양한 일감이 상이한 순서로 작업하므로 작업순서 결정과 부하 결정문제가 생산성에 영향을 미친다. 통상 공장에서는 작업 순서가 동일할 경우를 대비하여 서너개의 작업 우선순위 규칙(Priority rule), 작업배정규칙(Dispatching rule)을 함께 사용한다.</p>
@@ -1501,6 +1501,123 @@ ATP 계산
 </ul>
 </dd>
 </dl>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="작업우선순위 결정">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+작업우선순위 결정
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>다음 표와 같이 작업 5가지 주문이 순서대로 접수되었다. 선착순, 최소 작업시간, 최소 납기, 최소 여유시간 등 4가지 우선순위규칙을 활용하여 작업순서를 정할 때 다음 물음에 답하시오.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">작업</th>
+<th style="text-align: center;">도착순서</th>
+<th style="text-align: center;">납기(일)</th>
+<th style="text-align: center;">작업시간(일)</th>
+<th style="text-align: center;">여유시간(일)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">45</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">29</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>선착순 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.</li>
+<li>최소 작업시간 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.</li>
+<li>최소 납기 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.</li>
+<li>최소 여유시간 규칙의 평균 진행시간과 평균 납기 지연일수를 구하시오.</li>
+<li>평균 진행시간 최소 및 평균 납기 지연 최소의 규칙을 판정하시오.</li>
+</ol>
+<hr>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 36%">
+<col style="width: 30%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>우선순위 규칙</th>
+<th>작업순서</th>
+<th>평균 진행시간</th>
+<th>평균 납기</th>
+<th>지연일수</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(1) 선착순</td>
+<td>A－B－C－D－E</td>
+<td>(10＋25＋37＋51＋67) / 5 = 38.0</td>
+<td>(0＋0＋8＋21＋22) / 5 = 10.2</td>
+<td>10.2</td>
+</tr>
+<tr class="even">
+<td>(2) 최소 작업시간</td>
+<td>A－C－D－B－E</td>
+<td>(10＋22＋36＋51＋67) / 5 = 37.2</td>
+<td>(0＋0＋6＋26＋22) / 5 = 10.8</td>
+<td>10.8</td>
+</tr>
+<tr class="odd">
+<td>(3) 최소 납기</td>
+<td>A－B－C－D－E</td>
+<td>(10＋25＋37＋51＋67) / 5 = 38.0</td>
+<td>(0＋0＋8＋21＋22) / 5 = 10.2</td>
+<td>10.2</td>
+</tr>
+<tr class="even">
+<td>(4) 최소 여유시간</td>
+<td>A－B－D－C－E</td>
+<td>(10＋25＋39＋51＋67) / 5 = 38.4</td>
+<td>(0＋0＋9＋22＋22) / 5 = 10.6</td>
+<td>10.6</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <p><font color="blue"><strong>n개 작업을 2대 기계에서 작업할 경우</strong></font> 우선 순위 규칙은 <a href="Johnson's rule"><span class="quarto-xref"><span>존슨법</span></span></a>을 적용할 수 있다.</p>
