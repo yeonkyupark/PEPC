@@ -317,6 +317,11 @@ end
 
 #### 셀형 배치
 
+:::{.callout-tip icon=false title="기출"}
+124-2-5
+:::
+
+
 ![https://hbr.org/1984/07/group-technology-and-productivity](https://hbr.org/resources/images/article_assets/hbr/8407/84404_B.gif)
 
 "GT 배치" 또는 "그룹별 배치"라고 하며 작업장과 기계를 유사한 생산/가공 흐름을 갖는 제품들로그룹화하여 셀(cell) 단위로 배열하고 부품 분류별로 가공하는 형태이다. 금속가공 및 조립, 컴퓨터 칩 제조 및 조립 작업에 적용되며 유연성은 유지(공정별 배치 장점)하면서 효율성을 증대(제품별 배치 장점)시키려는 형태이다.
