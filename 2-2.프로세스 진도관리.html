@@ -932,6 +932,19 @@ window.Quarto = {
 </section>
 <section id="네트워크-구성" class="level3">
 <h3 class="anchored" data-anchor-id="네트워크-구성">네트워크 구성</h3>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="기출">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+기출
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>124-3-2</p>
+</div>
+</div>
 <p>네트워크 기법은 네트워크 작성 방법에 따라 AOA(Activity on Arrow)와 AON(Activity on Node) 방식으로 나뉜다.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -1496,6 +1509,81 @@ I --&gt; J
 <p><span class="math display">\[
 \text{라인 밸런싱 효율(E)} = \frac{총과업시간}{최소공정수 \times 사이클타임} \times 100\% = \frac{7.8(분)}{6(개) \times 1.5분} \times 100\% = 86.7\%
 \]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="네트워크 작성">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+네트워크 작성
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>활동</th>
+<th>선행활동</th>
+<th>소요시간(일)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td>A</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td>B</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td>C</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>E</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>E</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>G</td>
+<td>F</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>D, G</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<dl>
+<dt>AOA</dt>
+<dd>
+<img src="images/124-3-2-01.png" class="img-fluid">
+</dd>
+<dt>AON</dt>
+<dd>
+<img src="images/124-3-2-02.png" class="img-fluid">
+</dd>
+</dl>
+<p>총완료시간은 A(3) → B(6) → C(12) → D(2) → H(1) = 24(일)이다.</p>
 </div>
 </div>
 </section>
