@@ -310,6 +310,11 @@ end
 
 ## 의사결정 도구
 
+:::{.callout-tip icon=false title="기출"}
+124-2-4
+:::
+
+
 ```{mermaid}
 flowchart TD
 0[의사결정 도구]
