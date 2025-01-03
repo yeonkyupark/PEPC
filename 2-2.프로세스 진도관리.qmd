@@ -252,6 +252,11 @@ flowchart LR
 
 ### 네트워크 구성
 
+:::{.callout-tip icon=false title="기출"}
+124-3-2
+:::
+
+
 네트워크 기법은 네트워크 작성 방법에 따라 AOA(Activity on Arrow)와 AON(Activity on Node) 방식으로 나뉜다.
 
 ```{mermaid}
@@ -577,6 +582,31 @@ $$
 $$
 
 :::
+
+:::{.callout-important icon=false title="네트워크 작성"}
+
+| 활동 | 선행활동 | 소요시간(일) |
+|------|----------|-------------|
+| A    | -        | 3           |
+| B    | A        | 6           |
+| C    | B        | 12          |
+| D    | C        | 2           |
+| E    | -        | 6           |
+| F    | E        | 10          |
+| G    | F        | 5           |
+| H    | D, G     | 1           |
+
+----
+
+AOA
+: ![](images/124-3-2-01.png)
+
+AON
+: ![](images/124-3-2-02.png)
+
+총완료시간은 A(3) → B(6) → C(12) → D(2) → H(1) = 24(일)이다.
+:::
+
 
 ### 주요 기법
 
