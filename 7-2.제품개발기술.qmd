@@ -77,7 +77,7 @@
 ### 동시공학 {#sec-concurrent-engineering}
 
 :::{.callout-tip icon=false title="기출"}
-97-1-6, 100-1-8, 118-1-5
+97-1-6, 100-1-8, 118-1-5, 124-2-2
 :::
 
 ![https://en.wikipedia.org/wiki/Concurrent_engineering](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Waterfall_vs_iterative.JPG/1080px-Waterfall_vs_iterative.JPG)
@@ -130,6 +130,41 @@ CE는 제품 개발과 그 제품을 생산하는 공정, 판매와 유통, 구�
 - 품질이 향상된다.
 - 설계변경 횟수가 감소된다.
 - 재공품이 감소된다.
+
+#### 동시공학과 순차공학
+
+동시공학(Concurrent Engineering, CE)
+: > 제품 설계와 개발 단계에서 여러 부서가 동시에 협력하여 병행으로 진행하는 방식
+
+순차공학(Sequential Engineering, SE)
+: > 설계, 개발, 생산 등 각 단계가 순차적으로 진행되는 방식으로, 한 단계가 완료되어야 다음 단계로 넘어감
+
+```{r}
+#| echo: false
+# #| tbl-colwidths: [10,90]
+
+options(knitr.kable.NA = '')
+
+tb <- data.frame(
+    구분 = c("진행 방식", "작업 속도", "비용 절감 효과", "리스크 관리", "커뮤니케이션 방식"),
+    동시공학 = c(
+      "각 부서가 동시에 작업 (병행 진행)", 
+      "빠름 (병행 작업으로 단축 가능)", 
+      "높음 (설계 변경 비용 감소)", 
+      "낮음 (초기에 리스크 파악 및 조치 가능)", 
+      "지속적 협업 및 피드백"
+    ),
+    순차공학 = c(
+      "단계별 순차 진행 (완료 후 다음 단계)", 
+      "느림 (각 단계 완료 후 진행)", 
+      "낮음 (설계 변경 시 비용 상승)", 
+      "높음 (단계별 확인으로 리스크 파악)", 
+      "단계 완료 후 전달"
+    )
+  )
+
+knitr::kable(tb)
+```
 
 ### 모듈러 설계 {#sec-modular-design}
 
