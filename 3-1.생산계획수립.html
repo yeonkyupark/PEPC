@@ -2179,9 +2179,20 @@ Petrov방법
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>103-1-9</p>
+<p>103-1-9, 124-3-4</p>
 </div>
 </div>
+<p>MRP(Material Requirements Planning)는 제조업에서 원자재 및 부품의 수요를 계획하고 관리하는 시스템이다. 제품 생산에 필요한 자재를 적시에 확보함으로써 생산 일정이 원활하게 진행되도록 돕는다. MRP는 최종 제품의 생산 일정과 제품 구조(BOM, Bill of Materials)를 기반으로 각 부품 및 자재의 수요를 역산하여 계획을 수립한다.</p>
+<dl>
+<dt>MRP의 목적</dt>
+<dd>
+<ul>
+<li>적시 자재 조달: 생산 일정에 맞춰 필요한 자재를 준비해 생산 지연을 방지한다.</li>
+<li>재고 최소화: 불필요한 재고를 줄여 보관 비용을 절감한다.</li>
+<li>생산 계획 최적화: 생산 효율을 높이고 납기 준수를 보장한다.</li>
+</ul>
+</dd>
+</dl>
 <section id="mrp-3대-필수요소" class="level3">
 <h3 class="anchored" data-anchor-id="mrp-3대-필수요소">MRP 3대 필수요소</h3>
 <p>MRP 3대 필수요소는 기준일정계획(MPS), 자재명세서(BOM) 그리고 재고기록파일(IRF)이다.</p>
@@ -2190,18 +2201,46 @@ Petrov방법
 <dd>
 <ul>
 <li><a href="#sec-mps" class="quarto-xref"><span>기준일정계획(MPS)</span></a> 참고</li>
+<li>최종 제품 생산 일정 및 생산량을 계획하는 일정표</li>
 </ul>
 </dd>
 <dt>BOM</dt>
 <dd>
 <ul>
 <li><a href="#sec-bom" class="quarto-xref"><span>BOM</span></a> 참고</li>
+<li>최종 제품을 구성하는 원자재 및 부품 목록과 그 수량을 명시한 문서</li>
 </ul>
 </dd>
-<dt>IRF</dt>
+<dt>IRF(Inventory Records File)</dt>
 <dd>
 <ul>
 <li>재고관리에 기본이 되는 자재별 수불현황과 현재고, 조달 기간 명시</li>
+<li>현재 보유 중인 재고와 리드타임, 입출고 내역 등을 기록한 파일</li>
+</ul>
+</dd>
+<dt>MRP 작동 원리</dt>
+<dd>
+<ul>
+<li>순수요 계산: BOM과 현재 재고를 기반으로 부족한 자재의 순수요를 계산한다.</li>
+<li>소요량 산출: 최종 제품의 생산 일정에 맞춰 필요한 자재 및 부품의 필요 시점을 계산한다.</li>
+<li>주문 일정 작성: 리드 타임을 고려하여 자재를 언제 주문하거나 생산해야 하는지를 계획한다.</li>
+</ul>
+</dd>
+<dt>MRP의 장점</dt>
+<dd>
+<ul>
+<li>생산 효율성 향상: 필요한 자재를 적시에 조달해 생산 과정의 병목 현상을 방지한다.</li>
+<li>재고 비용 절감: 과잉 재고를 방지하고, 필요한 자재만 확보하여 재고 비용을 최소화한다.</li>
+<li>납기 준수 향상: 제품 생산 및 납품 일정을 보다 정확하게 계획할 수 있다.</li>
+</ul>
+</dd>
+<dt>MRP의 한계</dt>
+<dd>
+<ul>
+<li>데이터 정확성 필요: BOM, 재고 기록 등이 정확하지 않으면 계획이 어긋날 수 있다.</li>
+<li>복잡성: 많은 품목과 생산 단계가 얽혀 있어 관리 및 유지보수가 어렵다.</li>
+<li>유연성 부족: 수요 변동이나 생산 일정 변화에 대한 즉각적인 대응이 어렵다.</li>
+<li>리드 타임 의존성: 자재 조달 시간이 길어지면 전체 생산 일정이 지연될 수 있다.</li>
 </ul>
 </dd>
 </dl>
@@ -2220,6 +2259,167 @@ BOP
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>BOP</strong>(bill of process)는 제품을 구성하고 있는 부품이 어떤 공정에서 언제 생산을 해야 할지가 분단위로 이루어진 것으로 BOM 부품구성정보와 부품 정보에서 개당 작업공수와 부품 가공공정 정보 조합이다. BOM에 각 부품 제작공정을 표시하여 부품과 공정 선후관계를 네트워크(network) 형태로 표현한다.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important no-icon callout-titled" title="MRP 작성">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MRP 작성
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+00[산악자전거]
+10[몸체(1)]
+20[핸들(1)]
+11[앞바퀴(1)]
+12[뒷바퀴(1)]
+13[패달(2)]
+
+00 --- 10 &amp; 20
+10 --- 11 &amp; 12 &amp; 13
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>품목</th>
+<th>산악자전거</th>
+<th>몸체</th>
+<th>핸들</th>
+<th>앞바퀴</th>
+<th>뒷바퀴</th>
+<th>페달</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>현재고</td>
+<td>50</td>
+<td>100</td>
+<td>50</td>
+<td>40</td>
+<td>20</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>LT(주)</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 20%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>품목</th>
+<th>개당 소요량</th>
+<th>현재고</th>
+<th>LT(주)</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>산악자전거</td>
+<td>1</td>
+<td>50</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>150</td>
+<td>150</td>
+</tr>
+<tr class="even">
+<td>몸체</td>
+<td>1</td>
+<td>100</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>50</td>
+<td>150</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>핸들</td>
+<td>1</td>
+<td>50</td>
+<td>2</td>
+<td></td>
+<td>100</td>
+<td>150</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>앞바퀴</td>
+<td>1</td>
+<td>40</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>110</td>
+<td>150</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>뒷바퀴</td>
+<td>1</td>
+<td>20</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>130</td>
+<td>150</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>페달</td>
+<td>2</td>
+<td>80</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>220</td>
+<td>300</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
